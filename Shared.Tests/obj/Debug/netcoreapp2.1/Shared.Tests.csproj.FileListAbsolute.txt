@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Shared.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+F:\Personal\Sidekick API\Shared.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+F:\Personal\Sidekick API\Shared.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+F:\Personal\Sidekick API\Shared.Tests\bin\Debug\netcoreapp2.1\Shared.Tests.deps.json
+F:\Personal\Sidekick API\Shared.Tests\bin\Debug\netcoreapp2.1\Shared.Tests.runtimeconfig.json
+F:\Personal\Sidekick API\Shared.Tests\bin\Debug\netcoreapp2.1\Shared.Tests.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Shared.Tests\bin\Debug\netcoreapp2.1\Shared.Tests.dll
+F:\Personal\Sidekick API\Shared.Tests\bin\Debug\netcoreapp2.1\Shared.Tests.pdb
+F:\Personal\Sidekick API\Shared.Tests\obj\Debug\netcoreapp2.1\Shared.Tests.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Shared.Tests\obj\Debug\netcoreapp2.1\Shared.Tests.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Shared.Tests\obj\Debug\netcoreapp2.1\Shared.Tests.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Shared.Tests\obj\Debug\netcoreapp2.1\Shared.Tests.AssemblyInfo.cs
+F:\Personal\Sidekick API\Shared.Tests\obj\Debug\netcoreapp2.1\Shared.Tests.dll
+F:\Personal\Sidekick API\Shared.Tests\obj\Debug\netcoreapp2.1\Shared.Tests.pdb

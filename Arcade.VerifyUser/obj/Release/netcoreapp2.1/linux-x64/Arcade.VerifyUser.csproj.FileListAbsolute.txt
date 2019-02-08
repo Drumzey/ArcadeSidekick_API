@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.deps.json
+F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.dll
+F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.pdb
+F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.dll
+F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Release\netcoreapp2.1\linux-x64\Arcade.VerifyUser.pdb

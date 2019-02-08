@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\SaveScore\bin\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.deps.json
+F:\Personal\Sidekick API\SaveScore\bin\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.runtimeconfig.json
+F:\Personal\Sidekick API\SaveScore\bin\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.runtimeconfig.dev.json
+F:\Personal\Sidekick API\SaveScore\bin\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.dll
+F:\Personal\Sidekick API\SaveScore\bin\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.pdb
+F:\Personal\Sidekick API\SaveScore\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.dll
+F:\Personal\Sidekick API\SaveScore\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.pdb
+F:\Personal\Sidekick API\SaveScore\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\SaveScore\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\SaveScore\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\SaveScore\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.AssemblyInfo.cs
+F:\Personal\Sidekick API\SaveScore\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.csproj.CopyComplete
+F:\Personal\Sidekick API\SaveScore\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.dll
+F:\Personal\Sidekick API\SaveScore\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveScore.pdb
