@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.Authorizer\bin\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.deps.json
+F:\Personal\Sidekick API\Arcade.Authorizer\bin\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.Authorizer\bin\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.Authorizer\bin\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.dll
+F:\Personal\Sidekick API\Arcade.Authorizer\bin\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.pdb
+F:\Personal\Sidekick API\Arcade.Authorizer\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.Authorizer\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.Authorizer\obj\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.Authorizer\obj\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.Authorizer\obj\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.Authorizer\obj\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.Authorizer\obj\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.Authorizer\obj\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.dll
+F:\Personal\Sidekick API\Arcade.Authorizer\obj\Release\netcoreapp2.1\linux-x64\Arcade.Authorizer.pdb

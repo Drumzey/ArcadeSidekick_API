@@ -38,7 +38,7 @@ namespace Arcade.GetRating.Tests
             var context = new TestLambdaContext();
             var result = function.GetRatingHandler(request, context);
 
-            var newRatingInformation = JsonConvert.DeserializeObject<RatingInformationResponse>(result.Body);
+            var newRatingInformation = JsonConvert.DeserializeObject<SingleRatingInformationResponse>(result.Body);
 
             Assert.Equal(0, newRatingInformation.NumberOfRatings);
             Assert.Equal(0, newRatingInformation.Average);
@@ -81,7 +81,7 @@ namespace Arcade.GetRating.Tests
             var context = new TestLambdaContext();
             var result = function.GetRatingHandler(request, context);
 
-            var newRatingInformation = JsonConvert.DeserializeObject<RatingInformationResponse>(result.Body);
+            var newRatingInformation = JsonConvert.DeserializeObject<SingleRatingInformationResponse>(result.Body);
 
             Assert.Equal(1, newRatingInformation.NumberOfRatings);
             Assert.Equal(2, newRatingInformation.Average);

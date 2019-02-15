@@ -9,7 +9,7 @@ namespace Arcade.CreateUser.Tests
         public void EmailSecret_WhenCalledWithSecretAndEmail_Emails()
         {
             Email email = new Email();
-            email.EmailSecret("1234567", "richard.rumsey@gmail.com");            
+            email.EmailSecret("1234567", "richard.rumsey@gmail.com", "Drumzey");            
         }
     }
 }

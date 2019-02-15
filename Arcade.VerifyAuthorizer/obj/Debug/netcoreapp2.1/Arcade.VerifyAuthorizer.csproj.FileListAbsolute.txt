@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\bin\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.deps.json
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\bin\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\bin\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\bin\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.dll
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\bin\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.pdb
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.dll
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.pdb

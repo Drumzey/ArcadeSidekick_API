@@ -45,7 +45,7 @@ namespace Arcade.CreateUser.Tests
 
             userInfoRepository.Verify(k => k.Load(It.IsAny<String>()), Times.Once());
             userInfoRepository.Verify(k => k.Save(It.IsAny<UserInformation>()), Times.Once());
-            email.Verify(k => k.EmailSecret(It.IsAny<String>(), It.IsAny<String>()), Times.Once());
+            email.Verify(k => k.EmailSecret(It.IsAny<String>(), It.IsAny<String>(), It.IsAny<String>()), Times.Once());
         }
 
         [Fact]
@@ -82,7 +82,7 @@ namespace Arcade.CreateUser.Tests
 
             userInfoRepository.Verify(k => k.Load(It.IsAny<String>()), Times.Once());
             userInfoRepository.Verify(k => k.Save(It.IsAny<UserInformation>()), Times.Never);
-            email.Verify(k => k.EmailSecret(It.IsAny<String>(), It.IsAny<String>()), Times.Never);
+            email.Verify(k => k.EmailSecret(It.IsAny<String>(), It.IsAny<String>(), It.IsAny<String>()), Times.Never);
         }
     }
 }

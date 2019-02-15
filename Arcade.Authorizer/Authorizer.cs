@@ -30,6 +30,7 @@ namespace Arcade.Authorizer
         public Authorizer(IServiceProvider services)
         {
             _services = services;
+            ((IUserRepository)_services.GetService(typeof(IUserRepository))).SetupTable();
         }
 
         public APIGatewayCustomAuthorizerResponse AuthorizerHandler(APIGatewayCustomAuthorizerRequest tokenContext, ILambdaContext context)
@@ -42,12 +43,12 @@ namespace Arcade.Authorizer
                 throw new Exception("Unauthorized");
             }
 
-            var jwt = GetJWT(authorizationToken); // Parse the string into a JWT
-            var user = GetUser(jwt.Id); //Get the user from the database by the 
+            var jwt = GetJWT(authorizationToken); // Parse the string into a JWT            
+            var user = GetUser(jwt.Id); //Get the user from the database by the             
 
-            if (user.Verified)
+            if (!user.Verified)
             {
-                throw new Exception("Already Verified");
+                throw new Exception("Cannot save data as user not verified");
             }
 
             if (ValidateToken(authorizationToken ,user.Secret))

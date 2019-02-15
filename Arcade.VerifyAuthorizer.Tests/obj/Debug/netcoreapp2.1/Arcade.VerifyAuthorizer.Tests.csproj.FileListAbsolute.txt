@@ -1,0 +1,4 @@
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.AssemblyInfo.cs

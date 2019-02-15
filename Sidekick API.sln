@@ -37,6 +37,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arcade.Authorizer", "Arcade
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arcade.Authorizer.Tests", "Arcade.Authorizer.Tests\Arcade.Authorizer.Tests.csproj", "{C5D83D34-58A4-4EF0-93B1-81D0EEB242C3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arcade.VerifyAuthorizer", "Arcade.VerifyAuthorizer\Arcade.VerifyAuthorizer.csproj", "{26AE72CD-3063-469D-8B82-46CA0C1AED03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arcade.VerifyAuthorizer.Tests", "Arcade.VerifyAuthorizer.Tests\Arcade.VerifyAuthorizer.Tests.csproj", "{FDD1CC97-48C2-4878-8EF5-AAC74ED9C50E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +183,22 @@ Global
 		{C5D83D34-58A4-4EF0-93B1-81D0EEB242C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C5D83D34-58A4-4EF0-93B1-81D0EEB242C3}.Release|x86.ActiveCfg = Release|Any CPU
 		{C5D83D34-58A4-4EF0-93B1-81D0EEB242C3}.Release|x86.Build.0 = Release|Any CPU
+		{26AE72CD-3063-469D-8B82-46CA0C1AED03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26AE72CD-3063-469D-8B82-46CA0C1AED03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26AE72CD-3063-469D-8B82-46CA0C1AED03}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{26AE72CD-3063-469D-8B82-46CA0C1AED03}.Debug|x86.Build.0 = Debug|Any CPU
+		{26AE72CD-3063-469D-8B82-46CA0C1AED03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26AE72CD-3063-469D-8B82-46CA0C1AED03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26AE72CD-3063-469D-8B82-46CA0C1AED03}.Release|x86.ActiveCfg = Release|Any CPU
+		{26AE72CD-3063-469D-8B82-46CA0C1AED03}.Release|x86.Build.0 = Release|Any CPU
+		{FDD1CC97-48C2-4878-8EF5-AAC74ED9C50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD1CC97-48C2-4878-8EF5-AAC74ED9C50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD1CC97-48C2-4878-8EF5-AAC74ED9C50E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FDD1CC97-48C2-4878-8EF5-AAC74ED9C50E}.Debug|x86.Build.0 = Debug|Any CPU
+		{FDD1CC97-48C2-4878-8EF5-AAC74ED9C50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD1CC97-48C2-4878-8EF5-AAC74ED9C50E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD1CC97-48C2-4878-8EF5-AAC74ED9C50E}.Release|x86.ActiveCfg = Release|Any CPU
+		{FDD1CC97-48C2-4878-8EF5-AAC74ED9C50E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

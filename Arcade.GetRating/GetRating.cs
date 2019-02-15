@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
@@ -42,6 +43,7 @@ namespace Arcade.GetRating
             {
                 ratingInfo = new RatingInformation
                 {
+                    GameName = gamename,
                     Average = 0,
                     NumberOfRatings = 0,
                 };                 
@@ -58,12 +60,14 @@ namespace Arcade.GetRating
 
         private APIGatewayProxyResponse Response(RatingInformation ratingInfo)
         {
-            var response = new RatingInformationResponse
+            var response = new SaveRatingInformationResponse();
+            response.Games = new Dictionary<string, SingleRatingInformationResponse>();
+            response.Games.Add(ratingInfo.GameName, new SingleRatingInformationResponse
             {
                 Average = ratingInfo.Average,
                 NumberOfRatings = ratingInfo.NumberOfRatings,
-            };
-
+            });
+           
             return new APIGatewayProxyResponse
             {
                 StatusCode = (int)HttpStatusCode.OK,
