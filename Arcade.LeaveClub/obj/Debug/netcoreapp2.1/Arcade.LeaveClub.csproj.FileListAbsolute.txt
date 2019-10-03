@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.LeaveClub\bin\Debug\netcoreapp2.1\Arcade.LeaveClub.deps.json
+F:\Personal\Sidekick API\Arcade.LeaveClub\bin\Debug\netcoreapp2.1\Arcade.LeaveClub.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.LeaveClub\bin\Debug\netcoreapp2.1\Arcade.LeaveClub.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.LeaveClub\bin\Debug\netcoreapp2.1\Arcade.LeaveClub.dll
+F:\Personal\Sidekick API\Arcade.LeaveClub\bin\Debug\netcoreapp2.1\Arcade.LeaveClub.pdb
+F:\Personal\Sidekick API\Arcade.LeaveClub\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.LeaveClub\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.dll
+F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.pdb

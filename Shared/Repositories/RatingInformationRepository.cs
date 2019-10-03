@@ -1,44 +1,49 @@
-﻿using Amazon;
+﻿using System.Collections.Generic;
+using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Arcade.Shared.Repositories
 {
     public class RatingInformationRepository : IRatingRepository
     {
-        private DynamoDBContext _dbContext;
-        private IEnvironmentVariables _environmentVariables;
+        private DynamoDBContext dbContext;
+        private IEnvironmentVariables environmentVariables;
 
         public RatingInformationRepository()
         {
-            _environmentVariables = new EnvironmentVariables();
+            environmentVariables = new EnvironmentVariables();
         }
 
         public RatingInformationRepository(IEnvironmentVariables environmentVariables)
         {
-            _environmentVariables = environmentVariables;
+            this.environmentVariables = environmentVariables;
         }
 
         public void SetupTable()
         {
-            AWSConfigsDynamoDB.Context.TypeMappings[typeof(RatingInformation)] = 
-                new Amazon.Util.TypeMapping(typeof(RatingInformation), _environmentVariables.RatingInformationTableName);
+            AWSConfigsDynamoDB.Context.TypeMappings[typeof(RatingInformation)] =
+                new Amazon.Util.TypeMapping(typeof(RatingInformation), environmentVariables.RatingInformationTableName);
 
             var config = new DynamoDBContextConfig { ConsistentRead = true, Conversion = DynamoDBEntryConversion.V2 };
-            this._dbContext = new DynamoDBContext(new AmazonDynamoDBClient(), config);
+            this.dbContext = new DynamoDBContext(new AmazonDynamoDBClient(), config);
         }
 
         public void Save(RatingInformation key)
         {
-            _dbContext.SaveAsync(key).Wait();
+            dbContext.SaveAsync(key).Wait();
         }
 
         public RatingInformation Load(string partitionKey)
         {
-            return _dbContext.LoadAsync<RatingInformation>(partitionKey).Result;
+            return dbContext.LoadAsync<RatingInformation>(partitionKey).Result;
+        }
+
+        public IEnumerable<RatingInformation> AllRows()
+        {
+            var conditions = new List<ScanCondition>();
+            var allDocs = dbContext.ScanAsync<RatingInformation>(conditions).GetRemainingAsync().Result;
+            return allDocs;
         }
     }
 }

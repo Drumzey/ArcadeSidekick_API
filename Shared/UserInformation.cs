@@ -1,7 +1,6 @@
-﻿using Amazon.DynamoDBv2.DataModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using Amazon.DynamoDBv2.DataModel;
 
 namespace Arcade.Shared
 {
@@ -23,5 +22,21 @@ namespace Arcade.Shared
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }
+
+        public List<string> Clubs { get; set; }
+
+        public string TwitterHandle { get; set; }
+
+        public string Location { get; set; }
+
+        public int NumberOfGamesPlayed { get; set; }
+
+        public int NumberOfRatingsGiven { get; set; }
+
+        public int NumberOfScoresUploaded { get; set; }
+
+        public int NumberOfSocialShares { get; set; }
+
+        public int NumberOfChallengesSent { get; set; }
     }
 }

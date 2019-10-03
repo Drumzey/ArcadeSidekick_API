@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.deps.json
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.dll
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.pdb
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.dll
+F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetBestGames.pdb

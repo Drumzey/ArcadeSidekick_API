@@ -1,6 +1,6 @@
-﻿using Arcade.Shared;
+﻿using System;
+using Arcade.Shared;
 using Arcade.Shared.Repositories;
-using System;
 using Xunit;
 
 namespace Arcade.CreateUser.Tests.DI

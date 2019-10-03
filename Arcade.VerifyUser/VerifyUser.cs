@@ -18,7 +18,7 @@ namespace Arcade.VerifyUser
 {
     public class VerifyUser
     {
-        private IServiceProvider _services;
+        private IServiceProvider services;
 
         public VerifyUser()
             : this(DI.Container.Services())
@@ -27,16 +27,16 @@ namespace Arcade.VerifyUser
 
         public VerifyUser(IServiceProvider services)
         {
-            _services = services;
-            ((IUserRepository)_services.GetService(typeof(IUserRepository))).SetupTable();
+            this.services = services;
+            ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse VerifyUserHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
             var userInfo = JsonConvert.DeserializeObject<CreateUserInformation>(request.Body);
-            var user = ((IUserRepository)_services.GetService(typeof(IUserRepository))).Load(userInfo.Username);
+            var user = ((IUserRepository)services.GetService(typeof(IUserRepository))).Load(userInfo.Username);
 
-            if(user == null)
+            if (user == null)
             {
                 return new APIGatewayProxyResponse
                 {
@@ -46,7 +46,7 @@ namespace Arcade.VerifyUser
             }
 
             user.Verified = true;
-            ((IUserRepository)_services.GetService(typeof(IUserRepository))).Save(user);
+            ((IUserRepository)services.GetService(typeof(IUserRepository))).Save(user);
             return OkResponse();
         }
 

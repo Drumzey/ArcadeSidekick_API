@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.RestoreUser.deps.json
+F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.RestoreUser.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.RestoreUser.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.RestoreUser.dll
+F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.RestoreUser.pdb
+F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.dll
+F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.pdb

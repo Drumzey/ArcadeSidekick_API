@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net;
-using System.Net.Mail;
 using System.Security.Cryptography;
-using System.Threading.Tasks;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
@@ -18,8 +17,7 @@ namespace Arcade.CreateUser
 {
     public class CreateUser
     {
-
-        private IServiceProvider _services;
+        private IServiceProvider services;
 
         public CreateUser()
             : this(DI.Container.Services())
@@ -28,8 +26,9 @@ namespace Arcade.CreateUser
 
         public CreateUser(IServiceProvider services)
         {
-            _services = services;
-            ((IUserRepository)_services.GetService(typeof(IUserRepository))).SetupTable();
+            this.services = services;
+            ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
+            ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse CreateUserHandler(APIGatewayProxyRequest request, ILambdaContext context)
@@ -44,11 +43,64 @@ namespace Arcade.CreateUser
                 }
 
                 CreateUserInDatabase(userInfo);
+                CreateUserInObjectTable(userInfo.Username);
+                SaveRecentActivity(userInfo.Username);
                 return OkResponse();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return ErrorResponse(e.Message);
+            }
+        }
+
+        private void SaveRecentActivity(string username)
+        {
+            var recentActivity = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("recent");
+
+            if (recentActivity == null)
+            {
+                recentActivity = new ObjectInformation();
+                recentActivity.Key = "recent";
+                recentActivity.ListValue = new System.Collections.Generic.List<string>();
+            }
+
+            var message = GetMessage(username, DateTime.UtcNow.ToString("dd/MM/yyyy h:mm tt"));
+
+            Console.WriteLine(message);
+
+            recentActivity.ListValue.Add(message);
+
+            var newList = recentActivity.ListValue.Skip(Math.Max(0, recentActivity.ListValue.Count() - 50));
+            recentActivity.ListValue = newList.ToList();
+
+            ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Save(recentActivity);
+        }
+
+        private string GetMessage(string username, string date)
+        {
+            return $"{date}: {username.ToUpper()} joined the fun!";
+        }
+
+        private void CreateUserInObjectTable(string userName)
+        {
+            try
+            {
+                var users = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("users");
+
+                if (users == null)
+                {
+                    users = new ObjectInformation();
+                    users.Key = "users";
+                    users.ListValue = new List<string>();
+                }
+
+                users.ListValue.Add(userName);
+
+                ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Save(users);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
 
@@ -64,24 +116,33 @@ namespace Arcade.CreateUser
                 CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now,
                 Verified = false,
+                NumberOfChallengesSent = 0,
+                NumberOfGamesPlayed = 0,
+                NumberOfRatingsGiven = 0,
+                NumberOfScoresUploaded = 0,
+                NumberOfSocialShares = 0,
+                TwitterHandle = string.Empty,
+                Location = string.Empty,
             };
 
-            ((IUserRepository)_services.GetService(typeof(IUserRepository))).Save(newUser);
-            var email = ((IEmail)_services.GetService(typeof(IEmail)));            
-            email.EmailSecret(newUser.Secret, newUser.EmailAddress, newUser.Username);
+            ((IUserRepository)services.GetService(typeof(IUserRepository))).Save(newUser);
+            var email = (IEmail)services.GetService(typeof(IEmail));
+            var environment = (IEnvironmentVariables)services.GetService(typeof(IEnvironmentVariables));
+
+            email.EmailSecret(newUser.Secret, newUser.EmailAddress, newUser.Username, environment);
         }
 
         private string GenerateSecret()
-        {            
+        {
             RNGCryptoServiceProvider rngCryptoServiceProvider = new RNGCryptoServiceProvider();
             byte[] randomBytes = new byte[32];
             rngCryptoServiceProvider.GetBytes(randomBytes);
-            return Convert.ToBase64String(randomBytes);                    
+            return Convert.ToBase64String(randomBytes);
         }
 
         private bool DoesUserExist(string username)
         {
-            var user = ((IUserRepository)_services.GetService(typeof(IUserRepository))).Load(username);
+            var user = ((IUserRepository)services.GetService(typeof(IUserRepository))).Load(username);
             return user != null;
         }
 

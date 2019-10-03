@@ -11,10 +11,10 @@ namespace Arcade.Authorizer.DI
     {
         public static IServiceProvider Services()
         {
-            return new ServiceCollection()                
+            return new ServiceCollection()
                 .AddScoped<IAmazonLambda, AmazonLambdaClient>(sp => new AmazonLambdaClient(RegionEndpoint.EUWest2))
                 .AddScoped<IEnvironmentVariables, EnvironmentVariables>()
-                .AddScoped<IUserRepository, UserInformationRepository>()
+                .AddScoped<IUserRepository, UserRepository>()
                 .BuildServiceProvider();
         }
     }

@@ -1,7 +1,8 @@
 ﻿using System;
-using Microsoft.Extensions.DependencyInjection;
 using Arcade.Shared;
+using Arcade.Shared.Messages;
 using Arcade.Shared.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Arcade.SaveScore.DI
 {
@@ -10,8 +11,10 @@ namespace Arcade.SaveScore.DI
         public static IServiceProvider Services()
         {
             return new ServiceCollection()
-                .AddScoped<IEnvironmentVariables, EnvironmentVariables>()                
-                .AddScoped<IUserRepository, UserInformationRepository>()                
+                .AddScoped<IEnvironmentVariables, EnvironmentVariables>()
+                .AddScoped<IUserRepository, UserRepository>()
+                .AddScoped<IObjectRepository, ObjectRepository>()
+                .AddScoped<IMessageRepository, MessageRepository>()
                 .BuildServiceProvider();
         }
     }

@@ -1,15 +1,15 @@
 using System.Collections.Generic;
-using Xunit;
-using Amazon.Lambda.TestUtilities;
 using Amazon.Lambda.APIGatewayEvents;
+using Amazon.Lambda.TestUtilities;
+using Arcade.Shared;
 using Arcade.Shared.Repositories;
 using Moq;
-using Arcade.Shared;
 using Newtonsoft.Json;
+using Xunit;
 
 namespace Arcade.SaveScore.Tests
 {
-    public class SaveScoreHandlerTest
+    public class SaveHandlerTest
     {
         private const string TwoGames = "{\"Username\":\"Drumzey\",\"Games\":{\"Pacman\":\"123456\",\"Bubble Bobble\":\"987654\"},\"Ratings\":{\"Pacman\":9,\"Bubble Bobble\":9},\"CreatedAt\":\"2019-01-22T13:29:08.6505456+00:00\",\"UpdatedAt\":\"2019-01-22T13:29:08.6507032+00:00\"}";
         private const string TwoGamesUpdated = "{\"Username\":\"Drumzey\",\"Games\":{\"Pacman\":\"999999\",\"Bubble Bobble\":\"987654\"},\"Ratings\":{\"Pacman\":10,\"Bubble Bobble\":10},\"CreatedAt\":\"2019-01-22T13:29:08.6505456+00:00\",\"UpdatedAt\":\"2019-01-22T13:29:08.6507032+00:00\"}";
@@ -45,7 +45,7 @@ namespace Arcade.SaveScore.Tests
             Assert.True(newUserInformation.Games.ContainsKey("Pacman"));
             Assert.True(newUserInformation.Games.ContainsKey("Bubble Bobble"));
             Assert.Equal("123456", newUserInformation.Games["Pacman"]);
-            Assert.Equal("987654", newUserInformation.Games["Bubble Bobble"]);            
+            Assert.Equal("987654", newUserInformation.Games["Bubble Bobble"]);
 
             userInfoRepository.Verify(k => k.Save(It.IsAny<UserInformation>()), Times.Once());
         }
@@ -81,7 +81,7 @@ namespace Arcade.SaveScore.Tests
             Assert.True(newUserInformation.Games.ContainsKey("Pacman"));
             Assert.True(newUserInformation.Games.ContainsKey("Bubble Bobble"));
             Assert.Equal("999999", newUserInformation.Games["Pacman"]);
-            Assert.Equal("987654", newUserInformation.Games["Bubble Bobble"]);            
+            Assert.Equal("987654", newUserInformation.Games["Bubble Bobble"]);
 
             userInfoRepository.Verify(k => k.Save(It.IsAny<UserInformation>()), Times.Once());
         }
@@ -120,7 +120,7 @@ namespace Arcade.SaveScore.Tests
             Assert.True(newUserInformation.Games.ContainsKey("Solar Fox"));
             Assert.Equal("123456", newUserInformation.Games["Pacman"]);
             Assert.Equal("111111", newUserInformation.Games["Amidar"]);
-            Assert.Equal("987654", newUserInformation.Games["Solar Fox"]);            
+            Assert.Equal("987654", newUserInformation.Games["Solar Fox"]);
 
             userInfoRepository.Verify(k => k.Save(It.IsAny<UserInformation>()), Times.Once());
         }

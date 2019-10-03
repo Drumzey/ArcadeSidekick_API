@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\bin\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.deps.json
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\bin\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\bin\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\bin\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.dll
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\bin\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.pdb
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\obj\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\obj\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\obj\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\obj\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\obj\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\obj\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.dll
+F:\Personal\Sidekick API\Arcade.WhereCanIPlay_POST\obj\Debug\netcoreapp2.1\Arcade.WhereCanIPlay_POST.pdb

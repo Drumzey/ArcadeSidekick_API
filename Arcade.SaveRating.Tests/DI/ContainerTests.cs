@@ -1,6 +1,6 @@
-﻿using Arcade.Shared;
+﻿using System;
+using Arcade.Shared;
 using Arcade.Shared.Repositories;
-using System;
 using Xunit;
 
 namespace Arcade.SaveRating.Tests.DI
@@ -9,7 +9,7 @@ namespace Arcade.SaveRating.Tests.DI
     {
         [Theory]
         [InlineData(typeof(IEnvironmentVariables))]
-        [InlineData(typeof(IRatingRepository))]        
+        [InlineData(typeof(IRatingRepository))]
         public void SharedDI_ReturnsAnInstanceForEachRegisteredType(Type registeredType)
         {
             var services = Arcade.SaveRating.DI.Container.Services();

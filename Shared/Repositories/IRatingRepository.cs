@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Arcade.Shared.Repositories
 {
@@ -11,5 +9,7 @@ namespace Arcade.Shared.Repositories
         void Save(RatingInformation key);
 
         RatingInformation Load(string partitionKey);
+
+        IEnumerable<RatingInformation> AllRows();
     }
 }

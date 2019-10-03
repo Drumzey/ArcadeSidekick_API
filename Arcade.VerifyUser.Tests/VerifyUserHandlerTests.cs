@@ -1,19 +1,17 @@
-﻿using Amazon.Lambda.APIGatewayEvents;
+﻿using System;
+using System.Collections.Generic;
+using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.TestUtilities;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
 using Moq;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Net;
 using Xunit;
 
 namespace Arcade.VerifyUser.Tests
 {
     public class VerifyUserHandlerTests
     {
-        private const string userInput = "{\"Username\":\"Drumzey\",\"EmailAddress\":\"Drumzey@test.com\"}";
+        private const string UserInput = "{\"Username\":\"Drumzey\",\"EmailAddress\":\"Drumzey@test.com\"}";
 
         [Fact]
         public void VerifyUserHandler_WhenCalledWithNoUser_ReturnError()
@@ -24,7 +22,7 @@ namespace Arcade.VerifyUser.Tests
             };
             request = new APIGatewayProxyRequest
             {
-                Body = userInput,
+                Body = UserInput,
             };
 
             UserInformation info = null;
@@ -43,7 +41,7 @@ namespace Arcade.VerifyUser.Tests
             Assert.Equal("User record not found.", response);
             Assert.Equal(404, result.StatusCode);
 
-            userInfoRepository.Verify(k => k.Load(It.IsAny<String>()), Times.Once());            
+            userInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Once());
         }
 
         [Fact]
@@ -55,7 +53,7 @@ namespace Arcade.VerifyUser.Tests
             };
             request = new APIGatewayProxyRequest
             {
-                Body = userInput,
+                Body = UserInput,
             };
 
             UserInformation info = new UserInformation
@@ -72,15 +70,13 @@ namespace Arcade.VerifyUser.Tests
             var function = new VerifyUser(services);
             var context = new TestLambdaContext();
             var result = function.VerifyUserHandler(request, context);
+            string okResponse = result.Body;
 
-            var OkResponse = result.Body;
-
-            Assert.Equal("User record verified.", OkResponse);
+            Assert.Equal("User record verified.", okResponse);
             Assert.True(info.Verified);
 
-            userInfoRepository.Verify(k => k.Load(It.IsAny<String>()), Times.Once());
+            userInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Once());
             userInfoRepository.Verify(k => k.Save(It.IsAny<UserInformation>()), Times.Once());
-            
         }
     }
 }

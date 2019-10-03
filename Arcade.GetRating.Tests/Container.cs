@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Moq;
+﻿using System;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
-using System;
+using Microsoft.Extensions.DependencyInjection;
+using Moq;
 
 namespace Arcade.GetRating.Tests.DI
 {
@@ -14,7 +14,7 @@ namespace Arcade.GetRating.Tests.DI
         {
             return new ServiceCollection()
                 .AddScoped<IEnvironmentVariables>(sp => mockEnvironmentVariables.Object)
-                .AddScoped<IRatingRepository>(sp => mockRatingRepository.Object)                
+                .AddScoped<IRatingRepository>(sp => mockRatingRepository.Object)
                 .BuildServiceProvider();
         }
     }

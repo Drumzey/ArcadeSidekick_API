@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.deps.json
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.dll
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.pdb
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.dll
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.pdb

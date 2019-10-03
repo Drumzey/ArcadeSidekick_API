@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.deps.json
+F:\Personal\Sidekick API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.dll
+F:\Personal\Sidekick API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.pdb
+F:\Personal\Sidekick API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.dll
+F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.pdb

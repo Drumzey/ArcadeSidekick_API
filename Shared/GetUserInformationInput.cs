@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Arcade.Shared
 {
-    public class GetUsersInformationInput
+    public class GetUserInformationInput
     {
         public string Usernames { get; set; }
     }

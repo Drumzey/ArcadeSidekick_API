@@ -14,8 +14,7 @@ namespace Arcade.GetRating
 {
     public class GetRating
     {
-
-        private IServiceProvider _services;
+        private IServiceProvider services;
 
         public GetRating()
             : this(DI.Container.Services())
@@ -24,36 +23,36 @@ namespace Arcade.GetRating
 
         public GetRating(IServiceProvider services)
         {
-            _services = services;
-            ((IRatingRepository)_services.GetService(typeof(IRatingRepository))).SetupTable();
+            this.services = services;
+            ((IRatingRepository)this.services.GetService(typeof(IRatingRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse GetRatingHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
-            string gamename;
-            request.QueryStringParameters.TryGetValue("gamename", out gamename);
-            
+            request.QueryStringParameters.TryGetValue("gamename", out string gamename);
+
             if (string.IsNullOrEmpty(gamename))
             {
                 return ErrorResponse();
             }
 
             var ratingInfo = GetRatingInfo(gamename);
-            if(ratingInfo == null)
+            if (ratingInfo == null)
             {
                 ratingInfo = new RatingInformation
                 {
                     GameName = gamename,
                     Average = 0,
                     NumberOfRatings = 0,
-                };                 
+                };
             }
+
             return Response(ratingInfo);
         }
 
         private RatingInformation GetRatingInfo(string gamename)
         {
-            var ratingInformationForGame = ((IRatingRepository)_services.GetService(typeof(IRatingRepository))).Load(gamename);
+            var ratingInformationForGame = ((IRatingRepository)services.GetService(typeof(IRatingRepository))).Load(gamename);
 
             return ratingInformationForGame;
         }
@@ -67,7 +66,7 @@ namespace Arcade.GetRating
                 Average = ratingInfo.Average,
                 NumberOfRatings = ratingInfo.NumberOfRatings,
             });
-           
+
             return new APIGatewayProxyResponse
             {
                 StatusCode = (int)HttpStatusCode.OK,

@@ -1,26 +1,20 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Xunit;
-using Amazon.Lambda.Core;
+using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.TestUtilities;
-
-using Arcade.Authorizer;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
 using Moq;
-using Amazon.Lambda.APIGatewayEvents;
+using Xunit;
 
 namespace Arcade.Authorizer.Tests
 {
     public class FunctionTest
     {
-        string JWT_signed_with_MySecret = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJEUlVNWkVZIiwiaXNzIjoiU2lkZWtpY2siLCJleHAiOjE1NDk0NjUxNjQsImlhdCI6MTU0OTQ2NDg2NH0.ss279xfd2tYcy9-KrXY0UGkGFYh9sSOs6h8Aw8vHsrM";
-        string JWT_wrong_issuers = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJEUlVNWkVZIiwiaXNzIjoiT3RoZXIiLCJleHAiOjE1NDk0NjQ1MDksImlhdCI6MTU0OTQ2NDIwOX0.HcAPOGliOif6IGmz9qq7N40RJ3_ODfMzaYRVMzceZjY";
-        string JWT_tampered = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJHVVNGVSIsImlzcyI6IlNpZGVraWNrIiwiZXhwIjoxNTQ5NDY0NTA5LCJpYXQiOjE1NDk0NjQyMDl9.Y8wtsmfgtzS-E5oIaT2yD0LDgffCYYShmHbPBlNxnKQ";
-        string JWT_withNoClaims = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.JsU41fXf6KwG8qhVpWCvevARtRFf_kJxDyv1LpEpcpE";
+        private readonly string jWTSignedWithMySecret = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJEUlVNWkVZIiwiaXNzIjoiU2lkZWtpY2siLCJleHAiOjE1NDk0NjUxNjQsImlhdCI6MTU0OTQ2NDg2NH0.ss279xfd2tYcy9-KrXY0UGkGFYh9sSOs6h8Aw8vHsrM";
+        private readonly string jWTWrongIssuers = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJEUlVNWkVZIiwiaXNzIjoiT3RoZXIiLCJleHAiOjE1NDk0NjQ1MDksImlhdCI6MTU0OTQ2NDIwOX0.HcAPOGliOif6IGmz9qq7N40RJ3_ODfMzaYRVMzceZjY";
+        private readonly string jWTTampered = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJHVVNGVSIsImlzcyI6IlNpZGVraWNrIiwiZXhwIjoxNTQ5NDY0NTA5LCJpYXQiOjE1NDk0NjQyMDl9.Y8wtsmfgtzS-E5oIaT2yD0LDgffCYYShmHbPBlNxnKQ";
+        private readonly string jWTWithNoClaims = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.JsU41fXf6KwG8qhVpWCvevARtRFf_kJxDyv1LpEpcpE";
 
         [Fact]
         public void TestValidJWT()
@@ -34,7 +28,7 @@ namespace Arcade.Authorizer.Tests
                 Ratings = new Dictionary<string, int>(),
                 Verified = false,
                 CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now
+                UpdatedAt = DateTime.Now,
             };
 
             var userInfoRepository = new Mock<IUserRepository>();
@@ -45,7 +39,7 @@ namespace Arcade.Authorizer.Tests
             var function = new Authorizer(services);
             var context = new TestLambdaContext();
 
-            var tokenContext = SetupTokenContext(JWT_signed_with_MySecret);
+            var tokenContext = SetupTokenContext(jWTSignedWithMySecret);
             var result = function.AuthorizerHandler(tokenContext, context);
 
             var policyStatement = result.PolicyDocument.Statement[0];
@@ -67,7 +61,7 @@ namespace Arcade.Authorizer.Tests
                 Ratings = new Dictionary<string, int>(),
                 Verified = false,
                 CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now
+                UpdatedAt = DateTime.Now,
             };
 
             var userInfoRepository = new Mock<IUserRepository>();
@@ -78,7 +72,7 @@ namespace Arcade.Authorizer.Tests
             var function = new Authorizer(services);
             var context = new TestLambdaContext();
 
-            var tokenContext = SetupTokenContext(JWT_wrong_issuers);
+            var tokenContext = SetupTokenContext(jWTWrongIssuers);
             Assert.Throws<Exception>(() => function.AuthorizerHandler(tokenContext, context));
         }
 
@@ -94,7 +88,7 @@ namespace Arcade.Authorizer.Tests
                 Ratings = new Dictionary<string, int>(),
                 Verified = false,
                 CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now
+                UpdatedAt = DateTime.Now,
             };
 
             var userInfoRepository = new Mock<IUserRepository>();
@@ -105,7 +99,7 @@ namespace Arcade.Authorizer.Tests
             var function = new Authorizer(services);
             var context = new TestLambdaContext();
 
-            var tokenContext = SetupTokenContext(JWT_tampered);
+            var tokenContext = SetupTokenContext(jWTTampered);
             Assert.Throws<Exception>(() => function.AuthorizerHandler(tokenContext, context));
         }
 
@@ -121,7 +115,7 @@ namespace Arcade.Authorizer.Tests
                 Ratings = new Dictionary<string, int>(),
                 Verified = false,
                 CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now
+                UpdatedAt = DateTime.Now,
             };
 
             var userInfoRepository = new Mock<IUserRepository>();
@@ -132,14 +126,14 @@ namespace Arcade.Authorizer.Tests
             var function = new Authorizer(services);
             var context = new TestLambdaContext();
 
-            var tokenContext = SetupTokenContext(JWT_withNoClaims);
+            var tokenContext = SetupTokenContext(jWTWithNoClaims);
             Assert.Throws<Exception>(() => function.AuthorizerHandler(tokenContext, context));
         }
 
         [Fact]
         public void TestMalformedJWT()
         {
-            var userInfoRepository = new Mock<IUserRepository>();         
+            var userInfoRepository = new Mock<IUserRepository>();
             var services = DI.Container.Services(null, userInfoRepository);
 
             var function = new Authorizer(services);

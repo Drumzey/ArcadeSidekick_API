@@ -5,10 +5,10 @@ F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Debug\netcoreapp2.1\Arcade.Verify
 F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Debug\netcoreapp2.1\Arcade.VerifyUser.pdb
 F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\Arcade.VerifyUser\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
-F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.csprojAssemblyReference.cache
 F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.csproj.CoreCompileInputs.cache
 F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.AssemblyInfoInputs.cache
 F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.AssemblyInfo.cs
 F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.dll
 F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.pdb
+F:\Personal\Sidekick API\Arcade.VerifyUser\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.csprojAssemblyReference.cache

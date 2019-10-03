@@ -1,13 +1,12 @@
 using System;
 using System.Collections.Generic;
-
-using Xunit;
-using Amazon.Lambda.TestUtilities;
 using Amazon.Lambda.APIGatewayEvents;
+using Amazon.Lambda.TestUtilities;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
 using Moq;
 using Newtonsoft.Json;
+using Xunit;
 
 namespace Arcade.GetRating.Tests
 {
@@ -43,7 +42,7 @@ namespace Arcade.GetRating.Tests
             Assert.Equal(0, newRatingInformation.NumberOfRatings);
             Assert.Equal(0, newRatingInformation.Average);
 
-            ratingInfoRepository.Verify(k => k.Load(It.IsAny<String>()), Times.Once());
+            ratingInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Once());
         }
 
         [Fact]
@@ -86,7 +85,7 @@ namespace Arcade.GetRating.Tests
             Assert.Equal(1, newRatingInformation.NumberOfRatings);
             Assert.Equal(2, newRatingInformation.Average);
 
-            ratingInfoRepository.Verify(k => k.Load(It.IsAny<String>()), Times.Once());
+            ratingInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Once());
         }
     }
 }

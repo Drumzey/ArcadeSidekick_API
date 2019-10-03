@@ -18,19 +18,19 @@ using static Amazon.Lambda.APIGatewayEvents.APIGatewayCustomAuthorizerPolicy;
 
 namespace Arcade.VerifyAuthorizer
 {
-    public class VerifyAuthorizer
+    public class Authorizer
     {
-        private IServiceProvider _services;        
+        private IServiceProvider services;
 
-        public VerifyAuthorizer()
+        public Authorizer()
             : this(DI.Container.Services())
         {
         }
 
-        public VerifyAuthorizer(IServiceProvider services)
+        public Authorizer(IServiceProvider services)
         {
-            _services = services;
-            ((IUserRepository)_services.GetService(typeof(IUserRepository))).SetupTable();
+            this.services = services;
+            ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
         }
 
         public APIGatewayCustomAuthorizerResponse VerifyAuthorizerHandler(APIGatewayCustomAuthorizerRequest tokenContext, ILambdaContext context)
@@ -43,10 +43,10 @@ namespace Arcade.VerifyAuthorizer
                 throw new Exception("Unauthorized");
             }
 
-            var jwt = GetJWT(authorizationToken); // Parse the string into a JWT            
-            var user = GetUser(jwt.Id); //Get the user from the database by the             
-            
-            if (ValidateToken(authorizationToken ,user.Secret))
+            var jwt = GetJWT(authorizationToken); // Parse the string into a JWT
+            var user = GetUser(jwt.Id); // Get the user from the database by the
+
+            if (ValidateToken(authorizationToken, user.Secret))
             {
                 var allowedIAMPolicyStatment = GetAllowIAMPolicyStatement(jwt.Issuer);
                 return CustomAuthorizerResponse(allowedIAMPolicyStatment, jwt.Issuer);
@@ -71,7 +71,7 @@ namespace Arcade.VerifyAuthorizer
             {
                 jwtToken = handler.ReadJwtToken(token);
             }
-            catch (Exception e)
+            catch
             {
                 throw new Exception("Unauthorized");
             }
@@ -86,23 +86,23 @@ namespace Arcade.VerifyAuthorizer
 
         private bool ValidateToken(string token, string secret)
         {
-            TokenValidationParameters validationParameters = null;            
+            TokenValidationParameters validationParameters = null;
 
             validationParameters = new TokenValidationParameters
             {
                 ValidateIssuer = true,
                 ValidateAudience = false,
-                ValidateLifetime = false, //THIS SHOULD BE TRUE
+                ValidateLifetime = false, // THIS SHOULD BE TRUE
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret)),
-                ValidIssuer = "Sidekick"
+                ValidIssuer = "Sidekick",
             };
 
             try
             {
-                JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();                
+                JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
                 handler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
             }
-            catch (Exception e)
+            catch
             {
                 throw new Exception("Unauthorized");
             }
@@ -127,7 +127,7 @@ namespace Arcade.VerifyAuthorizer
                 Action = new HashSet<string>() { Constants.PolicyStatementAction },
             };
             var policyStatementResource = methodArn;
-            iamPolicyStatement.Effect = Constants.DenyPolicyStatementEffect;            
+            iamPolicyStatement.Effect = Constants.DenyPolicyStatementEffect;
             iamPolicyStatement.Resource = new HashSet<string>() { policyStatementResource };
             return iamPolicyStatement;
         }
@@ -145,7 +145,7 @@ namespace Arcade.VerifyAuthorizer
 
         private UserInformation GetUser(string username)
         {
-            var user = ((IUserRepository)_services.GetService(typeof(IUserRepository))).Load(username);
+            var user = ((IUserRepository)services.GetService(typeof(IUserRepository))).Load(username);
 
             if (user == null)
             {

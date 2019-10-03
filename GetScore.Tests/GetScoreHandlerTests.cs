@@ -1,17 +1,16 @@
 using System;
 using System.Collections.Generic;
-
-using Xunit;
-using Amazon.Lambda.TestUtilities;
 using Amazon.Lambda.APIGatewayEvents;
+using Amazon.Lambda.TestUtilities;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
 using Moq;
 using Newtonsoft.Json;
+using Xunit;
 
 namespace Arcade.GetScore.Tests
 {
-    public class FunctionTest
+    public class GetScoreHandlerTests
     {
         private const string UserInput = "{\"Usernames\":\"Drumzey\"}";
         private const string UserInput2Users = "{\"Usernames\":\"DRUMZEY,GUSTREE\"}";
@@ -42,8 +41,8 @@ namespace Arcade.GetScore.Tests
             var newUserInformation = JsonConvert.DeserializeObject<GetUserInformationResponse>(result.Body);
 
             Assert.Empty(newUserInformation.Users);
-           
-            userInfoRepository.Verify(k => k.Load(It.IsAny<String>()), Times.Once());
+
+            userInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Once());
         }
 
         [Fact]
@@ -68,7 +67,7 @@ namespace Arcade.GetScore.Tests
                     { "Pacman", "123456789" },
                     { "Bubble Bobble", "123456789" },
                     { "Amidar", "123456789" },
-                }
+                },
             };
 
             var userInfoRepository = new Mock<IUserRepository>();
@@ -84,7 +83,7 @@ namespace Arcade.GetScore.Tests
 
             Assert.NotEmpty(newUserInformation.Users[0].Games);
 
-            userInfoRepository.Verify(k => k.Load(It.IsAny<String>()), Times.Once());
+            userInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Once());
         }
 
         [Fact]
@@ -109,7 +108,7 @@ namespace Arcade.GetScore.Tests
                     { "Pacman", "123456789" },
                     { "Bubble Bobble", "123456789" },
                     { "Amidar", "123456789" },
-                }
+                },
             };
 
             UserInformation info2 = new UserInformation
@@ -122,7 +121,7 @@ namespace Arcade.GetScore.Tests
                     { "Pacman", "111111111" },
                     { "Bubble Bobble", "111111111" },
                     { "Amidar", "111111111" },
-                }
+                },
             };
 
             var userInfoRepository = new Mock<IUserRepository>();
@@ -140,7 +139,7 @@ namespace Arcade.GetScore.Tests
             Assert.NotEmpty(newUserInformation.Users);
             Assert.Equal(2, newUserInformation.Users.Count);
 
-            userInfoRepository.Verify(k => k.Load(It.IsAny<String>()), Times.Exactly(2));
+            userInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Exactly(2));
         }
     }
 }

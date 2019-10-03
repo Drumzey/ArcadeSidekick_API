@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.deps.json
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.dll
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.pdb
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.dll
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.pdb

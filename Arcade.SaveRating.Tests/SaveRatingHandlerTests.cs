@@ -1,12 +1,12 @@
-using Xunit;
-using Amazon.Lambda.TestUtilities;
-using Amazon.Lambda.APIGatewayEvents;
+using System;
 using System.Collections.Generic;
+using Amazon.Lambda.APIGatewayEvents;
+using Amazon.Lambda.TestUtilities;
+using Arcade.Shared;
 using Arcade.Shared.Repositories;
 using Moq;
-using Arcade.Shared;
 using Newtonsoft.Json;
-using System;
+using Xunit;
 
 namespace Arcade.SaveRating.Tests
 {
@@ -20,7 +20,7 @@ namespace Arcade.SaveRating.Tests
             APIGatewayProxyRequest request;
             var headers = new Dictionary<string, string>();
             headers.Add("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJEcnVtemV5In0.1sahSegWwFvkxEbV9uyKc2dmNbSSOe-UH5utOyHFMLc");
-            
+
             request = new APIGatewayProxyRequest
             {
                 Headers = headers,
@@ -74,7 +74,7 @@ namespace Arcade.SaveRating.Tests
                 },
                 CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now,
-            };            
+            };
 
             var ratingInfoRepository = new Mock<IRatingRepository>();
             ratingInfoRepository.Setup(x => x.Load(It.IsAny<string>())).Returns(info);

@@ -402,6 +402,9 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "StyleCop.Analyzers/1.1.118": {
+        "type": "package"
+      },
       "System.Collections/4.0.11": {
         "type": "package",
         "dependencies": {
@@ -1337,10 +1340,11 @@
       ]
     },
     "Amazon.Lambda.Core/1.0.0": {
-      "sha512": "+pBYGHaOaDAhu2j8BA5MhKLwxZM7lgmTSroGyCzEqWMBx+uc+QtpED2ShCAkKjKeedXH+LvJpQAUkEtW7rfcgQ==",
+      "sha512": "ZbVMsUNhhVOZ311lo9AdsWly4LB0G0OMlzUEukKO0bqzQNzvKLPOSiuLYrf4NFbcvnvNcuOm0QtxCVgtc04hhQ==",
       "type": "package",
       "path": "amazon.lambda.core/1.0.0",
       "files": [
+        ".signature.p7s",
         "amazon.lambda.core.1.0.0.nupkg.sha512",
         "amazon.lambda.core.nuspec",
         "lib/netstandard1.3/Amazon.Lambda.Core.dll",
@@ -1997,7 +2001,7 @@
       ]
     },
     "Newtonsoft.Json/9.0.1": {
-      "sha512": "StAf966HhJLkVGXtosBAI0Q9y83umbQon/nDyb40FpSHlEWKUVO+otVQXwXHAEvhMTyCF7DrAO8cjOnBJxfbBw==",
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "type": "package",
       "path": "newtonsoft.json/9.0.1",
       "files": [
@@ -2054,6 +2058,29 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
         "runtime.native.system.security.cryptography.nuspec"
+      ]
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "sha512": "OYYZdiCF/b3K/AzGWQ2PLQH5BnQRzQfHbbUgucMpJqBe9jsPTnyQh92oMabffFcTcBR2EOpJyMcp9D05fs8yvA==",
+      "type": "package",
+      "path": "stylecop.analyzers/1.1.118",
+      "files": [
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.dll",
+        "analyzers/dotnet/cs/de-DE/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/en-GB/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/es-MX/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/fr-FR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pl-PL/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ru-RU/StyleCop.Analyzers.resources.dll",
+        "stylecop.analyzers.1.1.118.nupkg.sha512",
+        "stylecop.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "System.Collections/4.0.11": {
@@ -3205,10 +3232,11 @@
       ]
     },
     "System.Net.WebHeaderCollection/4.0.1": {
-      "sha512": "XX2TIAN+wBSAIV51BU2FvvXMdstUa8b0FBSZmDWjZdwUMmggQSifpTOZ5fNH20z9ZCg2fkV1L5SsZnpO2RQDRQ==",
+      "sha512": "0aLl8yaaH+/jyI0f1Mn9xOvBWWwyOaJm/pR2SPAN2RvxhTD/yxxPaZt5d+2KXAZdPkJOafS4QQ1GaXhZcMN16g==",
       "type": "package",
       "path": "system.net.webheadercollection/4.0.1",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4708,7 +4736,7 @@
       ]
     },
     "System.Threading.Thread/4.0.0": {
-      "sha512": "/06upb6AJvsI455Tma/U4+X+7kOnBdit1jcKpmYsTkUuRzdYgNe2YagqMlxQ3EmHGZhtk9jWY7EWCNDqLsMxQQ==",
+      "sha512": "gIdJqDXlOr5W9zeqFErLw3dsOsiShSCYtF9SEHitACycmvNvY8odf9kiKvp6V7aibc8C4HzzNBkWXjyfn7plbQ==",
       "type": "package",
       "path": "system.threading.thread/4.0.0",
       "files": [
@@ -4892,7 +4920,8 @@
       "Amazon.Lambda.Core >= 1.0.0",
       "Amazon.Lambda.Serialization.Json >= 1.4.0",
       "Arcade.Shared >= 1.0.0",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "StyleCop.Analyzers >= 1.1.118"
     ]
   },
   "packageFolders": {
@@ -4953,6 +4982,12 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "StyleCop.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.1.118, )"
           }
         },
         "imports": [

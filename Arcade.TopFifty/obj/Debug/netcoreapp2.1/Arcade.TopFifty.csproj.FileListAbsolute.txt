@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.TopFifty\bin\Debug\netcoreapp2.1\Arcade.TopFifty.deps.json
+F:\Personal\Sidekick API\Arcade.TopFifty\bin\Debug\netcoreapp2.1\Arcade.TopFifty.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.TopFifty\bin\Debug\netcoreapp2.1\Arcade.TopFifty.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.TopFifty\bin\Debug\netcoreapp2.1\Arcade.TopFifty.dll
+F:\Personal\Sidekick API\Arcade.TopFifty\bin\Debug\netcoreapp2.1\Arcade.TopFifty.pdb
+F:\Personal\Sidekick API\Arcade.TopFifty\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.TopFifty\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.dll
+F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.pdb

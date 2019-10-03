@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>       
+	<OutputType>Exe</OutputType>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <RdXmlFile Include="rd.xml" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.APIGatewayEvents" Version="1.2.0" />
+    <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.4.0" />
+    <PackageReference Include="LambdaNative" Version="1.0.0" />
+    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="1.0.0-alpha-*" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Arcade.Shared.csproj" />
+  </ItemGroup>
+  
+</Project>

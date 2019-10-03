@@ -6,6 +6,6 @@ namespace Arcade.Shared
 {
     public class GetUserInformationResponse
     {
-        public List<GetSingleUserInformationResponse> Users { get; set; }
+        public List<GetSingleInformationResponse> Users { get; set; }
     }
 }

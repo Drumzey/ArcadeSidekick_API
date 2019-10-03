@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.JoinClub\bin\Debug\netcoreapp2.1\Arcade.JoinClub.deps.json
+F:\Personal\Sidekick API\Arcade.JoinClub\bin\Debug\netcoreapp2.1\Arcade.JoinClub.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.JoinClub\bin\Debug\netcoreapp2.1\Arcade.JoinClub.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.JoinClub\bin\Debug\netcoreapp2.1\Arcade.JoinClub.dll
+F:\Personal\Sidekick API\Arcade.JoinClub\bin\Debug\netcoreapp2.1\Arcade.JoinClub.pdb
+F:\Personal\Sidekick API\Arcade.JoinClub\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.JoinClub\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.dll
+F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.pdb

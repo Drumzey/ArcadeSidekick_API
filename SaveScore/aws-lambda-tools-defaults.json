@@ -14,7 +14,7 @@
     "function-memory-size" : 256,
     "function-timeout"     : 30,
     "function-handler"     : "Arcade.SaveScore::Arcade.SaveScore.SaveScore::SaveScoreHandler",
-    "function-name"        : "SaveScore",
+    "function-name"        : "SaveScoreTest",
     "function-role"        : "arn:aws:iam::444743524019:role/lambda_exec_SaveScore",
     "tracing-mode"         : "PassThrough",
     "environment-variables" : ""

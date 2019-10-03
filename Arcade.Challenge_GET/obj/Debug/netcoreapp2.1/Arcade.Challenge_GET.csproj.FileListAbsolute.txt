@@ -1,0 +1,4 @@
+F:\Personal\Sidekick API\Arcade.Challenge_GET\obj\Debug\netcoreapp2.1\Arcade.Challenge_GET.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.Challenge_GET\obj\Debug\netcoreapp2.1\Arcade.Challenge_GET.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.Challenge_GET\obj\Debug\netcoreapp2.1\Arcade.Challenge_GET.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.Challenge_GET\obj\Debug\netcoreapp2.1\Arcade.Challenge_GET.AssemblyInfo.cs

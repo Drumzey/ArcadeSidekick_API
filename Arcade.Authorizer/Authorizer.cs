@@ -1,11 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Net;
-using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
@@ -20,7 +16,7 @@ namespace Arcade.Authorizer
 {
     public class Authorizer
     {
-        private IServiceProvider _services;        
+        private IServiceProvider services;
 
         public Authorizer()
             : this(DI.Container.Services())
@@ -29,8 +25,8 @@ namespace Arcade.Authorizer
 
         public Authorizer(IServiceProvider services)
         {
-            _services = services;
-            ((IUserRepository)_services.GetService(typeof(IUserRepository))).SetupTable();
+            this.services = services;
+            ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
         }
 
         public APIGatewayCustomAuthorizerResponse AuthorizerHandler(APIGatewayCustomAuthorizerRequest tokenContext, ILambdaContext context)
@@ -38,20 +34,26 @@ namespace Arcade.Authorizer
             var authorizationToken = tokenContext.AuthorizationToken;
             var methodArn = tokenContext.MethodArn;
 
-            if (IsJWTTokenMalformed(authorizationToken))
+            if (IsJwtTokenMalformed(authorizationToken))
             {
                 throw new Exception("Unauthorized");
             }
 
-            var jwt = GetJWT(authorizationToken); // Parse the string into a JWT            
-            var user = GetUser(jwt.Id); //Get the user from the database by the             
+            var jwt = GetJWT(authorizationToken);
+
+            var user = GetUser(jwt.Id);
+
+            if (user == null)
+            {
+                throw new Exception("No User found");
+            }
 
             if (!user.Verified)
             {
                 throw new Exception("Cannot save data as user not verified");
             }
 
-            if (ValidateToken(authorizationToken ,user.Secret))
+            if (ValidateToken(authorizationToken, user.Secret))
             {
                 var allowedIAMPolicyStatment = GetAllowIAMPolicyStatement(jwt.Issuer);
                 return CustomAuthorizerResponse(allowedIAMPolicyStatment, jwt.Issuer);
@@ -61,7 +63,7 @@ namespace Arcade.Authorizer
             return CustomAuthorizerResponse(deniedIAMPolicyStatment, jwt.Issuer);
         }
 
-        private bool IsJWTTokenMalformed(string token)
+        private bool IsJwtTokenMalformed(string token)
         {
             JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
             return !handler.CanReadToken(token);
@@ -76,7 +78,7 @@ namespace Arcade.Authorizer
             {
                 jwtToken = handler.ReadJwtToken(token);
             }
-            catch (Exception e)
+            catch
             {
                 throw new Exception("Unauthorized");
             }
@@ -91,23 +93,23 @@ namespace Arcade.Authorizer
 
         private bool ValidateToken(string token, string secret)
         {
-            TokenValidationParameters validationParameters = null;            
+            TokenValidationParameters validationParameters = null;
 
             validationParameters = new TokenValidationParameters
             {
                 ValidateIssuer = true,
                 ValidateAudience = false,
-                ValidateLifetime = false, //THIS SHOULD BE TRUE
+                ValidateLifetime = false,
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret)),
-                ValidIssuer = "Sidekick"
+                ValidIssuer = "Sidekick",
             };
 
             try
             {
-                JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();                
+                JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
                 handler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
             }
-            catch (Exception e)
+            catch
             {
                 throw new Exception("Unauthorized");
             }
@@ -132,7 +134,7 @@ namespace Arcade.Authorizer
                 Action = new HashSet<string>() { Constants.PolicyStatementAction },
             };
             var policyStatementResource = methodArn;
-            iamPolicyStatement.Effect = Constants.DenyPolicyStatementEffect;            
+            iamPolicyStatement.Effect = Constants.DenyPolicyStatementEffect;
             iamPolicyStatement.Resource = new HashSet<string>() { policyStatementResource };
             return iamPolicyStatement;
         }
@@ -150,7 +152,7 @@ namespace Arcade.Authorizer
 
         private UserInformation GetUser(string username)
         {
-            var user = ((IUserRepository)_services.GetService(typeof(IUserRepository))).Load(username);
+            var user = ((IUserRepository)services.GetService(typeof(IUserRepository))).Load(username);
 
             if (user == null)
             {

@@ -1,7 +1,7 @@
 ﻿using System;
-using Microsoft.Extensions.DependencyInjection;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Arcade.GetRating.DI
 {
@@ -10,8 +10,8 @@ namespace Arcade.GetRating.DI
         public static IServiceProvider Services()
         {
             return new ServiceCollection()
-                .AddScoped<IEnvironmentVariables, EnvironmentVariables>()                
-                .AddScoped<IRatingRepository, RatingInformationRepository>()                
+                .AddScoped<IEnvironmentVariables, EnvironmentVariables>()
+                .AddScoped<IRatingRepository, RatingInformationRepository>()
                 .BuildServiceProvider();
         }
     }

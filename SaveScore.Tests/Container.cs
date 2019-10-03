@@ -1,10 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Moq;
+﻿using System;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.Extensions.DependencyInjection;
+using Moq;
 
 namespace Arcade.SaveScore.Tests.DI
 {
@@ -16,7 +14,7 @@ namespace Arcade.SaveScore.Tests.DI
         {
             return new ServiceCollection()
                 .AddScoped<IEnvironmentVariables>(sp => mockEnvironmentVariables.Object)
-                .AddScoped<IUserRepository>(sp => mockUserRepository.Object)                
+                .AddScoped<IUserRepository>(sp => mockUserRepository.Object)
                 .BuildServiceProvider();
         }
     }

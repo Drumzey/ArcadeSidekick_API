@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.deps.json
+F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.dll
+F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.pdb
+F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.dll
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Release\netcoreapp2.1\linux-x64\Arcade.ForgotInformation.pdb

@@ -16,7 +16,7 @@ namespace Arcade.GetScore
 {
     public class GetScore
     {
-        private IServiceProvider _services;
+        private IServiceProvider services;
 
         public GetScore()
             : this(DI.Container.Services())
@@ -25,15 +25,15 @@ namespace Arcade.GetScore
 
         public GetScore(IServiceProvider services)
         {
-            _services = services;
-            ((IUserRepository)_services.GetService(typeof(IUserRepository))).SetupTable();
+            this.services = services;
+            ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse GetScoreHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
             string usernames;
             request.QueryStringParameters.TryGetValue("usernames", out usernames);
-            
+
             if (string.IsNullOrEmpty(usernames))
             {
                 return ErrorResponse();
@@ -47,7 +47,7 @@ namespace Arcade.GetScore
         {
             var names = usernames.Split(',');
             var information = new List<UserInformation>();
-            var userRepository = (IUserRepository)_services.GetService(typeof(IUserRepository));
+            var userRepository = (IUserRepository)services.GetService(typeof(IUserRepository));
 
             foreach (string name in names)
             {
@@ -57,6 +57,7 @@ namespace Arcade.GetScore
                     information.Add(userInformation);
                 }
             }
+
             return information;
         }
 
@@ -66,15 +67,16 @@ namespace Arcade.GetScore
 
             if (userInfo != null)
             {
-                response.Users = new List<GetSingleUserInformationResponse>();
+                response.Users = new List<GetSingleInformationResponse>();
 
-                foreach(UserInformation info in userInfo)
+                foreach (UserInformation info in userInfo)
                 {
-                    response.Users.Add(new GetSingleUserInformationResponse
+                    response.Users.Add(new GetSingleInformationResponse
                     {
                         Username = info.Username,
                         Games = info.Games,
                         Ratings = info.Ratings,
+                        Clubs = info.Clubs,
                     });
                 }
             }

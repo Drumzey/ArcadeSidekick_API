@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\bin\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.deps.json
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\bin\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\bin\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\bin\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.dll
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\bin\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.pdb
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.dll
+F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Debug\netcoreapp2.1\Arcade.ProfileStats_GET.pdb
