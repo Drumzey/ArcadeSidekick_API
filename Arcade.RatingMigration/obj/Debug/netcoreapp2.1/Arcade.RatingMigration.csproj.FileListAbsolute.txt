@@ -3,9 +3,10 @@ F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.R
 F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.RatingMigration.runtimeconfig.dev.json
 F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.RatingMigration.dll
 F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.RatingMigration.pdb
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.GameDetails.dll
 F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.GameDetails.pdb
 F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
-F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.csprojAssemblyReference.cache
 F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.csproj.CoreCompileInputs.cache
 F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.AssemblyInfoInputs.cache
 F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.AssemblyInfo.cs

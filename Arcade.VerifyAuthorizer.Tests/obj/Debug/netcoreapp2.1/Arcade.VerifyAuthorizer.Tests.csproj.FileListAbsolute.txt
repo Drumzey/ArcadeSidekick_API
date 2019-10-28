@@ -1,7 +1,5 @@
-F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.csprojAssemblyReference.cache
-F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.csproj.CoreCompileInputs.cache
-F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.AssemblyInfoInputs.cache
-F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\bin\Debug\netcoreapp2.1\testhost.exe
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\bin\Debug\netcoreapp2.1\testhost.dll
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
@@ -14,6 +12,10 @@ F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\bin\Debug\netcoreapp2.1\A
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.dll
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.pdb
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.AssemblyInfo.cs
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.dll
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.Tests.pdb

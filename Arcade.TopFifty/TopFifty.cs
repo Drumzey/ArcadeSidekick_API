@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 
@@ -33,17 +35,25 @@ namespace Arcade.TopFifty
         public TopFifty(IServiceProvider services)
         {
             this.services = services;
-            environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));
-            ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
+            environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));            
+            ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse TopFiftyHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
             try
             {
-                var ratings = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("ratings");
-                var topFifty = GetTop50Ratings(ratings.DictionaryValue);
-                return Response(topFifty);
+                var arcadeRatings = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Arcade Games");
+                var pinballRatings = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Pinball");
+                var averageOfAllVotes = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Average");
+
+                var topArcades = GetTop50WeightedAverage(arcadeRatings.Dictionary, averageOfAllVotes.Value);
+                var topPinball = GetTop50WeightedAverage(pinballRatings.Dictionary, averageOfAllVotes.Value);
+
+                return Response(topArcades);
             }
             catch (Exception e)
             {
@@ -53,13 +63,18 @@ namespace Arcade.TopFifty
             return ErrorResponse();
         }
 
-        private List<Game> GetTop50Ratings(Dictionary<string, string> dictionaryValue)
+        private List<Game> GetTop50WeightedAverage(Dictionary<string, string> dictionaryValue, string mean)
         {
-            var numbericVersions = dictionaryValue.ToDictionary(g => g.Key, g => Convert.ToDouble(g.Value));
+            var numericVersions = dictionaryValue.ToDictionary(
+                g => g.Key,
+                g => WeightedAverageCalculator.CalculateAverage(
+                    double.Parse(g.Value.Split(',')[0]),
+                    double.Parse(g.Value.Split(',')[1]),
+                    double.Parse(mean)));
 
             List<Game> orderedGames = new List<Game>();
 
-            foreach (KeyValuePair<string, double> game in numbericVersions.OrderByDescending(game => game.Value))
+            foreach (KeyValuePair<string, double> game in numericVersions.OrderByDescending(game => game.Value))
             {
                 Game g = new Game();
                 g.Name = game.Key;

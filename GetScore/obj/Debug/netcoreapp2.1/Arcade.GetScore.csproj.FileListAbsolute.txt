@@ -5,7 +5,6 @@ F:\Personal\Sidekick API\GetScore\bin\Debug\netcoreapp2.1\Arcade.GetScore.dll
 F:\Personal\Sidekick API\GetScore\bin\Debug\netcoreapp2.1\Arcade.GetScore.pdb
 F:\Personal\Sidekick API\GetScore\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\GetScore\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
-F:\Personal\Sidekick API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.csprojAssemblyReference.cache
 F:\Personal\Sidekick API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.csproj.CoreCompileInputs.cache
 F:\Personal\Sidekick API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.AssemblyInfoInputs.cache
 F:\Personal\Sidekick API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.AssemblyInfo.cs

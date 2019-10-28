@@ -2,6 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
+using Arcade.Shared.Misc;
+using Arcade.GameDetails;
 
 namespace Arcade.RatingMigration.DI
 {
@@ -12,7 +14,8 @@ namespace Arcade.RatingMigration.DI
             return new ServiceCollection()
                 .AddScoped<IEnvironmentVariables, EnvironmentVariables>()
                 .AddScoped<IRatingRepository, RatingInformationRepository>()
-                .AddScoped<IObjectRepository, ObjectRepository>()
+                .AddScoped<IMiscRepository, MiscRepository>()
+                .AddScoped<IGameDetailsRepository, GameDetailsRepository>()
                 .BuildServiceProvider();
         }
     }

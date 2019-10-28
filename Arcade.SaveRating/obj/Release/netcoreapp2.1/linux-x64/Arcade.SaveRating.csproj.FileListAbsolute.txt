@@ -12,3 +12,5 @@ F:\Personal\Sidekick API\Arcade.SaveRating\obj\Release\netcoreapp2.1\linux-x64\A
 F:\Personal\Sidekick API\Arcade.SaveRating\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveRating.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.SaveRating\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveRating.dll
 F:\Personal\Sidekick API\Arcade.SaveRating\obj\Release\netcoreapp2.1\linux-x64\Arcade.SaveRating.pdb
+F:\Personal\Sidekick API\Arcade.SaveRating\bin\Release\netcoreapp2.1\linux-x64\Arcade.GameDetails.dll
+F:\Personal\Sidekick API\Arcade.SaveRating\bin\Release\netcoreapp2.1\linux-x64\Arcade.GameDetails.pdb

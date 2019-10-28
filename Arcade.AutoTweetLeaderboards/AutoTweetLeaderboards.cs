@@ -6,6 +6,7 @@ using System.Text;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using TweetSharp;
 
@@ -29,7 +30,7 @@ namespace Arcade.AutoTweetLeaderboards
             this.services = services;
             environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));
             ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
-            ((IGameRepository)this.services.GetService(typeof(IGameRepository))).SetupTable();
+            ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
         public void AutoTweetLeaderboardsHandler(APIGatewayProxyRequest request, ILambdaContext context)
@@ -37,10 +38,12 @@ namespace Arcade.AutoTweetLeaderboards
             try
             {
                 var category = GetCategory();
-                var game = ((IGameRepository)services.GetService(typeof(IGameRepository))).Load(category);
+                var game = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Games", category);
+
                 var rnd = new Random();
-                int index = rnd.Next(0, game.Games.Count());
-                var gameName = game.Games[index];
+                int index = rnd.Next(0, game.List1.Count());
+                var gameName = game.List1[index];
                 var keyGameName = gameName.Replace(" ", "_").ToLower();
 
                 var gameLeaderboard = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load(keyGameName);
@@ -68,22 +71,22 @@ namespace Arcade.AutoTweetLeaderboards
                     });
                 }
 
-                game.Games.RemoveAt(index);
+                game.List1.RemoveAt(index);
 
-                if (game.TweetedGames == null)
+                if (game.List2 == null)
                 {
-                    game.TweetedGames = new List<string>();
+                    game.List2 = new List<string>();
                 }
 
-                game.TweetedGames.Add(gameName);
+                game.List2.Add(gameName);
 
-                if (game.Games.Count() == 0)
+                if (game.List1.Count() == 0)
                 {
-                    game.Games = game.TweetedGames;
-                    game.TweetedGames = new List<string>();
+                    game.List1 = game.List2;
+                    game.List2 = new List<string>();
                 }
 
-                ((IGameRepository)services.GetService(typeof(IGameRepository))).Save(game);
+                ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(game);
             }
             catch (Exception e)
             {

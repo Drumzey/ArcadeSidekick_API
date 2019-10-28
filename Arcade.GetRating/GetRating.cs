@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Arcade.GameDetails;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
@@ -24,7 +25,7 @@ namespace Arcade.GetRating
         public GetRating(IServiceProvider services)
         {
             this.services = services;
-            ((IRatingRepository)this.services.GetService(typeof(IRatingRepository))).SetupTable();
+            ((IGameDetailsRepository)this.services.GetService(typeof(IGameDetailsRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse GetRatingHandler(APIGatewayProxyRequest request, ILambdaContext context)
@@ -39,9 +40,10 @@ namespace Arcade.GetRating
             var ratingInfo = GetRatingInfo(gamename);
             if (ratingInfo == null)
             {
-                ratingInfo = new RatingInformation
+                ratingInfo = new GameDetailsRecord
                 {
-                    GameName = gamename,
+                    Game = gamename,
+                    SortKey = "Rating",
                     Average = 0,
                     NumberOfRatings = 0,
                 };
@@ -50,18 +52,19 @@ namespace Arcade.GetRating
             return Response(ratingInfo);
         }
 
-        private RatingInformation GetRatingInfo(string gamename)
+        private GameDetailsRecord GetRatingInfo(string gamename)
         {
-            var ratingInformationForGame = ((IRatingRepository)services.GetService(typeof(IRatingRepository))).Load(gamename);
+            var ratingInformationForGame = ((IGameDetailsRepository)services.GetService(typeof(IGameDetailsRepository)))
+                .Load(gamename,"Rating");
 
             return ratingInformationForGame;
         }
 
-        private APIGatewayProxyResponse Response(RatingInformation ratingInfo)
+        private APIGatewayProxyResponse Response(GameDetailsRecord ratingInfo)
         {
             var response = new SaveRatingInformationResponse();
             response.Games = new Dictionary<string, SingleRatingInformationResponse>();
-            response.Games.Add(ratingInfo.GameName, new SingleRatingInformationResponse
+            response.Games.Add(ratingInfo.Game, new SingleRatingInformationResponse
             {
                 Average = ratingInfo.Average,
                 NumberOfRatings = ratingInfo.NumberOfRatings,

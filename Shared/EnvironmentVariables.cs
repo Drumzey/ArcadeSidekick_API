@@ -6,14 +6,20 @@ namespace Arcade.Shared
 {
     public class EnvironmentVariables : IEnvironmentVariables
     {
+        //DEFFO NEEDED
+        public string GameDetailsTableName => GetValue("GameDetailsTableName");
+
+        public string MiscTableName => GetValue("MiscTableName");
+
         public string UserInformationTableName => GetValue("UserInformationTableName");
+
+
+
 
         public string RatingInformationTableName => GetValue("RatingInformationTableName");
 
         public string ObjectTableName => GetValue("ObjectTableName");
-
-        public string GameTableName => GetValue("GameTableName");
-
+        
         public string ClubTableName => GetValue("ClubTableName");
 
         public string EmailAddress => GetValue("EmailAddress");
@@ -32,23 +38,7 @@ namespace Arcade.Shared
 
         public string TweetsOn => GetValue("TweetsOn");
 
-        public string ListItemsTableName => GetValue("ListItemsTableName");
-
-        public string DetailedScoresByUserNameTableName => GetValue("DetailedScoresByUserNameTableName");
-
-        public string SettingsByGameNameTableName => GetValue("SettingsByGameNameTableName");
-
-        public string ScoreByLocationTableName => GetValue("ScoreByLocationTableName");
-
-        public string LocationByMachineTableName => GetValue("LocationByMachineTableName");
-
-        public string ArcadeMachinesByLocationTableName => GetValue("ArcadeMachinesByLocationTableName");
-
         public string LocationTableName => GetValue("LocationTableName");
-
-        public string ScoreByGameNameTableName => GetValue("ScoreByGameNameTableName");
-
-        public string ChallengeTableName => GetValue("ChallengeTableName");
 
         public string MessageTableName => GetValue("MessageTableName");
 

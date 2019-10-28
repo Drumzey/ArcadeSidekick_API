@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.deps.json
+F:\Personal\Sidekick API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.dll
+F:\Personal\Sidekick API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.pdb
+F:\Personal\Sidekick API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.dll
+F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.pdb

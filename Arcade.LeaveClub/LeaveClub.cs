@@ -27,6 +27,7 @@ namespace Arcade.LeaveClub
         {
             this.services = services;
             ((IClubRepository)this.services.GetService(typeof(IClubRepository))).SetupTable();
+            ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse LeaveClubHandler(APIGatewayProxyRequest request, ILambdaContext context)

@@ -1,3 +1,5 @@
+F:\Personal\Sidekick API\Arcade.CreateUser.Tests\bin\Debug\netcoreapp2.1\testhost.exe
+F:\Personal\Sidekick API\Arcade.CreateUser.Tests\bin\Debug\netcoreapp2.1\testhost.dll
 F:\Personal\Sidekick API\Arcade.CreateUser.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 F:\Personal\Sidekick API\Arcade.CreateUser.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
 F:\Personal\Sidekick API\Arcade.CreateUser.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll

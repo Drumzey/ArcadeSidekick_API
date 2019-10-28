@@ -3,7 +3,9 @@ F:\Personal\Sidekick API\Arcade.SaveRating\bin\Debug\netcoreapp2.1\Arcade.SaveRa
 F:\Personal\Sidekick API\Arcade.SaveRating\bin\Debug\netcoreapp2.1\Arcade.SaveRating.runtimeconfig.dev.json
 F:\Personal\Sidekick API\Arcade.SaveRating\bin\Debug\netcoreapp2.1\Arcade.SaveRating.dll
 F:\Personal\Sidekick API\Arcade.SaveRating\bin\Debug\netcoreapp2.1\Arcade.SaveRating.pdb
+F:\Personal\Sidekick API\Arcade.SaveRating\bin\Debug\netcoreapp2.1\Arcade.GameDetails.dll
 F:\Personal\Sidekick API\Arcade.SaveRating\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.SaveRating\bin\Debug\netcoreapp2.1\Arcade.GameDetails.pdb
 F:\Personal\Sidekick API\Arcade.SaveRating\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
 F:\Personal\Sidekick API\Arcade.SaveRating\obj\Debug\netcoreapp2.1\Arcade.SaveRating.csprojAssemblyReference.cache
 F:\Personal\Sidekick API\Arcade.SaveRating\obj\Debug\netcoreapp2.1\Arcade.SaveRating.csproj.CoreCompileInputs.cache

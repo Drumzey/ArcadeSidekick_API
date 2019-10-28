@@ -11,6 +11,7 @@
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.4.0",
+          "Arcade.GameDetails": "1.0.0",
           "Arcade.Shared": "1.0.0"
         },
         "runtime": {
@@ -639,11 +640,20 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
+      "Arcade.GameDetails/1.0.0": {
+        "dependencies": {
+          "Amazon.Lambda.Core": "1.1.0",
+          "Amazon.Lambda.Serialization.Json": "1.4.0",
+          "Arcade.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Arcade.GameDetails.dll": {}
+        }
+      },
       "Arcade.Shared/1.0.0": {
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.3.17.1",
           "Amazon.Lambda.APIGatewayEvents": "1.1.3",
-          "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.4.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0"
         },
@@ -1092,6 +1102,11 @@
       "sha512": "sha512-Mk2mKmPi0nWaoiYeotq1dgeNK1fqWh61+EK+w4Wu8SWuTYLzpUnschb59bJtGywaPq7SmTuPf44wrXRwbIrukg==",
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
+    },
+    "Arcade.GameDetails/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Arcade.Shared/1.0.0": {
       "type": "project",

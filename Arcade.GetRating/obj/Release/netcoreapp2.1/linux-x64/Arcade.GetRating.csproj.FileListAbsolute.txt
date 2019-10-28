@@ -12,3 +12,5 @@ F:\Personal\Sidekick API\Arcade.GetRating\obj\Release\netcoreapp2.1\linux-x64\Ar
 F:\Personal\Sidekick API\Arcade.GetRating\obj\Release\netcoreapp2.1\linux-x64\Arcade.GetRating.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.GetRating\obj\Release\netcoreapp2.1\linux-x64\Arcade.GetRating.dll
 F:\Personal\Sidekick API\Arcade.GetRating\obj\Release\netcoreapp2.1\linux-x64\Arcade.GetRating.pdb
+F:\Personal\Sidekick API\Arcade.GetRating\bin\Release\netcoreapp2.1\linux-x64\Arcade.GameDetails.dll
+F:\Personal\Sidekick API\Arcade.GetRating\bin\Release\netcoreapp2.1\linux-x64\Arcade.GameDetails.pdb

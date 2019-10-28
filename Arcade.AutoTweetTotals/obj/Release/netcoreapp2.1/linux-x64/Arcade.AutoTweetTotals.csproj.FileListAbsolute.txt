@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.deps.json
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.dll
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\bin\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.pdb
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\bin\Release\netcoreapp2.1\linux-x64\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.dll
+F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Release\netcoreapp2.1\linux-x64\Arcade.AutoTweetTotals.pdb

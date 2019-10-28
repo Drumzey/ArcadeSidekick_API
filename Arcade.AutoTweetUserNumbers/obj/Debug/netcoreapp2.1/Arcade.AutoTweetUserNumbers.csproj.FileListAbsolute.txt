@@ -1,7 +1,3 @@
-F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.csprojAssemblyReference.cache
-F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.csproj.CoreCompileInputs.cache
-F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.AssemblyInfoInputs.cache
-F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.AssemblyInfo.cs
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.deps.json
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.runtimeconfig.json
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.runtimeconfig.dev.json
@@ -9,6 +5,10 @@ F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\bin\Debug\netcoreapp2.1\Arc
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.pdb
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.AssemblyInfo.cs
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.dll
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.pdb

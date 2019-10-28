@@ -5,7 +5,6 @@ F:\Personal\Sidekick API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.C
 F:\Personal\Sidekick API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Challenges_POST.pdb
 F:\Personal\Sidekick API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
-F:\Personal\Sidekick API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.csprojAssemblyReference.cache
 F:\Personal\Sidekick API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.csproj.CoreCompileInputs.cache
 F:\Personal\Sidekick API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.AssemblyInfoInputs.cache
 F:\Personal\Sidekick API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.AssemblyInfo.cs

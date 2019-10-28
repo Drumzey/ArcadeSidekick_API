@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using Amazon.DynamoDBv2.DataModel;
 
 namespace Arcade.Shared.Repositories
 {
@@ -9,6 +8,8 @@ namespace Arcade.Shared.Repositories
         void SetupTable();
 
         void Save(UserInformation key);
+
+        List<UserInformation> Scan(IEnumerable<ScanCondition> scanConditions);
 
         UserInformation Load(string partitionKey);
     }

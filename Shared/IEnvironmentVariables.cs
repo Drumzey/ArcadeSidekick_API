@@ -6,14 +6,20 @@ namespace Arcade.Shared
 {
     public interface IEnvironmentVariables
     {
+        //Deffo needed
+        string GameDetailsTableName { get; }
+
+        string MiscTableName { get; }
+
         string UserInformationTableName { get; }
+
+
+
 
         string RatingInformationTableName { get; }
 
         string ObjectTableName { get; }
-
-        string GameTableName { get; }
-
+        
         string ClubTableName { get; }
 
         string EmailAddress { get; }
@@ -32,23 +38,7 @@ namespace Arcade.Shared
 
         string TweetsOn { get; }
 
-        string ListItemsTableName { get; }
-
-        string DetailedScoresByUserNameTableName { get; }
-
-        string SettingsByGameNameTableName { get; }
-
-        string ScoreByLocationTableName { get; }
-
-        string LocationByMachineTableName { get; }
-
-        string ArcadeMachinesByLocationTableName { get; }
-
         string LocationTableName { get; }
-
-        string ScoreByGameNameTableName { get; }
-
-        string ChallengeTableName { get; }
 
         string MessageTableName { get; }
     }

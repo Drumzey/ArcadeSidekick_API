@@ -5,7 +5,6 @@ F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.Resto
 F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.RestoreUser.pdb
 F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\Arcade.RestoreUser\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
-F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.csprojAssemblyReference.cache
 F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.csproj.CoreCompileInputs.cache
 F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.AssemblyInfoInputs.cache
 F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.AssemblyInfo.cs

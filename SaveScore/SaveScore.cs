@@ -194,6 +194,11 @@ namespace Arcade.SaveScore
 
         private void CreateMessage(List<string> oldTop3, List<string> newTop3, string userName, string gameName)
         {
+            Console.WriteLine("U: " + userName);
+            Console.WriteLine("G: " + gameName);
+            Console.WriteLine("Old: " + string.Join(",", oldTop3));
+            Console.WriteLine("New: " + string.Join(",", newTop3));
+
             // We are not in the top 3 so nothing has changed
             if (newTop3.IndexOf(userName) == -1)
             {
@@ -203,9 +208,13 @@ namespace Arcade.SaveScore
             var indexOfNewPlayerInOldList = oldTop3.IndexOf(userName);
             var indexOfNewPlayerInNewList = newTop3.IndexOf(userName);
 
+            Console.WriteLine("Old place: " + indexOfNewPlayerInOldList);
+            Console.WriteLine("New place: " + indexOfNewPlayerInNewList);
+
             if (indexOfNewPlayerInOldList == indexOfNewPlayerInNewList)
             {
                 // Our position is unchanged
+                Console.WriteLine("Position unchanged");
                 return;
             }
 
@@ -216,23 +225,32 @@ namespace Arcade.SaveScore
                 if (indexOfNewPlayerInNewList == 0 && oldTop3.Count > 0)
                 {
                     // Create message to tell old first place that they are no longer in first
+                    Console.WriteLine("New first place!");
+                    Console.WriteLine("Person to notify: " + oldTop3[0]);
                     CreateFirstPlaceMessage(services, oldTop3[0], gameName, userName);
                 }
 
                 // Create message to tell person who was in third, that they have been knocked from the top 3
                 if (oldTop3.Count >= 3)
                 {
+                    Console.WriteLine("Third place knocked down");
+                    Console.WriteLine("Person to notify: " + oldTop3[2]);
                     CreateNoLongerTop3PlaceMessage(services, oldTop3[2], gameName, userName);
+                    return;
                 }
             }
 
             // We were in the old list and the new list in a new position
             if (indexOfNewPlayerInOldList != -1 && indexOfNewPlayerInNewList != -1)
             {
-                if (indexOfNewPlayerInNewList == 0 && oldTop3.Count > 0)
+                Console.WriteLine("We were in the top three and still are");
+                if (indexOfNewPlayerInNewList == 0 && indexOfNewPlayerInOldList != 0 && oldTop3.Count > 0)
                 {
+                    Console.WriteLine("We were not first but now we are");
+                    Console.WriteLine("Old first place: " + oldTop3[0]);
                     // Create message to tell old first place that they are no longer in first
                     CreateFirstPlaceMessage(services, oldTop3[0], gameName, userName);
+                    return;
                 }
             }
         }

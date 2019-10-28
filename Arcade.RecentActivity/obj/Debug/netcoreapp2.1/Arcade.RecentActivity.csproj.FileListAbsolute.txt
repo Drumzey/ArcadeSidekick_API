@@ -5,7 +5,6 @@ F:\Personal\Sidekick API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.Re
 F:\Personal\Sidekick API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.RecentActivity.pdb
 F:\Personal\Sidekick API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
-F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.csprojAssemblyReference.cache
 F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.csproj.CoreCompileInputs.cache
 F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.AssemblyInfoInputs.cache
 F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.AssemblyInfo.cs

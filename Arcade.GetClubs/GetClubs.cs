@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 
@@ -26,7 +27,7 @@ namespace Arcade.GetClubs
         public GetClubs(IServiceProvider services)
         {
             this.services = services;
-            ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
+            ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
             ((IClubRepository)this.services.GetService(typeof(IClubRepository))).SetupTable();
         }
 
@@ -34,12 +35,13 @@ namespace Arcade.GetClubs
         {
             try
             {
-                var clubNames = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("clubs");
+                var clubNames = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Clubs", "Order");
 
                 var clubsInformation = new List<ClubInformation>();
                 var clubRepository = (IClubRepository)services.GetService(typeof(IClubRepository));
 
-                foreach (string name in clubNames.ListValue)
+                foreach (string name in clubNames.List1)
                 {
                     var information = clubRepository.Load(name);
                     if (information != null)

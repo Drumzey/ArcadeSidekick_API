@@ -1,7 +1,3 @@
-F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csprojAssemblyReference.cache
-F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csproj.CoreCompileInputs.cache
-F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.AssemblyInfoInputs.cache
-F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.AssemblyInfo.cs
 F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.ForgotInformation.deps.json
 F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.ForgotInformation.runtimeconfig.json
 F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.ForgotInformation.runtimeconfig.dev.json
@@ -9,6 +5,9 @@ F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade
 F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.ForgotInformation.pdb
 F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.AssemblyInfo.cs
 F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.dll
 F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.pdb

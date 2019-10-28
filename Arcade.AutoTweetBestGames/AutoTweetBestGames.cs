@@ -6,7 +6,7 @@ using System.Text;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
-using Arcade.Shared.Repositories;
+using Arcade.Shared.Misc;
 using TweetSharp;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
@@ -27,36 +27,52 @@ namespace Arcade.AutoTweetBestGames
         public AutoTweetBestGames(IServiceProvider services)
         {
             this.services = services;
-            environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));
-            ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
+            environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));            
+            ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
         public void AutoTweetBestGamesHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
             try
             {
-                var ratings = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("ratings");
-                var topFive = GetTop5Ratings(ratings.DictionaryValue);
-                var message = GetTweetMessage(topFive);
+                var arcadeRatings = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Arcade Games");
+                var pinballRatings = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Pinball");
+                var averageOfAllVotes = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Average");
 
-                if (message == null)
-                {
-                    return;
-                }
+                var topArcades = GetTop5WeightedAverage(arcadeRatings.Dictionary, averageOfAllVotes.Value);
+                var topPinball = GetTop5WeightedAverage(pinballRatings.Dictionary, averageOfAllVotes.Value);
+
+                var arcadeMessage = GetTweetMessage(topArcades, "arcade games", "#arcade");
+                var pinballMessage = GetTweetMessage(topPinball, "pinball games", "#pinball");
 
                 if (!string.IsNullOrEmpty(environmentVariables.TweetsOn))
                 {
                     var service = new TwitterService(environmentVariables.ConsumerAPIKey, environmentVariables.ConsumerAPISecretKey);
                     service.AuthenticateWith(environmentVariables.AccessToken, environmentVariables.AccessTokenSecret);
 
-                    service.SendTweet(new SendTweetOptions
+                    if (arcadeMessage != null)
                     {
-                        Status = message,
-                    });
+                        service.SendTweet(new SendTweetOptions
+                        {
+                            Status = arcadeMessage,
+                        });
+                    }
+
+                    if (pinballMessage != null)
+                    {
+                        service.SendTweet(new SendTweetOptions
+                        {
+                            Status = pinballMessage,
+                        });
+                    }
                 }
                 else
                 {
-                    Console.Write(message);
+                    Console.Write(arcadeMessage);
+                    Console.Write(pinballMessage);
                 }
             }
             catch (Exception e)
@@ -65,13 +81,18 @@ namespace Arcade.AutoTweetBestGames
             }
         }
 
-        private List<string> GetTop5Ratings(Dictionary<string, string> dictionaryValue)
+        private List<string> GetTop5WeightedAverage(Dictionary<string, string> dictionaryValue, string mean)
         {
-            var numbericVersions = dictionaryValue.ToDictionary(g => g.Key, g => Convert.ToDouble(g.Value));
+            var numericVersions = dictionaryValue.ToDictionary(
+                g => g.Key,
+                g => WeightedAverageCalculator.CalculateAverage(
+                    double.Parse(g.Value.Split(',')[0]),
+                    double.Parse(g.Value.Split(',')[1]),
+                    double.Parse(mean)));
 
             List<string> orderedGames = new List<string>();
 
-            foreach (KeyValuePair<string, double> game in numbericVersions.OrderByDescending(game => game.Value))
+            foreach (KeyValuePair<string, double> game in numericVersions.OrderByDescending(game => game.Value))
             {
                 TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
                 var name = textInfo.ToTitleCase(game.Key.Replace("_", " "));
@@ -113,11 +134,11 @@ namespace Arcade.AutoTweetBestGames
             return orderedGames.Take(5).ToList();
         }
 
-        private string GetTweetMessage(List<string> topFive)
+        private string GetTweetMessage(List<string> topFive, string gameType, string hashtag)
         {
             var builder = new StringBuilder();
 
-            builder.AppendLine("The current #Top5 games as rated by sidekick users:");
+            builder.AppendLine($"The current #Top5 {gameType} as rated by sidekick users:");
             builder.AppendLine(string.Empty);
 
             foreach (string game in topFive)
@@ -126,7 +147,7 @@ namespace Arcade.AutoTweetBestGames
             }
 
             builder.AppendLine(string.Empty);
-            builder.Append("If you dont see your favourite go vote for it in app! #arcade #highscore #retrogames");
+            builder.Append($"If you dont see your favourite go vote for it in app! {hashtag} #highscore #retrogames");
             return builder.ToString();
         }
     }

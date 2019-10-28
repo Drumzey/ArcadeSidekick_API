@@ -1,8 +1,5 @@
-F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\Arcade.GetScore.dll
-F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.csprojAssemblyReference.cache
-F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.csproj.CoreCompileInputs.cache
-F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.AssemblyInfoInputs.cache
-F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.AssemblyInfo.cs
+F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\testhost.exe
+F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\testhost.dll
 F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
 F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
@@ -11,9 +8,14 @@ F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\Arcade.GetScore.
 F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\Arcade.GetScore.Tests.runtimeconfig.dev.json
 F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\Arcade.GetScore.Tests.dll
 F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\Arcade.GetScore.Tests.pdb
+F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\Arcade.GetScore.dll
 F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\Arcade.GetScore.pdb
 F:\Personal\Sidekick API\GetScore.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.AssemblyInfo.cs
 F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.csproj.CopyComplete
 F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.dll
 F:\Personal\Sidekick API\GetScore.Tests\obj\Debug\netcoreapp2.1\Arcade.GetScore.Tests.pdb
