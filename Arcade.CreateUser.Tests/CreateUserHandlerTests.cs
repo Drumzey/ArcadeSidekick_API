@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.TestUtilities;
 using Arcade.Shared;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Moq;
 using Newtonsoft.Json;
@@ -13,6 +14,8 @@ namespace Arcade.CreateUser.Tests
     public class CreateUserHandlerTests
     {
         private const string UserInput = "{\"Username\":\"Drumzey\",\"EmailAddress\":\"Drumzey@test.com\"}";
+        private const string UserInputBlankTwitter = "{\"Username\":\"Drumzey\",\"EmailAddress\":\"Drumzey@test.com\",\"TwitterHandle\":\"\"}";
+        private const string UserInputTwitter = "{\"Username\":\"Drumzey\",\"EmailAddress\":\"Drumzey@test.com\",\"TwitterHandle\":\"DRUMZEY\"}";
 
         [Fact]
         public void TEST()
@@ -38,10 +41,86 @@ namespace Arcade.CreateUser.Tests
 
             var userInfoRepository = new Mock<IUserRepository>();
             userInfoRepository.Setup(x => x.Load(It.IsAny<string>())).Returns(info);
-
             var email = new Mock<IEmail>();
+            var enviro = new Mock<IEnvironmentVariables>();
+            var objectR = new Mock<IObjectRepository>();
+            var misc = new Mock<IMiscRepository>();
 
-            var services = DI.Container.Services(null, userInfoRepository, email);
+            var services = DI.Container.Services(enviro, userInfoRepository, objectR, misc, email);
+
+            var function = new CreateUser(services);
+            var context = new TestLambdaContext();
+            var result = function.CreateUserHandler(request, context);
+
+            var oKResponse = result.Body;
+
+            Assert.Equal("User record created and secret emailed", oKResponse);
+
+            userInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Once());
+            userInfoRepository.Verify(k => k.Save(It.IsAny<UserInformation>()), Times.Once());
+
+            // email.Verify(k => k.EmailSecret(It.IsAny<String>(), It.IsAny<String>(), It.IsAny<String>()), Times.Once());
+        }
+
+        [Fact]
+        public void CreateUserHandler_WhenCalledWithNewUserBlankTwitter_CreatesUser()
+        {
+            APIGatewayProxyRequest request;
+            var headers = new Dictionary<string, string>()
+            {
+            };
+            request = new APIGatewayProxyRequest
+            {
+                Body = UserInputBlankTwitter,
+            };
+
+            UserInformation info = null;
+
+            var userInfoRepository = new Mock<IUserRepository>();
+            userInfoRepository.Setup(x => x.Load(It.IsAny<string>())).Returns(info);
+            var email = new Mock<IEmail>();
+            var enviro = new Mock<IEnvironmentVariables>();
+            var objectR = new Mock<IObjectRepository>();
+            var misc = new Mock<IMiscRepository>();
+
+            var services = DI.Container.Services(enviro, userInfoRepository, objectR, misc, email);
+
+            var function = new CreateUser(services);
+            var context = new TestLambdaContext();
+            var result = function.CreateUserHandler(request, context);
+
+            var oKResponse = result.Body;
+
+            Assert.Equal("User record created and secret emailed", oKResponse);
+
+            userInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Once());
+            userInfoRepository.Verify(k => k.Save(It.IsAny<UserInformation>()), Times.Once());
+
+            // email.Verify(k => k.EmailSecret(It.IsAny<String>(), It.IsAny<String>(), It.IsAny<String>()), Times.Once());
+        }
+
+        [Fact]
+        public void CreateUserHandler_WhenCalledWithNewUserTwitter_CreatesUser()
+        {
+            APIGatewayProxyRequest request;
+            var headers = new Dictionary<string, string>()
+            {
+            };
+            request = new APIGatewayProxyRequest
+            {
+                Body = UserInputTwitter,
+            };
+
+            UserInformation info = null;
+
+            var userInfoRepository = new Mock<IUserRepository>();
+            userInfoRepository.Setup(x => x.Load(It.IsAny<string>())).Returns(info);
+            var email = new Mock<IEmail>();
+            var enviro = new Mock<IEnvironmentVariables>();
+            var objectR = new Mock<IObjectRepository>();
+            var misc = new Mock<IMiscRepository>();
+
+            var services = DI.Container.Services(enviro, userInfoRepository, objectR, misc, email);
 
             var function = new CreateUser(services);
             var context = new TestLambdaContext();
@@ -78,8 +157,11 @@ namespace Arcade.CreateUser.Tests
             userInfoRepository.Setup(x => x.Load(It.IsAny<string>())).Returns(info);
 
             var email = new Mock<IEmail>();
+            var enviro = new Mock<IEnvironmentVariables>();
+            var objectR = new Mock<IObjectRepository>();
+            var misc = new Mock<IMiscRepository>();
 
-            var services = DI.Container.Services(null, userInfoRepository, email);
+            var services = DI.Container.Services(enviro, userInfoRepository, objectR, misc, email);
 
             var function = new CreateUser(services);
             var context = new TestLambdaContext();

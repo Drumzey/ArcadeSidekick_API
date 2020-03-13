@@ -16,8 +16,6 @@ namespace Arcade.Shared
 
 
 
-        public string RatingInformationTableName => GetValue("RatingInformationTableName");
-
         public string ObjectTableName => GetValue("ObjectTableName");
         
         public string ClubTableName => GetValue("ClubTableName");

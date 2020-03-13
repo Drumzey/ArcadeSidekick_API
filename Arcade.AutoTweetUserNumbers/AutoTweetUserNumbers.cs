@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using TweetSharp;
 
@@ -28,22 +29,22 @@ namespace Arcade.AutoTweetUserNumbers
         {
             this.services = services;
             environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));
-            ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
+            ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
         public void AutoTweetUserNumbersHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
             try
             {
-                var userRow = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("users");
-                var previousUsers = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("previoususers");
+                var userRow = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Activity", "Users");
+                var previousUsers = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Activity", "PreviousUsers");
 
-                var users = userRow.ListValue.Count;
+                var users = userRow.List1.Count;
                 var previous = 0;
 
                 if (previousUsers != null)
                 {
-                    previous = Convert.ToInt32(previousUsers.ListValue[0]);
+                    previous = Convert.ToInt32(previousUsers.Value);
                 }
 
                 var message = GetTweetMessage(users, previous);
@@ -117,16 +118,14 @@ namespace Arcade.AutoTweetUserNumbers
                     }
                 }
 
-                var previousUsers = new ObjectInformation
+                var previousUsers = new Misc
                 {
-                    Key = "previoususers",
-                    ListValue = new List<string>
-                    {
-                        users.ToString(),
-                    },
+                    Key = "Activity",
+                    SortKey = "PreviousUsers",
+                    Value = users.ToString(),
                 };
 
-                ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Save(previousUsers);
+                ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(previousUsers);
             }
 
             int option = rnd.Next(1, 4);

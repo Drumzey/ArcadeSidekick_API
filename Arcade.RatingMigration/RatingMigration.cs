@@ -28,7 +28,6 @@ namespace Arcade.RatingMigration
         public RatingMigration(IServiceProvider services)
         {
             _services = services;
-            ((IRatingRepository)_services.GetService(typeof(IRatingRepository))).SetupTable();
             ((IGameDetailsRepository)_services.GetService(typeof(IGameDetailsRepository))).SetupTable();
             ((IMiscRepository)_services.GetService(typeof(IMiscRepository))).SetupTable();
         }
@@ -38,31 +37,13 @@ namespace Arcade.RatingMigration
             var totalNumberOfRatings = 0;
             var totalOfRatings = 0;
 
-            var ratings = ((IRatingRepository)_services.GetService(typeof(IRatingRepository))).AllRows();
+            var gameRows = ((IGameDetailsRepository)_services.GetService(typeof(IGameDetailsRepository))).AllRows();
+            var ratings = gameRows.Where(x => x.SortKey.Equals("Rating"));
 
-            foreach (RatingInformation rating in ratings)
+            foreach (GameDetailsRecord rating in ratings)
             {
-                var gameDetailsRow = ((IGameDetailsRepository)_services.GetService(typeof(IGameDetailsRepository))).Load(rating.GameName, "Rating");
-
-                if (gameDetailsRow == null)
-                {
-                    gameDetailsRow = new GameDetailsRecord();
-                    gameDetailsRow.Game = rating.GameName;
-                    gameDetailsRow.SortKey = "Rating";
-                    gameDetailsRow.DataType = "Rating";
-                }
-
-                gameDetailsRow.Average = rating.Average;
-                gameDetailsRow.CreatedAt = rating.CreatedAt;
-                gameDetailsRow.NumberOfRatings = rating.NumberOfRatings;
-                gameDetailsRow.Ratings = rating.Ratings;
-                gameDetailsRow.Total = rating.Total;
-                gameDetailsRow.UpdatedAt = rating.UpdatedAt;
-
                 totalNumberOfRatings += rating.NumberOfRatings;
                 totalOfRatings += rating.Total;
-
-                ((IGameDetailsRepository)_services.GetService(typeof(IGameDetailsRepository))).Save(gameDetailsRow);
             }
 
             var miscRepository = (IMiscRepository)_services.GetService(typeof(IMiscRepository));

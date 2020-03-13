@@ -11,5 +11,7 @@ namespace Arcade.Shared.Messages
         void Save(Messages messages);
 
         Messages Load(string partitionKey);
+
+        //List<Messages> Scan(IEnumerable<ScanCondition> scanConditions);
     }
 }

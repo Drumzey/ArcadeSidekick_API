@@ -36,7 +36,7 @@
           "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.103.54": {
+      "AWSSDK.Core/3.3.103.57": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/AWSSDK.Core.dll": {}
@@ -67,6 +67,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.Lambda.dll": {}
+        }
+      },
+      "AWSSDK.SimpleEmail/3.3.101.63": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.103.57, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -1054,6 +1066,7 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.3.101.80",
+          "AWSSDK.SimpleEmail": "3.3.101.63",
           "Amazon.Lambda.APIGatewayEvents": "1.2.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
           "Microsoft.Extensions.DependencyInjection": "3.0.0"
@@ -1110,13 +1123,13 @@
         "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.xml"
       ]
     },
-    "AWSSDK.Core/3.3.103.54": {
-      "sha512": "qMOT804LB0zWK+5ljNGi30qS7MPRkmfqL5frvyzTghPGvaO1jG23zHvFXXhMSjyeeVn/DWN2cONx6byHPLQErA==",
+    "AWSSDK.Core/3.3.103.57": {
+      "sha512": "hc/AWR8gG4hqK5bNfDEYQcae1P8Iimgf83T0n8cJkY+vgTTbFcHJuif++UBWeSgjSs7QKsEec8pfFO8i206qNg==",
       "type": "package",
-      "path": "awssdk.core/3.3.103.54",
+      "path": "awssdk.core/3.3.103.57",
       "files": [
         ".signature.p7s",
-        "awssdk.core.3.3.103.54.nupkg.sha512",
+        "awssdk.core.3.3.103.57.nupkg.sha512",
         "awssdk.core.nuspec",
         "lib/MonoAndroid10/AWSSDK.Core.XML",
         "lib/MonoAndroid10/AWSSDK.Core.dll",
@@ -1229,6 +1242,44 @@
         "lib/uap/AWSSDK.Lambda.XML",
         "lib/uap/AWSSDK.Lambda.dll",
         "lib/uap/AWSSDK.Lambda.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.SimpleEmail/3.3.101.63": {
+      "sha512": "OZlLqhL8tyTkm5Eca1xCI+GvOAsonTgHOiAjRFpLRWcVWO/UEEu/aPCknBRkjPuFLxaR6ombo4k/nhEdsiI9lQ==",
+      "type": "package",
+      "path": "awssdk.simpleemail/3.3.101.63",
+      "files": [
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.SimpleEmail.CodeAnalysis.dll",
+        "awssdk.simpleemail.3.3.101.63.nupkg.sha512",
+        "awssdk.simpleemail.nuspec",
+        "lib/MonoAndroid10/AWSSDK.SimpleEmail.XML",
+        "lib/MonoAndroid10/AWSSDK.SimpleEmail.dll",
+        "lib/MonoTouch10/AWSSDK.SimpleEmail.XML",
+        "lib/MonoTouch10/AWSSDK.SimpleEmail.dll",
+        "lib/MonoTouch10/AWSSDK.SimpleEmail.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.SimpleEmail.XML",
+        "lib/Xamarin.iOS10/AWSSDK.SimpleEmail.dll",
+        "lib/net35/AWSSDK.SimpleEmail.dll",
+        "lib/net35/AWSSDK.SimpleEmail.pdb",
+        "lib/net35/AWSSDK.SimpleEmail.xml",
+        "lib/net45/AWSSDK.SimpleEmail.dll",
+        "lib/net45/AWSSDK.SimpleEmail.pdb",
+        "lib/net45/AWSSDK.SimpleEmail.xml",
+        "lib/netstandard1.3/AWSSDK.SimpleEmail.dll",
+        "lib/netstandard1.3/AWSSDK.SimpleEmail.pdb",
+        "lib/netstandard1.3/AWSSDK.SimpleEmail.xml",
+        "lib/netstandard2.0/AWSSDK.SimpleEmail.dll",
+        "lib/netstandard2.0/AWSSDK.SimpleEmail.pdb",
+        "lib/netstandard2.0/AWSSDK.SimpleEmail.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SimpleEmail.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SimpleEmail.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SimpleEmail.pdb",
+        "lib/uap/AWSSDK.SimpleEmail.XML",
+        "lib/uap/AWSSDK.SimpleEmail.dll",
+        "lib/uap/AWSSDK.SimpleEmail.pdb",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]

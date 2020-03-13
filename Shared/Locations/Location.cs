@@ -15,5 +15,7 @@ namespace Arcade.Shared.Locations
         public string SubmissionRules { get; set; }
 
         public List<string> GamesAvailable { get; set; }
+
+        public bool Private { get; set; }
     }
 }

@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 
@@ -29,6 +30,7 @@ namespace Arcade.CreateUser
             this.services = services;
             ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
             ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
+            ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse CreateUserHandler(APIGatewayProxyRequest request, ILambdaContext context)
@@ -44,7 +46,17 @@ namespace Arcade.CreateUser
 
                 CreateUserInDatabase(userInfo);
                 CreateUserInObjectTable(userInfo.Username);
-                SaveRecentActivity(userInfo.Username);
+                CreateUserTwitterHandleInMiscTable(userInfo);
+
+                try
+                {
+                    SaveRecentActivity(userInfo.Username);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine();
+                }
+
                 return OkResponse();
             }
             catch (Exception e)
@@ -53,27 +65,65 @@ namespace Arcade.CreateUser
             }
         }
 
+        private void CreateUserTwitterHandleInMiscTable(CreateUserInformation userInfo)
+        {
+            if (string.IsNullOrWhiteSpace(userInfo.TwitterHandle))
+            {
+                // We have nothing then do nothing
+                return;
+            }
+
+            try
+            {
+                var tweeties = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Twitter", "Users");
+
+                if (tweeties == null)
+                {
+                    tweeties = new Misc();
+                    tweeties.Key = "Twitter";
+                    tweeties.SortKey = "Users";
+                    tweeties.Dictionary = new Dictionary<string, string>();
+                }
+
+                if (!tweeties.Dictionary.ContainsKey(userInfo.Username))
+                {
+                    tweeties.Dictionary.Add(userInfo.Username, userInfo.TwitterHandle);
+                }
+                else
+                {
+                    tweeties.Dictionary[userInfo.Username] = userInfo.TwitterHandle;
+                }
+
+                ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(tweeties);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
         private void SaveRecentActivity(string username)
         {
-            var recentActivity = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("recent");
+            var recentActivity = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Activity", "All");
 
             if (recentActivity == null)
             {
-                recentActivity = new ObjectInformation();
-                recentActivity.Key = "recent";
-                recentActivity.ListValue = new System.Collections.Generic.List<string>();
+                recentActivity = new Misc();
+                recentActivity.Key = "Activity";
+                recentActivity.SortKey = "All";
+                recentActivity.List1 = new System.Collections.Generic.List<string>();
             }
 
             var message = GetMessage(username, DateTime.UtcNow.ToString("dd/MM/yyyy h:mm tt"));
 
             Console.WriteLine(message);
 
-            recentActivity.ListValue.Add(message);
+            recentActivity.List1.Add(message);
 
-            var newList = recentActivity.ListValue.Skip(Math.Max(0, recentActivity.ListValue.Count() - 50));
-            recentActivity.ListValue = newList.ToList();
+            var newList = recentActivity.List1.Skip(Math.Max(0, recentActivity.List1.Count() - 50));
+            recentActivity.List1 = newList.ToList();
 
-            ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Save(recentActivity);
+            ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(recentActivity);
         }
 
         private string GetMessage(string username, string date)
@@ -85,18 +135,19 @@ namespace Arcade.CreateUser
         {
             try
             {
-                var users = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("users");
+                var users = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Activity", "Users");
 
                 if (users == null)
                 {
-                    users = new ObjectInformation();
-                    users.Key = "users";
-                    users.ListValue = new List<string>();
+                    users = new Misc();
+                    users.Key = "Activity";
+                    users.SortKey = "Users";
+                    users.List1 = new List<string>();
                 }
 
-                users.ListValue.Add(userName);
+                users.List1.Add(userName);
 
-                ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Save(users);
+                ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(users);
             }
             catch (Exception e)
             {
@@ -121,7 +172,7 @@ namespace Arcade.CreateUser
                 NumberOfRatingsGiven = 0,
                 NumberOfScoresUploaded = 0,
                 NumberOfSocialShares = 0,
-                TwitterHandle = string.Empty,
+                TwitterHandle = userInfo.TwitterHandle,
                 Location = string.Empty,
             };
 

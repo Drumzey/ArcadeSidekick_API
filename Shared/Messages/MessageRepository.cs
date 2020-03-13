@@ -2,6 +2,7 @@
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Arcade.Shared.Messages;
+using System.Collections.Generic;
 
 namespace Arcade.Shared.Messages
 {
@@ -37,6 +38,11 @@ namespace Arcade.Shared.Messages
         public Messages Load(string username)
         {
             return dbContext.LoadAsync<Messages>(username).Result;
+        }
+
+        public List<Messages> Scan(IEnumerable<ScanCondition> scanConditions)
+        {
+            return dbContext.ScanAsync<Messages>(scanConditions).GetNextSetAsync().Result;
         }
     }
 }

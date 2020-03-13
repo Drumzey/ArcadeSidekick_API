@@ -1,6 +1,7 @@
 ﻿using System;
 using Arcade.Shared;
 using Arcade.Shared.Messages;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -15,6 +16,7 @@ namespace Arcade.SaveScore.DI
                 .AddScoped<IUserRepository, UserRepository>()
                 .AddScoped<IObjectRepository, ObjectRepository>()
                 .AddScoped<IMessageRepository, MessageRepository>()
+                .AddScoped<IMiscRepository, MiscRepository>()
                 .BuildServiceProvider();
         }
     }

@@ -62,10 +62,48 @@ namespace Arcade.VerifyUser.Tests
                 Verified = false,
             };
 
+            var environ = new Mock<IEnvironmentVariables>();
             var userInfoRepository = new Mock<IUserRepository>();
             userInfoRepository.Setup(x => x.Load(It.IsAny<string>())).Returns(info);
 
-            var services = DI.Container.Services(null, userInfoRepository);
+            var services = DI.Container.Services(environ, userInfoRepository);
+
+            var function = new VerifyUser(services);
+            var context = new TestLambdaContext();
+            var result = function.VerifyUserHandler(request, context);
+            string okResponse = result.Body;
+
+            Assert.Equal("User record verified.", okResponse);
+            Assert.True(info.Verified);
+
+            userInfoRepository.Verify(k => k.Load(It.IsAny<string>()), Times.Once());
+            userInfoRepository.Verify(k => k.Save(It.IsAny<UserInformation>()), Times.Once());
+        }
+
+        [Fact]
+        public void VerifyUserHandler_WhenCalledWithExistingUser_UpdatesUserAndTweetsTwitterHandle()
+        {
+            APIGatewayProxyRequest request;
+            var headers = new Dictionary<string, string>()
+            {
+            };
+            request = new APIGatewayProxyRequest
+            {
+                Body = UserInput,
+            };
+
+            UserInformation info = new UserInformation
+            {
+                Username = "Drumzey",
+                Verified = false,
+                TwitterHandle = "Drumzey",
+            };
+
+            var environ = new Mock<IEnvironmentVariables>();
+            var userInfoRepository = new Mock<IUserRepository>();
+            userInfoRepository.Setup(x => x.Load(It.IsAny<string>())).Returns(info);
+
+            var services = DI.Container.Services(environ, userInfoRepository);
 
             var function = new VerifyUser(services);
             var context = new TestLambdaContext();

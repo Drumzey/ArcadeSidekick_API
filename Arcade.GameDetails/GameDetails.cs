@@ -1,16 +1,31 @@
+// This lambda deals with getting all information about games
+//
+// GET - Rating
+// GET - Settings
+// GET - What games are available at which location
+// GET - Where is this game available
+// GET - Scores
+// NEED TO ADD - TOP 50
+//
+// GET ALL - This call will get the following information about a game in a single call
+//   Rating
+//   Settings
+//   Scores
+//   Locations
+//
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Arcade.GameDetails.Handlers;
 using Arcade.Shared;
 using Arcade.Shared.Locations;
 using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 
-// Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
 
 namespace Arcade.GameDetails
@@ -45,66 +60,97 @@ namespace Arcade.GameDetails
 
         public APIGatewayProxyResponse GameDetailsHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
+            //If we are posting something to the gamedetails then we are performing 
+            //a set of a new score
+            if (request.HttpMethod == "POST")
+            {
+                return SetHandler(request);
+            }
+
+            //If we are deleting something in the gamedetails then we are performing 
+            //a delete of an already existing score
+            if (request.HttpMethod == "DELETE")
+            {
+                return DeleteHandler(request);
+            }
+
             request.QueryStringParameters.TryGetValue("gameName", out string gameName);
+            request.QueryStringParameters.TryGetValue("userName", out string userName);
             request.QueryStringParameters.TryGetValue("location", out string location);
+
+            switch (request.Resource)
+            {
+                case "/app/games/all":
+                    if (string.IsNullOrEmpty(gameName))
+                    {
+                        return ErrorResponse();
+                    }
+                    if (string.IsNullOrEmpty(userName))
+                    {
+                        return ErrorResponse();
+                    }
+                    break;                
+                case "/app/games/knownsettings":
+                case "/app/games/ratingsweighted":
+                case "/app/games/detailedscore":
+                case "/app/games/knownlevels":
+                    if (string.IsNullOrEmpty(gameName))
+                    {
+                        return ErrorResponse();
+                    }
+                    break;
+
+                // case "/gamedetails/stats": NOT SURE WHAT THIS IS?
+                //if (string.IsNullOrEmpty(gameName))
+                //{
+                //    return ErrorResponse();
+                //}
+                //if (string.IsNullOrEmpty(userName))
+                //{
+                //    return ErrorResponse();
+                //}
+
+                //case "/gamedetails/locations":
+                //if (string.IsNullOrEmpty(gameName))
+                //{
+                //    return ErrorResponse();
+                //}
+                //break;
+
+                //case "/app/games/availableat":
+                //    if (string.IsNullOrEmpty(location))
+                //    {
+                //        return ErrorResponse();
+                //    }
+                //    break;
+                default:
+                    break;
+            }
+
 
             object response;
             switch (request.Resource)
             {
-                case "/gamedetails/all":
-                    if (string.IsNullOrEmpty(gameName))
-                    {
-                        return ErrorResponse();
-                    }
-                    response = GetAllInformation(gameName);
+                case "/app/games/all":
+                    response = GetAllInformation(gameName, userName);
                     break;
 
-                case "/gamedetails/availableatlocation":
-                    if (string.IsNullOrEmpty(location))
-                    {
-                        return ErrorResponse();
-                    }
-
-                    response = GetGamesAtLocation(location);
-                    break;
-                case "/gamedetails/locations":
-
-                    if (string.IsNullOrEmpty(gameName))
-                    {
-                        return ErrorResponse();
-                    }
-
-                    response = GetLocationsForGame(gameName);
-                    break;
-                case "/gamedetails/settings":
-
-                    if (string.IsNullOrEmpty(gameName))
-                    {
-                        return ErrorResponse();
-                    }
-
+                case "/app/games/knownsettings":
                     response = GetKnownSettingsForGame(gameName);
                     break;
-                case "/gamedetails/rating":
 
-                    if (string.IsNullOrEmpty(gameName))
-                    {
-                        return ErrorResponse();
-                    }
-
+                case "/app/games/ratingsweighted":
                     response = GetRatingForGame(gameName);
                     break;
-                case "/gamedetails/scores":
 
-                    if (string.IsNullOrEmpty(gameName))
-                    {
-                        return ErrorResponse();
-                    }
+                case "/app/games/knownlevels":
+                    response = GetLevelsForGame(gameName);
+                    break;
 
+                case "/app/games/detailedscore":
                     if (string.IsNullOrEmpty(location))
                     {
-                        Console.WriteLine(gameName);
-                        response = GetHighscores(gameName);
+                        response = GetAllHighscores(gameName);
                     }
                     else
                     {
@@ -112,70 +158,90 @@ namespace Arcade.GameDetails
                     }
                     break;
 
-                default:
-                    response = null;
-                    break;
-            }
+                //case "/app/games/availableat":
+                //    response = GetGamesAtLocation(location);
+                //    break;
 
-            if (response == null)
-            {
-                return ErrorResponse();
+                //case "/gamedetails/locations":
+                //    response = GetLocationsForGame(gameName);
+                //    break;
+
+                //case "/gamedetails/stats":
+                //    response = GetUserStatsForGame(userName, gameName);
+                //    break;
+
+                default:
+                    return ErrorResponse();
             }
 
             return Response(response);
         }
 
-        private object GetAllInformation(string gameName)
+        private APIGatewayProxyResponse DeleteHandler(APIGatewayProxyRequest request)
+        {
+            switch (request.Resource)
+            {
+                case "/app/games/detailedscore":
+                    DeleteHighscore(request.Body);
+                    return OKResponse();
+            }
+
+            return ErrorResponse();
+        }
+
+        private APIGatewayProxyResponse SetHandler(APIGatewayProxyRequest request)
+        {
+            switch (request.Resource)
+            {
+                case "/app/games/detailedscore":
+                     SetHighscore(request.Body);
+                     return OKResponse();
+            }
+
+            return ErrorResponse();
+        }
+
+        private object GetAllInformation(string gameName, string userName)
         {
             var details = gameDetailsRepository.QueryByGameName(gameName);
             var locationDetails = details.Where(x => x.DataType.Equals("Location")).ToList();
             var ratingDetails = details.Where(x => x.DataType.Equals("Rating")).FirstOrDefault();
+            var settingsDetails = details.Where(x => x.SortKey.Equals("Settings")).FirstOrDefault();
+            var statsDetails = details.Where(x => x.SortKey.Equals(userName)).FirstOrDefault();
 
             var locations = GetLocationsForGame(locationDetails);
-            var settings = GetKnownSettingsForGame(locationDetails);
-            var scores = GetHighscores(locationDetails, gameName);
+            var settings = GetKnownSettingsForGame(settingsDetails);
+            var scores = GetAllHighscores(locationDetails, gameName);
             var rating = GetRatingForGame(ratingDetails);
+            var stats = GetUserStatsForGame(statsDetails, settingsDetails);
 
             var response = new {
                 Locations = locations,
                 Settings = settings,
                 Scores = scores,
-                Rating = rating };
+                Rating = rating,
+                History = stats };
 
             return Response(response);
         }
 
-        private GameRating GetRatingForGame(GameDetailsRecord details)
+        private LevelsResponse GetLevelsForGame(string gameName)
         {
-            if (details == null)
+            var levels = gameDetailsRepository.Load(gameName, "Levels");
+
+            if (levels != null)
             {
-                return new GameRating
-                {
-                    Average = 0,
-                    NumberOfRatings = 0,
-                    WeightedAverage = 0,
+                return new LevelsResponse{
+                    Levels = levels.Levels,
+                    Finalised = levels.Finalised,
                 };
-            };
+            }
 
-            var average = details.Average;
-            var ratings = details.NumberOfRatings;
-            var averageOfAllGamesRecord = miscRepository.Load("Ratings", "Average");
-            var averageOfAllGames = double.Parse(averageOfAllGamesRecord.Value);
-
-            var weightedAverage = WeightedAverageCalculator.CalculateAverage(average, (double)ratings, averageOfAllGames);
-
-            return new GameRating
+            return new LevelsResponse
             {
-                Average = details.Average,
-                NumberOfRatings = details.NumberOfRatings,
-                WeightedAverage = weightedAverage,
+                Levels = new List<string>(),
+                Finalised = false,
             };
-        }
-
-        private GameRating GetRatingForGame(string gameName)
-        {
-            var details = gameDetailsRepository.Load(gameName, "Rating");
-            return GetRatingForGame(details);
         }
 
         private GamesAtLocation GetGamesAtLocation(string location)
@@ -187,131 +253,100 @@ namespace Arcade.GameDetails
             };
         }
 
+        private GameDetailsRecord GetUserStatsForGame(string userName, string gameName)
+        {
+            var handler = new StatsHandler();
+            return handler.Get(gameDetailsRepository, gameName, userName);
+        }
+
+        private GameDetailsRecord GetUserStatsForGame(GameDetailsRecord details, GameDetailsRecord stats)
+        {
+            details.Settings = stats.Settings;
+            return details;
+        }
+
+        #region RATING
+        private GameRating GetRatingForGame(GameDetailsRecord details)
+        {
+            var handler = new RatingHandler();
+            return handler.Get(miscRepository, details);
+        }
+
+        private GameRating GetRatingForGame(string gameName)
+        {
+            var handler = new RatingHandler();
+            return handler.Get(gameDetailsRepository, miscRepository, gameName);
+        }
+        #endregion
+
+        #region LOCATIONS
         private List<string> GetLocationsForGame(List<GameDetailsRecord> details)
         {
-            var locations = new List<string>();            
-            locations.AddRange(details.Select(x => x.SortKey));
-            return locations;
+            LocationHandler handler = new LocationHandler();
+            return handler.Get(details);
         }
 
         private List<string> GetLocationsForGame(string gameName)
         {
-            var details = gameDetailsRepository.QueryByGameName(gameName);
-            return GetLocationsForGame(details.Where(x => x.DataType.Equals("Location")).ToList());
+            LocationHandler handler = new LocationHandler();
+            return handler.Get(gameDetailsRepository, gameName);
         }
+        #endregion
 
-        private Scores GetScoresForLocationByGame(string location, string gameName)
+        #region SETTINGS
+        private List<Setting> GetKnownSettingsForGame(GameDetailsRecord details)
         {
-            var details = gameDetailsRepository.Load(gameName, location);
-
-            var scores = new Scores();
-            scores.Setting = new Dictionary<string, Setting>();
-            scores.SimpleScores = new Dictionary<string, List<SimpleScore>>();
-
-            foreach (Setting setting in details.Settings)
-            {
-                scores.Setting.Add(setting.SettingsId, setting);
-
-                var scoresForSetting = details.Scores.Where(x => x.SettingsId.Equals(setting.SettingsId));
-                scores.SimpleScores.Add(setting.SettingsId, new List<SimpleScore>());
-
-                foreach (ScoreDetails score in scoresForSetting)
-                {
-                    scores.SimpleScores[setting.SettingsId]
-                        .Add(new SimpleScore { UserName = score.UserName, Score = score.Score });
-                }
-            }
-
-            return scores;
-        }
-
-        private List<Setting> GetKnownSettingsForGame(List<GameDetailsRecord> details)
-        {
-            var settings = new List<Setting>();
-            foreach (GameDetailsRecord detail in details)
-            {
-                settings.AddRange(detail.Settings);
-            }
-            var uniqueSettings = settings.Distinct();
-            return uniqueSettings.ToList();
+            var handler = new SettingsHandler();
+            return handler.Get(details);
         }
 
         private List<Setting> GetKnownSettingsForGame(string gameName)
         {
-            var details = gameDetailsRepository.QueryByGameName(gameName);
-            return GetKnownSettingsForGame(details.Where(x => x.DataType.Equals("Location")).ToList());
+            var handler = new SettingsHandler();
+            return handler.Get(gameDetailsRepository, gameName);
+        }
+        #endregion
+
+        #region HIGHSCORES
+
+        private void DeleteHighscore(string body)
+        {
+            var handler = new HighScoreHandler();
+            handler.Delete(gameDetailsRepository, locationRepository, body);
         }
 
-        private Scores GetHighscores(string gameName)
+        private void SetHighscore(string body)
         {
-            var details = gameDetailsRepository.QueryByGameName(gameName);
-            return GetHighscores(details.Where(x => x.DataType.Equals("Location")).ToList(), gameName);
+            var handler = new HighScoreHandler();
+            handler.Set(gameDetailsRepository, locationRepository, body);
         }
 
-        private Scores GetHighscores(List<GameDetailsRecord> details, string gameName)
+        private Scores GetAllHighscores(string gameName)
         {
-            //Need to go over each details object in here as the outer loop
-            var scores = new Scores();
-            scores.Setting = new Dictionary<string, Setting>();
-            scores.SimpleScores = new Dictionary<string, List<SimpleScore>>();
+            var handler = new HighScoreHandler();
+            return handler.GetAll(gameDetailsRepository, objectRepository, gameName);
+        }
 
-            List<Setting> settingsFound = new List<Setting>();
-            List<SimpleScore> allScores = new List<SimpleScore>();
+        private Scores GetAllHighscores(List<GameDetailsRecord> details, string gameName)
+        {
+            var handler = new HighScoreHandler();
+            return handler.GetAll(gameDetailsRepository, objectRepository, details, gameName);
+        }
 
-            foreach (GameDetailsRecord detail in details)
+        private Scores GetScoresForLocationByGame(string location, string gameName)
+        {
+            var handler = new HighScoreHandler();
+            return handler.GetAllByLocation(gameDetailsRepository, gameName, location);
+        }
+        #endregion
+
+        private APIGatewayProxyResponse OKResponse()
+        {
+            return new APIGatewayProxyResponse
             {
-                foreach (Setting setting in detail.Settings)
-                {
-                    var settingIndex = -1;
-
-                    if(!settingsFound.Contains(setting))
-                    {
-                        settingsFound.Add(setting);
-                        settingIndex = settingsFound.IndexOf(setting);
-                        scores.Setting.Add(settingIndex.ToString(), setting);
-                    }
-                    else
-                    {
-                        settingIndex = settingsFound.IndexOf(setting);
-                    }
-
-                    var scoresForSetting = detail.Scores.Where(x => x.SettingsId.Equals(setting.SettingsId));
-
-                    if (!scores.SimpleScores.ContainsKey(settingIndex.ToString()))
-                    {
-                        scores.SimpleScores.Add(settingIndex.ToString(), new List<SimpleScore>());
-                    }                    
-
-                    foreach (ScoreDetails score in scoresForSetting)
-                    {
-                        scores.SimpleScores[settingIndex.ToString()]
-                            .Add(new SimpleScore { UserName = score.UserName, Score = score.Score });
-
-                        allScores.Add(new SimpleScore { UserName = score.UserName, Score = score.Score });
-                    }
-                }
-            }
-
-            //Create final list of all scores submitted
-            //In teh detailed scoreboards
-            scores.Setting.Add("ALL", new Setting());
-            scores.SimpleScores.Add("ALL", allScores);
-            //Need to add all the scores from the standard scores too...
-            var gamescore = objectRepository.Load(gameName);
-            if (gamescore != null)
-            {
-                foreach(KeyValuePair<string,string> score in gamescore.DictionaryValue)
-                {
-                    //Need to get the pairs of simple scores from this repository
-                    scores.SimpleScores["ALL"].Add(new SimpleScore
-                    {
-                        UserName = score.Key,
-                        Score = score.Value,
-                    });
-                }
-            }
-
-            return scores;
+                StatusCode = (int)HttpStatusCode.OK,
+                Body = "{ \"message\": \"Score added.\"}",
+            };
         }
 
         private APIGatewayProxyResponse Response(object returnObject)
@@ -331,5 +366,11 @@ namespace Arcade.GameDetails
                 Body = "{ \"message\": \"Error getting game details\" }",
             };
         }
+    }
+
+    class LevelsResponse
+    {
+        public List<string> Levels { get; set; }
+        public bool Finalised { get; set; }
     }
 }

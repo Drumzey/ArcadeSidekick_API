@@ -1,4 +1,5 @@
-﻿using Amazon;
+﻿using System.Collections.Generic;
+using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 
@@ -36,6 +37,13 @@ namespace Arcade.Shared.Locations
         public Location Load(string locationName)
         {
             return dbContext.LoadAsync<Location>(locationName).Result;
+        }
+
+        public List<Location> AllLocations()
+        {
+            var conditions = new List<ScanCondition>();
+            var allLocs = dbContext.ScanAsync<Location>(conditions).GetRemainingAsync().Result;
+            return allLocs;
         }
     }
 }

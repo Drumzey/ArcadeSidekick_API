@@ -8,6 +8,7 @@ using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
 using Arcade.Shared.Messages;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 
@@ -30,6 +31,7 @@ namespace Arcade.SaveScore
             this.services = services;
             ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
             ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
+            ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
             ((IMessageRepository)this.services.GetService(typeof(IMessageRepository))).SetupTable();
         }
 
@@ -46,20 +48,21 @@ namespace Arcade.SaveScore
         {
             var data = JsonConvert.DeserializeObject<SaveUserInformationInput>(requestBody);
 
-            var recentActivity = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("recent");
+            var recentActivity = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Activity", "All");
 
             if (recentActivity == null)
             {
-                recentActivity = new ObjectInformation();
-                recentActivity.Key = "recent";
-                recentActivity.ListValue = new System.Collections.Generic.List<string>();
+                recentActivity = new Misc();
+                recentActivity.Key = "Activity";
+                recentActivity.SortKey = "All";
+                recentActivity.List1 = new System.Collections.Generic.List<string>();
             }
 
             foreach (string gameKey in data.Games.Keys)
             {
                 try
                 {
-                    if (data.Games[gameKey] != "0" && data.Games[gameKey] != null)
+                    if (data.Games[gameKey] != "0" && !string.IsNullOrWhiteSpace(data.Games[gameKey]))
                     {
                         var score = string.Format("{0:N0}", Convert.ToDouble(data.Games[gameKey]));
 
@@ -75,7 +78,7 @@ namespace Arcade.SaveScore
                         }
 
                         var message = GetMessage(gameKey, data.Username, score, DateTime.UtcNow.ToString("dd/MM/yyyy h:mm tt"));
-                        recentActivity.ListValue.Add(message);
+                        recentActivity.List1.Add(message);
                     }
                 }
                 catch (Exception e)
@@ -85,10 +88,10 @@ namespace Arcade.SaveScore
                 }
             }
 
-            var newList = recentActivity.ListValue.Skip(Math.Max(0, recentActivity.ListValue.Count() - 100));
-            recentActivity.ListValue = newList.ToList();
+            var newList = recentActivity.List1.Skip(Math.Max(0, recentActivity.List1.Count() - 100));
+            recentActivity.List1 = newList.ToList();
 
-            ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Save(recentActivity);
+            ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(recentActivity);
         }
 
         private string GetGameName(string gameKey)
@@ -143,39 +146,188 @@ namespace Arcade.SaveScore
 
             foreach (string gameKey in data.Games.Keys)
             {
-                var scoreInformationForGame = ((IObjectRepository)services.GetService(typeof(IObjectRepository)))
-                    .Load(gameKey);
-
-                if (scoreInformationForGame == null)
+                try
                 {
-                    scoreInformationForGame = new ObjectInformation();
-                    scoreInformationForGame.Key = gameKey;
-                    scoreInformationForGame.DictionaryValue = new System.Collections.Generic.Dictionary<string, string>();
-                    scoreInformationForGame.DictionaryValue.Add(data.Username, data.Games[gameKey]);
-                }
-                else
-                {
-                    var oldTop3 = GetTopThree(scoreInformationForGame);
-
-                    if (!scoreInformationForGame.DictionaryValue.ContainsKey(data.Username))
+                    if (string.IsNullOrWhiteSpace(data.Games[gameKey]))
                     {
+                        //We are null or empty for some reason
+                        //do not do anything with this score as it coudl be being written by mistake
+                        continue;
+                    }
+
+                    var scoreInformationForGame = ((IObjectRepository)services.GetService(typeof(IObjectRepository)))
+                        .Load(gameKey);
+
+                    if (scoreInformationForGame == null)
+                    {
+                        scoreInformationForGame = new ObjectInformation();
+                        scoreInformationForGame.Key = gameKey;
+                        scoreInformationForGame.DictionaryValue = new System.Collections.Generic.Dictionary<string, string>();
                         scoreInformationForGame.DictionaryValue.Add(data.Username, data.Games[gameKey]);
                     }
                     else
                     {
-                        scoreInformationForGame.DictionaryValue[data.Username] = data.Games[gameKey];
+                        List<string> oldTop3 = new List<string>();
+                        List<string> oldTop5 = new List<string>();
+                        List<string> oldTop10 = new List<string>();
+                        List<string> oldTop25 = new List<string>();
+                        List<string> oldTop50 = new List<string>();
+                        List<string> oldTop100 = new List<string>();
+                        List<string> allOldScores = new List<string>();
+
+                        try
+                        {
+                            oldTop3 = GetTopX(3, scoreInformationForGame);
+                            oldTop5 = GetTopX(5, scoreInformationForGame);
+                            oldTop10 = GetTopX(10, scoreInformationForGame);
+                            oldTop25 = GetTopX(25, scoreInformationForGame);
+                            oldTop50 = GetTopX(50, scoreInformationForGame);
+                            oldTop100 = GetTopX(100, scoreInformationForGame);
+                            allOldScores = GetAll(scoreInformationForGame);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.Write("Couldnt get old top X");
+                        }
+
+                        if (!scoreInformationForGame.DictionaryValue.ContainsKey(data.Username))
+                        {
+                            scoreInformationForGame.DictionaryValue.Add(data.Username, data.Games[gameKey]);
+                        }
+                        else
+                        {
+                            scoreInformationForGame.DictionaryValue[data.Username] = data.Games[gameKey];
+                        }
+
+                        try
+                        {
+                            var newTop3 = GetTopX(3, scoreInformationForGame);
+                            var newTop5 = GetTopX(5, scoreInformationForGame);
+                            var newTop10 = GetTopX(10, scoreInformationForGame);
+                            var newTop25 = GetTopX(25, scoreInformationForGame);
+                            var newTop50 = GetTopX(50, scoreInformationForGame);
+                            var newTop100 = GetTopX(100, scoreInformationForGame);
+                            var newAllScores = GetAll(scoreInformationForGame);
+
+                            Console.Write("Writing first place message");
+                            CreateFirstPlaceMessage(oldTop3, newTop3, data.Username, gameKey);
+                            Console.Write("Sending 3rd place message");
+                            CreateMessage(oldTop3, newTop3, data.Username, gameKey, 3);
+                            Console.Write("Sending 5th place message");
+                            CreateMessage(oldTop5, newTop5, data.Username, gameKey, 5);
+                            Console.Write("Sending 10th place message");
+                            CreateMessage(oldTop10, newTop10, data.Username, gameKey, 10);
+                            Console.Write("Sending 25th place message");
+                            CreateMessage(oldTop25, newTop25, data.Username, gameKey, 25);
+                            Console.Write("Sending 50th place message");
+                            CreateMessage(oldTop50, newTop50, data.Username, gameKey, 50);
+                            Console.Write("Sending 100th place messages");
+                            CreateMessage(oldTop100, newTop100, data.Username, gameKey, 100);
+
+                            Console.Write("Sending friend messages");
+                            DoMessagesForFriends(
+                                allOldScores,
+                                newAllScores,
+                                data.Username,
+                                GetGameName(gameKey),
+                                gameKey);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.Write("Couldnt send messages");
+                        }
                     }
 
-                    var newTop3 = GetTopThree(scoreInformationForGame);
-
-                    CreateMessage(oldTop3, newTop3, data.Username, gameKey);
+                    ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Save(scoreInformationForGame);
                 }
-
-                ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Save(scoreInformationForGame);
+                catch (Exception e)
+                {
+                    throw new Exception("Cannot create recent activity");
+                }
             }
         }
 
-        private List<string> GetTopThree(ObjectInformation currentGameScores)
+        private void DoMessagesForFriends(
+            List<string> allOldScores,
+            List<string> newAllScores,
+            string userName,
+            string gameName,
+            string gameKey)
+        {
+            var playerOldPosition = allOldScores.IndexOf(userName);
+            var playerNewPosition = newAllScores.IndexOf(userName);
+            var playersToPotentiallyNotify = new List<string>();
+
+            if (playerOldPosition == -1)
+            {
+                // The player was not on the scoreboard, so any player in the positions behind the player
+                // who is following them now needs to be notified
+                playersToPotentiallyNotify = newAllScores.Skip(playerNewPosition + 1)
+                    .Take(newAllScores.Count() - playerNewPosition + 1).ToList();
+            }
+            else
+            {
+                Console.Write("Getting players to notify");
+                playersToPotentiallyNotify = newAllScores.Skip(playerNewPosition + 1)
+                    .Take(playerOldPosition - playerNewPosition).ToList();
+                Console.Write(playersToPotentiallyNotify);
+            }
+
+            // Get the players who follow the current player
+            var peopleWhoFollowX = ((IMiscRepository)services
+                .GetService(typeof(IMiscRepository))).Load("Followers", userName);
+            Console.Write(peopleWhoFollowX);
+
+            if (peopleWhoFollowX != null)
+            {
+                // Take the intersection of the two lists
+                var playersToNotify = peopleWhoFollowX.List1.Intersect(playersToPotentiallyNotify);
+                Console.Write(playersToNotify);
+
+                // The result is the people who need to get a message
+                foreach (string name in playersToNotify)
+                {
+                    var expletive = GetExpletive();
+                    Console.Write(expletive);
+                    Console.Write($"Sending message to {name}");
+                    Arcade.Shared.Messages.CreateMessage.Create(
+                       services,
+                       name,
+                       "Arcade Sidekick",
+                       $"{expletive} {userName} has beaten your top score on {gameName}. Don't let them get away with it!",
+                       Shared.Messages.MessageTypeEnum.ScoreBeaten,
+                       new Dictionary<string, string>
+                       {
+                            { "Game", gameName },
+                            { "GameKey", gameKey },
+                       });
+                }
+            }
+        }
+
+        private string GetExpletive()
+        {
+            Random rnd = new Random();
+            int result = rnd.Next(1, 11);
+
+            switch (result)
+            {
+                case 1: return "Uh oh.";
+                case 2: return "What a nuisance.";
+                case 3: return "There is something concerning we need to discuss.";
+                case 4: return "Sorry to be the bearer of some unfortunate news.";
+                case 5: return "I have some disappointing news for you.";
+                case 6: return "I have some distressing news.";
+                case 7: return "@!#?@!";
+                case 8: return "I am the bearer of bad news.";
+                case 9: return "There's no easy way to say this.";
+                case 10: return "Bad news!";
+            }
+
+            return "Oh poo.";
+        }
+
+        private List<string> GetAll(ObjectInformation currentGameScores)
         {
             var numericVersions = currentGameScores.DictionaryValue.ToDictionary(g => g.Key, g => Convert.ToDouble(g.Value));
 
@@ -189,24 +341,36 @@ namespace Arcade.SaveScore
                 }
             }
 
-            return orderedGames.Take(3).ToList();
+            return orderedGames.ToList();
         }
 
-        private void CreateMessage(List<string> oldTop3, List<string> newTop3, string userName, string gameName)
+        private List<string> GetTopX(int x, ObjectInformation currentGameScores)
         {
-            Console.WriteLine("U: " + userName);
-            Console.WriteLine("G: " + gameName);
-            Console.WriteLine("Old: " + string.Join(",", oldTop3));
-            Console.WriteLine("New: " + string.Join(",", newTop3));
+            var numericVersions = currentGameScores.DictionaryValue.ToDictionary(g => g.Key, g => Convert.ToDouble(g.Value));
 
+            List<string> orderedGames = new List<string>();
+
+            foreach (KeyValuePair<string, double> score in numericVersions.OrderByDescending(score => score.Value))
+            {
+                if (score.Value != 0)
+                {
+                    orderedGames.Add(score.Key);
+                }
+            }
+
+            return orderedGames.Take(x).ToList();
+        }
+
+        private void CreateFirstPlaceMessage(List<string> oldTopX, List<string> newTopX, string userName, string gameName)
+        {
             // We are not in the top 3 so nothing has changed
-            if (newTop3.IndexOf(userName) == -1)
+            if (newTopX.IndexOf(userName) == -1)
             {
                 return;
             }
 
-            var indexOfNewPlayerInOldList = oldTop3.IndexOf(userName);
-            var indexOfNewPlayerInNewList = newTop3.IndexOf(userName);
+            var indexOfNewPlayerInOldList = oldTopX.IndexOf(userName);
+            var indexOfNewPlayerInNewList = newTopX.IndexOf(userName);
 
             Console.WriteLine("Old place: " + indexOfNewPlayerInOldList);
             Console.WriteLine("New place: " + indexOfNewPlayerInNewList);
@@ -218,25 +382,16 @@ namespace Arcade.SaveScore
                 return;
             }
 
-            // We were not present in the old top 3 but are in the new top 3
+            // We were not present in the old top X but are in the new top X
             if (indexOfNewPlayerInOldList == -1 && indexOfNewPlayerInNewList != -1)
             {
                 // We are now in first and the old list had players
-                if (indexOfNewPlayerInNewList == 0 && oldTop3.Count > 0)
+                if (indexOfNewPlayerInNewList == 0 && oldTopX.Count > 0)
                 {
                     // Create message to tell old first place that they are no longer in first
                     Console.WriteLine("New first place!");
-                    Console.WriteLine("Person to notify: " + oldTop3[0]);
-                    CreateFirstPlaceMessage(services, oldTop3[0], gameName, userName);
-                }
-
-                // Create message to tell person who was in third, that they have been knocked from the top 3
-                if (oldTop3.Count >= 3)
-                {
-                    Console.WriteLine("Third place knocked down");
-                    Console.WriteLine("Person to notify: " + oldTop3[2]);
-                    CreateNoLongerTop3PlaceMessage(services, oldTop3[2], gameName, userName);
-                    return;
+                    Console.WriteLine("Person to notify: " + oldTopX[0]);
+                    CreateFirstPlaceMessage(services, oldTopX[0], gameName, userName);
                 }
             }
 
@@ -244,12 +399,52 @@ namespace Arcade.SaveScore
             if (indexOfNewPlayerInOldList != -1 && indexOfNewPlayerInNewList != -1)
             {
                 Console.WriteLine("We were in the top three and still are");
-                if (indexOfNewPlayerInNewList == 0 && indexOfNewPlayerInOldList != 0 && oldTop3.Count > 0)
+                if (indexOfNewPlayerInNewList == 0 && indexOfNewPlayerInOldList != 0 && oldTopX.Count > 0)
                 {
                     Console.WriteLine("We were not first but now we are");
-                    Console.WriteLine("Old first place: " + oldTop3[0]);
+                    Console.WriteLine("Old first place: " + oldTopX[0]);
                     // Create message to tell old first place that they are no longer in first
-                    CreateFirstPlaceMessage(services, oldTop3[0], gameName, userName);
+                    CreateFirstPlaceMessage(services, oldTopX[0], gameName, userName);
+                    return;
+                }
+            }
+        }
+
+        private void CreateMessage(List<string> oldTopX, List<string> newTopX, string userName, string gameName, int number)
+        {
+            Console.WriteLine("U: " + userName);
+            Console.WriteLine("G: " + gameName);
+            Console.WriteLine("Old: " + string.Join(",", oldTopX));
+            Console.WriteLine("New: " + string.Join(",", newTopX));
+
+            // We are not in the top 3 so nothing has changed
+            if (newTopX.IndexOf(userName) == -1)
+            {
+                return;
+            }
+
+            var indexOfNewPlayerInOldList = oldTopX.IndexOf(userName);
+            var indexOfNewPlayerInNewList = newTopX.IndexOf(userName);
+
+            Console.WriteLine("Old place: " + indexOfNewPlayerInOldList);
+            Console.WriteLine("New place: " + indexOfNewPlayerInNewList);
+
+            if (indexOfNewPlayerInOldList == indexOfNewPlayerInNewList)
+            {
+                // Our position is unchanged
+                Console.WriteLine("Position unchanged");
+                return;
+            }
+
+            // We were not present in the old top X but are in the new top X
+            if (indexOfNewPlayerInOldList == -1 && indexOfNewPlayerInNewList != -1)
+            {
+                // Create message to tell person who was in X, that they have been knocked from the top X
+                if (oldTopX.Count >= number)
+                {
+                    Console.WriteLine("X place knocked down");
+                    Console.WriteLine("Person to notify: " + oldTopX[number - 1]);
+                    CreateNoLongerTopXPlaceMessage(services, oldTopX[number - 1], gameName, userName, number);
                     return;
                 }
             }
@@ -272,7 +467,7 @@ namespace Arcade.SaveScore
                        });
         }
 
-        private void CreateNoLongerTop3PlaceMessage(IServiceProvider services, string to, string gameKey, string userName)
+        private void CreateNoLongerTopXPlaceMessage(IServiceProvider services, string to, string gameKey, string userName, int number)
         {
             var name = GetGameName(gameKey);
 
@@ -280,7 +475,7 @@ namespace Arcade.SaveScore
                        services,
                        to,
                        "Arcade Sidekick",
-                       $"{to} you are no longer in the top 3 on {name}. {userName} has jumped above you.",
+                       $"{to} you are no longer in the top {number} on {name}. {userName} has jumped above you.",
                        Shared.Messages.MessageTypeEnum.ScoreBeaten,
                        new Dictionary<string, string>
                        {
@@ -326,13 +521,22 @@ namespace Arcade.SaveScore
             {
                 foreach (string gameKey in data.Games.Keys)
                 {
-                    if (userInformation.Games.ContainsKey(gameKey))
+                    if (string.IsNullOrWhiteSpace(data.Games[gameKey]))
                     {
-                        userInformation.Games[gameKey] = data.Games[gameKey];
+                        // We are null or empty for some reason
+                        // do not do anything with this score as it coudl be being written by mistake
+                        continue;
                     }
                     else
                     {
-                        userInformation.Games.Add(gameKey, data.Games[gameKey]);
+                        if (userInformation.Games.ContainsKey(gameKey))
+                        {
+                            userInformation.Games[gameKey] = data.Games[gameKey];
+                        }
+                        else
+                        {
+                            userInformation.Games.Add(gameKey, data.Games[gameKey]);
+                        }
                     }
 
                     if (userInformation.Ratings.ContainsKey(gameKey))

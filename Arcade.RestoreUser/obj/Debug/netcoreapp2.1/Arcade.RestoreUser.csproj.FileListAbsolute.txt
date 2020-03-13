@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.Resto
 F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.dll
 F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.pdb
+F:\Personal\Sidekick API\Arcade.RestoreUser\obj\Debug\netcoreapp2.1\Arcade.RestoreUser.csprojAssemblyReference.cache

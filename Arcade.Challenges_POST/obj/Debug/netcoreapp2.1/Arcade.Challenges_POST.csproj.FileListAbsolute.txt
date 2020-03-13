@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.C
 F:\Personal\Sidekick API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.dll
 F:\Personal\Sidekick API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.pdb
+F:\Personal\Sidekick API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.csprojAssemblyReference.cache

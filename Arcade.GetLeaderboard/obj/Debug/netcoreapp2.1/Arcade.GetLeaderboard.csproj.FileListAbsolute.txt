@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.Ge
 F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.dll
 F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.pdb
+F:\Personal\Sidekick API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.csprojAssemblyReference.cache

@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty
 F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.dll
 F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.pdb
+F:\Personal\Sidekick API\Arcade.TopFifty\obj\Debug\netcoreapp2.1\Arcade.TopFifty.csprojAssemblyReference.cache

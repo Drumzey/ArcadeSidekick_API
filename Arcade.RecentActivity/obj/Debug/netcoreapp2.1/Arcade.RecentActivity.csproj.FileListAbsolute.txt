@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.Re
 F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.dll
 F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.pdb
+F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.csprojAssemblyReference.cache

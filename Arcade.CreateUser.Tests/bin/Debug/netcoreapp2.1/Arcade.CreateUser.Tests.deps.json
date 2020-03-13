@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "cfebb1815387d0a34da3f2eab180c79db0a78569"
+    "signature": "9ff912162d53ebedc105b129d932ae46942ac47b"
   },
   "compilationOptions": {},
   "targets": {
@@ -63,22 +63,33 @@
           }
         }
       },
-      "AWSSDK.Core/3.3.103.54": {
+      "AWSSDK.Core/3.3.103.57": {
         "runtime": {
           "lib/netstandard2.0/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.103.54"
+            "fileVersion": "3.3.103.57"
           }
         }
       },
       "AWSSDK.DynamoDBv2/3.3.101.80": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.103.54"
+          "AWSSDK.Core": "3.3.103.57"
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
             "assemblyVersion": "3.3.0.0",
             "fileVersion": "3.3.101.80"
+          }
+        }
+      },
+      "AWSSDK.SimpleEmail/3.3.101.63": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.103.57"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.101.63"
           }
         }
       },
@@ -873,6 +884,7 @@
       "Arcade.Shared/1.0.0": {
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.3.101.80",
+          "AWSSDK.SimpleEmail": "3.3.101.63",
           "Amazon.Lambda.APIGatewayEvents": "1.2.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
           "Microsoft.Extensions.DependencyInjection": "3.0.0"
@@ -917,12 +929,12 @@
       "path": "amazon.lambda.testutilities/1.1.0",
       "hashPath": "amazon.lambda.testutilities.1.1.0.nupkg.sha512"
     },
-    "AWSSDK.Core/3.3.103.54": {
+    "AWSSDK.Core/3.3.103.57": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qMOT804LB0zWK+5ljNGi30qS7MPRkmfqL5frvyzTghPGvaO1jG23zHvFXXhMSjyeeVn/DWN2cONx6byHPLQErA==",
-      "path": "awssdk.core/3.3.103.54",
-      "hashPath": "awssdk.core.3.3.103.54.nupkg.sha512"
+      "sha512": "sha512-hc/AWR8gG4hqK5bNfDEYQcae1P8Iimgf83T0n8cJkY+vgTTbFcHJuif++UBWeSgjSs7QKsEec8pfFO8i206qNg==",
+      "path": "awssdk.core/3.3.103.57",
+      "hashPath": "awssdk.core.3.3.103.57.nupkg.sha512"
     },
     "AWSSDK.DynamoDBv2/3.3.101.80": {
       "type": "package",
@@ -930,6 +942,13 @@
       "sha512": "sha512-WiWdkoKp2Sd8tO3hYtv9ZYvOXYBQ4Ajh/k2pqdeN6tN3Q3iZT4U03LC4DyArWPI69JrKz7zvS7UuNVBzgCu07w==",
       "path": "awssdk.dynamodbv2/3.3.101.80",
       "hashPath": "awssdk.dynamodbv2.3.3.101.80.nupkg.sha512"
+    },
+    "AWSSDK.SimpleEmail/3.3.101.63": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OZlLqhL8tyTkm5Eca1xCI+GvOAsonTgHOiAjRFpLRWcVWO/UEEu/aPCknBRkjPuFLxaR6ombo4k/nhEdsiI9lQ==",
+      "path": "awssdk.simpleemail/3.3.101.63",
+      "hashPath": "awssdk.simpleemail.3.3.101.63.nupkg.sha512"
     },
     "Castle.Core/4.4.0": {
       "type": "package",

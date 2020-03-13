@@ -35,7 +35,7 @@ namespace Arcade.TopFifty
         public TopFifty(IServiceProvider services)
         {
             this.services = services;
-            environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));            
+            environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));
             ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
@@ -53,7 +53,7 @@ namespace Arcade.TopFifty
                 var topArcades = GetTop50WeightedAverage(arcadeRatings.Dictionary, averageOfAllVotes.Value);
                 var topPinball = GetTop50WeightedAverage(pinballRatings.Dictionary, averageOfAllVotes.Value);
 
-                return Response(topArcades);
+                return Response(topArcades, topPinball);
             }
             catch (Exception e)
             {
@@ -85,12 +85,13 @@ namespace Arcade.TopFifty
             return orderedGames.Take(50).ToList();
         }
 
-        private APIGatewayProxyResponse Response(List<Game> ratingInfo)
+        private APIGatewayProxyResponse Response(List<Game> ratingInfo, List<Game> pinballratingInfo)
         {
+            var ratings = new { Arcade = ratingInfo, Pinball = pinballratingInfo };
             return new APIGatewayProxyResponse
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Body = JsonConvert.SerializeObject(ratingInfo),
+                Body = JsonConvert.SerializeObject(ratings),
             };
         }
 

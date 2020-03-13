@@ -1,12 +1,12 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v2.1/linux-x64",
+    "name": ".NETCoreApp,Version=v2.1/rhel.7.2-x64",
     "signature": "19c793dbab07de5cca3f3d5f41675b4b578f990e"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {},
-    ".NETCoreApp,Version=v2.1/linux-x64": {
+    ".NETCoreApp,Version=v2.1/rhel.7.2-x64": {
       "Arcade.SaveRating/1.0.0": {
         "dependencies": {
           "Amazon.Lambda.Serialization.Json": "1.7.0",

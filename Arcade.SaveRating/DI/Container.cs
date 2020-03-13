@@ -14,7 +14,6 @@ namespace Arcade.SaveRating.DI
             return new ServiceCollection()
                 .AddScoped<IEnvironmentVariables, EnvironmentVariables>()
                 .AddScoped<IUserRepository, UserRepository>()
-                .AddScoped<IObjectRepository, ObjectRepository>()
                 .AddScoped<IGameDetailsRepository, GameDetailsRepository>()
                 .AddScoped<IMiscRepository, MiscRepository>()
                 .BuildServiceProvider();

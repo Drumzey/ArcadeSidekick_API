@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade
 F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.dll
 F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.pdb
+F:\Personal\Sidekick API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csprojAssemblyReference.cache

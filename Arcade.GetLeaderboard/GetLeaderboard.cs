@@ -71,11 +71,18 @@ namespace Arcade.GetLeaderboard
         {
             var filteredScores = new Dictionary<string, string>();
             var clubRepository = (IClubRepository)services.GetService(typeof(IClubRepository));
+
+            //Fix to allow for & in club name
+            if (clubName.StartsWith("Neon Knights Arcade"))
+            {
+                clubName = "Neon Knights Arcade & Cafe";
+            }
+
             var club = clubRepository.Load(clubName);
 
             if (club == null)
             {
-                return ErrorResponse("Club not found");
+                return ErrorResponse($"{clubName}. Club not found");
             }
 
             foreach (string member in club.Members)
@@ -91,16 +98,16 @@ namespace Arcade.GetLeaderboard
 
         private APIGatewayProxyResponse OkResponse(Dictionary<string, string> scores)
         {
-            var headers = new Dictionary<string, string>
-            {
-                { "Access-Control-Allow-Origin", "*" },
-            };
+            //var headers = new Dictionary<string, string>
+            //{
+            //    { "Access-Control-Allow-Origin", "*" },
+            //};
 
             return new APIGatewayProxyResponse
             {
                 StatusCode = (int)HttpStatusCode.OK,
                 Body = JsonConvert.SerializeObject(scores),
-                Headers = headers,
+                //Headers = headers,
             };
         }
 

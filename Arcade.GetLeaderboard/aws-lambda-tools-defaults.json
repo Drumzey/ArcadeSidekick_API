@@ -14,7 +14,7 @@
     "function-memory-size" : 256,
     "function-timeout"     : 30,
     "function-handler"     : "Arcade.GetLeaderboard::Arcade.GetLeaderboard.GetLeaderboard::GetLeaderboardHandler",
-    "function-name"        : "GetLeaderboard2",
+    "function-name"        : "GetLeaderboard",
     "function-role"        : "arn:aws:iam::444743524019:role/lambda_exec_GetLeaderboard-0",
     "tracing-mode"         : "PassThrough",
     "environment-variables" : ""

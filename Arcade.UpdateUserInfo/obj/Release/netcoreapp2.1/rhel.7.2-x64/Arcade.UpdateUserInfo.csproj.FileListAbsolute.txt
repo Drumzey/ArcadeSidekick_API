@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.deps.json
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.dll
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.pdb
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.dll
+F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.UpdateUserInfo.pdb

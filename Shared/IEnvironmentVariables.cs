@@ -16,8 +16,6 @@ namespace Arcade.Shared
 
 
 
-        string RatingInformationTableName { get; }
-
         string ObjectTableName { get; }
         
         string ClubTableName { get; }

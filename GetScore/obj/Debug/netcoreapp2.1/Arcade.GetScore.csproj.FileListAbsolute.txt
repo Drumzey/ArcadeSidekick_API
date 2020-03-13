@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.Assemb
 F:\Personal\Sidekick API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.csproj.CopyComplete
 F:\Personal\Sidekick API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.dll
 F:\Personal\Sidekick API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.pdb
+F:\Personal\Sidekick API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.csprojAssemblyReference.cache

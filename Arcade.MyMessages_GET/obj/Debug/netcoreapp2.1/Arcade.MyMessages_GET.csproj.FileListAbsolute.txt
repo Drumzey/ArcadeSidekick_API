@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.MyMessages_GET\obj\Debug\netcoreapp2.1\Arcade.My
 F:\Personal\Sidekick API\Arcade.MyMessages_GET\obj\Debug\netcoreapp2.1\Arcade.MyMessages_GET.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.MyMessages_GET\obj\Debug\netcoreapp2.1\Arcade.MyMessages_GET.dll
 F:\Personal\Sidekick API\Arcade.MyMessages_GET\obj\Debug\netcoreapp2.1\Arcade.MyMessages_GET.pdb
+F:\Personal\Sidekick API\Arcade.MyMessages_GET\obj\Debug\netcoreapp2.1\Arcade.MyMessages_GET.csprojAssemblyReference.cache

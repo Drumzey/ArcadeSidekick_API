@@ -40,6 +40,14 @@ namespace Arcade.AutoTweetLeaderboards
                 var category = GetCategory();
                 var game = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
                     .Load("Games", category);
+                var twitterHandles = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Twitter", "Users");
+
+                if (twitterHandles == null)
+                {
+                    twitterHandles = new Misc();
+                    twitterHandles.Dictionary = new Dictionary<string, string>();
+                }
 
                 var rnd = new Random();
                 int index = rnd.Next(0, game.List1.Count());
@@ -50,7 +58,7 @@ namespace Arcade.AutoTweetLeaderboards
                 List<string> topFive = new List<string>();
                 if (gameLeaderboard != null)
                 {
-                    topFive = GetTop5Scores(gameLeaderboard.DictionaryValue);
+                    topFive = GetTop5Scores(gameLeaderboard.DictionaryValue, twitterHandles.Dictionary);
                 }
 
                 var message = GetTweetMessage(topFive, gameName);
@@ -104,7 +112,7 @@ namespace Arcade.AutoTweetLeaderboards
             return categories[choice];
         }
 
-        private List<string> GetTop5Scores(Dictionary<string, string> dictionaryValue)
+        private List<string> GetTop5Scores(Dictionary<string, string> dictionaryValue, Dictionary<string, string> twitterhandles)
         {
             var numericVersions = dictionaryValue.ToDictionary(g => g.Key, g => Convert.ToDouble(g.Value));
 
@@ -114,7 +122,14 @@ namespace Arcade.AutoTweetLeaderboards
             {
                 if (score.Value != 0)
                 {
-                    orderedGames.Add($"{score.Key}: {score.Value}");
+                    if (twitterhandles.ContainsKey(score.Key))
+                    {
+                        orderedGames.Add($"{score.Key} @{twitterhandles[score.Key]}: {score.Value}");
+                    }
+                    else
+                    {
+                        orderedGames.Add($"{score.Key}: {score.Value}");
+                    }
                 }
             }
 

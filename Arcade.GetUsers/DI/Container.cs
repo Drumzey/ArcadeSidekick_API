@@ -1,5 +1,6 @@
 ﻿using System;
 using Arcade.Shared;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,7 +12,7 @@ namespace Arcade.GetUsers.DI
         {
             return new ServiceCollection()
                 .AddScoped<IEnvironmentVariables, EnvironmentVariables>()
-                .AddScoped<IObjectRepository, ObjectRepository>()
+                .AddScoped<IMiscRepository, MiscRepository>()
                 .BuildServiceProvider();
         }
     }

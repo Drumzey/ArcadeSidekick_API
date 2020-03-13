@@ -13,3 +13,4 @@ F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.R
 F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.dll
 F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.pdb
+F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.csprojAssemblyReference.cache

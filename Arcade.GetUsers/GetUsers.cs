@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 
@@ -23,15 +24,15 @@ namespace Arcade.GetUsers
         public GetUsers(IServiceProvider services)
         {
             this.services = services;
-            ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
+            ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse GetUsersHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
             try
             {
-                var users = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("users");
-                return OkResponse(users.ListValue);
+                var users = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Activity", "Users");
+                return OkResponse(users.List1);
             }
             catch (Exception e)
             {

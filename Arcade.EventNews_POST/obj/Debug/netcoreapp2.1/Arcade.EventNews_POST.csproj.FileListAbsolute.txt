@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.Ev
 F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.dll
 F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.pdb
+F:\Personal\Sidekick API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.csprojAssemblyReference.cache

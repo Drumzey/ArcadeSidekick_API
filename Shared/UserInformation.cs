@@ -25,10 +25,6 @@ namespace Arcade.Shared
 
         public List<string> Clubs { get; set; }
 
-        public string TwitterHandle { get; set; }
-
-        public string Location { get; set; }
-
         public int NumberOfGamesPlayed { get; set; }
 
         public int NumberOfRatingsGiven { get; set; }
@@ -38,5 +34,12 @@ namespace Arcade.Shared
         public int NumberOfSocialShares { get; set; }
 
         public int NumberOfChallengesSent { get; set; }
+
+        public List<string> Friends { get; set; }
+
+        // Profile information for interest
+        public string TwitterHandle { get; set; }
+
+        public string Location { get; set; }
     }
 }

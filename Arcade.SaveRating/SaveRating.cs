@@ -38,17 +38,17 @@ namespace Arcade.SaveRating
         {
             this.services = services;
             ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
-            ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
             ((IGameDetailsRepository)this.services.GetService(typeof(IGameDetailsRepository))).SetupTable();
             ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse SaveRatingHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
-            var ratingInfo = SaveIntoGameDetailsTable(request.Body, request.Headers["Authorization"]);
-            SaveIntoObjectTable(ratingInfo);
-            SaveRatingTotalInformation();
+            totalNumberOfRatingsChangedBy = 0;
+            totalOfRatingsChangedBy = 0;
 
+            var ratingInfo = SaveIntoGameDetailsTable(request.Body, request.Headers["Authorization"]);
+            SaveRatingTotalInformation();
             SaveIntoMiscTable(ratingInfo);
 
             return Response(ratingInfo);
@@ -223,34 +223,6 @@ namespace Arcade.SaveRating
             };
         }
 
-        private ObjectInformation SaveIntoObjectTable(UpdateUserRatingsResponse ratingInfo)
-        {
-            var ratingFromObjectTable = ((IObjectRepository)services.GetService(typeof(IObjectRepository)))
-                    .Load("ratings");
-
-            if (ratingFromObjectTable == null)
-            {
-                ratingFromObjectTable = new ObjectInformation();
-                ratingFromObjectTable.Key = "ratings";
-                ratingFromObjectTable.DictionaryValue = new Dictionary<string, string>();
-            }
-
-            foreach (RatingInformation rating in ratingInfo.Ratings)
-            {
-                if (!ratingFromObjectTable.DictionaryValue.ContainsKey(rating.GameName))
-                {
-                    ratingFromObjectTable.DictionaryValue.Add(rating.GameName, rating.Average.ToString());
-                }
-                else
-                {
-                    ratingFromObjectTable.DictionaryValue[rating.GameName] = rating.Average.ToString();
-                }
-            }
-
-            ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Save(ratingFromObjectTable);
-            return ratingFromObjectTable;
-        }
-
         private static void ValidateJwt(string token, SaveRatingInformation data)
         {
             JwtSecurityToken jwtToken;
@@ -285,12 +257,21 @@ namespace Arcade.SaveRating
             var response = new SaveRatingInformationResponse();
             response.Games = new Dictionary<string, SingleRatingInformationResponse>();
 
+            var averageOfAllGamesRecord = ((IMiscRepository)this.services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Average");
+            var averageOfAllGames = double.Parse(averageOfAllGamesRecord.Value);
+
             foreach (RatingInformation info in ratingInfo.Ratings)
             {
+                var average = info.Average;
+                var ratings = info.NumberOfRatings;
+                var weightedAverage = WeightedAverageCalculator.CalculateAverage(average, (double)ratings, averageOfAllGames);
+
                 response.Games.Add(info.GameName, new SingleRatingInformationResponse
                 {
                     Average = info.Average,
                     NumberOfRatings = info.NumberOfRatings,
+                    WeightedAverage = weightedAverage,
                 });
             }
 

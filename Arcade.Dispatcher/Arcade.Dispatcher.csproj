@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AWSProjectType>Lambda</AWSProjectType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.APIGatewayEvents" Version="1.3.0" />
+    <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arcade.Challenges_POST\Arcade.Challenges_POST.csproj" />
+    <ProjectReference Include="..\Arcade.CreateUser\Arcade.CreateUser.csproj" />
+    <ProjectReference Include="..\Arcade.EventNews_POST\Arcade.EventNews_POST.csproj" />
+    <ProjectReference Include="..\Arcade.ForgotInformation\Arcade.ForgotInformation.csproj" />
+    <ProjectReference Include="..\Arcade.GameDetails\Arcade.GameDetails.csproj" />
+    <ProjectReference Include="..\Arcade.GetClubs\Arcade.GetClubs.csproj" />
+    <ProjectReference Include="..\Arcade.GetLeaderboard\Arcade.GetLeaderboard.csproj" />
+    <ProjectReference Include="..\Arcade.GetRating\Arcade.GetRating.csproj" />
+    <ProjectReference Include="..\Arcade.GetUsers\Arcade.GetUsers.csproj" />
+    <ProjectReference Include="..\Arcade.JoinClub\Arcade.JoinClub.csproj" />
+    <ProjectReference Include="..\Arcade.LeaveClub\Arcade.LeaveClub.csproj" />
+    <ProjectReference Include="..\Arcade.Locations\Arcade.Locations.csproj" />
+    <ProjectReference Include="..\Arcade.MyMessages_GET\Arcade.MyMessages_GET.csproj" />
+    <ProjectReference Include="..\Arcade.ProfileStats_GET\Arcade.ProfileStats_GET.csproj" />
+    <ProjectReference Include="..\Arcade.ProfileStats_POST\Arcade.ProfileStats_POST.csproj" />
+    <ProjectReference Include="..\Arcade.RecentActivity\Arcade.RecentActivity.csproj" />
+    <ProjectReference Include="..\Arcade.RestoreUser\Arcade.RestoreUser.csproj" />
+    <ProjectReference Include="..\Arcade.SaveRating\Arcade.SaveRating.csproj" />
+    <ProjectReference Include="..\Arcade.TopFifty\Arcade.TopFifty.csproj" />
+    <ProjectReference Include="..\Arcade.UpdateUserInfo\Arcade.UpdateUserInfo.csproj" />
+    <ProjectReference Include="..\Arcade.VerifyUser\Arcade.VerifyUser.csproj" />
+    <ProjectReference Include="..\GetScore\Arcade.GetScore.csproj" />
+    <ProjectReference Include="..\SaveScore\Arcade.SaveScore.csproj" />
+    <ProjectReference Include="..\Shared\Arcade.Shared.csproj" />
+  </ItemGroup>
+</Project>

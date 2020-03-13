@@ -1,0 +1,16 @@
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.deps.json
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.dll
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.pdb
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.dll
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.pdb
+F:\Personal\Sidekick API\Arcade.RatingMigration\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.dll
+F:\Personal\Sidekick API\Arcade.RatingMigration\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.RatingMigration.pdb

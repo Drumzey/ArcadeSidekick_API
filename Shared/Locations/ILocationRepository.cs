@@ -1,4 +1,6 @@
-﻿namespace Arcade.Shared.Locations
+﻿using System.Collections.Generic;
+
+namespace Arcade.Shared.Locations
 {
     public interface ILocationRepository
     {
@@ -7,5 +9,7 @@
         void Save(Location key);
 
         Location Load(string partitionKey);
+
+        List<Location> AllLocations();
     }
 }

@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.Dispatcher\bin\Debug\netcoreapp2.1\Arcade.Dispatcher.deps.json
+F:\Personal\Sidekick API\Arcade.Dispatcher\bin\Debug\netcoreapp2.1\Arcade.Dispatcher.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.Dispatcher\bin\Debug\netcoreapp2.1\Arcade.Dispatcher.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.Dispatcher\bin\Debug\netcoreapp2.1\Arcade.Dispatcher.dll
+F:\Personal\Sidekick API\Arcade.Dispatcher\bin\Debug\netcoreapp2.1\Arcade.Dispatcher.pdb
+F:\Personal\Sidekick API\Arcade.Dispatcher\obj\Debug\netcoreapp2.1\Arcade.Dispatcher.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.Dispatcher\obj\Debug\netcoreapp2.1\Arcade.Dispatcher.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.Dispatcher\obj\Debug\netcoreapp2.1\Arcade.Dispatcher.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.Dispatcher\obj\Debug\netcoreapp2.1\Arcade.Dispatcher.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.Dispatcher\obj\Debug\netcoreapp2.1\Arcade.Dispatcher.dll
+F:\Personal\Sidekick API\Arcade.Dispatcher\obj\Debug\netcoreapp2.1\Arcade.Dispatcher.pdb
+F:\Personal\Sidekick API\Arcade.Dispatcher\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.Dispatcher\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.Dispatcher\obj\Debug\netcoreapp2.1\Arcade.Dispatcher.csproj.CopyComplete

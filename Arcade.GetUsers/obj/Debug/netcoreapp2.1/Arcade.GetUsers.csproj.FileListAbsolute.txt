@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.GetUsers\obj\Debug\netcoreapp2.1\Arcade.GetUsers
 F:\Personal\Sidekick API\Arcade.GetUsers\obj\Debug\netcoreapp2.1\Arcade.GetUsers.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.GetUsers\obj\Debug\netcoreapp2.1\Arcade.GetUsers.dll
 F:\Personal\Sidekick API\Arcade.GetUsers\obj\Debug\netcoreapp2.1\Arcade.GetUsers.pdb
+F:\Personal\Sidekick API\Arcade.GetUsers\obj\Debug\netcoreapp2.1\Arcade.GetUsers.csprojAssemblyReference.cache

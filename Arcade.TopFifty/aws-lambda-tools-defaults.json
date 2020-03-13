@@ -14,7 +14,7 @@
     "function-memory-size" : 256,
     "function-timeout"     : 30,
     "function-handler"     : "Arcade.TopFifty::Arcade.TopFifty.TopFifty::TopFiftyHandler",
-    "function-name"        : "GetTopFifty",
+    "function-name"        : "GetTopFiftyIncPinball",
     "function-role"        : "arn:aws:iam::444743524019:role/lambda_exec_GetTopFifty",
     "tracing-mode"         : "PassThrough",
     "environment-variables" : ""

@@ -12,6 +12,7 @@ namespace Arcade.Shared.Messages
         ClubEvent,
         ClubNews,
         ClubInvite,
+        JoinedClub,
     }
 
     public class Message

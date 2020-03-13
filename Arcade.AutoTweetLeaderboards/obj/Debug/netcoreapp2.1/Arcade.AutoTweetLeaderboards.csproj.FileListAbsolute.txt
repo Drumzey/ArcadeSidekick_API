@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Ar
 F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.dll
 F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.pdb
+F:\Personal\Sidekick API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp2.1\Arcade.AutoTweetLeaderboards.csprojAssemblyReference.cache

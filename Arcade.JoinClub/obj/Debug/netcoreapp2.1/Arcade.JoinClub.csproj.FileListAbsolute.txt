@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub
 F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.dll
 F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.pdb
+F:\Personal\Sidekick API\Arcade.JoinClub\obj\Debug\netcoreapp2.1\Arcade.JoinClub.csprojAssemblyReference.cache

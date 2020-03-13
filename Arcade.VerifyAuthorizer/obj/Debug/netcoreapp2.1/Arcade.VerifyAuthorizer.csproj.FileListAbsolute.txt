@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.dll
 F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.pdb
+F:\Personal\Sidekick API\Arcade.VerifyAuthorizer\obj\Debug\netcoreapp2.1\Arcade.VerifyAuthorizer.csprojAssemblyReference.cache

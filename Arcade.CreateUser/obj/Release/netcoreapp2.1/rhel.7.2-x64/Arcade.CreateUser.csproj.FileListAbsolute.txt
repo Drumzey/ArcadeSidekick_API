@@ -1,0 +1,14 @@
+F:\Personal\Sidekick API\Arcade.CreateUser\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.deps.json
+F:\Personal\Sidekick API\Arcade.CreateUser\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.runtimeconfig.json
+F:\Personal\Sidekick API\Arcade.CreateUser\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.runtimeconfig.dev.json
+F:\Personal\Sidekick API\Arcade.CreateUser\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.dll
+F:\Personal\Sidekick API\Arcade.CreateUser\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.pdb
+F:\Personal\Sidekick API\Arcade.CreateUser\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.dll
+F:\Personal\Sidekick API\Arcade.CreateUser\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.pdb
+F:\Personal\Sidekick API\Arcade.CreateUser\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.csprojAssemblyReference.cache
+F:\Personal\Sidekick API\Arcade.CreateUser\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.csproj.CoreCompileInputs.cache
+F:\Personal\Sidekick API\Arcade.CreateUser\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.AssemblyInfoInputs.cache
+F:\Personal\Sidekick API\Arcade.CreateUser\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.AssemblyInfo.cs
+F:\Personal\Sidekick API\Arcade.CreateUser\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.csproj.CopyComplete
+F:\Personal\Sidekick API\Arcade.CreateUser\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.dll
+F:\Personal\Sidekick API\Arcade.CreateUser\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.CreateUser.pdb

@@ -11,3 +11,4 @@ F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveCl
 F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.dll
 F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.pdb
+F:\Personal\Sidekick API\Arcade.LeaveClub\obj\Debug\netcoreapp2.1\Arcade.LeaveClub.csprojAssemblyReference.cache

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 
@@ -28,15 +29,15 @@ namespace Arcade.RecentActivity
         {
             this.services = services;
             environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));
-            ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
+            ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse RecentActivityHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
             try
             {
-                var recent = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load("recent");
-                return Response(recent.ListValue);
+                var recentMisc = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Activity", "All");
+                return Response(recentMisc.List1);
             }
             catch (Exception e)
             {

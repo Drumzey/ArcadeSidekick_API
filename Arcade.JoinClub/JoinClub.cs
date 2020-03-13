@@ -4,6 +4,7 @@ using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
+using Arcade.Shared.Messages;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 
@@ -26,6 +27,7 @@ namespace Arcade.JoinClub
             this.services = services;
             ((IClubRepository)this.services.GetService(typeof(IClubRepository))).SetupTable();
             ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
+            ((IMessageRepository)this.services.GetService(typeof(IMessageRepository))).SetupTable();
         }
 
         public APIGatewayProxyResponse JoinClubHandler(APIGatewayProxyRequest request, ILambdaContext context)
@@ -70,11 +72,34 @@ namespace Arcade.JoinClub
                     }
                 }
 
+                SendClubJoinMessage(data.Username, club.AdminUsers, club.Name);
+
                 return OkResponse(club);
             }
             catch (Exception e)
             {
                 return ErrorResponse(e.Message);
+            }
+        }
+
+        private void SendClubJoinMessage(string userName, List<string> adminUsers, string clubName)
+        {
+            try
+            {
+                foreach (string name in adminUsers)
+                {
+                    Arcade.Shared.Messages.CreateMessage.Create(
+                       services,
+                       name,
+                       "Arcade Sidekick",
+                       $"A new user has joined your {clubName} club - {userName}.",
+                       Shared.Messages.MessageTypeEnum.JoinedClub,
+                       null);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Unable to send club joining messages");
             }
         }
 
