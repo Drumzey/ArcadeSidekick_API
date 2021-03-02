@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Arcade.Shared
+﻿namespace Arcade.Shared
 {
     public class GetUserInformationInput
     {

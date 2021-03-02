@@ -1,0 +1,14 @@
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGamers.pdb

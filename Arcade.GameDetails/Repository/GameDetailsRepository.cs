@@ -2,6 +2,7 @@
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Arcade.Shared;
+using System;
 using System.Collections.Generic;
 
 namespace Arcade.GameDetails
@@ -43,6 +44,21 @@ namespace Arcade.GameDetails
         public List<GameDetailsRecord> QueryByGameName(string gameName)
         {
             return dbContext.QueryAsync<GameDetailsRecord>(gameName).GetNextSetAsync().Result;
+        }
+
+        public IEnumerable<GameDetailsRecord> AllGamesForUser(string userName)
+        {
+            var conditions = new List<ScanCondition>();
+            var condition1 = new ScanCondition(
+                "SortKey", 
+                Amazon.DynamoDBv2.DocumentModel.ScanOperator.Equal,
+                new object[1] { userName });
+            conditions.Add(condition1);
+
+            Console.WriteLine("CONDITION: " + condition1.ToString());
+
+            var allDocs = dbContext.ScanAsync<GameDetailsRecord>(conditions).GetRemainingAsync().Result;
+            return allDocs;
         }
 
         public IEnumerable<GameDetailsRecord> AllRows()

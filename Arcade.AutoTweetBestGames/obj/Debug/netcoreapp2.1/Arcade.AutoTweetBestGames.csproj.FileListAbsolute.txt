@@ -12,3 +12,17 @@ F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcad
 F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.dll
 F:\Personal\Sidekick API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestGames.pdb

@@ -65,7 +65,7 @@ namespace Arcade.Dispatcher.UserHandler
                     return verifyUser.VerifyUserHandler(request, context);
 
                 default:
-                    return ErrorResponse("Unknown Club endpoint.");
+                    return ErrorResponse("Unknown User endpoint.");
             }
         }
 

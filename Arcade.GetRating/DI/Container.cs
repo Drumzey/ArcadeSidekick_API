@@ -1,7 +1,6 @@
 ﻿using System;
 using Arcade.GameDetails;
 using Arcade.Shared;
-using Arcade.Shared.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Arcade.GetRating.DI

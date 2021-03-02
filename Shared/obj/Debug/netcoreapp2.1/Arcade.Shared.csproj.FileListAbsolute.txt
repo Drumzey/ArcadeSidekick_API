@@ -7,3 +7,12 @@ F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.AssemblyIn
 F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.pdb
 F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Shared\bin\Debug\netcoreapp2.1\Arcade.Shared.deps.json
+C:\Personal\ArcadeSidekick_API\Shared\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Shared\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp2.1\Arcade.Shared.csprojAssemblyReference.cache

@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
 using Arcade.Shared.Repositories;
+using Arcade.Shared.Shared;
 using Newtonsoft.Json;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
@@ -28,6 +28,21 @@ namespace Arcade.GetLeaderboard
             this.services = services;
             ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
             ((IClubRepository)this.services.GetService(typeof(IClubRepository))).SetupTable();
+        }
+
+        public List<SimpleScore> GetLeaderboardScores(string gameName)
+        {
+            var gamescore = ((IObjectRepository)services.GetService(typeof(IObjectRepository))).Load(gameName);
+            if (gamescore == null)
+            {
+                return new List<SimpleScore>();
+            }
+
+            return gamescore.DictionaryValue.Select(x => new SimpleScore
+            {
+                Username = x.Key,
+                Score = x.Value,
+            }).ToList();
         }
 
         public APIGatewayProxyResponse GetLeaderboardHandler(APIGatewayProxyRequest request, ILambdaContext context)
@@ -72,7 +87,7 @@ namespace Arcade.GetLeaderboard
             var filteredScores = new Dictionary<string, string>();
             var clubRepository = (IClubRepository)services.GetService(typeof(IClubRepository));
 
-            //Fix to allow for & in club name
+            // Fix to allow for & in club name
             if (clubName.StartsWith("Neon Knights Arcade"))
             {
                 clubName = "Neon Knights Arcade & Cafe";

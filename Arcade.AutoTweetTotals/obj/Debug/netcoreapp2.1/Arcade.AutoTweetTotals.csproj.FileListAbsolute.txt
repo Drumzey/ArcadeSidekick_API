@@ -12,3 +12,17 @@ F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.A
 F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.dll
 F:\Personal\Sidekick API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Debug\netcoreapp2.1\Arcade.AutoTweetTotals.pdb

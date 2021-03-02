@@ -12,12 +12,14 @@ namespace Arcade.Dispatcher.VenueHandler
             ILambdaContext context,
             IServiceProvider services)
         {
+            var locations = new Locations.Locations(services);
+
             switch (request.Resource)
             {
                 case "/app/venues/all":
-                    var locations = new Locations.Locations(services);
+                case "/app/venues/join":
+                case "/website/venues":
                     return locations.LocationsHandler(request, context);
-
                 default:
                     return ErrorResponse("Unknown location endpoint.");
             }

@@ -1,11 +1,5 @@
 ﻿using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
-using Arcade.GetLeaderboard;
-using Arcade.GetRating;
-using Arcade.GetScore;
-using Arcade.SaveRating;
-using Arcade.SaveScore;
-using Arcade.TopFifty;
 using System;
 using System.Net;
 
@@ -34,8 +28,9 @@ namespace Arcade.Dispatcher.GameHandler
                 case "/app/games/knownlevels":
                 case "/app/games/knownsettings":
                 case "/app/games/ratingsweighted":
-                    var levels = new GameDetails.GameDetails(services);
-                    return levels.GameDetailsHandler(request, context);
+                case "/website/games/detailedscore":
+                    var games = new GameDetails.GameDetails(services);
+                    return games.GameDetailsHandler(request, context);
 
                 //Get and set the simple scores for a game
                 case "/app/games/simplescore":

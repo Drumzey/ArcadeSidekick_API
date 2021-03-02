@@ -12,3 +12,18 @@ F:\Personal\Sidekick API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinCl
 F:\Personal\Sidekick API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.dll
 F:\Personal\Sidekick API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.pdb
 F:\Personal\Sidekick API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\bin\Release\netcoreapp2.1\Arcade.JoinClub.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\bin\Release\netcoreapp2.1\Arcade.JoinClub.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\bin\Release\netcoreapp2.1\Arcade.JoinClub.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\bin\Release\netcoreapp2.1\Arcade.JoinClub.dll
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\bin\Release\netcoreapp2.1\Arcade.JoinClub.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.dll
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.JoinClub\obj\Release\netcoreapp2.1\Arcade.JoinClub.genruntimeconfig.cache

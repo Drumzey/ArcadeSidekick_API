@@ -12,3 +12,18 @@ F:\Personal\Sidekick API\Arcade.GameDetails\bin\Release\netcoreapp2.1\rhel.7.2-x
 F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.dll
 F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.dll
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.dll
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.GameDetails.genruntimeconfig.cache

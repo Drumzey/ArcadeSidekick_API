@@ -1,4 +1,5 @@
-﻿using Amazon;
+﻿using System.Collections.Generic;
+using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 
@@ -36,6 +37,12 @@ namespace Arcade.Shared.Repositories
         public ObjectInformation Load(string partitionKey)
         {
             return dbContext.LoadAsync<ObjectInformation>(partitionKey).Result;
+        }
+
+        public List<ObjectInformation> AllScores()
+        {
+            var conditions = new List<ScanCondition>();
+            return dbContext.ScanAsync<ObjectInformation>(conditions).GetNextSetAsync().Result;
         }
     }
 }

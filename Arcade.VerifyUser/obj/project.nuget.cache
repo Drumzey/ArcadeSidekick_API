@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "se5tyt3Y+YdYREVYp4/I6WPyxI0V5x6ezjUugsEXxFDvMPN2L4kXKTL+brPbaoKFVIEGpqQDy1zOBCkasbvLVw==",
+  "success": true,
+  "projectFilePath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.apigatewayevents\\1.2.0\\amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.core\\1.1.0\\amazon.lambda.core.1.1.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.serialization.json\\1.7.0\\amazon.lambda.serialization.json.1.7.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.core\\3.3.103.57\\awssdk.core.3.3.103.57.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.dynamodbv2\\3.3.101.80\\awssdk.dynamodbv2.3.3.101.80.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.simpleemail\\3.3.101.63\\awssdk.simpleemail.3.3.101.63.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.app\\2.1.0\\runtime.linux-x64.microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.dotnetapphost\\2.1.0\\runtime.linux-x64.microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.dotnethostpolicy\\2.1.0\\runtime.linux-x64.microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.dotnethostresolver\\2.1.0\\runtime.linux-x64.microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\tweetmoasharp\\6.0.0\\tweetmoasharp.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

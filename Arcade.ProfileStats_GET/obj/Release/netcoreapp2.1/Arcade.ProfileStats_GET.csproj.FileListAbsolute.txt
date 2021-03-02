@@ -12,3 +12,18 @@ F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcad
 F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.dll
 F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.pdb
 F:\Personal\Sidekick API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\bin\Release\netcoreapp2.1\Arcade.ProfileStats_GET.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\bin\Release\netcoreapp2.1\Arcade.ProfileStats_GET.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\bin\Release\netcoreapp2.1\Arcade.ProfileStats_GET.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\bin\Release\netcoreapp2.1\Arcade.ProfileStats_GET.dll
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\bin\Release\netcoreapp2.1\Arcade.ProfileStats_GET.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.dll
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.ProfileStats_GET\obj\Release\netcoreapp2.1\Arcade.ProfileStats_GET.genruntimeconfig.cache

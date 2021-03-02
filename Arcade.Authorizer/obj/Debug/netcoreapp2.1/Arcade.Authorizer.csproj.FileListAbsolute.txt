@@ -12,3 +12,17 @@ F:\Personal\Sidekick API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Author
 F:\Personal\Sidekick API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.dll
 F:\Personal\Sidekick API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.pdb

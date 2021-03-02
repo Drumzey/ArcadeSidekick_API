@@ -41,5 +41,13 @@ namespace Arcade.Shared
         public string TwitterHandle { get; set; }
 
         public string Location { get; set; }
+
+        public string DOB { get; set; }
+
+        public string YouTubeChannel { get; set; }
+
+        public Dictionary<string, List<ScoreDetails>> DetailedScores { get; set; }
+
+        public Dictionary<string, List<Setting>> DetailedSettings { get; set; }
     }
 }

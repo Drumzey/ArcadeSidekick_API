@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Arcade.Shared
+﻿namespace Arcade.Shared
 {
     public interface IEnvironmentVariables
     {
-        //Deffo needed
+        // Deffo needed
         string GameDetailsTableName { get; }
 
         string MiscTableName { get; }
 
         string UserInformationTableName { get; }
 
-
-
-
         string ObjectTableName { get; }
-        
+
         string ClubTableName { get; }
 
         string EmailAddress { get; }
@@ -39,5 +32,7 @@ namespace Arcade.Shared
         string LocationTableName { get; }
 
         string MessageTableName { get; }
+
+        string LeagueTableName { get; }
     }
 }

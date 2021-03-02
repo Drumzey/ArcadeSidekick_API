@@ -1,4 +1,5 @@
-﻿using Amazon;
+﻿using System.Collections.Generic;
+using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 
@@ -36,6 +37,11 @@ namespace Arcade.Shared.Misc
         public Misc Load(string key, string sortKey)
         {
             return dbContext.LoadAsync<Misc>(key, sortKey).Result;
+        }
+
+        public List<Misc> QueryByFollowerName(string key)
+        {
+            return dbContext.QueryAsync<Misc>(key).GetNextSetAsync().Result;
         }
     }
 }

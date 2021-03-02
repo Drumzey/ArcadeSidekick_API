@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
@@ -35,7 +36,8 @@ namespace Arcade.Dispatcher
             {
                 response = HandleClubRequest();
             }
-            else if (request.Resource.StartsWith("/app/games"))
+            else if (request.Resource.StartsWith("/app/games") ||
+                     request.Resource.StartsWith("/website/games"))
             {
                 response = HandleGameRequest();
             }
@@ -47,24 +49,55 @@ namespace Arcade.Dispatcher
             {
                 response = HandleUserRequest();
             }
-            else if (request.Resource.StartsWith("/app/venues"))
+            else if (request.Resource.StartsWith("/app/venues") ||
+                     request.Resource.StartsWith("/website/venues"))
             {
                 response = HandleVenueRequest();
             }
             else
             {
-                response = ErrorResponse("Unknown end point");
+                response = new APIGatewayProxyResponse
+                {
+                    StatusCode = (int)HttpStatusCode.BadRequest,
+                    Body = "{ \"message\": \"Error. Unknown end point\"}",
+                };
             }
 
-            return response;
+            if (response.StatusCode != 200)
+            {
+                return ErrorResponse(response);
+            }
+
+            return OkResponse(response);
         }
         
-        private APIGatewayProxyResponse ErrorResponse(string errorMessage)
+        private APIGatewayProxyResponse OkResponse(APIGatewayProxyResponse response)
         {
+            var headers = new Dictionary<string, string>
+            {
+                { "Access-Control-Allow-Origin", "*" },
+            };
+
             return new APIGatewayProxyResponse
             {
-                StatusCode = (int)HttpStatusCode.BadRequest,
-                Body = "{ \"message\": \"Error. " + errorMessage + "\"}",
+                StatusCode = response.StatusCode,
+                Body = response.Body,
+                Headers = headers,
+            };
+        }
+
+        private APIGatewayProxyResponse ErrorResponse(APIGatewayProxyResponse response)
+        {
+            var headers = new Dictionary<string, string>
+            {
+                { "Access-Control-Allow-Origin", "*" },
+            };
+
+            return new APIGatewayProxyResponse
+            {
+                StatusCode = response.StatusCode,
+                Body = response.Body,
+                Headers = headers,
             };
         }
 
@@ -90,7 +123,18 @@ namespace Arcade.Dispatcher
 
         private APIGatewayProxyResponse HandleGameRequest()
         {
-            return GameHandler.GameHandler.HandleRequest(request, context, services);
+            try
+            {
+                return GameHandler.GameHandler.HandleRequest(request, context, services);
+            }
+            catch(Exception e)
+            {
+                return new APIGatewayProxyResponse
+                {
+                    StatusCode = (int)HttpStatusCode.BadRequest,
+                    Body = "{ \"message\": \"Error. " + e.Message + "\"}",
+                };
+            }
         }
     }
 }

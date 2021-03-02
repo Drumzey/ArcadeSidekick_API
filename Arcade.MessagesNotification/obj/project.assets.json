@@ -841,10 +841,11 @@
   },
   "libraries": {
     "Amazon.Lambda.APIGatewayEvents/1.2.0": {
-      "sha512": "0srp/taB1wUm0FcnSbCY2lmi+kCkM1pQj0MW1gcaGrXsPHe19TnfNmMWSa11CKBKS8qYbWBMYLXdRaLrATYcxg==",
+      "sha512": "9yrwPuA1RNhwpNBEgHaohcrE0P+TqRDf2CUb/goLJLAEpxOXBSxPOH0EYCDhIdnrrpkGMgm5SDXK3YYufnHP4A==",
       "type": "package",
       "path": "amazon.lambda.apigatewayevents/1.2.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512",
         "amazon.lambda.apigatewayevents.nuspec",
@@ -855,10 +856,11 @@
       ]
     },
     "Amazon.Lambda.Core/1.1.0": {
-      "sha512": "SSvp3G8Li1/rsgsPTRBe7wQj2XUOd42/Yhjc+Srzkov9RzvccJMYWnGQ4g7T5Gx4AIk71HP+WmuiB3cq9JopAQ==",
+      "sha512": "ueGId8b4DEHoVWkHDs3iAJH8IUSAUGu5AqkoI/Syl4RuByzik7lz9IjoImiGAlGhtsQV02MHNeTo04IFjS37gQ==",
       "type": "package",
       "path": "amazon.lambda.core/1.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "amazon.lambda.core.1.1.0.nupkg.sha512",
         "amazon.lambda.core.nuspec",
@@ -869,10 +871,11 @@
       ]
     },
     "Amazon.Lambda.Serialization.Json/1.5.0": {
-      "sha512": "li8FV6AWazEkn4Ttz9qGyNLiWlk2UfCn0TQdICO3uzSaSPspPRCQOqgCAWasM2v4yPyoAQwzxRTQkCVGbkqeeA==",
+      "sha512": "Y1F/m+yKUcTLFgZrX8rvgq2m9d0ebnHtJu2gziTdi+7m1VqSO1BLngNDm/gNMEiL0fzbiygsCcg6T3/r1NnDFQ==",
       "type": "package",
       "path": "amazon.lambda.serialization.json/1.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "amazon.lambda.serialization.json.1.5.0.nupkg.sha512",
         "amazon.lambda.serialization.json.nuspec",
@@ -883,10 +886,12 @@
       ]
     },
     "AWSSDK.Core/3.3.103.57": {
-      "sha512": "hc/AWR8gG4hqK5bNfDEYQcae1P8Iimgf83T0n8cJkY+vgTTbFcHJuif++UBWeSgjSs7QKsEec8pfFO8i206qNg==",
+      "sha512": "/BgD+ZGKNL1TE3X3KOaxI2Nuw/+gU3I7K+wYyiV5g15hGulcG8cgYae5fHX5ElkTzdkwAtjIzBb/KfviYk84Aw==",
       "type": "package",
       "path": "awssdk.core/3.3.103.57",
+      "hasTools": true,
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "awssdk.core.3.3.103.57.nupkg.sha512",
         "awssdk.core.nuspec",
@@ -930,10 +935,12 @@
       ]
     },
     "AWSSDK.DynamoDBv2/3.3.101.80": {
-      "sha512": "WiWdkoKp2Sd8tO3hYtv9ZYvOXYBQ4Ajh/k2pqdeN6tN3Q3iZT4U03LC4DyArWPI69JrKz7zvS7UuNVBzgCu07w==",
+      "sha512": "qpkKIfZtCADDqCmqt4F9iq3mD3uM/rdhyU+w+s3FmFtQa8FpHZnvkuwpmjIrCVNsZv9sTdNOEdkWfPNXZwFGdA==",
       "type": "package",
       "path": "awssdk.dynamodbv2/3.3.101.80",
+      "hasTools": true,
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.DynamoDBv2.CodeAnalysis.dll",
         "awssdk.dynamodbv2.3.3.101.80.nupkg.sha512",
@@ -968,10 +975,12 @@
       ]
     },
     "AWSSDK.SimpleEmail/3.3.101.63": {
-      "sha512": "OZlLqhL8tyTkm5Eca1xCI+GvOAsonTgHOiAjRFpLRWcVWO/UEEu/aPCknBRkjPuFLxaR6ombo4k/nhEdsiI9lQ==",
+      "sha512": "yZgPPThVaMntazpR2rmW3q+1iagV0dHzGnEreTHaPcU4mka7kiv4Gx7dUsk55kBKVdF5h8YBTV63To++JC1X/g==",
       "type": "package",
       "path": "awssdk.simpleemail/3.3.101.63",
+      "hasTools": true,
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.SimpleEmail.CodeAnalysis.dll",
         "awssdk.simpleemail.3.3.101.63.nupkg.sha512",
@@ -1063,10 +1072,11 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection/3.0.0": {
-      "sha512": "Vwwbb48l24tLwLBDkvxY47y3e744Dw21GcE6AcMEh4/qv8nyZ7cO6jCClMrows6lFx/Kz2+YWK3yFBwAGFIHKg==",
+      "sha512": "yDsuNA/BT4j9qrcRs0NUNHQAJfywFWX18ZZ+shxXJL+/nIfz3vhuRTfnYgvFeQlNBlgmgdSjOcs4ajgoS6Q/Ng==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection/3.0.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
         "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
@@ -1079,10 +1089,11 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {
-      "sha512": "6XKLGN02w0LdhNIsrlDOl3Gfg5vts2bd/NGaj3SZ9J9pfkBAXg/KGVsDBqogExn1X2KGCxWNLLREStqEZKGJrg==",
+      "sha512": "ofQRroDlzJ0xKOtzNuaVt6QKNImFkhkG0lIMpGl7PtXnIf5SuLWBeiQZAP8DNSxDBJJdcsPkiJiMYK2WA5H8dQ==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
@@ -1091,10 +1102,11 @@
       ]
     },
     "Microsoft.NETCore.App/2.1.0": {
-      "sha512": "AvT774nTFgU8cYcGO9j1EMwuayKslxqYTurg32HGpWa2hEYNuW2+XgYVVNcZe6Ndbr84QX6fwaOZfd5n+1m2OA==",
+      "sha512": "JNHhG+j5eIhG26+H721IDmwswGUznTwwSuJMFe/08h0X2YarHvA15sVAvUkA/2Sp3W0ENNm48t+J7KTPRqEpfA==",
       "type": "package",
       "path": "microsoft.netcore.app/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "Microsoft.NETCore.App.versions.txt",
@@ -1356,10 +1368,11 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.1.0": {
-      "sha512": "f/47I60Wg3SrveTvnecCQhCZCAMYlUujWF15EQ/AZTqF/54qeEJjbCIAxKcZI8ToUYzSg6JdfrHggsgjCyCE9Q==",
+      "sha512": "vMn8V3GOp/SPOG2oE8WxswzAWZ/GZmc8EPiB3vc2EZ6us14ehXhsvUFXndYopGNSjCa9OdqC6L6xStF1KyUZnw==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1369,10 +1382,11 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostPolicy/2.1.0": {
-      "sha512": "p50yZYKzhH64lmArJgoKjtvsNehECa+/sAuOQzZh5uDNBTbRKxjN8IXP1e517xdVsgrFcSNxSEVDKZIOWVjGcQ==",
+      "sha512": "vBUwNihtLUVS2HhO6WocYfAktRmfFihm6JB8/sJ53caVW+AelvbnYpfiGzaZDpkWjN6vA3xzOKPu9Vu8Zz3p8Q==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostpolicy/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1382,10 +1396,11 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostResolver/2.1.0": {
-      "sha512": "fS9D8a+y55n6mHMbNqgHXaPGkjmpVH9h97OyrBxsCuo3Z8aQaFMJ5xIfmzji2ntUd/3truhMbSgSfIelHOkQpg==",
+      "sha512": "o0PRql5qOHFEY3d1WvzE+T7cMFKtOsWLMg8L1oTeGNnI4u5AzOj8o6AdZT3y2GxFA1DAx7AQ9qZjpCO2/bgZRw==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostresolver/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1395,10 +1410,11 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "TT+QCi9LcxGTjBssH7S7n5+8DVcwfG4DYgXX7Dk7+BfZ4oVHj8Q0CbYk9glzAlHLsSt3bYzol+fOdra2iu6GOw==",
+      "sha512": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1411,10 +1427,11 @@
       ]
     },
     "Microsoft.NETCore.Targets/2.1.0": {
-      "sha512": "etaYwrLZQUS+b3UWTpCnUggd6SQ/ZIkZ5pHnoR7+dIWt/wp2Rv3CvMKOZISsrt7FYCHKwCxfcepuuyEWkQxADg==",
+      "sha512": "x188gIZXOwFXkPXyGavEcPGcR6RGvjFOES2QzskN4gERZjWPN34qhRsZVMC0CLJfQLGSButarcgWxPPM4vmg0w==",
       "type": "package",
       "path": "microsoft.netcore.targets/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3538,36 +3555,40 @@
   },
   "packageFolders": {
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Personal\\Sidekick API\\Arcade.MessagesNotification\\Arcade.MessagesNotification.csproj",
+      "projectUniqueName": "C:\\Personal\\ArcadeSidekick_API\\Arcade.MessagesNotification\\Arcade.MessagesNotification.csproj",
       "projectName": "Arcade.MessagesNotification",
-      "projectPath": "F:\\Personal\\Sidekick API\\Arcade.MessagesNotification\\Arcade.MessagesNotification.csproj",
+      "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.MessagesNotification\\Arcade.MessagesNotification.csproj",
       "packagesPath": "C:\\Users\\richard.rumsey\\.nuget\\packages\\",
-      "outputPath": "F:\\Personal\\Sidekick API\\Arcade.MessagesNotification\\obj\\",
+      "outputPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.MessagesNotification\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\richard.rumsey\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\Personal\\Sidekick API\\Shared\\Arcade.Shared.csproj": {
-              "projectPath": "F:\\Personal\\Sidekick API\\Shared\\Arcade.Shared.csproj"
+            "C:\\Personal\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
+              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj"
             }
           }
         }

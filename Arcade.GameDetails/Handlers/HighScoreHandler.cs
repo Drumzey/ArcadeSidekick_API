@@ -1,19 +1,33 @@
-﻿using Arcade.Shared.Locations;
+﻿using Arcade.Shared;
+using Arcade.Shared.Locations;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Arcade.GameDetails.Handlers
 {
     public class HighScoreHandler
     {
-        private List<string> lowerScoreGames = new List<string>
+        private List<string> timedGames = new List<string>
         {
             "quick_and_crash",
             "neo_drift_out_new_technology",
+            "cadash",
+            "samurai_shodown_iv",
+            "samurai_shodown_v",
+            "samurai_shodown_v_special",
+            "art_of_fighting_3",
+            "outrunners",
+            "tekken_3",
+            "tekken_tag_tournament",
+            "soul_calibur",
+        };
+
+        private Dictionary<string, List<string>> timedLevels = new Dictionary<string, List<string>>
+        {
+            { "track_and_field", new List<string> { "100M DASH", "110M HURDLES" } },
         };
 
         public Scores GetAllByLocation(IGameDetailsRepository repo, string gameName, string location)
@@ -24,6 +38,11 @@ namespace Arcade.GameDetails.Handlers
             var scores = new Scores();
             scores.Setting = new Dictionary<string, Setting>();
             scores.SimpleScores = new Dictionary<string, List<SimpleScore>>();
+
+            if (settings == null || details == null)
+            {
+                return scores;
+            }
 
             foreach (Setting setting in settings.Settings)
             {
@@ -37,7 +56,7 @@ namespace Arcade.GameDetails.Handlers
                     foreach (ScoreDetails score in scoresForSetting)
                     {
                         scores.SimpleScores[setting.SettingsId]
-                            .Add(new SimpleScore { UserName = score.UserName, Score = score.Score });
+                            .Add(new SimpleScore { UserName = score.UserName, Score = score.Score, LevelName = score.LevelName });
                     }
                 }
             }
@@ -48,61 +67,69 @@ namespace Arcade.GameDetails.Handlers
         public Scores GetAll(IGameDetailsRepository repo, IObjectRepository objectRepo, string gameName)
         {
             var details = repo.QueryByGameName(gameName);
-            return GetAll(repo, objectRepo, details.Where(x => x.DataType.Equals("Location")).ToList(), gameName);
+
+            var locationDetails = new List<GameDetailsRecord>();
+
+            foreach (GameDetailsRecord rec in details)
+            {
+                if(rec.DataType == "Location")
+                {
+                    locationDetails.Add(rec);
+                }
+            }
+
+            return GetAll(repo, objectRepo, locationDetails, gameName);
         }
 
         public Scores GetAll(IGameDetailsRepository repo, IObjectRepository objectRepo, List<GameDetailsRecord> details, string gameName)
         {
             var settings = repo.Load(gameName, "Settings");
-            
             var scores = new Scores();
             scores.SimpleScores = new Dictionary<string, List<SimpleScore>>();
             scores.Setting = new Dictionary<string, Setting>();
-            Setting blankSetting = null;
-            
-            foreach (Setting setting in settings.Settings)
+
+            if (settings != null)
             {
-                var settingId = setting.SettingsId;
-                var newSettingId = setting.SettingsId;
-
-                if (setting.IsBlank)
+                foreach (Setting setting in settings.Settings)
                 {
-                    newSettingId = "Unknown";
-                }
-                    
-                scores.Setting.Add(newSettingId, setting);
-                scores.SimpleScores.Add(newSettingId, new List<SimpleScore>());
-                foreach (GameDetailsRecord detail in details)
-                {
-                    //Get the scores via the initial settingId
-                    var scoresToAdd = detail.Scores.Where(x => x.SettingsId.Equals(settingId));
+                    var settingId = setting.SettingsId;
+                    var newSettingId = setting.SettingsId;
 
-                    foreach(ScoreDetails score in scoresToAdd)
+                    if (setting.IsBlank)
                     {
-                        //Write the score with the newId (if we have overwritten it)
-                        scores.SimpleScores[newSettingId].Add(new SimpleScore
+                        newSettingId = "Unknown";
+                    }
+
+                    scores.Setting.Add(newSettingId, setting);
+                    scores.SimpleScores.Add(newSettingId, new List<SimpleScore>());
+                    
+                    foreach (GameDetailsRecord detail in details)
+                    {
+                        //Get the scores via the initial settingId
+                        var scoresToAdd = detail.Scores.Where(x => x.SettingsId.Equals(settingId));
+
+                        foreach (ScoreDetails score in scoresToAdd)
                         {
-                            Score = score.Score,
-                            UserName = score.UserName,
-                        });
+                            //Write the score with the newId (if we have overwritten it)
+                            scores.SimpleScores[newSettingId].Add(new SimpleScore
+                            {
+                                Score = score.Score,
+                                UserName = score.UserName,
+                                LevelName = score.LevelName,
+                            });
+                        }
                     }
                 }
             }
 
-            if (blankSetting == null)
-            {
-                blankSetting = new Setting();
-                blankSetting.Difficulty = "";
-                blankSetting.Lives = "";
-                blankSetting.ExtraLivesAt = "";
-                blankSetting.Credits = "";
-                blankSetting.MameOrPCB = "";
-                blankSetting.SettingsId = "Unknown";
-            }            
-            
             var gamescore = objectRepo.Load(gameName);
             if (gamescore != null)
             {
+                if (!scores.SimpleScores.ContainsKey("Unknown"))
+                {
+                    scores.SimpleScores.Add("Unknown", new List<SimpleScore>());
+                }
+
                 foreach (KeyValuePair<string, string> score in gamescore.DictionaryValue)
                 {
                     //Need to get the pairs of simple scores from this repository
@@ -110,6 +137,7 @@ namespace Arcade.GameDetails.Handlers
                     {
                         UserName = score.Key,
                         Score = score.Value,
+                        LevelName = string.Empty,
                     });
                 }
             }
@@ -206,7 +234,10 @@ namespace Arcade.GameDetails.Handlers
                 }
                 else
                 {
-                    if (lowerScoreGames.Contains(gameName))
+                    //In timed games the lower the score the better.
+                    //Only want to store the top score for each person in the locations record
+                    if (timedGames.Contains(gameName) || 
+                        (timedLevels.ContainsKey(gameName) && timedLevels[gameName].Contains(levelName)))
                     {
                         if (double.Parse(score) < double.Parse(existingUserScore.Score))
                         {
@@ -349,7 +380,7 @@ namespace Arcade.GameDetails.Handlers
 
             userRecord.Scores.Remove(scoreToRemove);
 
-            //we have removed the score from our repo, need to remove it from the lcoation it was
+            //we have removed the score from our repo, need to remove it from the location it was
             //set at.
             currentLocationRecord.Scores.Remove(scoreToRemove);
 
@@ -358,7 +389,7 @@ namespace Arcade.GameDetails.Handlers
             var sameLocation = userRecord.Scores.Where(x => x.Location.Equals(location));
             ScoreDetails nextBestScore;
 
-            if (lowerScoreGames.Contains(gameName))
+            if (timedGames.Contains(gameName))
             {
                 nextBestScore = sameLocation.OrderBy(x => double.Parse(x.Score)).FirstOrDefault();
             }

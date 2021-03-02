@@ -11,3 +11,18 @@ F:\Personal\Sidekick API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locat
 F:\Personal\Sidekick API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.dll
 F:\Personal\Sidekick API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\bin\Release\netcoreapp2.1\Arcade.Locations.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\bin\Release\netcoreapp2.1\Arcade.Locations.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\bin\Release\netcoreapp2.1\Arcade.Locations.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\bin\Release\netcoreapp2.1\Arcade.Locations.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\bin\Release\netcoreapp2.1\Arcade.Locations.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Release\netcoreapp2.1\Arcade.Locations.genruntimeconfig.cache

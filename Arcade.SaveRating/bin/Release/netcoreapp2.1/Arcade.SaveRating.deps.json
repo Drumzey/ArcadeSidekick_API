@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "556a99aa89339dd6245c3749f582b6b45be710a9"
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
@@ -285,16 +285,6 @@
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "System.IdentityModel.Tokens.Jwt/5.6.0": {
@@ -468,14 +458,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Security.Cryptography.Cng/4.5.0": {
-        "runtimeTargets": {
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
+      "System.Security.Cryptography.Cng/4.5.0": {},
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -592,42 +575,42 @@
     "Amazon.Lambda.APIGatewayEvents/1.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0srp/taB1wUm0FcnSbCY2lmi+kCkM1pQj0MW1gcaGrXsPHe19TnfNmMWSa11CKBKS8qYbWBMYLXdRaLrATYcxg==",
+      "sha512": "sha512-9yrwPuA1RNhwpNBEgHaohcrE0P+TqRDf2CUb/goLJLAEpxOXBSxPOH0EYCDhIdnrrpkGMgm5SDXK3YYufnHP4A==",
       "path": "amazon.lambda.apigatewayevents/1.2.0",
       "hashPath": "amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512"
     },
     "Amazon.Lambda.Core/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SSvp3G8Li1/rsgsPTRBe7wQj2XUOd42/Yhjc+Srzkov9RzvccJMYWnGQ4g7T5Gx4AIk71HP+WmuiB3cq9JopAQ==",
+      "sha512": "sha512-ueGId8b4DEHoVWkHDs3iAJH8IUSAUGu5AqkoI/Syl4RuByzik7lz9IjoImiGAlGhtsQV02MHNeTo04IFjS37gQ==",
       "path": "amazon.lambda.core/1.1.0",
       "hashPath": "amazon.lambda.core.1.1.0.nupkg.sha512"
     },
     "Amazon.Lambda.Serialization.Json/1.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Jb9k6BUbZik/NaVBdd5qIEQAa8ynWGGhQ8wz1svuY7NKhxB9G1DYuDy+7ZcqTYjn97Z3dSWNwinnjgACSBmZVg==",
+      "sha512": "sha512-R2PD+JZnLuCnP3f8sTZEGyVexeVWxIJqQbVUbZJIEjrElE8Dbx0zTMXxKr1w1AdhRsZvL3HXpIvYywRHChPQig==",
       "path": "amazon.lambda.serialization.json/1.7.0",
       "hashPath": "amazon.lambda.serialization.json.1.7.0.nupkg.sha512"
     },
     "AWSSDK.Core/3.3.103.57": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hc/AWR8gG4hqK5bNfDEYQcae1P8Iimgf83T0n8cJkY+vgTTbFcHJuif++UBWeSgjSs7QKsEec8pfFO8i206qNg==",
+      "sha512": "sha512-/BgD+ZGKNL1TE3X3KOaxI2Nuw/+gU3I7K+wYyiV5g15hGulcG8cgYae5fHX5ElkTzdkwAtjIzBb/KfviYk84Aw==",
       "path": "awssdk.core/3.3.103.57",
       "hashPath": "awssdk.core.3.3.103.57.nupkg.sha512"
     },
     "AWSSDK.DynamoDBv2/3.3.101.80": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WiWdkoKp2Sd8tO3hYtv9ZYvOXYBQ4Ajh/k2pqdeN6tN3Q3iZT4U03LC4DyArWPI69JrKz7zvS7UuNVBzgCu07w==",
+      "sha512": "sha512-qpkKIfZtCADDqCmqt4F9iq3mD3uM/rdhyU+w+s3FmFtQa8FpHZnvkuwpmjIrCVNsZv9sTdNOEdkWfPNXZwFGdA==",
       "path": "awssdk.dynamodbv2/3.3.101.80",
       "hashPath": "awssdk.dynamodbv2.3.3.101.80.nupkg.sha512"
     },
     "AWSSDK.SimpleEmail/3.3.101.63": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OZlLqhL8tyTkm5Eca1xCI+GvOAsonTgHOiAjRFpLRWcVWO/UEEu/aPCknBRkjPuFLxaR6ombo4k/nhEdsiI9lQ==",
+      "sha512": "sha512-yZgPPThVaMntazpR2rmW3q+1iagV0dHzGnEreTHaPcU4mka7kiv4Gx7dUsk55kBKVdF5h8YBTV63To++JC1X/g==",
       "path": "awssdk.simpleemail/3.3.101.63",
       "hashPath": "awssdk.simpleemail.3.3.101.63.nupkg.sha512"
     },
@@ -641,35 +624,35 @@
     "Microsoft.Extensions.DependencyInjection/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Vwwbb48l24tLwLBDkvxY47y3e744Dw21GcE6AcMEh4/qv8nyZ7cO6jCClMrows6lFx/Kz2+YWK3yFBwAGFIHKg==",
+      "sha512": "sha512-yDsuNA/BT4j9qrcRs0NUNHQAJfywFWX18ZZ+shxXJL+/nIfz3vhuRTfnYgvFeQlNBlgmgdSjOcs4ajgoS6Q/Ng==",
       "path": "microsoft.extensions.dependencyinjection/3.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6XKLGN02w0LdhNIsrlDOl3Gfg5vts2bd/NGaj3SZ9J9pfkBAXg/KGVsDBqogExn1X2KGCxWNLLREStqEZKGJrg==",
+      "sha512": "sha512-ofQRroDlzJ0xKOtzNuaVt6QKNImFkhkG0lIMpGl7PtXnIf5SuLWBeiQZAP8DNSxDBJJdcsPkiJiMYK2WA5H8dQ==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512"
     },
     "Microsoft.IdentityModel.JsonWebTokens/5.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7fdMT5J8vf7RBkvfpDkwlhwT1+BNRYv8V6KWOCBf5PlH0lqE1D4c0HJsIbwpku+mo3TaL6HG4op4a2tdV+XkQQ==",
+      "sha512": "sha512-0q0U1W+gX1jmfmv7uU7GXFGB518atmSwucxsVwPGpuaGS3jwd2tUi+Gau+ezxR6oAFEBFKG9lz/fxRZzGMeDXg==",
       "path": "microsoft.identitymodel.jsonwebtokens/5.6.0",
       "hashPath": "microsoft.identitymodel.jsonwebtokens.5.6.0.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Logging/5.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jFE/8OrdJMDLpl24ytuYwXLG5KS6LbQjLzsWZnl0H64XuDA8iZSF5c+gccjvBkv7q47wzo9ye+rv730HXSN0fw==",
+      "sha512": "sha512-zEDrfEVW5x5w2hbTV94WwAcWvtue5hNTXYqoPh3ypF6U8csm09JazEYy+VPp2RtczkyMfcsvWY9Fea17e+isYQ==",
       "path": "microsoft.identitymodel.logging/5.6.0",
       "hashPath": "microsoft.identitymodel.logging.5.6.0.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Tokens/5.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/k79ATv340zalZqTQ3vfDjI8Dawo8OaDUtYpm2xpZTvWH3kDQ1qmQ5eIIhSc6wlhcCMEBdJ0Uwm5q36tChXNMw==",
+      "sha512": "sha512-C3OqR3QfBQ7wcC7yAsdMQqay87OsV6yWPYG/Ai3n7dvmWIGkouQhXoVxRP0xz3cAFL4hxZBXyw4aLTC421PaMg==",
       "path": "microsoft.identitymodel.tokens/5.6.0",
       "hashPath": "microsoft.identitymodel.tokens.5.6.0.nupkg.sha512"
     },
@@ -683,7 +666,7 @@
     "StyleCop.Analyzers/1.1.118": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OYYZdiCF/b3K/AzGWQ2PLQH5BnQRzQfHbbUgucMpJqBe9jsPTnyQh92oMabffFcTcBR2EOpJyMcp9D05fs8yvA==",
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
       "path": "stylecop.analyzers/1.1.118",
       "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
     },
@@ -697,7 +680,7 @@
     "System.Collections.NonGeneric/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
+      "sha512": "sha512-LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
       "path": "system.collections.nongeneric/4.3.0",
       "hashPath": "system.collections.nongeneric.4.3.0.nupkg.sha512"
     },
@@ -725,7 +708,7 @@
     "System.ComponentModel.TypeConverter/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "sha512": "sha512-HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
     },
@@ -767,7 +750,7 @@
     "System.IdentityModel.Tokens.Jwt/5.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tOy/x3n+ZeL/PxoYGXbJqVGlT55nEDDFhPrzLiNMrKSUlByUVNP+CzsOgOJa8kjENvvB8BvAh8qhVjvcyMWo7A==",
+      "sha512": "sha512-KMvPpX4exs2fe7Upq5zHMSR4yupc+jy8WG8yjucZL0XvT+r/T0hRvLIe9fP/SeN8/UVxFYBRAkRI5k1zbRGqmA==",
       "path": "system.identitymodel.tokens.jwt/5.6.0",
       "hashPath": "system.identitymodel.tokens.jwt.5.6.0.nupkg.sha512"
     },
@@ -921,7 +904,7 @@
     "System.Security.Cryptography.Cng/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-O4tqXxWCD8y1IU1VTgzbuBFwoRahrADhDUxHjwezhHCsqyFNyQ5EytjWBxu0EsZuH14b4UO2pFkG063K2h/9Ug==",
+      "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
       "path": "system.security.cryptography.cng/4.5.0",
       "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
     },

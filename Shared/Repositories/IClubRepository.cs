@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Arcade.Shared.Repositories
+﻿namespace Arcade.Shared.Repositories
 {
     public interface IClubRepository
     {

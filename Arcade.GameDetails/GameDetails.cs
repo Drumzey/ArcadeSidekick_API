@@ -58,6 +58,16 @@ namespace Arcade.GameDetails
             miscRepository.SetupTable();
         }
 
+        public List<Setting> GetAllSettings(string gameName)
+        {
+            return GetKnownSettingsForGame(gameName);
+        }
+
+        public Scores GetAllScores(string gameName)
+        {
+            return GetAllHighscores(gameName);
+        }
+
         public APIGatewayProxyResponse GameDetailsHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
             //If we are posting something to the gamedetails then we are performing 
@@ -94,6 +104,7 @@ namespace Arcade.GameDetails
                 case "/app/games/ratingsweighted":
                 case "/app/games/detailedscore":
                 case "/app/games/knownlevels":
+                case "/website/games/detailedscore":
                     if (string.IsNullOrEmpty(gameName))
                     {
                         return ErrorResponse();
@@ -148,6 +159,7 @@ namespace Arcade.GameDetails
                     break;
 
                 case "/app/games/detailedscore":
+                case "/website/games/detailedscore":
                     if (string.IsNullOrEmpty(location))
                     {
                         response = GetAllHighscores(gameName);

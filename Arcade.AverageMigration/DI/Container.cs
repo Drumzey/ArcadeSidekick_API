@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
 using Arcade.Shared;
-using Arcade.Shared.Repositories;
 using Arcade.Shared.Misc;
 using Arcade.GameDetails;
 

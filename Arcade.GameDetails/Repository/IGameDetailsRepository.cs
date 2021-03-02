@@ -14,6 +14,8 @@ namespace Arcade.GameDetails
 
         IEnumerable<GameDetailsRecord> AllRows();
 
+        IEnumerable<GameDetailsRecord> AllGamesForUser(string userName);
+
         void Delete(string gameName, string sortKey);
     }
 }

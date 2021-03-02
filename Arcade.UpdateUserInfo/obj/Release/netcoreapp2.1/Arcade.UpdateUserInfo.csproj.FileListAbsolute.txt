@@ -12,3 +12,18 @@ F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.
 F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.dll
 F:\Personal\Sidekick API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\Arcade.UpdateUserInfo.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\Arcade.UpdateUserInfo.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\Arcade.UpdateUserInfo.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\Arcade.UpdateUserInfo.dll
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\Arcade.UpdateUserInfo.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.dll
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.UpdateUserInfo\obj\Release\netcoreapp2.1\Arcade.UpdateUserInfo.genruntimeconfig.cache

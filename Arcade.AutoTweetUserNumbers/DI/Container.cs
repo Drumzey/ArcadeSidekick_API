@@ -1,7 +1,6 @@
 ﻿using System;
 using Arcade.Shared;
 using Arcade.Shared.Misc;
-using Arcade.Shared.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Arcade.AutoTweetUserNumbers.DI

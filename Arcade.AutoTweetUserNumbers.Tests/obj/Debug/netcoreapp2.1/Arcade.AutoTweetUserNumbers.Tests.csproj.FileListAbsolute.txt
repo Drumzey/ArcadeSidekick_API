@@ -19,3 +19,24 @@ F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.dll
 F:\Personal\Sidekick API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\testhost.exe
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\testhost.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers.Tests\obj\Debug\netcoreapp2.1\Arcade.AutoTweetUserNumbers.Tests.pdb

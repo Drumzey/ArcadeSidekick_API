@@ -9,3 +9,5 @@ F:\Personal\Sidekick API\Arcade.MessagesNotification\obj\Debug\netcoreapp2.1\Arc
 F:\Personal\Sidekick API\Arcade.MessagesNotification\obj\Debug\netcoreapp2.1\Arcade.MessagesNotification.AssemblyInfo.cs
 F:\Personal\Sidekick API\Arcade.MessagesNotification\obj\Debug\netcoreapp2.1\Arcade.MessagesNotification.dll
 F:\Personal\Sidekick API\Arcade.MessagesNotification\obj\Debug\netcoreapp2.1\Arcade.MessagesNotification.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\netcoreapp2.1\Arcade.MessagesNotification.dll
+C:\Personal\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\netcoreapp2.1\Arcade.MessagesNotification.pdb

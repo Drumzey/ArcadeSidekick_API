@@ -12,3 +12,18 @@ F:\Personal\Sidekick API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUse
 F:\Personal\Sidekick API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.dll
 F:\Personal\Sidekick API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.pdb
 F:\Personal\Sidekick API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp2.1\Arcade.GetUsers.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp2.1\Arcade.GetUsers.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp2.1\Arcade.GetUsers.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp2.1\Arcade.GetUsers.dll
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp2.1\Arcade.GetUsers.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.dll
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp2.1\Arcade.GetUsers.genruntimeconfig.cache

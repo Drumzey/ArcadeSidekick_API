@@ -1,8 +1,7 @@
-﻿using Amazon;
+﻿using System.Collections.Generic;
+using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using Arcade.Shared.Messages;
-using System.Collections.Generic;
 
 namespace Arcade.Shared.Messages
 {

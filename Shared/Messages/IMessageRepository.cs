@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Arcade.Shared.Messages
+﻿namespace Arcade.Shared.Messages
 {
     public interface IMessageRepository
     {
@@ -12,6 +8,6 @@ namespace Arcade.Shared.Messages
 
         Messages Load(string partitionKey);
 
-        //List<Messages> Scan(IEnumerable<ScanCondition> scanConditions);
+        // List<Messages> Scan(IEnumerable<ScanCondition> scanConditions);
     }
 }

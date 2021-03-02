@@ -12,3 +12,17 @@ F:\Personal\Sidekick API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Asse
 F:\Personal\Sidekick API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.csproj.CopyComplete
 F:\Personal\Sidekick API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.dll
 F:\Personal\Sidekick API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.pdb
+C:\Personal\ArcadeSidekick_API\SaveScore\bin\Debug\netcoreapp2.1\Arcade.SaveScore.deps.json
+C:\Personal\ArcadeSidekick_API\SaveScore\bin\Debug\netcoreapp2.1\Arcade.SaveScore.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\SaveScore\bin\Debug\netcoreapp2.1\Arcade.SaveScore.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\SaveScore\bin\Debug\netcoreapp2.1\Arcade.SaveScore.dll
+C:\Personal\ArcadeSidekick_API\SaveScore\bin\Debug\netcoreapp2.1\Arcade.SaveScore.pdb
+C:\Personal\ArcadeSidekick_API\SaveScore\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\SaveScore\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.dll
+C:\Personal\ArcadeSidekick_API\SaveScore\obj\Debug\netcoreapp2.1\Arcade.SaveScore.pdb

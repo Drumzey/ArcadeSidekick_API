@@ -9,3 +9,15 @@ F:\Personal\Sidekick API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.Assembly
 F:\Personal\Sidekick API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.AssemblyInfo.cs
 F:\Personal\Sidekick API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.dll
 F:\Personal\Sidekick API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Shared\bin\Release\netcoreapp2.1\Arcade.Shared.deps.json
+C:\Personal\ArcadeSidekick_API\Shared\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Shared\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Shared\bin\Release\netcoreapp2.1\Arcade.Shared.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Shared\bin\Release\netcoreapp2.1\Arcade.Shared.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Shared\obj\Release\netcoreapp2.1\Arcade.Shared.genruntimeconfig.cache

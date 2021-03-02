@@ -19,3 +19,24 @@ F:\Personal\Sidekick API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.
 F:\Personal\Sidekick API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.dll
 F:\Personal\Sidekick API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\testhost.exe
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\testhost.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Authorizer.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Authorizer.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.dll
+C:\Personal\ArcadeSidekick_API\Arcade.Authorizer.Tests\obj\Debug\netcoreapp2.1\Arcade.Authorizer.Tests.pdb

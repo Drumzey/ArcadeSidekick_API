@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Arcade.EventNews_POST
+﻿namespace Arcade.EventNews_POST
 {
     public class EventNewsPost
     {

@@ -1,7 +1,7 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
+using Arcade.Shared;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Arcade.GameDetails
 {

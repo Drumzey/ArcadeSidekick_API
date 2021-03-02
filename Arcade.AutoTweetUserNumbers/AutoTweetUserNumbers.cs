@@ -1,13 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
 using Arcade.Shared.Misc;
-using Arcade.Shared.Repositories;
 using TweetSharp;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.

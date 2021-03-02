@@ -1,6 +1,5 @@
-﻿using System;
+﻿using Arcade.Shared;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Arcade.GameDetails
 {

@@ -1,9 +1,7 @@
 ﻿using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using System;
-using System.Collections.Generic;
 using System.Net;
-using System.Text;
 
 namespace Arcade.Dispatcher.ClubHandler
 {

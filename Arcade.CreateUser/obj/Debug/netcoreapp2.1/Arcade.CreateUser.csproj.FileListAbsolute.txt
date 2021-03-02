@@ -12,3 +12,17 @@ F:\Personal\Sidekick API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.Create
 F:\Personal\Sidekick API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.dll
 F:\Personal\Sidekick API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\bin\Debug\netcoreapp2.1\Arcade.CreateUser.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\bin\Debug\netcoreapp2.1\Arcade.CreateUser.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\bin\Debug\netcoreapp2.1\Arcade.CreateUser.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\bin\Debug\netcoreapp2.1\Arcade.CreateUser.dll
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\bin\Debug\netcoreapp2.1\Arcade.CreateUser.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.dll
+C:\Personal\ArcadeSidekick_API\Arcade.CreateUser\obj\Debug\netcoreapp2.1\Arcade.CreateUser.pdb

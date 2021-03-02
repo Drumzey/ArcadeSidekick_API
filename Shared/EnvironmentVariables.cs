@@ -1,23 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Arcade.Shared
 {
     public class EnvironmentVariables : IEnvironmentVariables
     {
-        //DEFFO NEEDED
+        // DEFFO NEEDED
         public string GameDetailsTableName => GetValue("GameDetailsTableName");
 
         public string MiscTableName => GetValue("MiscTableName");
 
         public string UserInformationTableName => GetValue("UserInformationTableName");
 
-
-
-
         public string ObjectTableName => GetValue("ObjectTableName");
-        
+
         public string ClubTableName => GetValue("ClubTableName");
 
         public string EmailAddress => GetValue("EmailAddress");
@@ -39,6 +34,8 @@ namespace Arcade.Shared
         public string LocationTableName => GetValue("LocationTableName");
 
         public string MessageTableName => GetValue("MessageTableName");
+
+        public string LeagueTableName => GetValue("LeagueTableName");
 
         private string GetValue(string variableName)
         {

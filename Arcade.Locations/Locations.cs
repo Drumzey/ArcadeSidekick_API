@@ -41,6 +41,14 @@ namespace Arcade.Locations
                     response = GetLocations();
                     break;
 
+                case "/app/venues/join":
+                    response = JoinPrivateVenue(request);
+                    break;
+
+                case "/website/venues":
+                    response = GetLocation(request);
+                    break;
+
                 default:
                     return ErrorResponse();
             }
@@ -48,10 +56,84 @@ namespace Arcade.Locations
             return Response(response);
         }
 
-        private List<string> GetLocations()
+        private APIGatewayProxyResponse JoinPrivateVenue(APIGatewayProxyRequest request)
         {
-            var games = locationRepository.AllLocations();
-            var locations = games.Select(x => x.Name).ToList();
+            try
+            {
+                var data = JsonConvert.DeserializeObject<LocationMembership>(request.Body);
+
+                if (string.IsNullOrEmpty(data.VenueName))
+                {
+                    return ErrorResponse("No venue name given");
+                }
+
+                if (string.IsNullOrEmpty(data.Password))
+                {
+                    return ErrorResponse("No password given");
+                }
+
+                var venue = locationRepository.Load(data.VenueName);
+
+                if (venue == null || venue.Private == false)
+                {
+                    return ErrorResponse("Incorrect venue details");
+                }
+
+                if (venue.Password != data.Password)
+                {
+                    return ErrorResponse("Incorrect venue details");
+                }
+
+                return Response(true);
+            }
+            catch (Exception e)
+            {
+                return ErrorResponse(e.Message);
+            }
+        }
+
+        private APIGatewayProxyResponse GetLocation(APIGatewayProxyRequest request)
+        {
+            try
+            {
+                request.QueryStringParameters.TryGetValue("password", out string password);
+                request.QueryStringParameters.TryGetValue("location", out string location);
+
+                if (string.IsNullOrEmpty(location))
+                {
+                    return ErrorResponse("No venue name given");
+                }
+
+                var venue = locationRepository.Load(location);
+
+                if (venue == null)
+                {
+                    return ErrorResponse("Incorrect venue details");
+                }
+
+                if (venue.Password != password)
+                {
+                    return ErrorResponse("Incorrect venue details");
+                }
+
+                return Response(venue);
+            }
+            catch (Exception e)
+            {
+                return ErrorResponse(e.Message);
+            }
+        }
+
+        private List<Location> GetLocations()
+        {
+            var locations = locationRepository.AllLocations();
+
+            foreach(var location in locations)
+            {
+                //Blank out the passwrod
+                location.Password = "";
+            }
+
             return locations;
         }
 
@@ -70,6 +152,15 @@ namespace Arcade.Locations
             {
                 StatusCode = (int)HttpStatusCode.BadRequest,
                 Body = "{ \"message\": \"Error getting location details\" }",
+            };
+        }
+
+        private APIGatewayProxyResponse ErrorResponse(string message)
+        {
+            return new APIGatewayProxyResponse
+            {
+                StatusCode = (int)HttpStatusCode.BadRequest,
+                Body = "{ \"message\": \"" + message + "\" }",
             };
         }
     }

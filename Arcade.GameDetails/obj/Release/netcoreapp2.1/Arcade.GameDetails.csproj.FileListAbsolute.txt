@@ -12,3 +12,18 @@ F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.Gam
 F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.csproj.CopyComplete
 F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.dll
 F:\Personal\Sidekick API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.dll
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.GameDetails.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.dll
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.GameDetails\obj\Release\netcoreapp2.1\Arcade.GameDetails.genruntimeconfig.cache

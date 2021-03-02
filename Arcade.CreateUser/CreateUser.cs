@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Security.Cryptography;
@@ -52,7 +51,7 @@ namespace Arcade.CreateUser
                 {
                     SaveRecentActivity(userInfo.Username);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     Console.WriteLine();
                 }
@@ -174,6 +173,8 @@ namespace Arcade.CreateUser
                 NumberOfSocialShares = 0,
                 TwitterHandle = userInfo.TwitterHandle,
                 Location = string.Empty,
+                DOB = string.Empty,
+                YouTubeChannel = string.Empty,
             };
 
             ((IUserRepository)services.GetService(typeof(IUserRepository))).Save(newUser);

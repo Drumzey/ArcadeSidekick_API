@@ -77,13 +77,11 @@ namespace Arcade.Shared
                 {
                     var response = client.SendEmailAsync(sendRequest).Result;
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                 }
             }
         }
-
-
 
         public void EmailSecret(string secret, string email, string username, IEnvironmentVariables environment)
         {

@@ -1,0 +1,15 @@
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.dll
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Release\netcoreapp2.1\rhel.7.2-x64\Arcade.AutoTweetBestGamers.genruntimeconfig.cache

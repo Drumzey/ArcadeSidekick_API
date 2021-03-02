@@ -12,3 +12,17 @@ F:\Personal\Sidekick API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.Sc
 F:\Personal\Sidekick API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.dll
 F:\Personal\Sidekick API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.pdb
 F:\Personal\Sidekick API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp2.1\Arcade.ScoreMigration.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp2.1\Arcade.ScoreMigration.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp2.1\Arcade.ScoreMigration.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp2.1\Arcade.ScoreMigration.dll
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp2.1\Arcade.ScoreMigration.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.dll
+C:\Personal\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp2.1\Arcade.ScoreMigration.pdb

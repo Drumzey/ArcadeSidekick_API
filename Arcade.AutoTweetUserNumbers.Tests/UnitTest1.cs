@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.TestUtilities;

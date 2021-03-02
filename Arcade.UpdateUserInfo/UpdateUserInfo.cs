@@ -160,6 +160,9 @@ namespace Arcade.UpdateUserInfo
 
             user.Friends = userInfo.Friends;
             user.TwitterHandle = userInfo.TwitterHandle;
+            user.DOB = userInfo.DOB;
+            user.Location = userInfo.Location;
+            user.YouTubeChannel = userInfo.YouTubeChannel;
 
             Console.WriteLine("About To Save");
             Console.WriteLine(user);

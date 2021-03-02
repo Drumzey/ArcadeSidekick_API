@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Arcade.Authorizer
+﻿namespace Arcade.Authorizer
 {
     public class Constants
     {

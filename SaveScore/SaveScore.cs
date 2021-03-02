@@ -150,8 +150,8 @@ namespace Arcade.SaveScore
                 {
                     if (string.IsNullOrWhiteSpace(data.Games[gameKey]))
                     {
-                        //We are null or empty for some reason
-                        //do not do anything with this score as it coudl be being written by mistake
+                        // We are null or empty for some reason
+                        // do not do anything with this score as it coudl be being written by mistake
                         continue;
                     }
 

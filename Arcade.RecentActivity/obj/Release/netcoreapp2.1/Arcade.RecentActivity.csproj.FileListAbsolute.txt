@@ -12,3 +12,18 @@ F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.
 F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.dll
 F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.pdb
 F:\Personal\Sidekick API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\bin\Release\netcoreapp2.1\Arcade.RecentActivity.deps.json
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\bin\Release\netcoreapp2.1\Arcade.RecentActivity.runtimeconfig.json
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\bin\Release\netcoreapp2.1\Arcade.RecentActivity.runtimeconfig.dev.json
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\bin\Release\netcoreapp2.1\Arcade.RecentActivity.dll
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\bin\Release\netcoreapp2.1\Arcade.RecentActivity.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.csprojAssemblyReference.cache
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.csproj.CoreCompileInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.AssemblyInfoInputs.cache
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.AssemblyInfo.cs
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.csproj.CopyComplete
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.dll
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.pdb
+C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Release\netcoreapp2.1\Arcade.RecentActivity.genruntimeconfig.cache

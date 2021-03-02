@@ -5,7 +5,6 @@ using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.GameDetails;
 using Arcade.Shared;
-using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.

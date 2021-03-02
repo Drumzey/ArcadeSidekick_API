@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Arcade.Shared.Shared
+﻿namespace Arcade.Shared.Shared
 {
     public class SimpleScore
     {

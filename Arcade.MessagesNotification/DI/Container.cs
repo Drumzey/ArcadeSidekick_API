@@ -1,10 +1,4 @@
-﻿using System;
-using Arcade.Shared;
-using Arcade.Shared.Messages;
-using Arcade.Shared.Repositories;
-using Microsoft.Extensions.DependencyInjection;
-
-namespace Arcade.MessagesNotification.DI
+﻿namespace Arcade.MessagesNotification.DI
 {
     public class Container
     {
