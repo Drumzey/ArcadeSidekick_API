@@ -58,8 +58,14 @@ namespace Arcade.Dispatcher.SystemHandler
             var clubs = ClubHandler.ClubHandler.GetAllClubs(request, context, services);
             var venues = VenueHandler.VenuesHandler.GetAllVenues(request, context, services);
 
-            var friendsGames = new GetScore.GetScore(services);
-            var friends = friendsGames.GetUserInfo(friendsName);
+            List<UserInformation> friends = new List<UserInformation>();
+
+            // If we have friends then get their scores.
+            if (!string.IsNullOrEmpty(friendsName))
+            {
+                var friendsGames = new GetScore.GetScore(services);
+                friends = friendsGames.GetUserInfo(friendsName);
+            }
 
             return StartupUnregisteredResponse(clubs, venues, friends);
         }
