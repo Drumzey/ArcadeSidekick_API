@@ -109,7 +109,7 @@ namespace Arcade.ForgotInformation
             var environment = (IEnvironmentVariables)services.GetService(typeof(IEnvironmentVariables));
 
             Email mail = new Email();
-            mail.EmailSecretReminder(user.Secret, email, username, environment);
+            mail.EmailSecretReminder(user.Secret, email, username);
             return OkResponse("Email Sent");
         }
 
@@ -131,7 +131,7 @@ namespace Arcade.ForgotInformation
             var environment = (IEnvironmentVariables)services.GetService(typeof(IEnvironmentVariables));
 
             Email mail = new Email();
-            mail.EmailUsernameReminder(email, environment);
+            mail.EmailUsernameReminder(email);
             return OkResponse("Reminder request made");
         }
 

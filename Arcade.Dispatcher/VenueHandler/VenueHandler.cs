@@ -1,6 +1,8 @@
 ﻿using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Arcade.Shared.Locations;
 using System;
+using System.Collections.Generic;
 using System.Net;
 
 namespace Arcade.Dispatcher.VenueHandler
@@ -23,6 +25,15 @@ namespace Arcade.Dispatcher.VenueHandler
                 default:
                     return ErrorResponse("Unknown location endpoint.");
             }
+        }
+
+        public static List<Location> GetAllVenues(
+            APIGatewayProxyRequest request,
+            ILambdaContext context,
+            IServiceProvider services)
+        {
+            var locations = new Locations.Locations(services);
+            return locations.GetLocations();
         }
 
         private static APIGatewayProxyResponse ErrorResponse(string errorMessage)

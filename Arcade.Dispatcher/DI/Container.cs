@@ -22,6 +22,7 @@ namespace Arcade.Dispatcher.DI
                 .AddScoped<IMiscRepository, MiscRepository>()
                 .AddScoped<IObjectRepository, ObjectRepository>()
                 .AddScoped<IUserRepository, UserRepository>()
+                .AddScoped<IEmail, Email>()
                 .BuildServiceProvider();
         }
     }

@@ -41,14 +41,16 @@ namespace Arcade.GetScore
             return Response(userInfo);
         }
 
-        private List<UserInformation> GetUserInfo(string usernames)
+        public List<UserInformation> GetUserInfo(string usernames)
         {
             var names = usernames.Split(',');
             var information = new List<UserInformation>();
             var userRepository = (IUserRepository)services.GetService(typeof(IUserRepository));
 
+            Console.WriteLine($"Gettings scores for users {usernames}");
             foreach (string name in names)
             {
+                Console.WriteLine($"Gettings scores for user {name}");
                 var userInformation = userRepository.Load(name);
                 if (userInformation != null)
                 {

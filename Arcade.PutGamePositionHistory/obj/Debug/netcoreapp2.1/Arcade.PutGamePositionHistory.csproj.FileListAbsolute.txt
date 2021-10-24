@@ -18,3 +18,7 @@ C:\Personal\ArcadeSidekick_API\Arcade.PutGamePositionHistory\obj\Debug\netcoreap
 C:\Personal\ArcadeSidekick_API\Arcade.PutGamePositionHistory\obj\Debug\netcoreapp2.1\Arcade.PutGamePositionHistory.AssemblyInfoInputs.cache
 C:\Personal\ArcadeSidekick_API\Arcade.PutGamePositionHistory\obj\Debug\netcoreapp2.1\Arcade.PutGamePositionHistory.AssemblyInfo.cs
 C:\Personal\ArcadeSidekick_API\Arcade.PutGamePositionHistory\obj\Debug\netcoreapp2.1\Arcade.PutGamePositionHistory.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.PutGamePositionHistory\obj\Debug\netcoreapp2.1\Arcade.PutGamePositionHistory.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.PutGamePositionHistory\obj\Debug\netcoreapp2.1\Arcade.PutGamePositionHistory.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.PutGamePositionHistory\obj\Debug\netcoreapp2.1\Arcade.PutGamePositionHistory.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.PutGamePositionHistory\obj\Debug\netcoreapp2.1\Arcade.PutGamePositionHistory.AssemblyInfo.cs

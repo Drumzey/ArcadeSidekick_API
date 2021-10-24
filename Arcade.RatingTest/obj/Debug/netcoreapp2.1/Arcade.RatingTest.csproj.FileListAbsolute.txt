@@ -1,0 +1,4 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingTest\obj\Debug\netcoreapp2.1\Arcade.RatingTest.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingTest\obj\Debug\netcoreapp2.1\Arcade.RatingTest.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingTest\obj\Debug\netcoreapp2.1\Arcade.RatingTest.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingTest\obj\Debug\netcoreapp2.1\Arcade.RatingTest.AssemblyInfo.cs

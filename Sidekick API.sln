@@ -125,6 +125,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stats", "Stats", "{11555AB8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arcade.PutGamePositionHistory", "Arcade.PutGamePositionHistory\Arcade.PutGamePositionHistory.csproj", "{37B61AF9-41BF-461D-A295-7E105075C5FD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemTesting", "SystemTesting", "{3B66541E-681F-47E1-B950-F7B0BFE61EEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arcade.RatingTest", "Arcade.RatingTest\Arcade.RatingTest.csproj", "{B0C2BFC2-3F9E-493D-89ED-5BAED2712744}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -523,6 +527,14 @@ Global
 		{37B61AF9-41BF-461D-A295-7E105075C5FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37B61AF9-41BF-461D-A295-7E105075C5FD}.Release|x86.ActiveCfg = Release|Any CPU
 		{37B61AF9-41BF-461D-A295-7E105075C5FD}.Release|x86.Build.0 = Release|Any CPU
+		{B0C2BFC2-3F9E-493D-89ED-5BAED2712744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C2BFC2-3F9E-493D-89ED-5BAED2712744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C2BFC2-3F9E-493D-89ED-5BAED2712744}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B0C2BFC2-3F9E-493D-89ED-5BAED2712744}.Debug|x86.Build.0 = Debug|Any CPU
+		{B0C2BFC2-3F9E-493D-89ED-5BAED2712744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C2BFC2-3F9E-493D-89ED-5BAED2712744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C2BFC2-3F9E-493D-89ED-5BAED2712744}.Release|x86.ActiveCfg = Release|Any CPU
+		{B0C2BFC2-3F9E-493D-89ED-5BAED2712744}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -567,6 +579,7 @@ Global
 		{CD4AC888-4577-4600-B1A9-25850E15B027} = {88F0EADC-E7CF-486F-81EE-7DD694B8DAE3}
 		{3AECB058-DBF7-4F34-81E9-00232442EDCE} = {0F72B74F-EAD5-46D8-A4D0-EAFA8F9A1990}
 		{37B61AF9-41BF-461D-A295-7E105075C5FD} = {11555AB8-B50D-4F1F-81BA-F2941EDEA2D0}
+		{B0C2BFC2-3F9E-493D-89ED-5BAED2712744} = {3B66541E-681F-47E1-B950-F7B0BFE61EEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B8CA096-CBE8-4B88-BE9C-68CCD00FDF67}

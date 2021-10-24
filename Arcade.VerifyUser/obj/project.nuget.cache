@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "se5tyt3Y+YdYREVYp4/I6WPyxI0V5x6ezjUugsEXxFDvMPN2L4kXKTL+brPbaoKFVIEGpqQDy1zOBCkasbvLVw==",
+  "dgSpecHash": "f7y7LbdzhRi0mQXmpd+M5l47imT+jdGEc70arybqxKfl+No1C6y0tJXIztPtksYMNa13XtO+a9rz86c1BcbXzg==",
   "success": true,
-  "projectFilePath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj",
+  "projectFilePath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.apigatewayevents\\1.2.0\\amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.core\\1.1.0\\amazon.lambda.core.1.1.0.nupkg.sha512",
@@ -19,7 +19,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.app\\2.1.0\\runtime.linux-x64.microsoft.netcore.app.2.1.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.dotnetapphost\\2.1.0\\runtime.linux-x64.microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.dotnethostpolicy\\2.1.0\\runtime.linux-x64.microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",

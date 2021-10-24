@@ -26,3 +26,17 @@ C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.
 C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.dll
 C:\Personal\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Authorizer.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\netcoreapp2.1\Arcade.Authorizer.pdb

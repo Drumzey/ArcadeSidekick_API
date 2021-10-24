@@ -3144,24 +3144,27 @@
   },
   "packageFolders": {
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Personal\\ArcadeSidekick_API\\Arcade.Dispatcher\\Arcade.Dispatcher.csproj",
+      "projectUniqueName": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Dispatcher\\Arcade.Dispatcher.csproj",
       "projectName": "Arcade.Dispatcher",
-      "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.Dispatcher\\Arcade.Dispatcher.csproj",
+      "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Dispatcher\\Arcade.Dispatcher.csproj",
       "packagesPath": "C:\\Users\\richard.rumsey\\.nuget\\packages\\",
-      "outputPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.Dispatcher\\obj\\",
+      "outputPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Dispatcher\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\richard.rumsey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -3170,83 +3173,83 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "projectReferences": {
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.Challenges_POST\\Arcade.Challenges_POST.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.Challenges_POST\\Arcade.Challenges_POST.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Challenges_POST\\Arcade.Challenges_POST.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Challenges_POST\\Arcade.Challenges_POST.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.CreateUser\\Arcade.CreateUser.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.CreateUser\\Arcade.CreateUser.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.CreateUser\\Arcade.CreateUser.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.CreateUser\\Arcade.CreateUser.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.EventNews_POST\\Arcade.EventNews_POST.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.EventNews_POST\\Arcade.EventNews_POST.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.EventNews_POST\\Arcade.EventNews_POST.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.EventNews_POST\\Arcade.EventNews_POST.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.ForgotInformation\\Arcade.ForgotInformation.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.ForgotInformation\\Arcade.ForgotInformation.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ForgotInformation\\Arcade.ForgotInformation.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ForgotInformation\\Arcade.ForgotInformation.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.GetClubs\\Arcade.GetClubs.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.GetClubs\\Arcade.GetClubs.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetClubs\\Arcade.GetClubs.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetClubs\\Arcade.GetClubs.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.GetLeaderboard\\Arcade.GetLeaderboard.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.GetLeaderboard\\Arcade.GetLeaderboard.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetLeaderboard\\Arcade.GetLeaderboard.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetLeaderboard\\Arcade.GetLeaderboard.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.GetRating\\Arcade.GetRating.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.GetRating\\Arcade.GetRating.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetRating\\Arcade.GetRating.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetRating\\Arcade.GetRating.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.JoinClub\\Arcade.JoinClub.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.JoinClub\\Arcade.JoinClub.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.JoinClub\\Arcade.JoinClub.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.JoinClub\\Arcade.JoinClub.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.Locations\\Arcade.Locations.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.Locations\\Arcade.Locations.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Locations\\Arcade.Locations.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Locations\\Arcade.Locations.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.MyMessages_GET\\Arcade.MyMessages_GET.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.MyMessages_GET\\Arcade.MyMessages_GET.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.MyMessages_GET\\Arcade.MyMessages_GET.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.MyMessages_GET\\Arcade.MyMessages_GET.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.ProfileStats_GET\\Arcade.ProfileStats_GET.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.ProfileStats_GET\\Arcade.ProfileStats_GET.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_GET\\Arcade.ProfileStats_GET.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_GET\\Arcade.ProfileStats_GET.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.ProfileStats_POST\\Arcade.ProfileStats_POST.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.ProfileStats_POST\\Arcade.ProfileStats_POST.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_POST\\Arcade.ProfileStats_POST.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_POST\\Arcade.ProfileStats_POST.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.RecentActivity\\Arcade.RecentActivity.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.RecentActivity\\Arcade.RecentActivity.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RecentActivity\\Arcade.RecentActivity.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RecentActivity\\Arcade.RecentActivity.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.RestoreUser\\Arcade.RestoreUser.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.RestoreUser\\Arcade.RestoreUser.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RestoreUser\\Arcade.RestoreUser.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RestoreUser\\Arcade.RestoreUser.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.SaveRating\\Arcade.SaveRating.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.SaveRating\\Arcade.SaveRating.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.SaveRating\\Arcade.SaveRating.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.SaveRating\\Arcade.SaveRating.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.UpdateUserInfo\\Arcade.UpdateUserInfo.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.UpdateUserInfo\\Arcade.UpdateUserInfo.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.UpdateUserInfo\\Arcade.UpdateUserInfo.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.UpdateUserInfo\\Arcade.UpdateUserInfo.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\GetScore\\Arcade.GetScore.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\GetScore\\Arcade.GetScore.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\GetScore\\Arcade.GetScore.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\GetScore\\Arcade.GetScore.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj"
             },
-            "C:\\Personal\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj"
             }
           }
         }
@@ -3259,6 +3262,7 @@
     },
     "frameworks": {
       "netcoreapp2.1": {
+        "targetAlias": "netcoreapp2.1",
         "dependencies": {
           "Amazon.Lambda.APIGatewayEvents": {
             "target": "Package",
@@ -3285,7 +3289,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

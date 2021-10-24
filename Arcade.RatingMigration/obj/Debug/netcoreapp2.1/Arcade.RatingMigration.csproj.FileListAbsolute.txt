@@ -30,3 +30,19 @@ C:\Personal\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Ar
 C:\Personal\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.dll
 C:\Personal\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.RatingMigration.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.RatingMigration.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.RatingMigration.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.RatingMigration.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.RatingMigration.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.GameDetails.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.GameDetails.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingMigration\obj\Debug\netcoreapp2.1\Arcade.RatingMigration.pdb

@@ -5,7 +5,6 @@ using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.GameDetails;
-using Arcade.GetLeaderboard;
 using Arcade.Shared.Leagues;
 using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
@@ -86,7 +85,7 @@ namespace Arcade.GetLeagueScores
                         allScores = true;
                     }
 
-                    var responseScores = new List<SimpleScore>();
+                    var responseScores = new List<SimpleScoreWithVerified>();
 
                     if (allScores)
                     {
@@ -161,23 +160,24 @@ namespace Arcade.GetLeagueScores
             }
         }
 
-        private static List<SimpleScore> GetSimpleScores(
+        private static List<SimpleScoreWithVerified> GetSimpleScores(
             List<string> users,
             GetLeaderboard.GetLeaderboard leaderboard,
             string gameName)
         {
             var simpleScores = leaderboard.GetLeaderboardScores(gameName);
-            var responseScores = new List<SimpleScore>();
+            var responseScores = new List<SimpleScoreWithVerified>();
 
             foreach (var score in simpleScores)
             {
                 if (users.Contains(score.Username))
                 {
-                    responseScores.Add(new SimpleScore
+                    responseScores.Add(new SimpleScoreWithVerified
                     {
                         UserName = score.Username,
                         Score = score.Score,
                         LevelName = "FULL GAME",
+                        Verified = false,
                     });
                 }
             }
@@ -185,12 +185,12 @@ namespace Arcade.GetLeagueScores
             return responseScores;
         }
 
-        private static List<SimpleScore> GetDetailedScores(
+        private static List<SimpleScoreWithVerified> GetDetailedScores(
         List<string> users,
         GameDetails.GameDetails gameDetails,
         KeyValuePair<string, string> game)
         {
-            var responseScores = new List<SimpleScore>();
+            var responseScores = new List<SimpleScoreWithVerified>();
             var scores = gameDetails.GetAllScores(game.Key);
 
             foreach (var simpleScore in scores.SimpleScores)

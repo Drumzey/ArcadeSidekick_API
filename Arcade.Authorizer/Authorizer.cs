@@ -36,6 +36,7 @@ namespace Arcade.Authorizer
 
             if (IsJwtTokenMalformed(authorizationToken))
             {
+                Console.WriteLine("Token is malformed");
                 throw new Exception("Unauthorized");
             }
 
@@ -45,8 +46,11 @@ namespace Arcade.Authorizer
 
             if (user == null)
             {
+                Console.WriteLine("user is null");
                 throw new Exception("No User found");
             }
+
+            Console.WriteLine($"user name is {user.Username}");
 
             if (!user.Verified)
             {
@@ -80,11 +84,13 @@ namespace Arcade.Authorizer
             }
             catch
             {
+                Console.WriteLine("Cant read token");
                 throw new Exception("Unauthorized");
             }
 
             if ((jwtToken == null) || (jwtToken.Payload.Count < 1))
             {
+                Console.WriteLine("No payload");
                 throw new Exception("No Payload");
             }
 
@@ -111,6 +117,7 @@ namespace Arcade.Authorizer
             }
             catch
             {
+                Console.WriteLine("Cant validate token");
                 throw new Exception("Unauthorized");
             }
 
@@ -152,10 +159,12 @@ namespace Arcade.Authorizer
 
         private UserInformation GetUser(string username)
         {
+            Console.WriteLine($"UserName {username}");
             var user = ((IUserRepository)services.GetService(typeof(IUserRepository))).Load(username);
 
             if (user == null)
             {
+                Console.WriteLine("Cant find user");
                 throw new Exception("Unauthorized");
             }
 

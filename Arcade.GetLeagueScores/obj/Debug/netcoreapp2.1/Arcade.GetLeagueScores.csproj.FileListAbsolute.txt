@@ -18,3 +18,9 @@ C:\Personal\ArcadeSidekick_API\Arcade.GetLeagueScores\obj\Debug\netcoreapp2.1\Ar
 C:\Personal\ArcadeSidekick_API\Arcade.GetLeagueScores\obj\Debug\netcoreapp2.1\Arcade.GetLeagueScores.pdb
 C:\Personal\ArcadeSidekick_API\Arcade.GetLeagueScores\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.dll
 C:\Personal\ArcadeSidekick_API\Arcade.GetLeagueScores\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeagueScores\obj\Debug\netcoreapp2.1\Arcade.GetLeagueScores.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeagueScores\obj\Debug\netcoreapp2.1\Arcade.GetLeagueScores.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeagueScores\obj\Debug\netcoreapp2.1\Arcade.GetLeagueScores.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeagueScores\obj\Debug\netcoreapp2.1\Arcade.GetLeagueScores.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeagueScores\obj\Debug\netcoreapp2.1\Arcade.GetLeagueScores.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeagueScores\obj\Debug\netcoreapp2.1\Arcade.GetLeagueScores.pdb

@@ -30,6 +30,35 @@ namespace Arcade.Dispatcher
             this.request = request;
             this.context = context;
 
+            if (request.Resource.StartsWith("/app/clubs") ||
+                request.Resource.StartsWith("/app/games") ||
+                request.Resource.StartsWith("/website/games") ||
+                request.Resource.StartsWith("/app/system") ||
+                request.Resource.StartsWith("/app/venues") ||
+                request.Resource.StartsWith("/website/venues") ||
+                request.Resource.StartsWith("/app/users/messages") ||
+                request.Resource.StartsWith("/app/users/profile") ||
+                request.Resource.StartsWith("/app/users/update"))
+            {
+                if (request.HttpMethod == "POST" || request.HttpMethod == "DELETE")
+                {
+                    Console.WriteLine($"Authorizing {request.HttpMethod} Request");
+                    var auth = new AuthorizationHandler.AuthorizationHandler(this.services);
+                    var result = auth.Authorize(request);
+                    if (!result)
+                    {
+                        var unAuthResponse = new APIGatewayProxyResponse
+                        {
+                            StatusCode = (int)HttpStatusCode.Unauthorized,
+                            Body = "{ \"message\": \"Error. Unknown end point\"}",
+                        };
+
+                        return ErrorResponse(unAuthResponse);
+                    }
+                    Console.WriteLine("Authorized");
+                }
+            }
+
             APIGatewayProxyResponse response;
 
             if (request.Resource.StartsWith("/app/clubs"))

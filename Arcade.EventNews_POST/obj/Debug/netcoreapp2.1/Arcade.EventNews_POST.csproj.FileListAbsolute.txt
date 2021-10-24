@@ -26,3 +26,17 @@ C:\Personal\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arc
 C:\Personal\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.dll
 C:\Personal\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.EventNews_POST.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Debug\netcoreapp2.1\Arcade.EventNews_POST.pdb

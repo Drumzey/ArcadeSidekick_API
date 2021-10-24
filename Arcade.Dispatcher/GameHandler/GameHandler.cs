@@ -25,6 +25,8 @@ namespace Arcade.Dispatcher.GameHandler
                 case "/app/games/all":
                 case "/app/games/availableat": //This game is available at
                 case "/app/games/detailedscore":
+                case "/app/games/uploaddetailedscores": //Going from an offline to an online user
+                case "/app/games/alldetailedscore":
                 case "/app/games/knownlevels":
                 case "/app/games/knownsettings":
                 case "/app/games/ratingsweighted":

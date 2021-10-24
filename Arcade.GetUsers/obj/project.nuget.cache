@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B7mtoYPB7jnh0Myrg4sGEq8k3gp/U5EXcyA7+N2xM3krgZ6MyqfpLMuPBxRCZ0XiAVcbJyZH71vDmOzALI3EBg==",
+  "dgSpecHash": "VisSrWGKOBgVekyaOnJJNynUnzk8SedaQ2qp+zeXqblznAPwbAwuOduzK6dILl+hg1ZyQ4bVqNKyYJo0154m2w==",
   "success": true,
-  "projectFilePath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj",
+  "projectFilePath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.apigatewayevents\\1.2.0\\amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.core\\1.1.0\\amazon.lambda.core.1.1.0.nupkg.sha512",

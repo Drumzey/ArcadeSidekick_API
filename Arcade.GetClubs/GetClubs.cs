@@ -33,36 +33,42 @@ namespace Arcade.GetClubs
         {
             try
             {
-                var clubNames = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
-                    .Load("Clubs", "Order");
-
-                var clubsInformation = new List<ClubInformation>();
-                var clubRepository = (IClubRepository)services.GetService(typeof(IClubRepository));
-
-                foreach (string name in clubNames.List1)
-                {
-                    var information = clubRepository.Load(name);
-                    if (information != null)
-                    {
-                        if (!string.IsNullOrWhiteSpace(information.Secret))
-                        {
-                            information.Secret = "Protected";
-                        }
-                        else
-                        {
-                            information.Secret = string.Empty;
-                        }
-
-                        clubsInformation.Add(information);
-                    }
-                }
-
+                var clubsInformation = GetClubsInformation();
                 return OkResponse(clubsInformation);
             }
             catch (Exception e)
             {
                 return ErrorResponse(e.Message);
             }
+        }
+
+        public List<ClubInformation> GetClubsInformation()
+        {
+            var clubNames = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Clubs", "Order");
+
+            var clubsInformation = new List<ClubInformation>();
+            var clubRepository = (IClubRepository)services.GetService(typeof(IClubRepository));
+
+            foreach (string name in clubNames.List1)
+            {
+                var information = clubRepository.Load(name);
+                if (information != null)
+                {
+                    if (!string.IsNullOrWhiteSpace(information.Secret))
+                    {
+                        information.Secret = "Protected";
+                    }
+                    else
+                    {
+                        information.Secret = string.Empty;
+                    }
+
+                    clubsInformation.Add(information);
+                }
+            }
+
+            return clubsInformation;
         }
 
         private APIGatewayProxyResponse OkResponse(List<ClubInformation> clubs)

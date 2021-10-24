@@ -1487,6 +1487,21 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "Arcade.GameDetails/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Amazon.Lambda.Core": "1.1.0",
+          "Amazon.Lambda.Serialization.Json": "1.7.0",
+          "Arcade.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Arcade.GameDetails.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Arcade.GameDetails.dll": {}
+        }
+      },
       "Arcade.SaveScore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -2793,11 +2808,12 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
+      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2962,11 +2978,12 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
+      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5365,6 +5382,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "Arcade.GameDetails/1.0.0": {
+      "type": "project",
+      "path": "../Arcade.GameDetails/Arcade.GameDetails.csproj",
+      "msbuildProject": "../Arcade.GameDetails/Arcade.GameDetails.csproj"
+    },
     "Arcade.SaveScore/1.0.0": {
       "type": "project",
       "path": "../SaveScore/Arcade.SaveScore.csproj",
@@ -5380,6 +5402,7 @@
     ".NETCoreApp,Version=v2.1": [
       "Amazon.Lambda.Core >= 1.1.0",
       "Amazon.Lambda.TestUtilities >= 1.1.0",
+      "Arcade.GameDetails >= 1.0.0",
       "Arcade.SaveScore >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.3.0",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -5391,24 +5414,27 @@
   },
   "packageFolders": {
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Personal\\ArcadeSidekick_API\\SaveScore.Tests\\Arcade.SaveScore.Tests.csproj",
+      "projectUniqueName": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore.Tests\\Arcade.SaveScore.Tests.csproj",
       "projectName": "Arcade.SaveScore.Tests",
-      "projectPath": "C:\\Personal\\ArcadeSidekick_API\\SaveScore.Tests\\Arcade.SaveScore.Tests.csproj",
+      "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore.Tests\\Arcade.SaveScore.Tests.csproj",
       "packagesPath": "C:\\Users\\richard.rumsey\\.nuget\\packages\\",
-      "outputPath": "C:\\Personal\\ArcadeSidekick_API\\SaveScore.Tests\\obj\\",
+      "outputPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\richard.rumsey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5417,14 +5443,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Personal\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj": {
-              "projectPath": "C:\\Personal\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj"
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj"
+            },
+            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj": {
+              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj"
             }
           }
         }

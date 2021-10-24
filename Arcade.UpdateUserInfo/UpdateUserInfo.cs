@@ -134,11 +134,22 @@ namespace Arcade.UpdateUserInfo
 
                 if (!tweeties.Dictionary.ContainsKey(userInfo.Username))
                 {
-                    tweeties.Dictionary.Add(userInfo.Username, userInfo.TwitterHandle);
+                    if (userInfo.TwitterHandle != null && !string.IsNullOrEmpty(userInfo.TwitterHandle))
+                    {
+                        tweeties.Dictionary.Add(userInfo.Username, userInfo.TwitterHandle);
+                    }
                 }
                 else
                 {
-                    tweeties.Dictionary[userInfo.Username] = userInfo.TwitterHandle;
+                    if (userInfo.TwitterHandle != null && !string.IsNullOrEmpty(userInfo.TwitterHandle))
+                    {
+                        tweeties.Dictionary[userInfo.Username] = userInfo.TwitterHandle;
+                    }
+                    else
+                    {
+                        // We are null or empty in which case remove the record
+                        tweeties.Dictionary.Remove(userInfo.Username);
+                    }
                 }
 
                 ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(tweeties);

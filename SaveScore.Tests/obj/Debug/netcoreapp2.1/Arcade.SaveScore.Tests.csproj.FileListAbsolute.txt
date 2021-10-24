@@ -40,3 +40,26 @@ C:\Personal\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.Sa
 C:\Personal\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.dll
 C:\Personal\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\testhost.exe
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\testhost.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.GameDetails.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.SaveScore.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.GameDetails.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.SaveScore.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore.Tests\obj\Debug\netcoreapp2.1\Arcade.SaveScore.Tests.pdb

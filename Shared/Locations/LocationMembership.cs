@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Arcade.Shared.Locations
+﻿namespace Arcade.Shared.Locations
 {
     public class LocationMembership
     {

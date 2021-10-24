@@ -26,3 +26,17 @@ C:\Personal\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.
 C:\Personal\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.dll
 C:\Personal\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\netcoreapp2.1\Arcade.GetScore.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\netcoreapp2.1\Arcade.GetScore.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\netcoreapp2.1\Arcade.GetScore.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\netcoreapp2.1\Arcade.GetScore.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\netcoreapp2.1\Arcade.GetScore.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\netcoreapp2.1\Arcade.GetScore.pdb

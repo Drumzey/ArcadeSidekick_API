@@ -12,3 +12,17 @@ C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\netco
 C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.pdb
 C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.dll
 C:\Personal\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestCategoryGamer.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestCategoryGamer.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestCategoryGamer.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestCategoryGamer.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\netcoreapp2.1\Arcade.AutoTweetBestCategoryGamer.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\netcoreapp2.1\Arcade.AutoTweetCategoryGamer.pdb

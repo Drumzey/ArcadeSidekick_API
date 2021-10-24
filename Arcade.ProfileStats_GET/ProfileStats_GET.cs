@@ -40,7 +40,7 @@ namespace Arcade.ProfileStats_GET
             return Response(userInfo);
         }
 
-        private UserInformation GetUserInfo(string username)
+        public UserInformation GetUserInfo(string username)
         {
             var userRepository = (IUserRepository)services.GetService(typeof(IUserRepository));
 

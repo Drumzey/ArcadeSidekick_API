@@ -19,6 +19,11 @@ namespace Arcade.Locations
         private IEnvironmentVariables environmentVariables;
         private ILocationRepository locationRepository;
 
+        private List<string> countryOrder = new List<string>
+        {
+            "UK", "IRE", "USA", "AUS", "CAN", "FRA"
+        };
+
         public Locations()
             : this(DI.Container.Services())
         {
@@ -124,17 +129,27 @@ namespace Arcade.Locations
             }
         }
 
-        private List<Location> GetLocations()
+        public List<Location> GetLocations()
         {
             var locations = locationRepository.AllLocations();
 
             foreach(var location in locations)
             {
-                //Blank out the passwrod
+                //Blank out the password
                 location.Password = "";
             }
 
-            return locations;
+            //Add the locations in country sections, ordered alphabetically
+            var orderedLocations = new List<Location>();
+            foreach(string country in countryOrder)
+            {
+                orderedLocations.AddRange(locations.Where(x => x.Country.Equals(country)).OrderBy(x => x.Name));
+            }
+
+            //Add all locations whose country is not defined in the list
+            orderedLocations.AddRange(locations.Where(x => !countryOrder.Contains(x.Country)).OrderBy(x => x.Name));
+
+            return orderedLocations;
         }
 
         private APIGatewayProxyResponse Response(object returnObject)

@@ -26,3 +26,17 @@ C:\Personal\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\
 C:\Personal\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.dll
 C:\Personal\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.ForgotInformation.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.ForgotInformation.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.ForgotInformation.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.ForgotInformation.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.ForgotInformation.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\netcoreapp2.1\Arcade.ForgotInformation.pdb

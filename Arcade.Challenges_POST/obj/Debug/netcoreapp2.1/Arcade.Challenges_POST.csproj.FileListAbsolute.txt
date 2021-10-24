@@ -26,3 +26,17 @@ C:\Personal\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Ar
 C:\Personal\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.dll
 C:\Personal\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Challenges_POST.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Challenges_POST.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Challenges_POST.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Challenges_POST.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Challenges_POST.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Debug\netcoreapp2.1\Arcade.Challenges_POST.pdb

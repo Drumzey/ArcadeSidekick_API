@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i0wf9m5qtQPTYYxtXcSBKiZdOt3Cu05PJ3qyjs6ca3uzmH4jppsL5bGJ4R2pBWcqtNhu81kG6MGj0EX4b6g/vQ==",
+  "dgSpecHash": "cNqevsc4LbaNtlZbntDvDqclrSNBDRRgF/Ec84W7GKdMxGDx8HV/GaGeRsY+MmVtWt5DijEBcEkuFSTC2RkFkA==",
   "success": true,
-  "projectFilePath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj",
+  "projectFilePath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.apigatewayevents\\1.2.0\\amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.core\\1.1.0\\amazon.lambda.core.1.1.0.nupkg.sha512",

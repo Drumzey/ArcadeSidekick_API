@@ -31,7 +31,7 @@ namespace Arcade.Challenges_POST
 
         public APIGatewayProxyResponse Challenges_POSTHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
-            var data = JsonConvert.DeserializeObject<ChallengePost>(request.Body);            
+            var data = JsonConvert.DeserializeObject<ChallengePost>(request.Body);
 
             if (!ValidRequest(data))
             {
@@ -40,10 +40,12 @@ namespace Arcade.Challenges_POST
 
             if (data.ToClubMembers)
             {
+                Console.WriteLine("Sending Club Challenge");
                 GenerateClubChallenge(data);
             }
             else
             {
+                Console.WriteLine("Sending Friend Challenge");
                 GenerateChallenge(data);
             }
 
@@ -106,10 +108,15 @@ namespace Arcade.Challenges_POST
                 Expires = data.Expires,
             };
 
-            foreach(string user in userList)
+            var messages = new List<Messages>();
+
+            var messageRepo = (IMessageRepository)services.GetService(typeof(IMessageRepository));
+
+            foreach (string user in userList)
             {
-                Arcade.Shared.Messages.CreateMessage.Create(
-                       services,
+                Console.WriteLine($"Sending message to {user}");
+                messages.Add(Arcade.Shared.Messages.CreateMessage.CreateWithoutPost(
+                       messageRepo,
                        user,
                        "Arcade Sidekick",
                        data.Message,
@@ -118,9 +125,12 @@ namespace Arcade.Challenges_POST
                        {
                             { "Game", data.GameName },
                             { "Club", data.From }
-                       });
+                       }));
             }
 
+            Console.WriteLine("Sending message to all club members");
+            messageRepo.SaveBatch(messages);
+            Console.WriteLine("Messages saved");
             return userList;
         }
 

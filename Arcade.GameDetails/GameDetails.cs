@@ -38,6 +38,7 @@ namespace Arcade.GameDetails
         private ILocationRepository locationRepository;
         private IObjectRepository objectRepository;
         private IMiscRepository miscRepository;
+        private IUserRepository userRepository;
 
         public GameDetails()
             : this(DI.Container.Services())
@@ -56,6 +57,8 @@ namespace Arcade.GameDetails
             objectRepository.SetupTable();
             miscRepository = ((IMiscRepository)this.services.GetService(typeof(IMiscRepository)));
             miscRepository.SetupTable();
+            userRepository = ((IUserRepository)this.services.GetService(typeof(IUserRepository)));
+            userRepository.SetupTable();
         }
 
         public List<Setting> GetAllSettings(string gameName)
@@ -196,6 +199,13 @@ namespace Arcade.GameDetails
                 case "/app/games/detailedscore":
                     DeleteHighscore(request.Body);
                     return OKResponse();
+
+                case "/app/games/alldetailedscore":
+                    DeleteAllHighscores(request.Body);
+                    var data = JsonConvert.DeserializeObject<dynamic>(request.Body);
+                    var gameName = (string)data.GameName;
+                    var response = GetRatingForGame(gameName);
+                    return Response(response);
             }
 
             return ErrorResponse();
@@ -208,6 +218,9 @@ namespace Arcade.GameDetails
                 case "/app/games/detailedscore":
                      SetHighscore(request.Body);
                      return OKResponse();
+                case "/app/games/uploaddetailedscores":
+                    UploadAllOfflineData(request.Body);
+                    return OKResponse();
             }
 
             return ErrorResponse();
@@ -324,13 +337,19 @@ namespace Arcade.GameDetails
         private void DeleteHighscore(string body)
         {
             var handler = new HighScoreHandler();
-            handler.Delete(gameDetailsRepository, locationRepository, body);
+            handler.Delete(gameDetailsRepository, locationRepository, userRepository, body);
+        }
+
+        private void DeleteAllHighscores(string body)
+        {
+            var handler = new HighScoreHandler(services);
+            handler.DeleteAll(gameDetailsRepository, locationRepository, userRepository, body);
         }
 
         private void SetHighscore(string body)
         {
             var handler = new HighScoreHandler();
-            handler.Set(gameDetailsRepository, locationRepository, body);
+            handler.Set(gameDetailsRepository, locationRepository, userRepository, miscRepository, body);
         }
 
         private Scores GetAllHighscores(string gameName)
@@ -351,6 +370,12 @@ namespace Arcade.GameDetails
             return handler.GetAllByLocation(gameDetailsRepository, gameName, location);
         }
         #endregion
+
+        private void UploadAllOfflineData(string body)
+        {
+            var handler = new UploadAllHandler(this.services);
+            handler.UploadData(body);
+        }
 
         private APIGatewayProxyResponse OKResponse()
         {

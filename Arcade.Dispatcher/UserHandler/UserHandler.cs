@@ -1,6 +1,9 @@
 ﻿using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Arcade.Shared;
+using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Net;
 
 namespace Arcade.Dispatcher.UserHandler
@@ -53,8 +56,7 @@ namespace Arcade.Dispatcher.UserHandler
                     return ErrorResponse("Unknown method on user profile.");
 
                 case "/app/users/restore":
-                    var restoreUser = new RestoreUser.RestoreUser(services);
-                    return restoreUser.RestoreUserHandler(request, context);
+                    return RestoreUserAggregate(services, request, context);
 
                 case "/app/users/update":
                     var updateUser = new UpdateUserInfo.UpdateUserInfo(services);
@@ -67,6 +69,60 @@ namespace Arcade.Dispatcher.UserHandler
                 default:
                     return ErrorResponse("Unknown User endpoint.");
             }
+        }
+
+        private static APIGatewayProxyResponse RestoreUserAggregate(
+            IServiceProvider services,
+            APIGatewayProxyRequest request,
+            ILambdaContext context)
+        {
+            string username;
+            request.QueryStringParameters.TryGetValue("username", out username);
+
+            var restoreUser = new RestoreUser.RestoreUser(services);
+            var restoreUserResponse = restoreUser.GetUserInfo(username);
+
+            var friendsGames = new GetScore.GetScore(services);
+            var friendsGamesResponse = new List<UserInformation>();
+            if (restoreUserResponse.Friends.Count > 0)
+            {
+                friendsGamesResponse = friendsGames.GetUserInfo(string.Join(',', restoreUserResponse.Friends));
+            }
+
+            return RestoreUserResponse(restoreUserResponse, friendsGamesResponse);
+        }
+
+        private static APIGatewayProxyResponse RestoreUserResponse(
+            UserInformation restoreUserResponse,
+            List<UserInformation> friendsGamesResponse)
+        {
+            var response = new Dictionary<string, object>();
+            response.Add("Me", restoreUserResponse);
+
+            GetUserInformationResponse friendResponse = new GetUserInformationResponse();
+            if (friendsGamesResponse != null)
+            {
+                friendResponse.Users = new List<GetSingleInformationResponse>();
+
+                foreach (UserInformation info in friendsGamesResponse)
+                {
+                    friendResponse.Users.Add(new GetSingleInformationResponse
+                    {
+                        Username = info.Username,
+                        Games = info.Games,
+                        Ratings = info.Ratings,
+                        Clubs = info.Clubs,
+                    });
+                }
+            }
+
+            response.Add("Friends", friendResponse);
+
+            return new APIGatewayProxyResponse
+            {
+                StatusCode = (int)HttpStatusCode.OK,
+                Body = JsonConvert.SerializeObject(response)
+            };
         }
 
         private static APIGatewayProxyResponse ErrorResponse(string errorMessage)

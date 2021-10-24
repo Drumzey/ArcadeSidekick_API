@@ -40,3 +40,24 @@ C:\Personal\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\A
 C:\Personal\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.dll
 C:\Personal\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\testhost.exe
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\testhost.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\Arcade.VerifyUser.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\Arcade.VerifyUser.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser.Tests\obj\Debug\netcoreapp2.1\Arcade.VerifyUser.Tests.pdb

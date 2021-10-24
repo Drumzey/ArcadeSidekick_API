@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ihDyNqOQQj+Sl6WCOyvFJvOQ5702JDDeoJOomw2PMwULLrNSaqJVm22U8DkmXrOAaXF4WWVyUDONgxZRF92IFQ==",
+  "dgSpecHash": "pmVU+QhujTc3P4W0nFsAZ/X30v2En991Ti6Q4NbptdxSTrThq3nT3//O+wfnri9HdBBKUUVRWfT3cOVmkyoahQ==",
   "success": true,
-  "projectFilePath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj",
+  "projectFilePath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.apigatewayevents\\1.2.0\\amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.core\\1.1.0\\amazon.lambda.core.1.1.0.nupkg.sha512",

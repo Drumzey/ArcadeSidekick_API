@@ -179,9 +179,15 @@ namespace Arcade.CreateUser
 
             ((IUserRepository)services.GetService(typeof(IUserRepository))).Save(newUser);
             var email = (IEmail)services.GetService(typeof(IEmail));
-            var environment = (IEnvironmentVariables)services.GetService(typeof(IEnvironmentVariables));
 
-            email.EmailSecret(newUser.Secret, newUser.EmailAddress, newUser.Username, environment);
+            try
+            {
+                email.EmailSecret(newUser.Secret, newUser.EmailAddress, newUser.Username);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
 
         private string GenerateSecret()

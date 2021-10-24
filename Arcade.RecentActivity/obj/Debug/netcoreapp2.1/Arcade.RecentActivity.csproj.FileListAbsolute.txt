@@ -26,3 +26,17 @@ C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arc
 C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.dll
 C:\Personal\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.RecentActivity.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.RecentActivity.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.RecentActivity.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.RecentActivity.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.RecentActivity.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\netcoreapp2.1\Arcade.RecentActivity.pdb

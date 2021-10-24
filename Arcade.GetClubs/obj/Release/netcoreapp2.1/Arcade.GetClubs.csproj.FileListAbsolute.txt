@@ -27,3 +27,18 @@ C:\Personal\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.
 C:\Personal\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.dll
 C:\Personal\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.pdb
 C:\Personal\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.genruntimeconfig.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\netcoreapp2.1\Arcade.GetClubs.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\netcoreapp2.1\Arcade.GetClubs.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\netcoreapp2.1\Arcade.GetClubs.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\netcoreapp2.1\Arcade.GetClubs.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\netcoreapp2.1\Arcade.GetClubs.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\netcoreapp2.1\Arcade.GetClubs.genruntimeconfig.cache

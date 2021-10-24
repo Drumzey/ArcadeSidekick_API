@@ -46,7 +46,7 @@ namespace Arcade.RestoreUser
             return Response(userInfo);
         }
 
-        private UserInformation GetUserInfo(string username)
+        public UserInformation GetUserInfo(string username)
         {
             var userRepository = (IUserRepository)services.GetService(typeof(IUserRepository));
             var userInformation = userRepository.Load(username);
@@ -80,6 +80,12 @@ namespace Arcade.RestoreUser
 
             userInformation.DetailedScores = detailedScores;
             userInformation.DetailedSettings = GetDetailedSettings(detailedScores.Select(x => x.Key).ToList());
+
+            var twitterHandles = miscRepository.Load("Twitter", "Users");
+            if (twitterHandles.Dictionary.ContainsKey(username))
+            {
+                userInformation.TwitterHandle = twitterHandles.Dictionary[username];
+            }
 
             return userInformation;
         }

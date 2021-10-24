@@ -29,6 +29,13 @@ namespace Arcade.Shared.Messages
             this.dbContext = new DynamoDBContext(new AmazonDynamoDBClient(), config);
         }
 
+        public void SaveBatch(List<Messages> messages)
+        {
+            var batch = dbContext.CreateBatchWrite<Messages>();
+            batch.AddPutItems(messages);
+            batch.ExecuteAsync();
+        }
+
         public void Save(Messages message)
         {
             dbContext.SaveAsync(message).Wait();

@@ -36,13 +36,28 @@ namespace Arcade.MyMessages_GET
                 return ErrorResponse();
             }
 
+            var messages = GetMessages(services, username, request);
+
+            if (messages.New == null && messages.Old == null)
+            {
+                return Response(new List<Message>(), new List<Message>());
+            }
+
+            return Response(messages.New, messages.Old);
+        }
+
+        public (List<Message> New, List<Message> Old) GetMessages(
+            IServiceProvider services,
+            string username,
+            APIGatewayProxyRequest request)
+        {
             var messageRepository = (IMessageRepository)services.GetService(typeof(IMessageRepository));
 
             var userMessages = messageRepository.Load(username);
 
             if (userMessages == null)
             {
-                return Response(new List<Message>(), new List<Message>());
+                return (null, null);
             }
 
             //Get unseen messages
@@ -55,7 +70,7 @@ namespace Arcade.MyMessages_GET
 
             messageRepository.Save(userMessages);
 
-            return Response(newMessages, oldMessages);
+            return (newMessages, oldMessages);
         }
 
         private static void MarkMessagesAsSeen(APIGatewayProxyRequest request, List<Message> newMessages)

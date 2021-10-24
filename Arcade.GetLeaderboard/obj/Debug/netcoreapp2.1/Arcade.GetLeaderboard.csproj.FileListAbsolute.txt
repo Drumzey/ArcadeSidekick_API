@@ -26,3 +26,17 @@ C:\Personal\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arc
 C:\Personal\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.dll
 C:\Personal\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.GetLeaderboard.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetLeaderboard\obj\Debug\netcoreapp2.1\Arcade.GetLeaderboard.pdb

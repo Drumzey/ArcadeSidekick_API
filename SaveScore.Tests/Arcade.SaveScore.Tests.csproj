@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Arcade.GameDetails\Arcade.GameDetails.csproj" />
     <ProjectReference Include="..\SaveScore\Arcade.SaveScore.csproj" />
   </ItemGroup>
 

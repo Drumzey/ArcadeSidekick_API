@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Personal\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj": {}
+    "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj": {}
   },
   "projects": {
-    "C:\\Personal\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj": {
+    "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Personal\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj",
+        "projectUniqueName": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj",
         "projectName": "Arcade.VerifyUser",
-        "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj",
+        "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj",
         "packagesPath": "C:\\Users\\richard.rumsey\\.nuget\\packages\\",
-        "outputPath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.VerifyUser\\obj\\",
+        "outputPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\richard.rumsey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,14 +29,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
             "projectReferences": {
-              "C:\\Personal\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
-                "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj"
+              "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
+                "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj"
               }
             }
           }
@@ -47,6 +49,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "Amazon.Lambda.Core": {
               "target": "Package",
@@ -83,7 +86,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -92,21 +95,23 @@
         }
       }
     },
-    "C:\\Personal\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
+    "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Personal\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj",
+        "projectUniqueName": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj",
         "projectName": "Arcade.Shared",
-        "projectPath": "C:\\Personal\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj",
+        "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj",
         "packagesPath": "C:\\Users\\richard.rumsey\\.nuget\\packages\\",
-        "outputPath": "C:\\Personal\\ArcadeSidekick_API\\Shared\\obj\\",
+        "outputPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\richard.rumsey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -115,11 +120,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
             "projectReferences": {}
           }
         },
@@ -131,6 +136,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
@@ -175,7 +181,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

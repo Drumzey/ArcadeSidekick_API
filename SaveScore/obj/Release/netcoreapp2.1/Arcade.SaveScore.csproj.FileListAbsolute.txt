@@ -27,3 +27,18 @@ C:\Personal\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveSc
 C:\Personal\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.dll
 C:\Personal\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.pdb
 C:\Personal\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.genruntimeconfig.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\bin\Release\netcoreapp2.1\Arcade.SaveScore.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\bin\Release\netcoreapp2.1\Arcade.SaveScore.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\bin\Release\netcoreapp2.1\Arcade.SaveScore.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\bin\Release\netcoreapp2.1\Arcade.SaveScore.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\bin\Release\netcoreapp2.1\Arcade.SaveScore.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\bin\Release\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\bin\Release\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\SaveScore\obj\Release\netcoreapp2.1\Arcade.SaveScore.genruntimeconfig.cache

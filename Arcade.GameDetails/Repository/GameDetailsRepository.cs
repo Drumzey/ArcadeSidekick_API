@@ -36,6 +36,14 @@ namespace Arcade.GameDetails
             dbContext.SaveAsync(record).Wait();
         }
 
+        public void SaveBatch(List<GameDetailsRecord> records)
+        {
+            var batch = dbContext.CreateBatchWrite<GameDetailsRecord>();
+            batch.AddPutItems(records);
+            Console.WriteLine($"Batch adding records {records.Count}");
+            batch.ExecuteAsync();
+        }
+
         public GameDetailsRecord Load(string gameName, string location)
         {
             return dbContext.LoadAsync<GameDetailsRecord>(gameName, location).Result;

@@ -11,6 +11,7 @@ namespace Arcade.Shared
 {
     public class Email : IEmail
     {
+        #region AWS
         public void EmailSecret(string secret, string email, string username)
         {
             string header = string.Format("<p><span style=\"font-size:28px;\">Welcome {0}!</span></p>", username);
@@ -45,7 +46,7 @@ namespace Arcade.Shared
             builder.AppendLine(headerText);
             builder.AppendLine(bodyText);
 
-            using (var client = new AmazonSimpleEmailServiceClient(RegionEndpoint.EUWest1))
+            using (var client = new AmazonSimpleEmailServiceClient(RegionEndpoint.EUWest2))
             {
                 var sendRequest = new SendEmailRequest
                 {
@@ -53,6 +54,7 @@ namespace Arcade.Shared
                     Destination = new Destination
                     {
                         ToAddresses = new List<string> { email },
+                        BccAddresses = new List<string> { "arcadesidekick@outlook.com" },
                     },
                     Message = new Message
                     {
@@ -77,11 +79,148 @@ namespace Arcade.Shared
                 {
                     var response = client.SendEmailAsync(sendRequest).Result;
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
                 }
             }
         }
+
+        public void EmailSecretReminder(string secret, string email, string username)
+        {
+            string header = string.Format("<p><span style=\"font-size:28px;\">Hello again {0}!</span></p>", username);
+
+            string body = string.Format(
+                "<p>You've lost your secret code. We did tell you not to do that! Never mind.</p> " +
+                "<p></p>" +
+                "<p>Your secret code is {0}</p>" +
+                "<p></p>" +
+                "<p>Try not to lose it again and keep it in a safe place.</p>" +
+                "<p></p>" +
+                "<p>Rumz</p>" +
+                "<p></p>" +
+                "<p><a href=\"https://sites.google.com/site/arcadesidekickapp/home\">Home</a></p>" +
+                "<p><a href=\"https://sites.google.com/site/arcadesidekickapp/faq\">Frequently Asked Questions</a></p>" +
+                "<p><a href=\"https://sites.google.com/site/arcadesidekickapp/games\">Available Games</a></p>" +
+                "<p><a href=\"https://sites.google.com/site/arcadesidekickapp/privacy\">Privacy Policy</a></p>", secret);
+
+            string headerText = string.Format("Hello again {0}!", username);
+            string bodyText = string.Format(
+                "You've lost your secret code. We did tell you not to do that! Never mind." +
+                "Your secret code is {0}" +
+                "Try not to lose it again and keep it in a safe place." +
+                "Rumz", secret);
+
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine(headerText);
+            builder.AppendLine(bodyText);
+
+            using (var client = new AmazonSimpleEmailServiceClient(RegionEndpoint.EUWest2))
+            {
+                var sendRequest = new SendEmailRequest
+                {
+                    Source = "arcadesidekick@outlook.com",
+                    Destination = new Destination
+                    {
+                        ToAddresses = new List<string> { email },
+                        BccAddresses = new List<string> { "arcadesidekick@outlook.com" },
+                    },
+                    Message = new Message
+                    {
+                        Subject = new Content("Arcade Sidekick - Forgotten Secret"),
+                        Body = new Body
+                        {
+                            Html = new Content
+                            {
+                                Charset = "UTF-8",
+                                Data = header + body,
+                            },
+                            Text = new Content
+                            {
+                                Charset = "UTF-8",
+                                Data = builder.ToString(),
+                            },
+                        },
+                    },
+                };
+
+                try
+                {
+                    var response = client.SendEmailAsync(sendRequest).Result;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+
+        public void EmailUsernameReminder(string email)
+        {
+            string header = string.Format("<p><span style=\"font-size:28px;\">Hello again!</span></p>");
+
+            string body = string.Format("<p>You cant remember your username? Did you lose your memory when you added your last credit and continued?</p> " +
+                        "<p></p>" +
+                        "<p>Anyway your request has been logged and we will get back to you as soon as possible</p>" +
+                        "<p></p>" +
+                        "<p>Rumz</p>" +
+                        "<p></p>" +
+                        "<p><a href=\"https://sites.google.com/site/arcadesidekickapp/home\">Home</a></p>" +
+                        "<p><a href=\"https://sites.google.com/site/arcadesidekickapp/faq\">Frequently Asked Questions</a></p>" +
+                        "<p><a href=\"https://sites.google.com/site/arcadesidekickapp/games\">Available Games</a></p>" +
+                        "<p><a href=\"https://sites.google.com/site/arcadesidekickapp/privacy\">Privacy Policy</a></p>");
+
+            string headerText = string.Format("Hello again!");
+            string bodyText = string.Format(
+                "You cant remember your username? Did you lose your memory when you added your last credit and continued?" +
+                "Anyway your request has been logged and we will get back to you as soon as possible" +
+                "Rumz");
+
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine(headerText);
+            builder.AppendLine(bodyText);
+
+            using (var client = new AmazonSimpleEmailServiceClient(RegionEndpoint.EUWest2))
+            {
+                var sendRequest = new SendEmailRequest
+                {
+                    Source = "arcadesidekick@outlook.com",
+                    Destination = new Destination
+                    {
+                        ToAddresses = new List<string> { email },
+                        BccAddresses = new List<string> { "arcadesidekick@outlook.com" },
+                    },
+                    Message = new Message
+                    {
+                        Subject = new Content("URGENT - Forgotten Username"),
+                        Body = new Body
+                        {
+                            Html = new Content
+                            {
+                                Charset = "UTF-8",
+                                Data = header + body,
+                            },
+                            Text = new Content
+                            {
+                                Charset = "UTF-8",
+                                Data = builder.ToString(),
+                            },
+                        },
+                    },
+                };
+
+                try
+                {
+                    var response = client.SendEmailAsync(sendRequest).Result;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+
+        #endregion
 
         public void EmailSecret(string secret, string email, string username, IEnvironmentVariables environment)
         {

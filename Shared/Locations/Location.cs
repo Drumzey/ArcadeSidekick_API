@@ -25,5 +25,7 @@ namespace Arcade.Shared.Locations
         public bool Private { get; set; }
 
         public string Password { get; set; }
+
+        public string Country { get; set; }
     }
 }

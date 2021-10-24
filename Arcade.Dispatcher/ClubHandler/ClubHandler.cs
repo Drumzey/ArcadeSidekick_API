@@ -1,6 +1,8 @@
 ﻿using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Arcade.Shared;
 using System;
+using System.Collections.Generic;
 using System.Net;
 
 namespace Arcade.Dispatcher.ClubHandler
@@ -17,7 +19,7 @@ namespace Arcade.Dispatcher.ClubHandler
                 case "/app/clubs/all":
                     var getClubs = new GetClubs.GetClubs(services);
                     return getClubs.GetClubsHandler(request, context);
-               
+
                 case "/app/clubs/join":
                     var joinClub = new JoinClub.JoinClub(services);
                     return joinClub.JoinClubHandler(request, context);
@@ -37,6 +39,15 @@ namespace Arcade.Dispatcher.ClubHandler
                 default:
                     return ErrorResponse("Unknown Club endpoint");
             }
+        }
+
+        public static List<ClubInformation> GetAllClubs(
+            APIGatewayProxyRequest request,
+            ILambdaContext context,
+            IServiceProvider services)
+        {
+            var getClubs = new GetClubs.GetClubs(services);
+            return getClubs.GetClubsInformation();
         }
 
         private static APIGatewayProxyResponse ErrorResponse(string errorMessage)

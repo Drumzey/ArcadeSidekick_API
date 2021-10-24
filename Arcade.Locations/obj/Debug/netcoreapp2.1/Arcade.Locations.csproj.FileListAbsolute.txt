@@ -26,3 +26,17 @@ C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.L
 C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.csproj.CopyComplete
 C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.dll
 C:\Personal\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp2.1\Arcade.Locations.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp2.1\Arcade.Locations.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp2.1\Arcade.Locations.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp2.1\Arcade.Locations.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp2.1\Arcade.Locations.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp2.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp2.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp2.1\Arcade.Locations.pdb

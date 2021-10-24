@@ -1,9 +1,11 @@
 ﻿using Arcade.Shared;
 using Arcade.Shared.Locations;
+using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 namespace Arcade.GameDetails.Handlers
@@ -30,6 +32,17 @@ namespace Arcade.GameDetails.Handlers
             { "track_and_field", new List<string> { "100M DASH", "110M HURDLES" } },
         };
 
+        private IServiceProvider services;
+
+        public HighScoreHandler()
+        {
+        }
+
+        public HighScoreHandler(IServiceProvider services)
+        {
+            this.services = services;
+        }
+
         public Scores GetAllByLocation(IGameDetailsRepository repo, string gameName, string location)
         {
             var settings = repo.Load(gameName, "Settings");
@@ -37,7 +50,7 @@ namespace Arcade.GameDetails.Handlers
 
             var scores = new Scores();
             scores.Setting = new Dictionary<string, Setting>();
-            scores.SimpleScores = new Dictionary<string, List<SimpleScore>>();
+            scores.SimpleScores = new Dictionary<string, List<SimpleScoreWithVerified>>();
 
             if (settings == null || details == null)
             {
@@ -51,12 +64,12 @@ namespace Arcade.GameDetails.Handlers
                 if (scoresForSetting.Count() != 0)
                 {
                     scores.Setting.Add(setting.SettingsId, setting);
-                    scores.SimpleScores.Add(setting.SettingsId, new List<SimpleScore>());
+                    scores.SimpleScores.Add(setting.SettingsId, new List<SimpleScoreWithVerified>());
 
                     foreach (ScoreDetails score in scoresForSetting)
                     {
                         scores.SimpleScores[setting.SettingsId]
-                            .Add(new SimpleScore { UserName = score.UserName, Score = score.Score, LevelName = score.LevelName });
+                            .Add(new SimpleScoreWithVerified { UserName = score.UserName, Score = score.Score, LevelName = score.LevelName, Verified = score.Verified });
                     }
                 }
             }
@@ -85,7 +98,7 @@ namespace Arcade.GameDetails.Handlers
         {
             var settings = repo.Load(gameName, "Settings");
             var scores = new Scores();
-            scores.SimpleScores = new Dictionary<string, List<SimpleScore>>();
+            scores.SimpleScores = new Dictionary<string, List<SimpleScoreWithVerified>>();
             scores.Setting = new Dictionary<string, Setting>();
 
             if (settings != null)
@@ -101,7 +114,7 @@ namespace Arcade.GameDetails.Handlers
                     }
 
                     scores.Setting.Add(newSettingId, setting);
-                    scores.SimpleScores.Add(newSettingId, new List<SimpleScore>());
+                    scores.SimpleScores.Add(newSettingId, new List<SimpleScoreWithVerified>());
                     
                     foreach (GameDetailsRecord detail in details)
                     {
@@ -111,11 +124,12 @@ namespace Arcade.GameDetails.Handlers
                         foreach (ScoreDetails score in scoresToAdd)
                         {
                             //Write the score with the newId (if we have overwritten it)
-                            scores.SimpleScores[newSettingId].Add(new SimpleScore
+                            scores.SimpleScores[newSettingId].Add(new SimpleScoreWithVerified
                             {
                                 Score = score.Score,
                                 UserName = score.UserName,
                                 LevelName = score.LevelName,
+                                Verified = score.Verified,
                             });
                         }
                     }
@@ -127,17 +141,18 @@ namespace Arcade.GameDetails.Handlers
             {
                 if (!scores.SimpleScores.ContainsKey("Unknown"))
                 {
-                    scores.SimpleScores.Add("Unknown", new List<SimpleScore>());
+                    scores.SimpleScores.Add("Unknown", new List<SimpleScoreWithVerified>());
                 }
 
                 foreach (KeyValuePair<string, string> score in gamescore.DictionaryValue)
                 {
                     //Need to get the pairs of simple scores from this repository
-                    scores.SimpleScores["Unknown"].Add(new SimpleScore
+                    scores.SimpleScores["Unknown"].Add(new SimpleScoreWithVerified
                     {
                         UserName = score.Key,
                         Score = score.Value,
                         LevelName = string.Empty,
+                        Verified = false,
                     });
                 }
             }
@@ -145,7 +160,12 @@ namespace Arcade.GameDetails.Handlers
             return scores;
         }
 
-        public void Set(IGameDetailsRepository repo, ILocationRepository locationRepo, string body)
+        public void Set(
+            IGameDetailsRepository repo,
+            ILocationRepository locationRepo,
+            IUserRepository userRepo,
+            IMiscRepository miscRepo,
+            string body)
         {
             //Take the body and construct a new Game Details Object
             var data = JsonConvert.DeserializeObject<dynamic>(body);
@@ -162,6 +182,14 @@ namespace Arcade.GameDetails.Handlers
                 //We cant pass the score as a double so throw an exception
                 throw new Exception("Score not in correct format");
             }
+
+            // If we are posting a new best score then update the simple score for this game.
+            this.UpdateSimpleScoreIfRequired(
+                doubleScore,
+                userRepo,
+                userName,
+                gameName,
+                levelName);
 
             var location = (string) data.Location;
             var currentLocationRecord = repo.Load(gameName, location);
@@ -287,12 +315,140 @@ namespace Arcade.GameDetails.Handlers
             //Save the settings record although only need to save if we have updated the settings.......
             repo.Save(settingsRecord);
 
-            Console.WriteLine("updating level information");
             UpdateLevelInformation(repo, gameName, levelName);
-            Console.WriteLine("updating location information");
             UpdateLocationInformation(locationRepo, gameName, location);
-            Console.WriteLine("updating user information");
             UpdateUsersGameDetails(repo, gameName, userName, detailsToAdd);
+            SaveRecentActivity(miscRepo, userName, gameName, score);
+        }
+
+        private void SaveRecentActivity(
+            IMiscRepository miscRepo,
+            string userName,
+            string gameName,
+            string scoreString)
+        {
+            var recentActivity = miscRepo.Load("Activity", "All");
+
+            if (recentActivity == null)
+            {
+                recentActivity = new Misc();
+                recentActivity.Key = "Activity";
+                recentActivity.SortKey = "All";
+                recentActivity.List1 = new List<string>();
+            }
+
+            try
+            {
+                
+                var score = string.Format("{0:N0}", Convert.ToDouble(scoreString));
+
+                if(IsTimedGameOrLevel(gameName, string.Empty))
+                {
+                    TimeSpan t = TimeSpan.FromMilliseconds(double.Parse(score));
+                    score = string.Format(
+                        "{0:D2}h:{1:D2}m:{2:D2}s:{3:D3}ms",
+                        t.Hours,
+                        t.Minutes,
+                        t.Seconds,
+                        t.Milliseconds);
+                }
+
+                var message = GetMessage(gameName, userName, score, DateTime.UtcNow.ToString("dd/MM/yyyy h:mm tt"));
+                recentActivity.List1.Add(message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error uploadingrecent activity for game " + gameName);
+                Console.WriteLine(e.Message);
+            }
+
+            var newList = recentActivity.List1.Skip(Math.Max(0, recentActivity.List1.Count() - 100));
+            recentActivity.List1 = newList.ToList();
+
+            miscRepo.Save(recentActivity);
+        }
+
+        private string GetMessage(string gameKey, string username, string score, string date)
+        {
+            var name = GetGameName(gameKey);
+            return $"{date}: {username} - {name} - {score}";
+        }
+
+        private string GetGameName(string gameKey)
+        {
+            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+            var name = textInfo.ToTitleCase(gameKey.Replace("_", " "));
+
+            if (name.Contains(" Xi ") || name.EndsWith(" Xi"))
+            {
+                name = name.Replace(" Xi ", " XI ");
+                name = name.Replace(" Xi", " XI");
+            }
+            else if (name.Contains(" Viii ") || name.EndsWith(" Viii"))
+            {
+                name = name.Replace(" Viii ", " VIII ");
+                name = name.Replace(" Viii", " VIII");
+            }
+            else if (name.Contains(" Vii ") || name.EndsWith(" Vii"))
+            {
+                name = name.Replace(" Vii ", " VII ");
+                name = name.Replace(" Vii", " VII");
+            }
+            else if (name.Contains(" Vi ") || name.EndsWith(" Vi"))
+            {
+                name = name.Replace(" Vi ", " VI ");
+                name = name.Replace(" Vi", " VI");
+            }
+            else if (name.Contains(" Iii ") || name.EndsWith(" Iii"))
+            {
+                name = name.Replace(" Iii ", " III ");
+                name = name.Replace(" Iii", " III");
+            }
+            else if (name.Contains(" Ii ") || name.EndsWith(" Ii"))
+            {
+                name = name.Replace(" Ii ", " II ");
+                name = name.Replace(" Ii", " II");
+            }
+
+            return name;
+        }
+
+
+        private void UpdateSimpleScoreIfRequired(
+            double doubleScore,
+            IUserRepository userRepo,
+            string userName,
+            string gameName,
+            string levelName)
+        {
+            var user = userRepo.Load(userName);
+
+            double existingScore = 0;
+            if (user.Games.ContainsKey(gameName))
+            {
+                existingScore = double.Parse(user.Games[gameName]);
+            }
+            else
+            {
+                user.Games.Add(gameName, "0");
+            }
+
+            if (this.IsTimedGameOrLevel(gameName, levelName))
+            {
+                if (existingScore > doubleScore)
+                {
+                    user.Games[gameName] = doubleScore.ToString();
+                    userRepo.Save(user);
+                }
+            }
+            else
+            {
+                if (existingScore < doubleScore)
+                {
+                    user.Games[gameName] = doubleScore.ToString();
+                    userRepo.Save(user);
+                }
+            }
         }
 
         private void UpdateLevelInformation(IGameDetailsRepository repo, string gameName, string levelName)
@@ -321,7 +477,123 @@ namespace Arcade.GameDetails.Handlers
             repo.Save(levels);
         }
 
-        public void Delete(IGameDetailsRepository repo, ILocationRepository locationRepo, string body)
+        public void DeleteAll(
+            IGameDetailsRepository repo,
+            ILocationRepository locationRepo,
+            IUserRepository userRepo,
+            string body)
+        {
+            //construct the settings from the data, find the score and delete it from the user record
+            var data = JsonConvert.DeserializeObject<dynamic>(body);
+
+            var gameName = (string)data.GameName;
+            var userName = (string)data.UserName;
+
+            var detailedUserRecord = repo.Load(gameName, userName);
+
+            if (detailedUserRecord == null)
+            {
+                // This user does not have any detailed records for this game
+                Console.WriteLine($"Cant find detailed game record for {gameName} for {userName}");
+            }
+            else
+            {
+                Console.WriteLine($"Found detailed game record for {gameName} for {userName}");
+                // we need to remove all the detailed scores for this user
+                repo.Delete(gameName, userName);
+
+                // If the scores made were against any particular location we need to remove those too
+                var locations = detailedUserRecord.Scores.Select(x => x.Location).Distinct();
+                foreach (var location in locations)
+                {
+                    var currentLocationRecord = repo.Load(gameName, location);
+                    var scoresFromLocation = detailedUserRecord.Scores.Where(x => x.Location == location);
+                    foreach (var scoreFromLocation in scoresFromLocation)
+                    {
+                        currentLocationRecord.Scores.Remove(scoreFromLocation);
+                    }
+
+                    if (currentLocationRecord.Scores.Count == 0)
+                    {
+                        // We have no scores for this game in this location anymore
+                        // so do we really have this game at the location?
+                        repo.Delete(gameName, location);
+                    }
+                    else
+                    {
+                        repo.Save(currentLocationRecord);
+                    }
+                }
+
+                // if the scores had settings that are now no longer used by other scores then we can delete the setting
+                // WILL LEAVE RIGHT NOW
+            }
+
+            // we need to remove their rating in the game details for that game
+            var gameRating = repo.Load(gameName, "Rating");
+            if (gameRating != null)
+            {
+                Console.WriteLine("Removing game rating from details table");
+
+                // Change the game detailed rating
+                var userRating = gameRating.Ratings[userName];
+
+                Console.WriteLine($"User rating {userRating}");
+
+                var result = gameRating.Ratings.Remove(userName);
+
+                Console.WriteLine($"Removed rating: {result}");
+
+                Console.WriteLine($"Old ratings: {gameRating.NumberOfRatings}");
+                gameRating.NumberOfRatings = gameRating.NumberOfRatings - 1;
+                Console.WriteLine($"New ratings: {gameRating.NumberOfRatings}");
+
+                Console.WriteLine($"Old total: {gameRating.Total}");
+                gameRating.Total = gameRating.Total - userRating;
+                Console.WriteLine($"New total: {gameRating.Total}");
+
+                if (gameRating.NumberOfRatings != 0)
+                {
+                    Console.WriteLine($"Old average: {gameRating.Total}");
+                    var average = (double)gameRating.Total / gameRating.NumberOfRatings;
+                    gameRating.Average = Math.Round(average, 2);
+                    Console.WriteLine($"New average: {gameRating.Total}");
+                    repo.Save(gameRating);
+                }
+                else
+                {
+                    // If we have no ratings left then remove the record
+                    Console.WriteLine($"Deleting record");
+                    repo.Delete(gameName, "Rating");
+                }
+
+                // Update the Misc Table with the totals for ratings
+                SaveRatingTotalInformation(userRating);
+
+                // Update the overall ratings for the game
+                SaveIntoMiscTable(gameName, gameRating.Average, gameRating.NumberOfRatings);
+            }
+
+            // we need to remove their simple score in their user record
+            var userSimple = userRepo.Load(userName);
+            userSimple.Games.Remove(gameName);
+
+            // we need to adjust the number of games played
+            userSimple.NumberOfGamesPlayed = userSimple.NumberOfGamesPlayed - 1;
+
+            // we need to adjust the number of ratings given
+            userSimple.NumberOfRatingsGiven = userSimple.NumberOfRatingsGiven - 1;
+
+            // we need to remove their rating in the user record
+            userSimple.Ratings.Remove(gameName);
+            userRepo.Save(userSimple);
+        }
+
+        public void Delete(
+            IGameDetailsRepository repo,
+            ILocationRepository locationRepo, 
+            IUserRepository userRepo,
+            string body)
         {
             //construct the settings from the data, find the score and delete it from the user record
             var data = JsonConvert.DeserializeObject<dynamic>(body);
@@ -343,14 +615,17 @@ namespace Arcade.GameDetails.Handlers
 
             if(settingsRecord == null)
             {
+                Console.WriteLine($"No Setting for {gameName}");
                 throw new Exception("No settings");
             }
             if (userRecord == null)
             {
+                Console.WriteLine($"No Setting for {userName}");
                 throw new Exception("No user record");
             }
             if (currentLocationRecord == null)
             {
+                Console.WriteLine($"No Location for {location}");
                 throw new Exception("No location");
             }
 
@@ -358,6 +633,7 @@ namespace Arcade.GameDetails.Handlers
 
             if (existingSettingIndex == -1)
             {
+                Console.WriteLine($"No Setting index");
                 throw new Exception("No existing settings index");
             }
 
@@ -365,6 +641,7 @@ namespace Arcade.GameDetails.Handlers
 
             if (existingSetting == null)
             {
+                Console.WriteLine($"No existing setting");
                 throw new Exception("No existing settings");
             }
 
@@ -378,37 +655,71 @@ namespace Arcade.GameDetails.Handlers
                 LevelName = levelName,
             };
 
-            userRecord.Scores.Remove(scoreToRemove);
+            var removed = userRecord.Scores.Remove(scoreToRemove);
+            Console.WriteLine($"score removed {removed}");
+            repo.Save(userRecord);
+            Console.WriteLine($"User record saved");
 
             //we have removed the score from our repo, need to remove it from the location it was
-            //set at.
-            currentLocationRecord.Scores.Remove(scoreToRemove);
-
-            //We now need to add the next best score to the currentLocation
-            //Find the next highest score in the same location with same settingsId
-            var sameLocation = userRecord.Scores.Where(x => x.Location.Equals(location));
-            ScoreDetails nextBestScore;
-
-            if (timedGames.Contains(gameName))
+            //set at. We only store one score per person at a venue
+            if (currentLocationRecord.Scores.Remove(scoreToRemove))
             {
-                nextBestScore = sameLocation.OrderBy(x => double.Parse(x.Score)).FirstOrDefault();
-            }
-            else
-            {
-                nextBestScore = sameLocation.OrderByDescending(x => double.Parse(x.Score)).FirstOrDefault();
+                Console.WriteLine($"removing from location record");
+
+                // We have removed the score and we want to find the next highest one if there is one
+                // Find the next highest score in the same location with same settingsId
+                var sameLocation = userRecord.Scores.Where(x => x.Location.Equals(location));
+                Console.WriteLine($"Next highest score {sameLocation}");
+                ScoreDetails nextBestScore;
+
+                if (sameLocation.Any())
+                {
+                    Console.WriteLine($"We have a next highest score");
+                    if (timedGames.Contains(gameName))
+                    {
+                        Console.WriteLine($"Timed game");
+                        nextBestScore = sameLocation.OrderBy(x => double.Parse(x.Score)).FirstOrDefault();
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Normal game");
+                        nextBestScore = sameLocation.OrderByDescending(x => double.Parse(x.Score)).FirstOrDefault();
+                    }
+
+                    if (nextBestScore != null)
+                    {
+                        currentLocationRecord.Scores.Add(nextBestScore);
+                    }
+                }
             }
 
-            if (nextBestScore != null)
-            {
-                currentLocationRecord.Scores.Add(nextBestScore);
-            }
-
-            repo.Save(userRecord);
+            Console.WriteLine($"Saving location record");
             repo.Save(currentLocationRecord);
+
+            // If the score we removed was our top simple score then we need to find our next highest score
+            // in all our detailed scores and assign it to our user record
+            var user = userRepo.Load(userName);
+            if (user.Games[gameName] == scoreToRemove.Score)
+            {
+                Console.WriteLine("Removing Top Score");
+                var nextBestScore = userRecord.Scores.OrderByDescending(x => double.Parse(x.Score)).FirstOrDefault();
+                if (nextBestScore != null)
+                {
+                    Console.WriteLine("Next Best Score: " + nextBestScore.Score);
+                    user.Games[gameName] = nextBestScore.Score;
+                }
+                else
+                {
+                    Console.WriteLine($"No next best score");
+                    user.Games[gameName] = "0";
+                }
+                userRepo.Save(user);
+            }
 
             if (userRecord.Scores.Count() == 0)
             {
                 //We have no scores for this game for this user now, so lets remove it
+                Console.WriteLine($"Removing detailed game record for user as has no scores");
                 repo.Delete(gameName, userName);
             }
 
@@ -418,11 +729,73 @@ namespace Arcade.GameDetails.Handlers
                 //present at this location.
                 //We can delete the record at this location
                 //And we can delete the gamename from the location table..
+                Console.WriteLine($"Location has no scores for this game so can be removed");
                 repo.Delete(gameName, location);
 
-                var locationrecord = locationRepo.Load(location);
-                locationrecord.GamesAvailable.Remove(gameName);
-                locationRepo.Save(locationrecord);
+                if (location != "Home Arcade")
+                {
+                    Console.WriteLine($"No scores for this game for non home location, can remove game from location as no indication game actually exists for location");
+                    var locationrecord = locationRepo.Load(location);
+                    locationrecord.GamesAvailable.Remove(gameName);
+                    locationRepo.Save(locationrecord);
+                }
+            }
+        }
+
+        private void SaveRatingTotalInformation(int ratingRemoved)
+        {
+            var miscRepository = (IMiscRepository)services.GetService(typeof(IMiscRepository));
+            var totalNumber = miscRepository.Load("Ratings", "TotalNumber");
+            var total = miscRepository.Load("Ratings", "Total");
+            var averageRating = miscRepository.Load("Ratings", "Average");
+
+            var totalNumberInt = int.Parse(totalNumber.Value);
+            totalNumber.Value = (totalNumberInt - 1).ToString();
+
+            var totalInt = int.Parse(total.Value);
+            total.Value = (totalInt - ratingRemoved).ToString();
+
+            averageRating.Value = Math.Round(double.Parse(total.Value) / double.Parse(totalNumber.Value), 2).ToString();
+
+            miscRepository.Save(totalNumber);
+            miscRepository.Save(total);
+            miscRepository.Save(averageRating);
+        }
+
+        private string ConvertName(string name)
+        {
+            name = name.ToLower();
+            name = name.Replace(" ", "_");
+            return name;
+        }
+
+        private void SaveIntoMiscTable(string gameName, double average, int numberOfRatings)
+        {
+            var pinballGames = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Games", "Pinball");
+            var pinballNames = pinballGames.List1.ConvertAll(g => ConvertName(g));
+            pinballNames.AddRange(pinballGames.List2.ConvertAll(g => ConvertName(g)));
+
+            var pinballRatings = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Pinball");
+            var arcadeRatings = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Arcade Games");
+            
+            if (pinballNames.Contains(gameName))
+            {
+                if (pinballRatings.Dictionary.ContainsKey(gameName))
+                {
+                    pinballRatings.Dictionary[gameName] = average.ToString() + "," + numberOfRatings.ToString();
+                    ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(pinballRatings);
+                }
+            }
+            else
+            {
+                if (arcadeRatings.Dictionary.ContainsKey(gameName))
+                {
+                    arcadeRatings.Dictionary[gameName] = average.ToString() + "," + numberOfRatings.ToString();
+                    ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(arcadeRatings);
+                }
             }
         }
 
@@ -492,6 +865,25 @@ namespace Arcade.GameDetails.Handlers
             {
                 return string.Equals(a, b);
             }
+        }
+
+        private bool IsTimedGameOrLevel(
+            string gameName,
+            string levelName)
+        {
+            // If we are a timed game then return true
+            if (timedGames.Contains(gameName))
+            {
+                return true;
+            }
+
+            // If we happen to be a timed level then also return true
+            if (timedLevels.ContainsKey(gameName) && timedLevels[gameName].Contains(levelName))
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

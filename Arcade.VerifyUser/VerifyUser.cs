@@ -62,6 +62,8 @@ namespace Arcade.VerifyUser
                         message = $"A new user has joined the fun! Welcome {user.Username} (@{user.TwitterHandle})! #arcade #highscore #retrogaming";
                     }
 
+                    Console.WriteLine("Tweeting new user");
+
                     service.SendTweet(new SendTweetOptions
                     {
                         Status = message,
@@ -69,7 +71,7 @@ namespace Arcade.VerifyUser
                 }
                 catch (Exception e)
                 {
-                    // Oh dear
+                    Console.WriteLine($"Tweeting new user failed {e.Message}");
                 }
             }
 

@@ -8,6 +8,8 @@ namespace Arcade.GameDetails
 
         void Save(GameDetailsRecord record);
 
+        void SaveBatch(List<GameDetailsRecord> records);
+
         GameDetailsRecord Load(string gameName, string sortKey);
 
         List<GameDetailsRecord> QueryByGameName(string gameName);
