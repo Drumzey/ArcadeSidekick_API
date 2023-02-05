@@ -1,0 +1,17 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\bin\Debug\netcoreapp3.1\Arcade.GetRating.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\bin\Debug\netcoreapp3.1\Arcade.GetRating.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\bin\Debug\netcoreapp3.1\Arcade.GetRating.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\bin\Debug\netcoreapp3.1\Arcade.GetRating.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\bin\Debug\netcoreapp3.1\Arcade.GetRating.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\bin\Debug\netcoreapp3.1\Arcade.GameDetails.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\bin\Debug\netcoreapp3.1\Arcade.GameDetails.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\obj\Debug\netcoreapp3.1\Arcade.GetRating.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\obj\Debug\netcoreapp3.1\Arcade.GetRating.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\obj\Debug\netcoreapp3.1\Arcade.GetRating.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\obj\Debug\netcoreapp3.1\Arcade.GetRating.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\obj\Debug\netcoreapp3.1\Arcade.GetRating.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\obj\Debug\netcoreapp3.1\Arcade.GetRating.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\obj\Debug\netcoreapp3.1\Arcade.GetRating.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetRating\obj\Debug\netcoreapp3.1\Arcade.GetRating.genruntimeconfig.cache

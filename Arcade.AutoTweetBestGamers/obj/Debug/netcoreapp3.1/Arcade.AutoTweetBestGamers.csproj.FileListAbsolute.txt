@@ -1,0 +1,15 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.genruntimeconfig.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGamers\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGamers.csprojAssemblyReference.cache

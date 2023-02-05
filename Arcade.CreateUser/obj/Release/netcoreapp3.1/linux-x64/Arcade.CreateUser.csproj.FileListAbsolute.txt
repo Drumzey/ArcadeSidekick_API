@@ -1,0 +1,16 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\linux-x64\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\linux-x64\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\obj\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.csproj.AssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\obj\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\obj\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\obj\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\obj\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\obj\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\obj\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\obj\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\obj\Release\netcoreapp3.1\linux-x64\Arcade.CreateUser.genruntimeconfig.cache

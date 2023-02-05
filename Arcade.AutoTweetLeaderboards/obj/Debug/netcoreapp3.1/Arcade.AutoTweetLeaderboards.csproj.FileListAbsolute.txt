@@ -1,0 +1,15 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.genruntimeconfig.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\netcoreapp3.1\Arcade.AutoTweetLeaderboards.csprojAssemblyReference.cache

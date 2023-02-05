@@ -1,0 +1,15 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.genruntimeconfig.cache

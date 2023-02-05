@@ -1,0 +1,16 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\bin\Debug\netcoreapp3.1\Arcade.AverageMigration.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\bin\Debug\netcoreapp3.1\Arcade.AverageMigration.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\bin\Debug\netcoreapp3.1\Arcade.AverageMigration.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\bin\Debug\netcoreapp3.1\Arcade.AverageMigration.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\bin\Debug\netcoreapp3.1\Arcade.AverageMigration.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\bin\Debug\netcoreapp3.1\Arcade.GameDetails.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\bin\Debug\netcoreapp3.1\Arcade.GameDetails.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\obj\Debug\netcoreapp3.1\Arcade.AverageMigration.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\obj\Debug\netcoreapp3.1\Arcade.AverageMigration.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\obj\Debug\netcoreapp3.1\Arcade.AverageMigration.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\obj\Debug\netcoreapp3.1\Arcade.AverageMigration.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\obj\Debug\netcoreapp3.1\Arcade.AverageMigration.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\obj\Debug\netcoreapp3.1\Arcade.AverageMigration.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AverageMigration\obj\Debug\netcoreapp3.1\Arcade.AverageMigration.genruntimeconfig.cache

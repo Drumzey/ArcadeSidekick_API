@@ -1,0 +1,9 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Shared\bin\Debug\netcoreapp3.1\Arcade.Shared.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Shared\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Shared\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp3.1\Arcade.Shared.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp3.1\Arcade.Shared.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp3.1\Arcade.Shared.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Debug\netcoreapp3.1\Arcade.Shared.csprojAssemblyReference.cache

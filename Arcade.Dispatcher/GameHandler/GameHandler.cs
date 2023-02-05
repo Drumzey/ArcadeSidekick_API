@@ -30,6 +30,8 @@ namespace Arcade.Dispatcher.GameHandler
                 case "/app/games/knownlevels":
                 case "/app/games/knownsettings":
                 case "/app/games/ratingsweighted":
+                case "/app/games/getgameplaytips":
+                case "/app/games/uploadgameplaytip":
                 case "/website/games/detailedscore":
                     var games = new GameDetails.GameDetails(services);
                     return games.GameDetailsHandler(request, context);
@@ -66,6 +68,10 @@ namespace Arcade.Dispatcher.GameHandler
                 case "/app/games/top50":
                     var top50 = new TopFifty.TopFifty(services);
                     return top50.TopFiftyHandler(request, context);
+
+                case "/app/games/bottom50":
+                    var bottom50 = new TopFifty.TopFifty(services);
+                    return bottom50.BottomFiftyHandler(request, context);
 
                 //Get the simple leader board for a game
                 case "/app/games/leaderboard":

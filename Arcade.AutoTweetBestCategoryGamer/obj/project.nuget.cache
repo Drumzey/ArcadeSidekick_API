@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QS1WyNfevkYQAN3cg0VrYgq3M5CxmeMNWr3KJuuA+jGzwbuJtiF8GIJx8kvU3A7IdH0lSI5MMd/misB68neN4w==",
+  "dgSpecHash": "y9azsdtcV9lMgIe9rTFSFB7Lh3bQ5J60bUpA6slR0lzr7vtavxOiPULTJH8f9DzhdpoRyp6k/yr9nLIXGKxP9g==",
   "success": true,
-  "projectFilePath": "C:\\Personal\\ArcadeSidekick_API\\Arcade.AutoTweetBestCategoryGamer\\Arcade.AutoTweetBestCategoryGamer.csproj",
+  "projectFilePath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.AutoTweetBestCategoryGamer\\Arcade.AutoTweetBestCategoryGamer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.apigatewayevents\\1.2.0\\amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.core\\1.1.0\\amazon.lambda.core.1.1.0.nupkg.sha512",
@@ -12,18 +12,7 @@
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.simpleemail\\3.3.101.63\\awssdk.simpleemail.3.3.101.63.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.app\\2.1.0\\runtime.linux-x64.microsoft.netcore.app.2.1.0.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.dotnetapphost\\2.1.0\\runtime.linux-x64.microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.dotnethostpolicy\\2.1.0\\runtime.linux-x64.microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\runtime.linux-x64.microsoft.netcore.dotnethostresolver\\2.1.0\\runtime.linux-x64.microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\tweetmoasharp\\6.0.0\\tweetmoasharp.6.0.0.nupkg.sha512"
   ],
   "logs": []

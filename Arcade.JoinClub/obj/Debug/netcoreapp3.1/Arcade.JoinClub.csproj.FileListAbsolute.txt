@@ -1,0 +1,15 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\bin\Debug\netcoreapp3.1\Arcade.JoinClub.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\bin\Debug\netcoreapp3.1\Arcade.JoinClub.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\bin\Debug\netcoreapp3.1\Arcade.JoinClub.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\bin\Debug\netcoreapp3.1\Arcade.JoinClub.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\bin\Debug\netcoreapp3.1\Arcade.JoinClub.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\obj\Debug\netcoreapp3.1\Arcade.JoinClub.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\obj\Debug\netcoreapp3.1\Arcade.JoinClub.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\obj\Debug\netcoreapp3.1\Arcade.JoinClub.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\obj\Debug\netcoreapp3.1\Arcade.JoinClub.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\obj\Debug\netcoreapp3.1\Arcade.JoinClub.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\obj\Debug\netcoreapp3.1\Arcade.JoinClub.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\obj\Debug\netcoreapp3.1\Arcade.JoinClub.genruntimeconfig.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.JoinClub\obj\Debug\netcoreapp3.1\Arcade.JoinClub.csprojAssemblyReference.cache

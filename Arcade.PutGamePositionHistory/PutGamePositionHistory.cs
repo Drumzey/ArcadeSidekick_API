@@ -57,7 +57,7 @@ namespace Arcade.PutGamePositionHistory
         /// <returns></returns>
         private Dictionary<string, List<string>> GetAllGameHighscores()
         {
-
+            return null;
         }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace Arcade.PutGamePositionHistory
         /// <returns></returns>
         private string GetContent(KeyValuePair<string, List<string>> results)
         {
-
+            return null;
         }
 
         /// <summary>
@@ -82,18 +82,18 @@ namespace Arcade.PutGamePositionHistory
         {
             try
             {
-                using (var client = new AmazonS3Client(Amazon.RegionEndpoint.EUWest2))
-                {
-                    var request = new GetObjectRequest
-                    {
-                        BucketName = bucket,
-                        Key = key,
-                        FilePath = $"{filePath}.json"
-                    };
-                    var response = await client.GetObjectAsync(request);
-                    var reader = new StreamReader(response.ResponseStream);
-                    string content = reader.ReadToEnd();
-                }
+                //using (var client = new AmazonS3Client(Amazon.RegionEndpoint.EUWest2))
+                //{
+                //    var request = new GetObjectRequest
+                //    {
+                //        BucketName = bucket,
+                //        Key = key,
+                //        FilePath = $"{filePath}.json"
+                //    };
+                //    var response = await client.GetObjectAsync(request);
+                //    var reader = new StreamReader(response.ResponseStream);
+                //    string content = reader.ReadToEnd();
+                //}
                 return true;
             }
             catch (Exception ex)
@@ -107,17 +107,17 @@ namespace Arcade.PutGamePositionHistory
         {
             try
             {
-                using (var client = new AmazonS3Client(Amazon.RegionEndpoint.EUWest2))
-                {
-                    var request = new PutObjectRequest
-                    {
-                        BucketName = bucket,
-                        Key = key,
-                        FilePath = filePath,
-                        ContentBody = content
-                    };
-                    var response = await client.PutObjectAsync(request);
-                }
+                //using (var client = new AmazonS3Client(Amazon.RegionEndpoint.EUWest2))
+                //{
+                //    var request = new PutObjectRequest
+                //    {
+                //        BucketName = bucket,
+                //        Key = key,
+                //        FilePath = filePath,
+                //        ContentBody = content
+                //    };
+                //    var response = await client.PutObjectAsync(request);
+                //}
                 return true;
             }
             catch (Exception ex)

@@ -1,8 +1,0 @@
-F:\Personal\Sidekick API\Arcade.CreateUserNative\bin\Debug\netcoreapp2.1\Arcade.CreateUserNative.deps.json
-F:\Personal\Sidekick API\Arcade.CreateUserNative\bin\Debug\netcoreapp2.1\Arcade.CreateUserNative.runtimeconfig.json
-F:\Personal\Sidekick API\Arcade.CreateUserNative\bin\Debug\netcoreapp2.1\Arcade.CreateUserNative.runtimeconfig.dev.json
-F:\Personal\Sidekick API\Arcade.CreateUserNative\bin\Debug\netcoreapp2.1\Arcade.CreateUserNative.dll
-F:\Personal\Sidekick API\Arcade.CreateUserNative\obj\Debug\netcoreapp2.1\Arcade.CreateUserNative.csprojAssemblyReference.cache
-F:\Personal\Sidekick API\Arcade.CreateUserNative\obj\Debug\netcoreapp2.1\Arcade.CreateUserNative.csproj.CoreCompileInputs.cache
-F:\Personal\Sidekick API\Arcade.CreateUserNative\obj\Debug\netcoreapp2.1\Arcade.CreateUserNative.AssemblyInfoInputs.cache
-F:\Personal\Sidekick API\Arcade.CreateUserNative\obj\Debug\netcoreapp2.1\Arcade.CreateUserNative.AssemblyInfo.cs

@@ -165,6 +165,7 @@ namespace Arcade.GameDetails.Handlers
             ILocationRepository locationRepo,
             IUserRepository userRepo,
             IMiscRepository miscRepo,
+            IObjectRepository objRepo,
             string body)
         {
             //Take the body and construct a new Game Details Object
@@ -187,6 +188,7 @@ namespace Arcade.GameDetails.Handlers
             this.UpdateSimpleScoreIfRequired(
                 doubleScore,
                 userRepo,
+                objRepo,
                 userName,
                 gameName,
                 levelName);
@@ -417,12 +419,13 @@ namespace Arcade.GameDetails.Handlers
         private void UpdateSimpleScoreIfRequired(
             double doubleScore,
             IUserRepository userRepo,
+            IObjectRepository objRepo,
             string userName,
             string gameName,
             string levelName)
         {
             var user = userRepo.Load(userName);
-
+            
             double existingScore = 0;
             if (user.Games.ContainsKey(gameName))
             {
@@ -449,6 +452,50 @@ namespace Arcade.GameDetails.Handlers
                     userRepo.Save(user);
                 }
             }
+
+            // What about the object leaderboard for this game?
+            var leaderboard = objRepo.Load(gameName);
+            if(leaderboard == null)
+            {
+                // If no leaderboard exists yet
+                leaderboard = new ObjectInformation
+                {
+                    Key = gameName,
+                    DictionaryValue = new Dictionary<string, string>
+                    {
+                        { userName, doubleScore.ToString() }
+                    }
+                };
+            }
+            else
+            {
+                // If the leaderboard does exist
+                if (!leaderboard.DictionaryValue.ContainsKey(userName))
+                {
+                    // This user doesnt have a score for it
+                    leaderboard.DictionaryValue.Add(userName, doubleScore.ToString());
+                }
+                else
+                {
+                    // User has a score already.
+                    if (this.IsTimedGameOrLevel(gameName, levelName))
+                    {
+                        if (existingScore > doubleScore)
+                        {
+                            leaderboard.DictionaryValue[userName] = doubleScore.ToString();
+                        }
+                    }
+                    else
+                    {
+                        if (existingScore < doubleScore)
+                        {
+                            leaderboard.DictionaryValue[userName] = doubleScore.ToString();
+                        }
+                    }
+                }
+            }
+
+            objRepo.Save(leaderboard);
         }
 
         private void UpdateLevelInformation(IGameDetailsRepository repo, string gameName, string levelName)

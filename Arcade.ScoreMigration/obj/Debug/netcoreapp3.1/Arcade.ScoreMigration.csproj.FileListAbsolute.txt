@@ -1,0 +1,14 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp3.1\Arcade.ScoreMigration.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp3.1\Arcade.ScoreMigration.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp3.1\Arcade.ScoreMigration.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp3.1\Arcade.ScoreMigration.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp3.1\Arcade.ScoreMigration.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp3.1\Arcade.ScoreMigration.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp3.1\Arcade.ScoreMigration.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp3.1\Arcade.ScoreMigration.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp3.1\Arcade.ScoreMigration.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp3.1\Arcade.ScoreMigration.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp3.1\Arcade.ScoreMigration.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.ScoreMigration\obj\Debug\netcoreapp3.1\Arcade.ScoreMigration.genruntimeconfig.cache

@@ -43,12 +43,16 @@ namespace Arcade.CreateUser
                     return ConflictResponse();
                 }
 
+                Console.WriteLine("Creating user in DB");
                 CreateUserInDatabase(userInfo);
+                Console.WriteLine("Creating user in object table");
                 CreateUserInObjectTable(userInfo.Username);
+                Console.WriteLine("Creating twitter handle in misc table");
                 CreateUserTwitterHandleInMiscTable(userInfo);
 
                 try
                 {
+                    Console.WriteLine("Saving recent activity");
                     SaveRecentActivity(userInfo.Username);
                 }
                 catch (Exception)
@@ -74,6 +78,7 @@ namespace Arcade.CreateUser
 
             try
             {
+                Console.WriteLine("Loading twitter users");
                 var tweeties = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Twitter", "Users");
 
                 if (tweeties == null)
@@ -93,6 +98,7 @@ namespace Arcade.CreateUser
                     tweeties.Dictionary[userInfo.Username] = userInfo.TwitterHandle;
                 }
 
+                Console.WriteLine("Saving twitter users");
                 ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(tweeties);
             }
             catch (Exception e)
@@ -103,6 +109,7 @@ namespace Arcade.CreateUser
 
         private void SaveRecentActivity(string username)
         {
+            Console.WriteLine("Loading recent activity");
             var recentActivity = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Activity", "All");
 
             if (recentActivity == null)
@@ -122,6 +129,7 @@ namespace Arcade.CreateUser
             var newList = recentActivity.List1.Skip(Math.Max(0, recentActivity.List1.Count() - 50));
             recentActivity.List1 = newList.ToList();
 
+            Console.WriteLine("Saving recent activity");
             ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(recentActivity);
         }
 
@@ -134,6 +142,7 @@ namespace Arcade.CreateUser
         {
             try
             {
+                Console.WriteLine("Loading user activity");
                 var users = ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Load("Activity", "Users");
 
                 if (users == null)
@@ -146,6 +155,7 @@ namespace Arcade.CreateUser
 
                 users.List1.Add(userName);
 
+                Console.WriteLine("Saving user in misc table");
                 ((IMiscRepository)services.GetService(typeof(IMiscRepository))).Save(users);
             }
             catch (Exception e)
@@ -178,14 +188,18 @@ namespace Arcade.CreateUser
             };
 
             ((IUserRepository)services.GetService(typeof(IUserRepository))).Save(newUser);
+            Console.WriteLine("User saved");
+            Console.WriteLine("Getting email service");
             var email = (IEmail)services.GetService(typeof(IEmail));
 
             try
             {
+                Console.WriteLine("Emailing secret");
                 email.EmailSecret(newUser.Secret, newUser.EmailAddress, newUser.Username);
             }
             catch (Exception e)
             {
+                Console.WriteLine("Error sending email");
                 Console.WriteLine(e);
             }
         }

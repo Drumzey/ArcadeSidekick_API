@@ -1,0 +1,4 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\netcoreapp3.1\Arcade.MessagesNotification.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\netcoreapp3.1\Arcade.MessagesNotification.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\netcoreapp3.1\Arcade.MessagesNotification.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\netcoreapp3.1\Arcade.MessagesNotification.csproj.CoreCompileInputs.cache

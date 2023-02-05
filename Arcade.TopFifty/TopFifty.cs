@@ -37,6 +37,30 @@ namespace Arcade.TopFifty
             ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
+        public APIGatewayProxyResponse BottomFiftyHandler(APIGatewayProxyRequest request, ILambdaContext context)
+        {
+            try
+            {
+                var arcadeRatings = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Arcade Games");
+                var pinballRatings = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Pinball");
+                var averageOfAllVotes = ((IMiscRepository)services.GetService(typeof(IMiscRepository)))
+                    .Load("Ratings", "Average");
+
+                var topArcades = GetBottom50WeightedAverage(arcadeRatings.Dictionary, averageOfAllVotes.Value);
+                var topPinball = GetBottom50WeightedAverage(pinballRatings.Dictionary, averageOfAllVotes.Value);
+
+                return Response(topArcades, topPinball);
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+
+            return ErrorResponse();
+        }
+
         public APIGatewayProxyResponse TopFiftyHandler(APIGatewayProxyRequest request, ILambdaContext context)
         {
             try
@@ -73,6 +97,30 @@ namespace Arcade.TopFifty
             List<Game> orderedGames = new List<Game>();
 
             foreach (KeyValuePair<string, double> game in numericVersions.OrderByDescending(game => game.Value))
+            {
+                Game g = new Game();
+                g.Name = game.Key;
+                g.Rating = Math.Round(game.Value, 2);
+                orderedGames.Add(g);
+            }
+
+            return orderedGames.Take(50).ToList();
+        }
+
+        private List<Game> GetBottom50WeightedAverage(Dictionary<string, string> dictionaryValue, string mean)
+        {
+            var numericVersions = dictionaryValue.ToDictionary(
+                g => g.Key,
+                g => WeightedAverageCalculator.CalculateAverage(
+                    double.Parse(g.Value.Split(',')[0]),
+                    double.Parse(g.Value.Split(',')[1]),
+                    double.Parse(mean)));
+
+            List<Game> orderedGames = new List<Game>();
+
+            var nonZero = numericVersions.Where(x => x.Value > 0);
+
+            foreach (KeyValuePair<string, double> game in nonZero.OrderBy(game => game.Value))
             {
                 Game g = new Game();
                 g.Name = game.Key;

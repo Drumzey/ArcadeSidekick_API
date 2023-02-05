@@ -20,6 +20,7 @@ using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.GameDetails.Handlers;
+using Arcade.GameDetails.Models;
 using Arcade.Shared;
 using Arcade.Shared.Locations;
 using Arcade.Shared.Misc;
@@ -107,36 +108,13 @@ namespace Arcade.GameDetails
                 case "/app/games/ratingsweighted":
                 case "/app/games/detailedscore":
                 case "/app/games/knownlevels":
+                case "/app/games/getgameplaytips":
                 case "/website/games/detailedscore":
                     if (string.IsNullOrEmpty(gameName))
                     {
                         return ErrorResponse();
                     }
                     break;
-
-                // case "/gamedetails/stats": NOT SURE WHAT THIS IS?
-                //if (string.IsNullOrEmpty(gameName))
-                //{
-                //    return ErrorResponse();
-                //}
-                //if (string.IsNullOrEmpty(userName))
-                //{
-                //    return ErrorResponse();
-                //}
-
-                //case "/gamedetails/locations":
-                //if (string.IsNullOrEmpty(gameName))
-                //{
-                //    return ErrorResponse();
-                //}
-                //break;
-
-                //case "/app/games/availableat":
-                //    if (string.IsNullOrEmpty(location))
-                //    {
-                //        return ErrorResponse();
-                //    }
-                //    break;
                 default:
                     break;
             }
@@ -173,17 +151,9 @@ namespace Arcade.GameDetails
                     }
                     break;
 
-                //case "/app/games/availableat":
-                //    response = GetGamesAtLocation(location);
-                //    break;
-
-                //case "/gamedetails/locations":
-                //    response = GetLocationsForGame(gameName);
-                //    break;
-
-                //case "/gamedetails/stats":
-                //    response = GetUserStatsForGame(userName, gameName);
-                //    break;
+                case "/app/games/getgameplaytips":
+                    response = GetHintsAndTipsForGame(gameName);
+                    break;
 
                 default:
                     return ErrorResponse();
@@ -216,10 +186,15 @@ namespace Arcade.GameDetails
             switch (request.Resource)
             {
                 case "/app/games/detailedscore":
-                     SetHighscore(request.Body);
-                     return OKResponse();
+                    SetHighscore(request.Body);
+                    return OKResponse();
+
                 case "/app/games/uploaddetailedscores":
                     UploadAllOfflineData(request.Body);
+                    return OKResponse();
+
+                case "/app/games/uploadgameplaytip":
+                    AddNewHintsAndTips(request.Body);
                     return OKResponse();
             }
 
@@ -349,7 +324,7 @@ namespace Arcade.GameDetails
         private void SetHighscore(string body)
         {
             var handler = new HighScoreHandler();
-            handler.Set(gameDetailsRepository, locationRepository, userRepository, miscRepository, body);
+            handler.Set(gameDetailsRepository, locationRepository, userRepository, miscRepository, objectRepository, body);
         }
 
         private Scores GetAllHighscores(string gameName)
@@ -370,6 +345,23 @@ namespace Arcade.GameDetails
             return handler.GetAllByLocation(gameDetailsRepository, gameName, location);
         }
         #endregion
+
+        #region Hints And Tips
+
+        public void AddNewHintsAndTips(string body)
+        {
+            var handler = new HintsAndTipsHandler();
+            handler.SaveTipsForGame(gameDetailsRepository, body);
+        }
+
+        private List<HintsAndTips> GetHintsAndTipsForGame(string gameName)
+        {
+            var handler = new HintsAndTipsHandler();
+            return handler.GetTipsForGame(gameDetailsRepository, gameName);
+        }
+
+        #endregion
+
 
         private void UploadAllOfflineData(string body)
         {

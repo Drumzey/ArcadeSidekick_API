@@ -38,7 +38,9 @@ namespace Arcade.Dispatcher
                 request.Resource.StartsWith("/website/venues") ||
                 request.Resource.StartsWith("/app/users/messages") ||
                 request.Resource.StartsWith("/app/users/profile") ||
-                request.Resource.StartsWith("/app/users/update"))
+                request.Resource.StartsWith("/app/users/update") ||
+                request.Resource.StartsWith("/app/users/restore") ||
+                request.Resource.StartsWith("/app/users/verify"))
             {
                 if (request.HttpMethod == "POST" || request.HttpMethod == "DELETE")
                 {

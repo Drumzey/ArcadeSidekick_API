@@ -1,0 +1,15 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\netcoreapp3.1\Arcade.VerifyUser.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\netcoreapp3.1\Arcade.VerifyUser.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\netcoreapp3.1\Arcade.VerifyUser.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\netcoreapp3.1\Arcade.VerifyUser.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\netcoreapp3.1\Arcade.VerifyUser.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\netcoreapp3.1\Arcade.VerifyUser.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\netcoreapp3.1\Arcade.VerifyUser.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\netcoreapp3.1\Arcade.VerifyUser.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\netcoreapp3.1\Arcade.VerifyUser.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\netcoreapp3.1\Arcade.VerifyUser.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\netcoreapp3.1\Arcade.VerifyUser.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\netcoreapp3.1\Arcade.VerifyUser.genruntimeconfig.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\netcoreapp3.1\Arcade.VerifyUser.csprojAssemblyReference.cache

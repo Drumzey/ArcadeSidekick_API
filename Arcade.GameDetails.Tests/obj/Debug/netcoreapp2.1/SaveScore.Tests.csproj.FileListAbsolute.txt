@@ -1,7 +1,0 @@
-F:\Personal\Sidekick API\SaveScore.Tests\obj\Debug\netcoreapp2.1\SaveScore.Tests.csprojAssemblyReference.cache
-F:\Personal\Sidekick API\SaveScore.Tests\obj\Debug\netcoreapp2.1\SaveScore.Tests.csproj.CoreCompileInputs.cache
-F:\Personal\Sidekick API\SaveScore.Tests\obj\Debug\netcoreapp2.1\SaveScore.Tests.AssemblyInfoInputs.cache
-F:\Personal\Sidekick API\SaveScore.Tests\obj\Debug\netcoreapp2.1\SaveScore.Tests.AssemblyInfo.cs
-F:\Personal\Sidekick API\SaveScore.Tests\bin\Debug\netcoreapp2.1\SaveScore.dll
-F:\Personal\Sidekick API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Shared.dll
-F:\Personal\Sidekick API\SaveScore.Tests\bin\Debug\netcoreapp2.1\Shared.pdb

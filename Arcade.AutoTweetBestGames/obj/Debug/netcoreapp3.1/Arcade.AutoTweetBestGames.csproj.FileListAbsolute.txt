@@ -1,0 +1,15 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.deps.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.runtimeconfig.dev.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.csprojAssemblyReference.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.AssemblyInfoInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.AssemblyInfo.cs
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.csproj.CoreCompileInputs.cache
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.csproj.CopyComplete
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Debug\netcoreapp3.1\Arcade.AutoTweetBestGames.genruntimeconfig.cache

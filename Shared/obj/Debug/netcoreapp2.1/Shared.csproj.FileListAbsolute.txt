@@ -1,9 +1,0 @@
-F:\Personal\Sidekick API\Shared\bin\Debug\netcoreapp2.1\Shared.deps.json
-F:\Personal\Sidekick API\Shared\bin\Debug\netcoreapp2.1\Shared.dll
-F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Shared.csproj.CoreCompileInputs.cache
-F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Shared.AssemblyInfoInputs.cache
-F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Shared.AssemblyInfo.cs
-F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Shared.csprojAssemblyReference.cache
-F:\Personal\Sidekick API\Shared\bin\Debug\netcoreapp2.1\Shared.pdb
-F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Shared.dll
-F:\Personal\Sidekick API\Shared\obj\Debug\netcoreapp2.1\Shared.pdb

@@ -1,0 +1,15 @@
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Arcade.CreateUser.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Arcade.CreateUser.runtimeconfig.json
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Arcade.CreateUser.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Amazon.Lambda.APIGatewayEvents.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Amazon.Lambda.Core.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Amazon.Lambda.Serialization.Json.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\AWSSDK.Core.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\AWSSDK.DynamoDBv2.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\AWSSDK.SimpleEmail.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Microsoft.Extensions.DependencyInjection.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Newtonsoft.Json.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Arcade.Shared.dll
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Arcade.Shared.pdb
+C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.CreateUser\bin\Release\netcoreapp3.1\publish\Arcade.CreateUser.deps.json

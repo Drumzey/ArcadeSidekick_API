@@ -1,4 +1,5 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
+using Arcade.GameDetails.Models;
 using Arcade.Shared;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,8 @@ namespace Arcade.GameDetails
         public List<ScoreDetails> Scores { get; set; }
 
         public List<Setting> Settings { get; set; }
+
+        public List<HintsAndTips> HintsAndTips { get; set; }
 
         public List<string> Levels { get; set; }
 
