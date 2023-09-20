@@ -8,27 +8,19 @@
           "Newtonsoft.Json": "9.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {}
         }
       },
       "Amazon.Lambda.Core/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {}
         }
       },
       "Amazon.Lambda.Serialization.Json/1.7.0": {
@@ -38,27 +30,19 @@
           "Newtonsoft.Json": "9.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {}
         }
       },
       "AWSSDK.Core/3.3.103.57": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         }
       },
       "AWSSDK.DynamoDBv2/3.3.101.80": {
@@ -67,14 +51,10 @@
           "AWSSDK.Core": "[3.3.103.54, 3.4.0)"
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         }
       },
       "AWSSDK.SimpleEmail/3.3.101.63": {
@@ -83,14 +63,10 @@
           "AWSSDK.Core": "[3.3.103.57, 3.4.0)"
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection/3.0.0": {
@@ -99,40 +75,28 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "StyleCop.Analyzers/1.1.118": {
@@ -145,188 +109,11 @@
         },
         "compile": {
           "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
-            "related": ".deps.json"
-          }
+          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
-            "related": ".deps.json"
-          }
-        }
-      },
-      "Arcade.Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "AWSSDK.DynamoDBv2": "3.3.101.80",
-          "AWSSDK.SimpleEmail": "3.3.101.63",
-          "Amazon.Lambda.APIGatewayEvents": "1.2.0",
-          "Amazon.Lambda.Serialization.Json": "1.7.0",
-          "Microsoft.Extensions.DependencyInjection": "3.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Arcade.Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Arcade.Shared.dll": {}
-        }
-      }
-    },
-    ".NETCoreApp,Version=v3.1/linux-x64": {
-      "Amazon.Lambda.APIGatewayEvents/1.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "9.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Amazon.Lambda.Core/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Amazon.Lambda.Serialization.Json/1.7.0": {
-        "type": "package",
-        "dependencies": {
-          "Amazon.Lambda.Core": "1.1.0",
-          "Newtonsoft.Json": "9.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "AWSSDK.Core/3.3.103.57": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.DynamoDBv2/3.3.101.80": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.3.103.54, 3.4.0)"
-        },
-        "compile": {
-          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "AWSSDK.SimpleEmail/3.3.101.63": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "[3.3.103.57, 3.4.0)"
-        },
-        "compile": {
-          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Newtonsoft.Json/11.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "StyleCop.Analyzers/1.1.118": {
-        "type": "package"
-      },
-      "TweetMoaSharp/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
-            "related": ".deps.json"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
-            "related": ".deps.json"
-          }
+          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {}
         }
       },
       "Arcade.Shared/1.0.0": {
@@ -733,8 +520,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -743,12 +529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "linux-x64": {
-        "#import": []
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
       }
     }
   }
