@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\net6.0\Arcade.AutoTweetLeaderboards.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\net6.0\Arcade.AutoTweetLeaderboards.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\net6.0\Arcade.AutoTweetLeaderboards.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\net6.0\Arcade.AutoTweetLeaderboards.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\Arcade.AutoTweetLeaderboards.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\Arcade.AutoTweetLeaderboards.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\Arcade.AutoTweetLeaderboards.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\Arcade.AutoTweetLeaderboards.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\Arcade.AutoTweetLeaderboards.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\Arcade.AutoTweetLeaderboards.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\Arcade.AutoTweetLeaderboards.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\refint\Arcade.AutoTweetLeaderboards.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\Arcade.AutoTweetLeaderboards.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\Arcade.AutoTweetLeaderboards.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetLeaderboards\obj\Debug\net6.0\ref\Arcade.AutoTweetLeaderboards.dll

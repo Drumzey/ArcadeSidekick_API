@@ -49,10 +49,10 @@ namespace Arcade.MyMessages_GET
         public (List<Message> New, List<Message> Old) GetMessages(
             IServiceProvider services,
             string username,
-            APIGatewayProxyRequest request)
+            APIGatewayProxyRequest request,
+            bool attemptUpdate = true)
         {
             var messageRepository = (IMessageRepository)services.GetService(typeof(IMessageRepository));
-
             var userMessages = messageRepository.Load(username);
 
             if (userMessages == null)
@@ -66,7 +66,17 @@ namespace Arcade.MyMessages_GET
             //Get seen messages
             var oldMessages = userMessages.Notifications.Where(x => x.Seen == true).OrderByDescending(x => x.TimeSet).ToList();
 
-            MarkMessagesAsSeen(request, newMessages);
+            try
+            {
+                if (attemptUpdate)
+                {
+                    MarkMessagesAsSeen(request, newMessages);
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine($"Error updating messages");
+            }
 
             messageRepository.Save(userMessages);
 

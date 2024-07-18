@@ -15,3 +15,21 @@ C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netco
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.dll
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.pdb
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\bin\Debug\netcoreapp3.1\Arcade.SaveRating.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\bin\Debug\netcoreapp3.1\Arcade.SaveRating.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\bin\Debug\netcoreapp3.1\Arcade.SaveRating.runtimeconfig.dev.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\bin\Debug\netcoreapp3.1\Arcade.SaveRating.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\bin\Debug\netcoreapp3.1\Arcade.SaveRating.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\bin\Debug\netcoreapp3.1\Arcade.GameDetails.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\bin\Debug\netcoreapp3.1\Arcade.GameDetails.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.SaveRating\obj\Debug\netcoreapp3.1\Arcade.SaveRating.genruntimeconfig.cache

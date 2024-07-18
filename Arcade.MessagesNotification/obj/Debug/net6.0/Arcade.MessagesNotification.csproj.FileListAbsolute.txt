@@ -1,0 +1,5 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\net6.0\Arcade.MessagesNotification.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\net6.0\Arcade.MessagesNotification.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\net6.0\Arcade.MessagesNotification.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\net6.0\Arcade.MessagesNotification.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MessagesNotification\obj\Debug\net6.0\Arcade.MessagesNotification.csproj.CoreCompileInputs.cache

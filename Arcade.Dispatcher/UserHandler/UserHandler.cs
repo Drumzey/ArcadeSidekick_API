@@ -1,6 +1,7 @@
 ﻿using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
+using Arcade.Shared.Messages;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -89,12 +90,29 @@ namespace Arcade.Dispatcher.UserHandler
                 friendsGamesResponse = friendsGames.GetUserInfo(string.Join(',', restoreUserResponse.Friends));
             }
 
-            return RestoreUserResponse(restoreUserResponse, friendsGamesResponse);
+            var newMessages = new List<Message>();
+            var oldMessages = new List<Message>();
+
+            try
+            {
+                var myMessages = new MyMessages_GET.MyMessages_GET(services);
+                var myMessagesResponse = myMessages.GetMessages(services, username, request, false);
+                newMessages = myMessagesResponse.New;
+                oldMessages = myMessagesResponse.Old;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine($"Error getting messages {e.InnerException}");
+            }
+
+            return RestoreUserResponse(restoreUserResponse, friendsGamesResponse, newMessages, oldMessages);
         }
 
         private static APIGatewayProxyResponse RestoreUserResponse(
             UserInformation restoreUserResponse,
-            List<UserInformation> friendsGamesResponse)
+            List<UserInformation> friendsGamesResponse,
+            List<Message> newMessages,
+            List<Message> oldMessages)
         {
             var response = new Dictionary<string, object>();
             response.Add("Me", restoreUserResponse);
@@ -117,6 +135,8 @@ namespace Arcade.Dispatcher.UserHandler
             }
 
             response.Add("Friends", friendResponse);
+            response.Add("NewMessages", newMessages);
+            response.Add("OldMessages", oldMessages);
 
             return new APIGatewayProxyResponse
             {

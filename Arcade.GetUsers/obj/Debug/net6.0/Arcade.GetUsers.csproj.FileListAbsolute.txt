@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Debug\net6.0\Arcade.GetUsers.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Debug\net6.0\Arcade.GetUsers.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Debug\net6.0\Arcade.GetUsers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Debug\net6.0\Arcade.GetUsers.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\Arcade.GetUsers.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\Arcade.GetUsers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\Arcade.GetUsers.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\Arcade.GetUsers.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\Arcade.GetUsers.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\Arcade.GetUsers.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\Arcade.GetUsers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\refint\Arcade.GetUsers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\Arcade.GetUsers.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\Arcade.GetUsers.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Debug\net6.0\ref\Arcade.GetUsers.dll

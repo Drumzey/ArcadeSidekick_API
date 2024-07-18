@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Arcade.Shared.Messages
 {
@@ -23,6 +24,7 @@ namespace Arcade.Shared.Messages
                 Data = data,
             };
 
+            Console.WriteLine($"Sending Messages to {to}");
             var messages = messageRepo.Load(to);
 
             if (messages == null)
@@ -30,6 +32,14 @@ namespace Arcade.Shared.Messages
                 messages = new Messages();
                 messages.UserName = to;
                 messages.Notifications = new List<Message>();
+            }
+            else
+            {
+                // This is loading all messages for this user and then appending one on the end
+                // We dont want to keep all messages for ever.
+                // Keep messages for the past 2 months ONLY
+                var messagesThisMonth = messages.Notifications.Where(x => x.TimeSet > DateTime.Now.AddMonths(-2)).ToList();
+                messages.Notifications = messagesThisMonth;
             }
 
             messages.Notifications.Add(mess);
@@ -57,6 +67,7 @@ namespace Arcade.Shared.Messages
 
             var messageService = (IMessageRepository)services.GetService(typeof(IMessageRepository));
 
+            Console.WriteLine($"Sending Messages to {to}");
             var messages = messageService.Load(to);
 
             if (messages == null)
@@ -64,6 +75,14 @@ namespace Arcade.Shared.Messages
                 messages = new Messages();
                 messages.UserName = to;
                 messages.Notifications = new List<Message>();
+            }
+            else
+            {
+                // This is loading all messages for this user and then appending one on the end
+                // We dont want to keep all messages for ever.
+                // Keep messages for the past 2 months ONLY
+                var messagesThisMonth = messages.Notifications.Where(x => x.TimeSet > DateTime.Now.AddMonths(-2)).ToList();
+                messages.Notifications = messagesThisMonth;
             }
 
             messages.Notifications.Add(mess);

@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\net6.0\Arcade.Authorizer.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\net6.0\Arcade.Authorizer.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\net6.0\Arcade.Authorizer.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\net6.0\Arcade.Authorizer.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\Arcade.Authorizer.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\Arcade.Authorizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\Arcade.Authorizer.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\Arcade.Authorizer.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\Arcade.Authorizer.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\Arcade.Authorizer.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\Arcade.Authorizer.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\refint\Arcade.Authorizer.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\Arcade.Authorizer.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\Arcade.Authorizer.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Authorizer\obj\Debug\net6.0\ref\Arcade.Authorizer.dll

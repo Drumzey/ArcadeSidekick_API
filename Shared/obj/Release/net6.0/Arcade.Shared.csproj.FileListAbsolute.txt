@@ -1,0 +1,14 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\bin\Release\net6.0\Arcade.Shared.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\bin\Release\net6.0\Arcade.Shared.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\bin\Release\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\bin\Release\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\Arcade.Shared.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\Arcade.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\Arcade.Shared.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\Arcade.Shared.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\Arcade.Shared.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\refint\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\Arcade.Shared.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Shared\obj\Release\net6.0\ref\Arcade.Shared.dll

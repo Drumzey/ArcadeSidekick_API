@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\net6.0\Arcade.GetScore.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\net6.0\Arcade.GetScore.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\net6.0\Arcade.GetScore.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\net6.0\Arcade.GetScore.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\Arcade.GetScore.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\Arcade.GetScore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\Arcade.GetScore.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\Arcade.GetScore.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\Arcade.GetScore.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\Arcade.GetScore.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\Arcade.GetScore.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\refint\Arcade.GetScore.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\Arcade.GetScore.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\Arcade.GetScore.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore\obj\Debug\net6.0\ref\Arcade.GetScore.dll

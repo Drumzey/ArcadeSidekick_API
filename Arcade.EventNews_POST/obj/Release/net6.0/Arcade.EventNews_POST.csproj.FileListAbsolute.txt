@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Release\net6.0\Arcade.EventNews_POST.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Release\net6.0\Arcade.EventNews_POST.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Release\net6.0\Arcade.EventNews_POST.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Release\net6.0\Arcade.EventNews_POST.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Release\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\bin\Release\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\Arcade.EventNews_POST.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\Arcade.EventNews_POST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\Arcade.EventNews_POST.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\Arcade.EventNews_POST.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\Arcade.EventNews_POST.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\Arcade.EventNews_POST.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\Arcade.EventNews_POST.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\refint\Arcade.EventNews_POST.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\Arcade.EventNews_POST.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\Arcade.EventNews_POST.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.EventNews_POST\obj\Release\net6.0\ref\Arcade.EventNews_POST.dll

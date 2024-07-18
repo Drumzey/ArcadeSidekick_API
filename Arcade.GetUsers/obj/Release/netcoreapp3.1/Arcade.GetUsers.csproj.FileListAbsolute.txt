@@ -14,3 +14,19 @@ C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netco
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.genruntimeconfig.cache
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.GeneratedMSBuildEditorConfig.editorconfig
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp3.1\Arcade.GetUsers.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp3.1\Arcade.GetUsers.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp3.1\Arcade.GetUsers.runtimeconfig.dev.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp3.1\Arcade.GetUsers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp3.1\Arcade.GetUsers.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\bin\Release\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetUsers\obj\Release\netcoreapp3.1\Arcade.GetUsers.genruntimeconfig.cache

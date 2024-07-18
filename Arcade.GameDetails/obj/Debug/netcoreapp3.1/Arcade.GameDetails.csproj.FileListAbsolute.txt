@@ -13,3 +13,19 @@ C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netc
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.dll
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.pdb
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.runtimeconfig.dev.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.GameDetails.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GameDetails\obj\Debug\netcoreapp3.1\Arcade.GameDetails.genruntimeconfig.cache

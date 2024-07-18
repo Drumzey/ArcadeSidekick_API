@@ -14,3 +14,19 @@ C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Releas
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.genruntimeconfig.cache
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.GeneratedMSBuildEditorConfig.editorconfig
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Release\netcoreapp3.1\Arcade.Challenges_POST.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Release\netcoreapp3.1\Arcade.Challenges_POST.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Release\netcoreapp3.1\Arcade.Challenges_POST.runtimeconfig.dev.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Release\netcoreapp3.1\Arcade.Challenges_POST.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Release\netcoreapp3.1\Arcade.Challenges_POST.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Release\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\bin\Release\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Challenges_POST\obj\Release\netcoreapp3.1\Arcade.Challenges_POST.genruntimeconfig.cache

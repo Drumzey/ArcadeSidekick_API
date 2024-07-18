@@ -1,26 +1,34 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net6.0": {
       "Amazon.Lambda.APIGatewayEvents/1.3.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "9.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {}
+          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {}
+          "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Amazon.Lambda.Core/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {}
+          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {}
+          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Amazon.Lambda.Serialization.Json/1.7.0": {
@@ -30,19 +38,27 @@
           "Newtonsoft.Json": "9.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {}
+          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {}
+          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "AWSSDK.Core/3.3.103.57": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "AWSSDK.DynamoDBv2/3.3.101.80": {
@@ -51,10 +67,14 @@
           "AWSSDK.Core": "[3.3.103.54, 3.4.0)"
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "AWSSDK.SimpleEmail/3.3.101.63": {
@@ -63,10 +83,14 @@
           "AWSSDK.Core": "[3.3.103.57, 3.4.0)"
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {}
+          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {}
+          "lib/netstandard2.0/AWSSDK.SimpleEmail.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/3.0.0": {
@@ -75,19 +99,27 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.IdentityModel.JsonWebTokens/5.6.0": {
@@ -97,19 +129,27 @@
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.IdentityModel.Logging/5.6.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.IdentityModel.Tokens/5.6.0": {
@@ -120,19 +160,27 @@
           "System.Security.Cryptography.Cng": "4.5.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IdentityModel.Tokens.Jwt/5.6.0": {
@@ -143,16 +191,22 @@
           "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Security.Cryptography.Cng/4.5.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {}
+          "ref/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {}
@@ -171,16 +225,20 @@
         },
         "compile": {
           "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {}
+          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
+            "related": ".deps.json"
+          }
         },
         "runtime": {
           "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {}
+          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
+            "related": ".deps.json"
+          }
         }
       },
       "Arcade.Challenges_POST/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -195,7 +253,7 @@
       },
       "Arcade.CreateUser/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -210,7 +268,7 @@
       },
       "Arcade.EventNews_POST/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -225,7 +283,7 @@
       },
       "Arcade.ForgotInformation/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -240,7 +298,7 @@
       },
       "Arcade.GameDetails/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -255,7 +313,7 @@
       },
       "Arcade.GetClubs/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -270,7 +328,7 @@
       },
       "Arcade.GetLeaderboard/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.APIGatewayEvents": "1.2.0",
           "Amazon.Lambda.Core": "1.1.0",
@@ -286,7 +344,7 @@
       },
       "Arcade.GetRating/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -302,7 +360,7 @@
       },
       "Arcade.GetScore/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -317,7 +375,7 @@
       },
       "Arcade.GetUsers/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.APIGatewayEvents": "1.2.0",
           "Amazon.Lambda.Core": "1.1.0",
@@ -333,7 +391,7 @@
       },
       "Arcade.JoinClub/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -348,7 +406,7 @@
       },
       "Arcade.LeaveClub/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -363,7 +421,7 @@
       },
       "Arcade.Locations/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Arcade.Shared": "1.0.0"
@@ -377,7 +435,7 @@
       },
       "Arcade.MyMessages_GET/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -392,7 +450,7 @@
       },
       "Arcade.ProfileStats_GET/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -407,7 +465,7 @@
       },
       "Arcade.ProfileStats_POST/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -422,7 +480,7 @@
       },
       "Arcade.RecentActivity/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -437,7 +495,7 @@
       },
       "Arcade.RestoreUser/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -453,7 +511,7 @@
       },
       "Arcade.SaveRating/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Serialization.Json": "1.7.0",
           "Arcade.GameDetails": "1.0.0",
@@ -469,7 +527,7 @@
       },
       "Arcade.SaveScore/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -485,7 +543,7 @@
       },
       "Arcade.Shared/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.3.101.80",
           "AWSSDK.SimpleEmail": "3.3.101.63",
@@ -502,7 +560,7 @@
       },
       "Arcade.TopFifty/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -517,7 +575,7 @@
       },
       "Arcade.UpdateUserInfo/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -532,7 +590,7 @@
       },
       "Arcade.VerifyUser/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Amazon.Lambda.Core": "1.1.0",
           "Amazon.Lambda.Serialization.Json": "1.7.0",
@@ -1083,7 +1141,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net6.0": [
       "Amazon.Lambda.APIGatewayEvents >= 1.3.0",
       "Amazon.Lambda.Core >= 1.1.0",
       "Arcade.Challenges_POST >= 1.0.0",
@@ -1114,32 +1172,27 @@
   },
   "packageFolders": {
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Dispatcher\\Arcade.Dispatcher.csproj",
+      "projectUniqueName": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Dispatcher\\Arcade.Dispatcher.csproj",
       "projectName": "Arcade.Dispatcher",
-      "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Dispatcher\\Arcade.Dispatcher.csproj",
+      "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Dispatcher\\Arcade.Dispatcher.csproj",
       "packagesPath": "C:\\Users\\richard.rumsey\\.nuget\\packages\\",
-      "outputPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Dispatcher\\obj\\",
+      "outputPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Dispatcher\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\richard.rumsey\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -1147,80 +1200,80 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Challenges_POST\\Arcade.Challenges_POST.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Challenges_POST\\Arcade.Challenges_POST.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Challenges_POST\\Arcade.Challenges_POST.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Challenges_POST\\Arcade.Challenges_POST.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.CreateUser\\Arcade.CreateUser.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.CreateUser\\Arcade.CreateUser.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.CreateUser\\Arcade.CreateUser.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.CreateUser\\Arcade.CreateUser.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.EventNews_POST\\Arcade.EventNews_POST.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.EventNews_POST\\Arcade.EventNews_POST.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.EventNews_POST\\Arcade.EventNews_POST.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.EventNews_POST\\Arcade.EventNews_POST.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ForgotInformation\\Arcade.ForgotInformation.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ForgotInformation\\Arcade.ForgotInformation.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ForgotInformation\\Arcade.ForgotInformation.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ForgotInformation\\Arcade.ForgotInformation.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GameDetails\\Arcade.GameDetails.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetClubs\\Arcade.GetClubs.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetClubs\\Arcade.GetClubs.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetClubs\\Arcade.GetClubs.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetClubs\\Arcade.GetClubs.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetLeaderboard\\Arcade.GetLeaderboard.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetLeaderboard\\Arcade.GetLeaderboard.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetLeaderboard\\Arcade.GetLeaderboard.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetLeaderboard\\Arcade.GetLeaderboard.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetRating\\Arcade.GetRating.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetRating\\Arcade.GetRating.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetRating\\Arcade.GetRating.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetRating\\Arcade.GetRating.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.JoinClub\\Arcade.JoinClub.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.JoinClub\\Arcade.JoinClub.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.JoinClub\\Arcade.JoinClub.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.JoinClub\\Arcade.JoinClub.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.LeaveClub\\Arcade.LeaveClub.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Locations\\Arcade.Locations.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Locations\\Arcade.Locations.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Locations\\Arcade.Locations.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.Locations\\Arcade.Locations.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.MyMessages_GET\\Arcade.MyMessages_GET.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.MyMessages_GET\\Arcade.MyMessages_GET.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.MyMessages_GET\\Arcade.MyMessages_GET.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.MyMessages_GET\\Arcade.MyMessages_GET.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_GET\\Arcade.ProfileStats_GET.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_GET\\Arcade.ProfileStats_GET.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_GET\\Arcade.ProfileStats_GET.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_GET\\Arcade.ProfileStats_GET.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_POST\\Arcade.ProfileStats_POST.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_POST\\Arcade.ProfileStats_POST.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_POST\\Arcade.ProfileStats_POST.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.ProfileStats_POST\\Arcade.ProfileStats_POST.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RecentActivity\\Arcade.RecentActivity.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RecentActivity\\Arcade.RecentActivity.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RecentActivity\\Arcade.RecentActivity.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RecentActivity\\Arcade.RecentActivity.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RestoreUser\\Arcade.RestoreUser.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RestoreUser\\Arcade.RestoreUser.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RestoreUser\\Arcade.RestoreUser.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.RestoreUser\\Arcade.RestoreUser.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.SaveRating\\Arcade.SaveRating.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.SaveRating\\Arcade.SaveRating.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.SaveRating\\Arcade.SaveRating.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.SaveRating\\Arcade.SaveRating.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.TopFifty\\Arcade.TopFifty.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.UpdateUserInfo\\Arcade.UpdateUserInfo.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.UpdateUserInfo\\Arcade.UpdateUserInfo.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.UpdateUserInfo\\Arcade.UpdateUserInfo.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.UpdateUserInfo\\Arcade.UpdateUserInfo.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\GetScore\\Arcade.GetScore.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\GetScore\\Arcade.GetScore.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\GetScore\\Arcade.GetScore.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\GetScore\\Arcade.GetScore.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\SaveScore\\Arcade.SaveScore.csproj"
             },
-            "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
-              "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj"
+            "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
+              "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj"
             }
           }
         }
@@ -1232,8 +1285,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "Amazon.Lambda.APIGatewayEvents": {
             "target": "Package",
@@ -1250,7 +1303,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -1259,7 +1313,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

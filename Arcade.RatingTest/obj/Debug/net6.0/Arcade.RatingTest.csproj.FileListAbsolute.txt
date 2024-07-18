@@ -1,0 +1,5 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingTest\obj\Debug\net6.0\Arcade.RatingTest.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingTest\obj\Debug\net6.0\Arcade.RatingTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingTest\obj\Debug\net6.0\Arcade.RatingTest.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingTest\obj\Debug\net6.0\Arcade.RatingTest.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RatingTest\obj\Debug\net6.0\Arcade.RatingTest.csproj.CoreCompileInputs.cache

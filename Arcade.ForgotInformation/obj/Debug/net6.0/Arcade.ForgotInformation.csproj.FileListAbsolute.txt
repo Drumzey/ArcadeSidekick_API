@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\net6.0\Arcade.ForgotInformation.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\net6.0\Arcade.ForgotInformation.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\net6.0\Arcade.ForgotInformation.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\net6.0\Arcade.ForgotInformation.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\Arcade.ForgotInformation.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\Arcade.ForgotInformation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\Arcade.ForgotInformation.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\Arcade.ForgotInformation.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\Arcade.ForgotInformation.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\Arcade.ForgotInformation.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\Arcade.ForgotInformation.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\refint\Arcade.ForgotInformation.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\Arcade.ForgotInformation.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\Arcade.ForgotInformation.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ForgotInformation\obj\Debug\net6.0\ref\Arcade.ForgotInformation.dll

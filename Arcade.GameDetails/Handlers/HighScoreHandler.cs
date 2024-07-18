@@ -130,6 +130,7 @@ namespace Arcade.GameDetails.Handlers
                                 UserName = score.UserName,
                                 LevelName = score.LevelName,
                                 Verified = score.Verified,
+                                Location = score.Location
                             });
                         }
                     }
@@ -153,6 +154,7 @@ namespace Arcade.GameDetails.Handlers
                         Score = score.Value,
                         LevelName = string.Empty,
                         Verified = false,
+                        Location = string.Empty,
                     });
                 }
             }

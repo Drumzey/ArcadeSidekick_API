@@ -15,3 +15,21 @@ C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netc
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.dll
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.pdb
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\bin\Debug\netcoreapp3.1\Arcade.RestoreUser.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\bin\Debug\netcoreapp3.1\Arcade.RestoreUser.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\bin\Debug\netcoreapp3.1\Arcade.RestoreUser.runtimeconfig.dev.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\bin\Debug\netcoreapp3.1\Arcade.RestoreUser.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\bin\Debug\netcoreapp3.1\Arcade.RestoreUser.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\bin\Debug\netcoreapp3.1\Arcade.GameDetails.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\bin\Debug\netcoreapp3.1\Arcade.GameDetails.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RestoreUser\obj\Debug\netcoreapp3.1\Arcade.RestoreUser.genruntimeconfig.cache

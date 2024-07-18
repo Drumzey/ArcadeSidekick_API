@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\net6.0\Arcade.GetClubs.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\net6.0\Arcade.GetClubs.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\net6.0\Arcade.GetClubs.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\net6.0\Arcade.GetClubs.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\bin\Release\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\Arcade.GetClubs.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\Arcade.GetClubs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\Arcade.GetClubs.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\Arcade.GetClubs.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\Arcade.GetClubs.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\Arcade.GetClubs.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\Arcade.GetClubs.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\refint\Arcade.GetClubs.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\Arcade.GetClubs.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\Arcade.GetClubs.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.GetClubs\obj\Release\net6.0\ref\Arcade.GetClubs.dll

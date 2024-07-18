@@ -1,4 +1,10 @@
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
+using Amazon.DynamoDBv2.DataModel;
+using Amazon.Lambda.APIGatewayEvents;
+using Amazon.Lambda.Core;
+using System;
+using System.Collections.Generic;
+
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
 
 namespace Arcade.MessagesNotification

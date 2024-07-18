@@ -12,3 +12,19 @@ C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcor
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.dll
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.pdb
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp3.1\Arcade.Locations.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp3.1\Arcade.Locations.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp3.1\Arcade.Locations.runtimeconfig.dev.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp3.1\Arcade.Locations.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp3.1\Arcade.Locations.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\bin\Debug\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.Locations\obj\Debug\netcoreapp3.1\Arcade.Locations.genruntimeconfig.cache

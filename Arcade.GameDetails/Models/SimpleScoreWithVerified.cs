@@ -9,5 +9,7 @@
         public string LevelName { get; set; }
 
         public bool Verified { get; set; }
+
+        public string Location { get; set; }
     }
 }

@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\bin\Debug\net6.0\Arcade.ProfileStats_POST.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\bin\Debug\net6.0\Arcade.ProfileStats_POST.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\bin\Debug\net6.0\Arcade.ProfileStats_POST.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\bin\Debug\net6.0\Arcade.ProfileStats_POST.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\Arcade.ProfileStats_POST.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\Arcade.ProfileStats_POST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\Arcade.ProfileStats_POST.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\Arcade.ProfileStats_POST.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\Arcade.ProfileStats_POST.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\Arcade.ProfileStats_POST.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\Arcade.ProfileStats_POST.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\refint\Arcade.ProfileStats_POST.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\Arcade.ProfileStats_POST.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\Arcade.ProfileStats_POST.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.ProfileStats_POST\obj\Debug\net6.0\ref\Arcade.ProfileStats_POST.dll

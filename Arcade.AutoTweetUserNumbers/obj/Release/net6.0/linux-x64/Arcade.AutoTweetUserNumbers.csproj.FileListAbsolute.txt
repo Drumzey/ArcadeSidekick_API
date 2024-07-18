@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\linux-x64\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\linux-x64\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\refint\Arcade.AutoTweetUserNumbers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\Arcade.AutoTweetUserNumbers.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\obj\Release\net6.0\linux-x64\ref\Arcade.AutoTweetUserNumbers.dll

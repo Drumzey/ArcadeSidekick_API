@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\net6.0\Arcade.VerifyUser.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\net6.0\Arcade.VerifyUser.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\net6.0\Arcade.VerifyUser.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\net6.0\Arcade.VerifyUser.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\Arcade.VerifyUser.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\Arcade.VerifyUser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\Arcade.VerifyUser.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\Arcade.VerifyUser.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\Arcade.VerifyUser.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\Arcade.VerifyUser.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\Arcade.VerifyUser.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\refint\Arcade.VerifyUser.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\Arcade.VerifyUser.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\Arcade.VerifyUser.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyUser\obj\Debug\net6.0\ref\Arcade.VerifyUser.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "94KK3XQl/NJsr0GM7R94JBVKqvczCNBdkCm+Fp5rB67wQcugnDyF23fmva1bmTh5oYoFup09YPAXg5F5R2H3Vg==",
+  "dgSpecHash": "iUxc5sVmFsNiQKANM7yojGOHgc3jHJGPxo56uaUpMOY17J3lSkSEP6rd1EHNT1vnx2R7w0UrhZdAAQ1bQ0QErg==",
   "success": true,
-  "projectFilePath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.AutoTweetBestGamers\\Arcade.AutoTweetBestGamers.csproj",
+  "projectFilePath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.AutoTweetBestGamers\\Arcade.AutoTweetBestGamers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.apigatewayevents\\1.2.0\\amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.core\\1.1.0\\amazon.lambda.core.1.1.0.nupkg.sha512",
@@ -12,7 +12,7 @@
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.simpleemail\\3.3.101.63\\awssdk.simpleemail.3.3.101.63.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\tweetmoasharp\\6.0.0\\tweetmoasharp.6.0.0.nupkg.sha512"
   ],
   "logs": []

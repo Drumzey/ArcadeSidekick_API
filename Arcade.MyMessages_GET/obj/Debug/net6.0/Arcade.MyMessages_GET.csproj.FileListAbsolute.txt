@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\bin\Debug\net6.0\Arcade.MyMessages_GET.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\bin\Debug\net6.0\Arcade.MyMessages_GET.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\bin\Debug\net6.0\Arcade.MyMessages_GET.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\bin\Debug\net6.0\Arcade.MyMessages_GET.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\Arcade.MyMessages_GET.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\Arcade.MyMessages_GET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\Arcade.MyMessages_GET.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\Arcade.MyMessages_GET.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\Arcade.MyMessages_GET.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\Arcade.MyMessages_GET.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\Arcade.MyMessages_GET.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\refint\Arcade.MyMessages_GET.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\Arcade.MyMessages_GET.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\Arcade.MyMessages_GET.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.MyMessages_GET\obj\Debug\net6.0\ref\Arcade.MyMessages_GET.dll

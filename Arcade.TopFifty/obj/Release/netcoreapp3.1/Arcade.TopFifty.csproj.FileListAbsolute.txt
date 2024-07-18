@@ -14,3 +14,19 @@ C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netco
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.genruntimeconfig.cache
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.csproj.AssemblyReference.cache
 C:\Personal\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\bin\Release\netcoreapp3.1\Arcade.TopFifty.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\bin\Release\netcoreapp3.1\Arcade.TopFifty.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\bin\Release\netcoreapp3.1\Arcade.TopFifty.runtimeconfig.dev.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\bin\Release\netcoreapp3.1\Arcade.TopFifty.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\bin\Release\netcoreapp3.1\Arcade.TopFifty.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\bin\Release\netcoreapp3.1\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\bin\Release\netcoreapp3.1\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.TopFifty\obj\Release\netcoreapp3.1\Arcade.TopFifty.genruntimeconfig.cache

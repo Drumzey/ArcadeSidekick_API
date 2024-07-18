@@ -92,13 +92,15 @@ namespace Arcade.EventNews_POST
 
         private void GenerateEventNews(EventNewsPost data, List<string> userList)
         {
-            MessageTypeEnum messagetype;
-            messagetype = GetMessageType(data);
+            MessageTypeEnum messagetype = GetMessageType(data);
+            var messages = new List<Messages>();
+            var messageRepo = (IMessageRepository)services.GetService(typeof(IMessageRepository));
 
             foreach (string user in userList)
             {
-                Arcade.Shared.Messages.CreateMessage.Create(
-                       services,
+                Console.WriteLine($"Sending message to {user}");
+                messages.Add(Arcade.Shared.Messages.CreateMessage.CreateWithoutPost(
+                       messageRepo,
                        user,
                        data.From,
                        data.Message,
@@ -106,8 +108,12 @@ namespace Arcade.EventNews_POST
                        new Dictionary<string, string>
                        {
                             { "Club", data.From }
-                       });
+                       }));
             }
+
+            Console.WriteLine("Sending message to all club members");
+            messageRepo.SaveBatch(messages);
+            Console.WriteLine("Messages saved");
         }
 
         private static MessageTypeEnum GetMessageType(EventNewsPost data)

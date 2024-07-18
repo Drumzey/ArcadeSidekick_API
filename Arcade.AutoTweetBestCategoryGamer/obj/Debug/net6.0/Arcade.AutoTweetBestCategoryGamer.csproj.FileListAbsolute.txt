@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\net6.0\Arcade.AutoTweetCategoryGamer.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\net6.0\Arcade.AutoTweetCategoryGamer.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\net6.0\Arcade.AutoTweetCategoryGamer.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\net6.0\Arcade.AutoTweetCategoryGamer.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\Arcade.AutoTweetBestCategoryGamer.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\Arcade.AutoTweetBestCategoryGamer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\Arcade.AutoTweetBestCategoryGamer.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\Arcade.AutoTweetBestCategoryGamer.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\Arcade.AutoTweetBestCategoryGamer.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\Arcade.AutoTweetBestCategoryGamer.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\Arcade.AutoTweetCategoryGamer.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\refint\Arcade.AutoTweetCategoryGamer.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\Arcade.AutoTweetCategoryGamer.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\Arcade.AutoTweetBestCategoryGamer.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestCategoryGamer\obj\Debug\net6.0\ref\Arcade.AutoTweetCategoryGamer.dll

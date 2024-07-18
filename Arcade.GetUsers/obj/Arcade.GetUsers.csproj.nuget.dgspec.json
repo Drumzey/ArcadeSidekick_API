@@ -1,31 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj": {}
+    "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj": {}
   },
   "projects": {
-    "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj": {
+    "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj",
+        "projectUniqueName": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj",
         "projectName": "Arcade.GetUsers",
-        "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj",
+        "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\Arcade.GetUsers.csproj",
         "packagesPath": "C:\\Users\\richard.rumsey\\.nuget\\packages\\",
-        "outputPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\obj\\",
+        "outputPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.GetUsers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\richard.rumsey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -33,11 +30,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
-                "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj"
+              "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
+                "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj"
               }
             }
           }
@@ -49,8 +46,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Amazon.Lambda.APIGatewayEvents": {
               "target": "Package",
@@ -77,7 +74,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -86,32 +84,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
+    "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj",
+        "projectUniqueName": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj",
         "projectName": "Arcade.Shared",
-        "projectPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj",
+        "projectPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\Arcade.Shared.csproj",
         "packagesPath": "C:\\Users\\richard.rumsey\\.nuget\\packages\\",
-        "outputPath": "C:\\Personal\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\obj\\",
+        "outputPath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\richard.rumsey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -119,8 +114,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -131,8 +126,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
@@ -167,7 +162,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -176,7 +172,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

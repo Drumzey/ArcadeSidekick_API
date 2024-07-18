@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\net6.0\Arcade.RecentActivity.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\net6.0\Arcade.RecentActivity.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\net6.0\Arcade.RecentActivity.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\net6.0\Arcade.RecentActivity.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\net6.0\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\bin\Debug\net6.0\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\Arcade.RecentActivity.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\Arcade.RecentActivity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\Arcade.RecentActivity.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\Arcade.RecentActivity.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\Arcade.RecentActivity.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\Arcade.RecentActivity.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\Arcade.RecentActivity.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\refint\Arcade.RecentActivity.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\Arcade.RecentActivity.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\Arcade.RecentActivity.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.RecentActivity\obj\Debug\net6.0\ref\Arcade.RecentActivity.dll
