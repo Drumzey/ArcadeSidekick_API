@@ -7,6 +7,31 @@ namespace Arcade.Shared.Messages
     public static class CreateMessage
     {
         public static Messages CreateWithoutPost(
+            Messages userRecord,
+            Message newMessage,
+            string to)
+        {
+            if (userRecord == null)
+            {
+                userRecord = new Messages();
+                userRecord.UserName = to;
+                userRecord.Notifications = new List<Message>();
+            }
+            else
+            {
+                // This is loading all messages for this user and then appending one on the end
+                // We dont want to keep all messages for ever.
+                // Keep messages for the past 2 months ONLY
+                var messagesThisMonth = userRecord.Notifications.Where(x => x.TimeSet > DateTime.Now.AddMonths(-2)).ToList();
+                userRecord.Notifications = messagesThisMonth;
+            }
+
+            userRecord.Notifications.Add(newMessage);
+
+            return userRecord;
+        }
+
+        public static Messages CreateWithoutPost(
             IMessageRepository messageRepo,
             string to,
             string from,

@@ -51,19 +51,19 @@
           "dependencies": {
             "Amazon.Lambda.Core": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[2.2.0, )"
             },
             "Amazon.Lambda.TestUtilities": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[2.0.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.3.0, )"
+              "version": "[17.10.0, )"
             },
             "Moq": {
               "target": "Package",
-              "version": "[4.13.1, )"
+              "version": "[4.20.70, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
@@ -73,13 +73,13 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.9.0, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.8.2, )"
             }
           },
           "imports": [
@@ -149,11 +149,11 @@
           "dependencies": {
             "Amazon.Lambda.Core": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[2.2.0, )"
             },
             "Amazon.Lambda.Serialization.Json": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[2.2.1, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
@@ -163,7 +163,7 @@
             },
             "TweetMoaSharp": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -229,23 +229,23 @@
           "dependencies": {
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[3.3.101.80, )"
+              "version": "[3.7.305.2, )"
             },
             "AWSSDK.SimpleEmail": {
               "target": "Package",
-              "version": "[3.3.101.63, )"
+              "version": "[3.7.301.5, )"
             },
             "Amazon.Lambda.APIGatewayEvents": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[2.7.0, )"
             },
             "Amazon.Lambda.Serialization.Json": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[2.2.1, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[8.0.0, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",

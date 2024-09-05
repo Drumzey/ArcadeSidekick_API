@@ -15,8 +15,8 @@
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgStyleCop_Analyzers Condition=" '$(PkgStyleCop_Analyzers)' == '' ">C:\Users\richard.rumsey\.nuget\packages\stylecop.analyzers\1.1.118</PkgStyleCop_Analyzers>
-    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.core\3.3.103.57</PkgAWSSDK_Core>
-    <PkgAWSSDK_SimpleEmail Condition=" '$(PkgAWSSDK_SimpleEmail)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.simpleemail\3.3.101.63</PkgAWSSDK_SimpleEmail>
-    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.dynamodbv2\3.3.101.80</PkgAWSSDK_DynamoDBv2>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.core\3.7.304.31</PkgAWSSDK_Core>
+    <PkgAWSSDK_SimpleEmail Condition=" '$(PkgAWSSDK_SimpleEmail)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.simpleemail\3.7.301.5</PkgAWSSDK_SimpleEmail>
+    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.dynamodbv2\3.7.305.2</PkgAWSSDK_DynamoDBv2>
   </PropertyGroup>
 </Project>

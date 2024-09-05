@@ -1,6 +1,5 @@
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\testhost.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\testhost.exe
-C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\Arcade.VerifyAuthorizer.Tests.deps.json
@@ -29,7 +28,6 @@ C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyA
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\NuGet.Frameworks.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\xunit.abstractions.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\xunit.assert.dll
@@ -115,3 +113,5 @@ C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyA
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\obj\Debug\net6.0\Arcade.VerifyAuthorizer.Tests.pdb
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\obj\Debug\net6.0\Arcade.VerifyAuthorizer.Tests.genruntimeconfig.cache
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\obj\Debug\net6.0\ref\Arcade.VerifyAuthorizer.Tests.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\.msCoverageSourceRootsMapping_Arcade.VerifyAuthorizer.Tests
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.VerifyAuthorizer.Tests\bin\Debug\net6.0\xunit.runner.visualstudio.testadapter.dll

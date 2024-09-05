@@ -14,11 +14,10 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\richard.rumsey\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
     <PkgStyleCop_Analyzers Condition=" '$(PkgStyleCop_Analyzers)' == '' ">C:\Users\richard.rumsey\.nuget\packages\stylecop.analyzers\1.1.118</PkgStyleCop_Analyzers>
-    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.core\3.3.103.57</PkgAWSSDK_Core>
-    <PkgAWSSDK_SimpleEmail Condition=" '$(PkgAWSSDK_SimpleEmail)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.simpleemail\3.3.101.63</PkgAWSSDK_SimpleEmail>
-    <PkgAWSSDK_Lambda Condition=" '$(PkgAWSSDK_Lambda)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.lambda\3.3.103.21</PkgAWSSDK_Lambda>
-    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.dynamodbv2\3.3.101.80</PkgAWSSDK_DynamoDBv2>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.core\3.7.304.31</PkgAWSSDK_Core>
+    <PkgAWSSDK_SimpleEmail Condition=" '$(PkgAWSSDK_SimpleEmail)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.simpleemail\3.7.301.5</PkgAWSSDK_SimpleEmail>
+    <PkgAWSSDK_Lambda Condition=" '$(PkgAWSSDK_Lambda)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.lambda\3.7.305.52</PkgAWSSDK_Lambda>
+    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\richard.rumsey\.nuget\packages\awssdk.dynamodbv2\3.7.305.2</PkgAWSSDK_DynamoDBv2>
   </PropertyGroup>
 </Project>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Arcade.Shared;
 using Arcade.Shared.Messages;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
@@ -96,19 +97,32 @@ namespace Arcade.EventNews_POST
             var messages = new List<Messages>();
             var messageRepo = (IMessageRepository)services.GetService(typeof(IMessageRepository));
 
-            foreach (string user in userList)
+            Console.WriteLine("Loading all messages");
+            var userRecords = messageRepo.BatchGet(userList);
+            Console.WriteLine("Loading all loaded");
+
+            var newMessage = new Message
             {
-                Console.WriteLine($"Sending message to {user}");
-                messages.Add(Arcade.Shared.Messages.CreateMessage.CreateWithoutPost(
-                       messageRepo,
-                       user,
-                       data.From,
-                       data.Message,
-                       messagetype,
-                       new Dictionary<string, string>
+                From = data.From,
+                Seen = false,
+                TimeSet = DateTime.Now,
+                Text = data.Message,
+                MessageType = messagetype,
+                Data = new Dictionary<string, string>
                        {
                             { "Club", data.From }
-                       }));
+                       },
+            };
+
+            foreach (string user in userList)
+            {
+                var userRecord = userRecords.Where(x => x.UserName == user).FirstOrDefault();
+
+                Console.WriteLine($"Sending message to {user}");
+                messages.Add(Arcade.Shared.Messages.CreateMessage.CreateWithoutPost(
+                    userRecord,
+                    newMessage,
+                    user));
             }
 
             Console.WriteLine("Sending message to all club members");

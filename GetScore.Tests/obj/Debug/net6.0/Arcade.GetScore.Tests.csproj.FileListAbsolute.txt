@@ -1,6 +1,5 @@
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\testhost.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\testhost.exe
-C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\Arcade.GetScore.Tests.deps.json
@@ -27,7 +26,6 @@ C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\Moq.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\NuGet.Frameworks.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\xunit.abstractions.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\xunit.assert.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\xunit.core.dll
@@ -112,3 +110,8 @@ C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\obj\Debug\net6.0\Arcade.GetScore.Tests.pdb
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\obj\Debug\net6.0\Arcade.GetScore.Tests.genruntimeconfig.cache
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\obj\Debug\net6.0\ref\Arcade.GetScore.Tests.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\.msCoverageSourceRootsMapping_Arcade.GetScore.Tests
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\xunit.runner.visualstudio.testadapter.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\GetScore.Tests\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll

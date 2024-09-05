@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "1cyAj1Nix4QUZ00ZD/GuNIoaOrCAjPz+5fHGOltLahaHxPsQNNO8+/n5mVu73kde6EHbuCua2M44iV1xxNFiiQ==",
+  "dgSpecHash": "O8pWCir7677+EQK22MmihIvwD8RqjpVsrTYn7K2F8lgtZg/NeZpKv8MrT6a9aCF6XcmRCG6NOlFRijZ4vOcxwQ==",
   "success": true,
   "projectFilePath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.VerifyUser\\Arcade.VerifyUser.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.apigatewayevents\\1.2.0\\amazon.lambda.apigatewayevents.1.2.0.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.core\\1.1.0\\amazon.lambda.core.1.1.0.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.serialization.json\\1.7.0\\amazon.lambda.serialization.json.1.7.0.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.core\\3.3.103.57\\awssdk.core.3.3.103.57.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.dynamodbv2\\3.3.101.80\\awssdk.dynamodbv2.3.3.101.80.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.simpleemail\\3.3.101.63\\awssdk.simpleemail.3.3.101.63.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.apigatewayevents\\2.7.0\\amazon.lambda.apigatewayevents.2.7.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.core\\2.2.0\\amazon.lambda.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\amazon.lambda.serialization.json\\2.2.1\\amazon.lambda.serialization.json.2.2.1.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.core\\3.7.304.31\\awssdk.core.3.7.304.31.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.305.2\\awssdk.dynamodbv2.3.7.305.2.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\awssdk.simpleemail\\3.7.301.5\\awssdk.simpleemail.3.7.301.5.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\tweetmoasharp\\6.0.0\\tweetmoasharp.6.0.0.nupkg.sha512"
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\tweetmoasharp\\6.0.2\\tweetmoasharp.6.0.2.nupkg.sha512"
   ],
   "logs": []
 }

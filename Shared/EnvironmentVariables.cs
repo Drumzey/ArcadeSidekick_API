@@ -37,6 +37,10 @@ namespace Arcade.Shared
 
         public string LeagueTableName => GetValue("LeagueTableName");
 
+        public string AWSAccessKey => GetValue("AWSAccessKey");
+
+        public string AWSAccessKeySecret => GetValue("AWSAccessKeySecret");
+
         private string GetValue(string variableName)
         {
             var value = Environment.GetEnvironmentVariable(variableName);

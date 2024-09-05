@@ -34,5 +34,9 @@
         string MessageTableName { get; }
 
         string LeagueTableName { get; }
+
+        string AWSAccessKey { get; }
+
+        string AWSAccessKeySecret { get; }
     }
 }

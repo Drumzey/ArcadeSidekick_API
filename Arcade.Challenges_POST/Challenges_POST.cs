@@ -1,12 +1,15 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Amazon.SimpleEmail.Model;
 using Arcade.Shared;
 using Arcade.Shared.Messages;
 using Arcade.Shared.Repositories;
 using Newtonsoft.Json;
+using Message = Arcade.Shared.Messages.Message;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
@@ -99,33 +102,36 @@ namespace Arcade.Challenges_POST
             }
 
             List<string> userList = clubInformation.Members;
-            var newChallenge = new IndividualChallenge
+            var messages = new List<Messages>();
+            var messageRepo = (IMessageRepository)services.GetService(typeof(IMessageRepository));
+
+            Console.WriteLine("Loading all messages");
+            var userRecords = messageRepo.BatchGet(userList);
+            Console.WriteLine("Loading all loaded");
+
+            var newMessage = new Message
             {
                 From = data.From,
                 Seen = false,
-                GameName = data.GameName,
-                Message = data.Message,
-                Expires = data.Expires,
-            };
-
-            var messages = new List<Messages>();
-
-            var messageRepo = (IMessageRepository)services.GetService(typeof(IMessageRepository));
-
-            foreach (string user in userList)
-            {
-                Console.WriteLine($"Sending message to {user}");
-                messages.Add(Arcade.Shared.Messages.CreateMessage.CreateWithoutPost(
-                       messageRepo,
-                       user,
-                       "Arcade Sidekick",
-                       data.Message,
-                       Shared.Messages.MessageTypeEnum.ClubChallengeReceived,
-                       new Dictionary<string, string>
+                TimeSet = DateTime.Now,
+                Text = data.Message,
+                MessageType = Shared.Messages.MessageTypeEnum.ClubChallengeReceived,
+                Data = new Dictionary<string, string>
                        {
                             { "Game", data.GameName },
                             { "Club", data.From }
-                       }));
+                       },
+            };
+
+            foreach (string user in userList)
+            {
+                var userRecord = userRecords.Where(x => x.UserName == user).FirstOrDefault();
+
+                Console.WriteLine($"Sending message to {user}");
+                messages.Add(Arcade.Shared.Messages.CreateMessage.CreateWithoutPost(
+                    userRecord,
+                    newMessage,
+                    user));
             }
 
             Console.WriteLine("Sending message to all club members");

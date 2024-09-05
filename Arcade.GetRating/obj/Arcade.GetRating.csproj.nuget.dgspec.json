@@ -51,11 +51,11 @@
           "dependencies": {
             "Amazon.Lambda.Core": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[2.2.0, )"
             },
             "Amazon.Lambda.Serialization.Json": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[2.2.1, )"
             }
           },
           "imports": [
@@ -75,6 +75,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     },
@@ -128,11 +133,11 @@
           "dependencies": {
             "Amazon.Lambda.Core": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[2.2.0, )"
             },
             "Amazon.Lambda.Serialization.Json": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[2.2.1, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
@@ -158,6 +163,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     },
@@ -204,23 +214,23 @@
           "dependencies": {
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[3.3.101.80, )"
+              "version": "[3.7.305.2, )"
             },
             "AWSSDK.SimpleEmail": {
               "target": "Package",
-              "version": "[3.3.101.63, )"
+              "version": "[3.7.301.5, )"
             },
             "Amazon.Lambda.APIGatewayEvents": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[2.7.0, )"
             },
             "Amazon.Lambda.Serialization.Json": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[2.2.1, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[8.0.0, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
@@ -246,6 +256,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }

@@ -5,8 +5,8 @@
     <AWSProjectType>Lambda</AWSProjectType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
-    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.7.0" />
+    <PackageReference Include="Amazon.Lambda.Core" Version="2.2.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="2.2.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Arcade.GameDetails\Arcade.GameDetails.csproj" />

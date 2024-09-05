@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Security.Cryptography;
+using System.Text;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Amazon.S3;
+using Amazon.S3.Model;
+using Amazon.Util;
 using Arcade.Shared;
 using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
@@ -18,6 +22,7 @@ namespace Arcade.CreateUser
     public class CreateUser
     {
         private IServiceProvider services;
+        private IEnvironmentVariables environmentVariables;
 
         public CreateUser()
             : this(DI.Container.Services())
@@ -30,6 +35,7 @@ namespace Arcade.CreateUser
             ((IUserRepository)this.services.GetService(typeof(IUserRepository))).SetupTable();
             ((IObjectRepository)this.services.GetService(typeof(IObjectRepository))).SetupTable();
             ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
+            environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));
         }
 
         public APIGatewayProxyResponse CreateUserHandler(APIGatewayProxyRequest request, ILambdaContext context)
@@ -60,6 +66,7 @@ namespace Arcade.CreateUser
                     Console.WriteLine();
                 }
 
+                this.DeleteUserListInS3();
                 return OkResponse();
             }
             catch (Exception e)
@@ -243,6 +250,38 @@ namespace Arcade.CreateUser
                 StatusCode = (int)HttpStatusCode.InternalServerError,
                 Body = "{ \"message\": \"Error. " + error + "\"}",
             };
+        }
+
+        private void DeleteUserListInS3()
+        {
+            AmazonS3Client client;
+            using (client = new AmazonS3Client(
+                environmentVariables.AWSAccessKey,
+                environmentVariables.AWSAccessKeySecret,
+                Amazon.RegionEndpoint.EUWest2))
+            {
+                try
+                {
+                    DeleteObjectRequest deleteObjectRequest = new DeleteObjectRequest();
+                    deleteObjectRequest.BucketName = "arcadesidekick";
+                    deleteObjectRequest.Key = "API_TEMP/USERS.txt";
+
+                    var response = client.DeleteObjectAsync(deleteObjectRequest).Result;
+
+                    if (response.HttpStatusCode == HttpStatusCode.OK)
+                    {
+                        Console.WriteLine("User List deleted");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Could not delete user list {response.HttpStatusCode}");
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
         }
     }
 }

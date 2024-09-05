@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Amazon.DynamoDBv2.DataModel;
 
 namespace Arcade.Shared.Messages
 {
@@ -12,6 +14,10 @@ namespace Arcade.Shared.Messages
 
         Messages Load(string partitionKey);
 
-        // List<Messages> Scan(IEnumerable<ScanCondition> scanConditions);
+        List<Messages> Scan(IEnumerable<ScanCondition> scanConditions);
+
+        List<Messages> All();
+
+        List<Messages> BatchGet(List<string> userNames);
     }
 }
