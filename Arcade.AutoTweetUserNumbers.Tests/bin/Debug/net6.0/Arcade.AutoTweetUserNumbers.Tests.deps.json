@@ -400,6 +400,22 @@
           }
         }
       },
+      "OAuth.DotNetCore/3.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/OAuth.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "RestSharp/107.3.0": {
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "assemblyVersion": "107.3.0.0",
+            "fileVersion": "107.3.0.0"
+          }
+        }
+      },
       "StyleCop.Analyzers/1.1.118": {},
       "System.Diagnostics.EventLog/6.0.0": {
         "runtime": {
@@ -497,7 +513,8 @@
           "Amazon.Lambda.Core": "2.2.0",
           "Amazon.Lambda.Serialization.Json": "2.2.1",
           "Arcade.Shared": "1.0.0",
-          "TweetMoaSharp": "6.0.2"
+          "OAuth.DotNetCore": "3.0.1",
+          "RestSharp": "107.3.0"
         },
         "runtime": {
           "Arcade.AutoTweetUserNumbers.dll": {}
@@ -634,6 +651,20 @@
       "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "OAuth.DotNetCore/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-odOVMFAIIBruZh1XlLdr7QekRYjqEzhpvcRDbObPwfqTqob+/H6mlsXaTzJ/djCzBOtywHghJtPBietPqzP9rA==",
+      "path": "oauth.dotnetcore/3.0.1",
+      "hashPath": "oauth.dotnetcore.3.0.1.nupkg.sha512"
+    },
+    "RestSharp/107.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qu+A+VAnVLX3OeWVNm11UJz0aVErqSfYqIiOUbJM9x98uLymCOoL/oXRAjMb6XHra27WXxHmzy9EKEOKXWR6Pw==",
+      "path": "restsharp/107.3.0",
+      "hashPath": "restsharp.107.3.0.nupkg.sha512"
     },
     "StyleCop.Analyzers/1.1.118": {
       "type": "package",

@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Release\net6.0\linux-x64\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\bin\Release\net6.0\linux-x64\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\refint\Arcade.AutoTweetBestGames.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\Arcade.AutoTweetBestGames.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetBestGames\obj\Release\net6.0\linux-x64\ref\Arcade.AutoTweetBestGames.dll

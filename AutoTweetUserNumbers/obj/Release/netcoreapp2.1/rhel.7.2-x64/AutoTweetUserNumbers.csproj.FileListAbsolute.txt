@@ -1,0 +1,13 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.runtimeconfig.dev.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\obj\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\obj\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\obj\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\obj\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\obj\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\obj\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\obj\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\obj\Release\netcoreapp2.1\rhel.7.2-x64\AutoTweetUserNumbers.genruntimeconfig.cache

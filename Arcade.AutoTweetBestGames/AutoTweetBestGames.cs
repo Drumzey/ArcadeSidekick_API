@@ -1,13 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
 using Arcade.Shared.Misc;
-using TweetSharp;
+using OAuth;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
@@ -27,7 +29,7 @@ namespace Arcade.AutoTweetBestGames
         public AutoTweetBestGames(IServiceProvider services)
         {
             this.services = services;
-            environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));            
+            environmentVariables = (IEnvironmentVariables)this.services.GetService(typeof(IEnvironmentVariables));
             ((IMiscRepository)this.services.GetService(typeof(IMiscRepository))).SetupTable();
         }
 
@@ -50,23 +52,14 @@ namespace Arcade.AutoTweetBestGames
 
                 if (!string.IsNullOrEmpty(environmentVariables.TweetsOn))
                 {
-                    var service = new TwitterService(environmentVariables.ConsumerAPIKey, environmentVariables.ConsumerAPISecretKey);
-                    service.AuthenticateWith(environmentVariables.AccessToken, environmentVariables.AccessTokenSecret);
-
                     if (arcadeMessage != null)
                     {
-                        service.SendTweet(new SendTweetOptions
-                        {
-                            Status = arcadeMessage,
-                        });
+                        this.Tweet(arcadeMessage);
                     }
 
                     if (pinballMessage != null)
                     {
-                        service.SendTweet(new SendTweetOptions
-                        {
-                            Status = pinballMessage,
-                        });
+                        this.Tweet(pinballMessage);
                     }
                 }
                 else
@@ -138,17 +131,44 @@ namespace Arcade.AutoTweetBestGames
         {
             var builder = new StringBuilder();
 
-            builder.AppendLine($"The current #Top5 {gameType} as rated by sidekick users:");
-            builder.AppendLine(string.Empty);
+            builder.Append($"The current #Top5 {gameType} as rated by sidekick users:\\n");
+            builder.Append("\\n");
 
             foreach (string game in topFive)
             {
-                builder.AppendLine(game);
+                builder.Append(game + "\\n");
             }
 
-            builder.AppendLine(string.Empty);
+            builder.Append("\\n");
             builder.Append($"If you dont see your favourite go vote for it in app! {hashtag} #highscore #retrogames");
             return builder.ToString();
+        }
+
+        public void Tweet(string message)
+        {
+            var _oAuthConsumerKey = environmentVariables.ConsumerAPIKey;
+            var _oAuthConsumerSecret = environmentVariables.ConsumerAPISecretKey;
+            var _accessToken = environmentVariables.AccessToken;
+            var _accessTokenSecret = environmentVariables.AccessTokenSecret;
+
+            OAuthRequest client = OAuthRequest.ForProtectedResource("POST", _oAuthConsumerKey, _oAuthConsumerSecret, _accessToken, _accessTokenSecret);
+            client.RequestUrl = "https://api.twitter.com/2/tweets";
+            string auth = client.GetAuthorizationHeader();
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(client.RequestUrl);
+            request.Method = "POST";
+            request.Headers.Add("Content-Type", "application/json");
+            request.Headers.Add("Authorization", auth);
+
+            var jsonMessage = "{\"text\": \"" + message + "\"}";
+
+            using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+            {
+                streamWriter.Write(jsonMessage);
+            }
+
+            var response = (HttpWebResponse)request.GetResponse();
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
         }
     }
 }

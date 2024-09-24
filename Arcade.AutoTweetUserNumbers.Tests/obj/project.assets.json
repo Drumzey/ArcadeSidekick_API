@@ -468,6 +468,28 @@
           }
         }
       },
+      "OAuth.DotNetCore/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OAuth.dll": {}
+        }
+      },
+      "RestSharp/107.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "StyleCop.Analyzers/1.1.118": {
         "type": "package"
       },
@@ -631,7 +653,8 @@
           "Amazon.Lambda.Core": "2.2.0",
           "Amazon.Lambda.Serialization.Json": "2.2.1",
           "Arcade.Shared": "1.0.0",
-          "TweetMoaSharp": "6.0.2"
+          "OAuth.DotNetCore": "3.0.1",
+          "RestSharp": "107.3.0"
         },
         "compile": {
           "bin/placeholder/Arcade.AutoTweetUserNumbers.dll": {}
@@ -1205,6 +1228,37 @@
         "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "OAuth.DotNetCore/3.0.1": {
+      "sha512": "odOVMFAIIBruZh1XlLdr7QekRYjqEzhpvcRDbObPwfqTqob+/H6mlsXaTzJ/djCzBOtywHghJtPBietPqzP9rA==",
+      "type": "package",
+      "path": "oauth.dotnetcore/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/OAuth.dll",
+        "lib/netstandard2.0/OAuth.dll",
+        "oauth.dotnetcore.3.0.1.nupkg.sha512",
+        "oauth.dotnetcore.nuspec"
+      ]
+    },
+    "RestSharp/107.3.0": {
+      "sha512": "qu+A+VAnVLX3OeWVNm11UJz0aVErqSfYqIiOUbJM9x98uLymCOoL/oXRAjMb6XHra27WXxHmzy9EKEOKXWR6Pw==",
+      "type": "package",
+      "path": "restsharp/107.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.107.3.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "StyleCop.Analyzers/1.1.118": {

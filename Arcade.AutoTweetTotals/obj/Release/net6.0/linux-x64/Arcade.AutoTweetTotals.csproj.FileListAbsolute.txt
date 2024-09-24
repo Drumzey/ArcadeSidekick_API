@@ -1,0 +1,17 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.deps.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Release\net6.0\linux-x64\Arcade.Shared.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\bin\Release\net6.0\linux-x64\Arcade.Shared.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.csproj.AssemblyReference.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.AssemblyInfoInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.AssemblyInfo.cs
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.csproj.CoreCompileInputs.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.csproj.CopyComplete
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\refint\Arcade.AutoTweetTotals.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\Arcade.AutoTweetTotals.genruntimeconfig.cache
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetTotals\obj\Release\net6.0\linux-x64\ref\Arcade.AutoTweetTotals.dll

@@ -11,8 +11,9 @@
           "Amazon.Lambda.Core": "2.2.0",
           "Amazon.Lambda.Serialization.Json": "2.2.1",
           "Arcade.Shared": "1.0.0",
-          "StyleCop.Analyzers": "1.1.118",
-          "TweetMoaSharp": "6.0.2"
+          "OAuth.DotNetCore": "3.0.1",
+          "RestSharp": "107.3.0",
+          "StyleCop.Analyzers": "1.1.118"
         },
         "runtime": {
           "Arcade.AutoTweetBestGames.dll": {}
@@ -103,22 +104,23 @@
           }
         }
       },
-      "StyleCop.Analyzers/1.1.118": {},
-      "TweetMoaSharp/6.0.2": {
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
-        },
+      "OAuth.DotNetCore/3.0.1": {
         "runtime": {
-          "lib/netstandard2.0/Hammock.NetStandard20.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          },
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
-            "assemblyVersion": "6.0.2.0",
-            "fileVersion": "6.0.2.0"
+          "lib/netstandard2.0/OAuth.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
           }
         }
       },
+      "RestSharp/107.3.0": {
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "assemblyVersion": "107.3.0.0",
+            "fileVersion": "107.3.0.0"
+          }
+        }
+      },
+      "StyleCop.Analyzers/1.1.118": {},
       "Arcade.Shared/1.0.0": {
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.7.305.2",
@@ -202,19 +204,26 @@
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
+    "OAuth.DotNetCore/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-odOVMFAIIBruZh1XlLdr7QekRYjqEzhpvcRDbObPwfqTqob+/H6mlsXaTzJ/djCzBOtywHghJtPBietPqzP9rA==",
+      "path": "oauth.dotnetcore/3.0.1",
+      "hashPath": "oauth.dotnetcore.3.0.1.nupkg.sha512"
+    },
+    "RestSharp/107.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qu+A+VAnVLX3OeWVNm11UJz0aVErqSfYqIiOUbJM9x98uLymCOoL/oXRAjMb6XHra27WXxHmzy9EKEOKXWR6Pw==",
+      "path": "restsharp/107.3.0",
+      "hashPath": "restsharp.107.3.0.nupkg.sha512"
+    },
     "StyleCop.Analyzers/1.1.118": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
       "path": "stylecop.analyzers/1.1.118",
       "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
-    },
-    "TweetMoaSharp/6.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FYYHGdGhs1MDXViBX11YSZ8DaVmtUjYO6OWZAOxnXCiVnuZwqiWhqd4mg/OzVWfodCRT3fmVbjO47HQjYnv6jA==",
-      "path": "tweetmoasharp/6.0.2",
-      "hashPath": "tweetmoasharp.6.0.2.nupkg.sha512"
     },
     "Arcade.Shared/1.0.0": {
       "type": "project",

@@ -10,8 +10,8 @@ C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTwe
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\Microsoft.Extensions.DependencyInjection.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\Newtonsoft.Json.dll
-C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\Hammock.NetStandard20.dll
-C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\TweetSharp.NetStandard20.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\OAuth.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\RestSharp.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\Arcade.Shared.dll
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\Arcade.Shared.pdb
 C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\Arcade.AutoTweetUserNumbers\bin\Release\net6.0\publish\Arcade.AutoTweetUserNumbers.deps.json

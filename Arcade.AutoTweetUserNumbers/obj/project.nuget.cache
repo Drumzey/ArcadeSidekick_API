@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "f/HTMFsvO5D7PrpvX/ED/fE6nVkc8eug/mK4/5mT3j/FQM3UT/DNCtYZm/36uDl14D7wSxODP4oG8ZBZfnwTOQ==",
+  "dgSpecHash": "bR3o7rm6xFL5FtdqXKcAdg9XKlWlJe8oMdcUdB0bZpVGV84lyZdj2WZXEK5X/5uEz+4JKCY0HwDUegSN3ozagA==",
   "success": true,
   "projectFilePath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.AutoTweetUserNumbers\\Arcade.AutoTweetUserNumbers.csproj",
   "expectedPackageFiles": [
@@ -13,8 +13,9 @@
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
-    "C:\\Users\\richard.rumsey\\.nuget\\packages\\tweetmoasharp\\6.0.2\\tweetmoasharp.6.0.2.nupkg.sha512"
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\oauth.dotnetcore\\3.0.1\\oauth.dotnetcore.3.0.1.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\restsharp\\107.3.0\\restsharp.107.3.0.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
   ],
   "logs": []
 }

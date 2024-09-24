@@ -138,26 +138,210 @@
           }
         }
       },
-      "StyleCop.Analyzers/1.1.118": {
-        "type": "package"
-      },
-      "TweetMoaSharp/6.0.2": {
+      "OAuth.DotNetCore/3.0.1": {
         "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
-        },
         "compile": {
-          "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
-            "related": ".deps.json"
+          "lib/netstandard2.0/OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OAuth.dll": {}
+        }
+      },
+      "RestSharp/107.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
-            "related": ".deps.json"
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
           }
         }
+      },
+      "StyleCop.Analyzers/1.1.118": {
+        "type": "package"
+      },
+      "Arcade.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.305.2",
+          "AWSSDK.SimpleEmail": "3.7.301.5",
+          "Amazon.Lambda.APIGatewayEvents": "2.7.0",
+          "Amazon.Lambda.Serialization.Json": "2.2.1",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Arcade.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Arcade.Shared.dll": {}
+        }
+      }
+    },
+    "net6.0/linux-x64": {
+      "Amazon.Lambda.APIGatewayEvents/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Amazon.Lambda.APIGatewayEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.APIGatewayEvents.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Amazon.Lambda.Core/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Amazon.Lambda.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Amazon.Lambda.Serialization.Json/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.2.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.304.31": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.7.305.2": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.304.31, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.SimpleEmail/3.7.301.5": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.304.31, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleEmail.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleEmail.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OAuth.DotNetCore/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OAuth.dll": {}
+        }
+      },
+      "RestSharp/107.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "StyleCop.Analyzers/1.1.118": {
+        "type": "package"
       },
       "Arcade.Shared/1.0.0": {
         "type": "project",
@@ -412,6 +596,37 @@
         "packageIcon.png"
       ]
     },
+    "OAuth.DotNetCore/3.0.1": {
+      "sha512": "odOVMFAIIBruZh1XlLdr7QekRYjqEzhpvcRDbObPwfqTqob+/H6mlsXaTzJ/djCzBOtywHghJtPBietPqzP9rA==",
+      "type": "package",
+      "path": "oauth.dotnetcore/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/OAuth.dll",
+        "lib/netstandard2.0/OAuth.dll",
+        "oauth.dotnetcore.3.0.1.nupkg.sha512",
+        "oauth.dotnetcore.nuspec"
+      ]
+    },
+    "RestSharp/107.3.0": {
+      "sha512": "qu+A+VAnVLX3OeWVNm11UJz0aVErqSfYqIiOUbJM9x98uLymCOoL/oXRAjMb6XHra27WXxHmzy9EKEOKXWR6Pw==",
+      "type": "package",
+      "path": "restsharp/107.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.107.3.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
     "StyleCop.Analyzers/1.1.118": {
       "sha512": "Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
       "type": "package",
@@ -437,37 +652,6 @@
         "tools/uninstall.ps1"
       ]
     },
-    "TweetMoaSharp/6.0.2": {
-      "sha512": "FYYHGdGhs1MDXViBX11YSZ8DaVmtUjYO6OWZAOxnXCiVnuZwqiWhqd4mg/OzVWfodCRT3fmVbjO47HQjYnv6jA==",
-      "type": "package",
-      "path": "tweetmoasharp/6.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "README.md",
-        "lib/2.0/Hammock.dll",
-        "lib/2.0/LinqBridge.dll",
-        "lib/2.0/TweetSharp.dll",
-        "lib/3.5/Hammock.ClientProfile.dll",
-        "lib/3.5/TweetSharp.dll",
-        "lib/4.0/Hammock.ClientProfile.dll",
-        "lib/4.0/TweetSharp.dll",
-        "lib/4.5/Hammock.ClientProfile.dll",
-        "lib/4.5/TweetSharp.dll",
-        "lib/netstandard1.0/Hammock.ClientProfile.dll",
-        "lib/netstandard1.0/TweetSharp.dll",
-        "lib/netstandard2.0/Hammock.NetStandard20.dll",
-        "lib/netstandard2.0/TweetSharp.NetStandard20.deps.json",
-        "lib/netstandard2.0/TweetSharp.NetStandard20.dll",
-        "lib/portable-win81+wpa81/Hammock.WinRT.dll",
-        "lib/portable-win81+wpa81/Hammock.WinRT.pri",
-        "lib/portable-win81+wpa81/TweetSharp.WinRT.dll",
-        "lib/portable-win81+wpa81/TweetSharp.WinRT.pri",
-        "tweetmoasharp.6.0.2.nupkg.sha512",
-        "tweetmoasharp.nuspec"
-      ]
-    },
     "Arcade.Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/Arcade.Shared.csproj",
@@ -479,8 +663,9 @@
       "Amazon.Lambda.Core >= 2.2.0",
       "Amazon.Lambda.Serialization.Json >= 2.2.1",
       "Arcade.Shared >= 1.0.0",
-      "StyleCop.Analyzers >= 1.1.118",
-      "TweetMoaSharp >= 6.0.2"
+      "OAuth.DotNetCore >= 3.0.1",
+      "RestSharp >= 107.3.0",
+      "StyleCop.Analyzers >= 1.1.118"
     ]
   },
   "packageFolders": {
@@ -540,15 +725,19 @@
             "target": "Package",
             "version": "[2.2.1, )"
           },
+          "OAuth.DotNetCore": {
+            "target": "Package",
+            "version": "[3.0.1, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[107.3.0, )"
+          },
           "StyleCop.Analyzers": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers",
             "suppressParent": "All",
             "target": "Package",
             "version": "[1.1.118, )"
-          },
-          "TweetMoaSharp": {
-            "target": "Package",
-            "version": "[6.0.2, )"
           }
         },
         "imports": [
@@ -568,6 +757,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "linux-x64": {
+        "#import": []
       }
     }
   }

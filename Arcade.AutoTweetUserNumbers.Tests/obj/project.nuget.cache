@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "y1BwBZKunjb9kixxgoTwj997QW89nMBEfZNX8NXSP5KTUgAJJO39p9e9T7MsgI7vkqR8Q9SOcxunpR39XuyYPg==",
+  "dgSpecHash": "2yZ5RYXuZTec2y1sRrTZe4duLlHks4s/7H3Kpfg/F4BEb0n0moDebKNiqO+4lN8NN4LIo9NLV/s/on5DWvkmRA==",
   "success": true,
   "projectFilePath": "C:\\Personal\\Mobile Development\\Arcade Sidekick\\ArcadeSidekick_API\\Arcade.AutoTweetUserNumbers.Tests\\Arcade.AutoTweetUserNumbers.Tests.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,8 @@
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\microsoft.testplatform.testhost\\17.10.0\\microsoft.testplatform.testhost.17.10.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\oauth.dotnetcore\\3.0.1\\oauth.dotnetcore.3.0.1.nupkg.sha512",
+    "C:\\Users\\richard.rumsey\\.nuget\\packages\\restsharp\\107.3.0\\restsharp.107.3.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\richard.rumsey\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",

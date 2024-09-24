@@ -1,13 +1,15 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using Arcade.Shared;
 using Arcade.Shared.Misc;
 using Arcade.Shared.Repositories;
-using TweetSharp;
+using OAuth;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
@@ -69,13 +71,7 @@ namespace Arcade.AutoTweetLeaderboards
 
                 if (!string.IsNullOrEmpty(environmentVariables.TweetsOn))
                 {
-                    var service = new TwitterService(environmentVariables.ConsumerAPIKey, environmentVariables.ConsumerAPISecretKey);
-                    service.AuthenticateWith(environmentVariables.AccessToken, environmentVariables.AccessTokenSecret);
-
-                    service.SendTweet(new SendTweetOptions
-                    {
-                        Status = message,
-                    });
+                    this.Tweet(message);
                 }
 
                 game.List1.RemoveAt(index);
@@ -141,28 +137,28 @@ namespace Arcade.AutoTweetLeaderboards
 
             if (topFive.Count == 0)
             {
-                builder.AppendLine($"#Highscore time, at least it would be if we had any submissions for {name}!");
-                builder.AppendLine($"This is your chance to be number one on the leaderboards, you might not get that chance again!");
+                builder.Append($"#Highscore time, at least it would be if we had any submissions for {name}! ");
+                builder.Append($"This is your chance to be number one on the leaderboards, you might not get that chance again! ");
                 builder.Append("Submit your best and start the competition! #arcade #retrogames");
                 return builder.ToString();
             }
             else if (topFive.Count < 5)
             {
-                builder.AppendLine($"#Highscore time. Not many submissions for this one. The current #Top{topFive.Count} scores for {name} are:");
+                builder.Append($"#Highscore time. Not many submissions for this one. The current #Top{topFive.Count} scores for {name} are:\\n");
             }
             else
             {
-                builder.AppendLine($"#Highscore time. The #Top5 scores for {name} are:");
+                builder.Append($"#Highscore time. The #Top5 scores for {name} are:\\n");
             }
 
-            builder.AppendLine(string.Empty);
+            builder.Append("\\n");
 
             foreach (string game in topFive)
             {
-                builder.AppendLine(game);
+                builder.Append(game + "\\n");
             }
 
-            builder.AppendLine(string.Empty);
+            builder.Append("\\n");
             var rnd = new Random();
             int choice = rnd.Next(0, 5);
 
@@ -188,6 +184,41 @@ namespace Arcade.AutoTweetLeaderboards
             }
 
             return builder.ToString();
+        }
+
+        public void Tweet(string message)
+        {
+            var _oAuthConsumerKey = environmentVariables.ConsumerAPIKey;
+            var _oAuthConsumerSecret = environmentVariables.ConsumerAPISecretKey;
+            var _accessToken = environmentVariables.AccessToken;
+            var _accessTokenSecret = environmentVariables.AccessTokenSecret;
+
+            Console.WriteLine(_oAuthConsumerKey);
+            Console.WriteLine(_oAuthConsumerSecret);
+            Console.WriteLine(_accessToken);
+            Console.WriteLine(_accessTokenSecret);
+
+            OAuthRequest client = OAuthRequest.ForProtectedResource("POST", _oAuthConsumerKey, _oAuthConsumerSecret, _accessToken, _accessTokenSecret);
+            client.RequestUrl = "https://api.twitter.com/2/tweets";
+            string auth = client.GetAuthorizationHeader();
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(client.RequestUrl);
+            request.Method = "POST";
+            request.Headers.Add("Content-Type", "application/json");
+            request.Headers.Add("Authorization", auth);
+
+            var jsonMessage = "{\"text\": \"" + message + "\"}";
+            Console.WriteLine(jsonMessage);
+
+            using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+            {
+                streamWriter.Write(jsonMessage);
+            }
+
+            var response = (HttpWebResponse)request.GetResponse();
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+            Console.WriteLine(responseString);
         }
     }
 }

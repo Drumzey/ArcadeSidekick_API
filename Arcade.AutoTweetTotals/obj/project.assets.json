@@ -138,21 +138,25 @@
           }
         }
       },
-      "TweetMoaSharp/6.0.2": {
+      "OAuth.DotNetCore/3.0.1": {
         "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
-        },
         "compile": {
-          "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
-            "related": ".deps.json"
+          "lib/netstandard2.0/OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OAuth.dll": {}
+        }
+      },
+      "RestSharp/107.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Hammock.NetStandard20.dll": {},
-          "lib/netstandard2.0/TweetSharp.NetStandard20.dll": {
-            "related": ".deps.json"
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -409,35 +413,35 @@
         "packageIcon.png"
       ]
     },
-    "TweetMoaSharp/6.0.2": {
-      "sha512": "FYYHGdGhs1MDXViBX11YSZ8DaVmtUjYO6OWZAOxnXCiVnuZwqiWhqd4mg/OzVWfodCRT3fmVbjO47HQjYnv6jA==",
+    "OAuth.DotNetCore/3.0.1": {
+      "sha512": "odOVMFAIIBruZh1XlLdr7QekRYjqEzhpvcRDbObPwfqTqob+/H6mlsXaTzJ/djCzBOtywHghJtPBietPqzP9rA==",
       "type": "package",
-      "path": "tweetmoasharp/6.0.2",
+      "path": "oauth.dotnetcore/3.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.md",
-        "README.md",
-        "lib/2.0/Hammock.dll",
-        "lib/2.0/LinqBridge.dll",
-        "lib/2.0/TweetSharp.dll",
-        "lib/3.5/Hammock.ClientProfile.dll",
-        "lib/3.5/TweetSharp.dll",
-        "lib/4.0/Hammock.ClientProfile.dll",
-        "lib/4.0/TweetSharp.dll",
-        "lib/4.5/Hammock.ClientProfile.dll",
-        "lib/4.5/TweetSharp.dll",
-        "lib/netstandard1.0/Hammock.ClientProfile.dll",
-        "lib/netstandard1.0/TweetSharp.dll",
-        "lib/netstandard2.0/Hammock.NetStandard20.dll",
-        "lib/netstandard2.0/TweetSharp.NetStandard20.deps.json",
-        "lib/netstandard2.0/TweetSharp.NetStandard20.dll",
-        "lib/portable-win81+wpa81/Hammock.WinRT.dll",
-        "lib/portable-win81+wpa81/Hammock.WinRT.pri",
-        "lib/portable-win81+wpa81/TweetSharp.WinRT.dll",
-        "lib/portable-win81+wpa81/TweetSharp.WinRT.pri",
-        "tweetmoasharp.6.0.2.nupkg.sha512",
-        "tweetmoasharp.nuspec"
+        "lib/net40/OAuth.dll",
+        "lib/netstandard2.0/OAuth.dll",
+        "oauth.dotnetcore.3.0.1.nupkg.sha512",
+        "oauth.dotnetcore.nuspec"
+      ]
+    },
+    "RestSharp/107.3.0": {
+      "sha512": "qu+A+VAnVLX3OeWVNm11UJz0aVErqSfYqIiOUbJM9x98uLymCOoL/oXRAjMb6XHra27WXxHmzy9EKEOKXWR6Pw==",
+      "type": "package",
+      "path": "restsharp/107.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.107.3.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "Arcade.Shared/1.0.0": {
@@ -451,7 +455,8 @@
       "Amazon.Lambda.Core >= 2.2.0",
       "Amazon.Lambda.Serialization.Json >= 2.2.1",
       "Arcade.Shared >= 1.0.0",
-      "TweetMoaSharp >= 6.0.2"
+      "OAuth.DotNetCore >= 3.0.1",
+      "RestSharp >= 107.3.0"
     ]
   },
   "packageFolders": {
@@ -511,9 +516,13 @@
             "target": "Package",
             "version": "[2.2.1, )"
           },
-          "TweetMoaSharp": {
+          "OAuth.DotNetCore": {
             "target": "Package",
-            "version": "[6.0.2, )"
+            "version": "[3.0.1, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[107.3.0, )"
           }
         },
         "imports": [

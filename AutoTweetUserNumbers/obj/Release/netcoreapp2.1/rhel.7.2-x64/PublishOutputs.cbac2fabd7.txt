@@ -1,0 +1,7 @@
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\publish\AutoTweetUserNumbers.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\publish\AutoTweetUserNumbers.runtimeconfig.json
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\publish\AutoTweetUserNumbers.pdb
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\publish\Amazon.Lambda.Core.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\publish\Amazon.Lambda.Serialization.Json.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\publish\Newtonsoft.Json.dll
+C:\Personal\Mobile Development\Arcade Sidekick\ArcadeSidekick_API\AutoTweetUserNumbers\bin\Release\netcoreapp2.1\publish\AutoTweetUserNumbers.deps.json

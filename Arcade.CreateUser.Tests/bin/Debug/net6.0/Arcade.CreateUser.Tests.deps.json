@@ -79,6 +79,17 @@
           }
         }
       },
+      "AWSSDK.S3/3.7.310.8": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.304.31"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.310.8"
+          }
+        }
+      },
       "AWSSDK.SimpleEmail/3.7.301.5": {
         "dependencies": {
           "AWSSDK.Core": "3.7.304.31"
@@ -478,6 +489,7 @@
       "xunit.runner.visualstudio/2.8.2": {},
       "Arcade.CreateUser/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.310.8",
           "Amazon.Lambda.Core": "2.2.0",
           "Amazon.Lambda.Serialization.Json": "2.2.1",
           "Arcade.Shared": "1.0.0"
@@ -547,6 +559,13 @@
       "sha512": "sha512-1BncGathkKwwsCHBU42NCiPY3osFPkQ++A1JjrnFnfQ0SeFpfVc9xSrsvsKKR2E8IATuwgW30OXTNujTR5NGcw==",
       "path": "awssdk.dynamodbv2/3.7.305.2",
       "hashPath": "awssdk.dynamodbv2.3.7.305.2.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.310.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-10Rt0X6jclb1jVZMoIcCHeWzrRmEaq8ZDs6ZiXe+7sh1ZXayOKqMvLdoALaesuD0ZjFoHRid/FFZ4M/v1g7Q1A==",
+      "path": "awssdk.s3/3.7.310.8",
+      "hashPath": "awssdk.s3.3.7.310.8.nupkg.sha512"
     },
     "AWSSDK.SimpleEmail/3.7.301.5": {
       "type": "package",

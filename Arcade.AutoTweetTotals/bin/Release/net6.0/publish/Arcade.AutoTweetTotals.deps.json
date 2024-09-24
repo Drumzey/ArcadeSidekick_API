@@ -1,0 +1,226 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0/linux-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {},
+    ".NETCoreApp,Version=v6.0/linux-x64": {
+      "Arcade.AutoTweetTotals/1.0.0": {
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.2.0",
+          "Amazon.Lambda.Serialization.Json": "2.2.1",
+          "Arcade.Shared": "1.0.0",
+          "OAuth.DotNetCore": "3.0.1",
+          "RestSharp": "107.3.0"
+        },
+        "runtime": {
+          "Arcade.AutoTweetTotals.dll": {}
+        }
+      },
+      "Amazon.Lambda.APIGatewayEvents/2.7.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.APIGatewayEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.Core/2.2.0": {
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.Serialization.Json/2.2.1": {
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.2.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Lambda.Serialization.Json.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.304.31": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.304.31"
+          }
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.7.305.2": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.304.31"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.305.2"
+          }
+        }
+      },
+      "AWSSDK.SimpleEmail/3.7.301.5": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.304.31"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleEmail.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.301.5"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "OAuth.DotNetCore/3.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/OAuth.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "RestSharp/107.3.0": {
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "assemblyVersion": "107.3.0.0",
+            "fileVersion": "107.3.0.0"
+          }
+        }
+      },
+      "Arcade.Shared/1.0.0": {
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.305.2",
+          "AWSSDK.SimpleEmail": "3.7.301.5",
+          "Amazon.Lambda.APIGatewayEvents": "2.7.0",
+          "Amazon.Lambda.Serialization.Json": "2.2.1",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0"
+        },
+        "runtime": {
+          "Arcade.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Arcade.AutoTweetTotals/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Amazon.Lambda.APIGatewayEvents/2.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HAbdRKLzvUqRg/fItan7up/PWsj6vQfYF+1a4YV6sv1bq5TuK/ra+ndJwWMlzL+MFJzJaHwCmtkyBbh/vz8Oig==",
+      "path": "amazon.lambda.apigatewayevents/2.7.0",
+      "hashPath": "amazon.lambda.apigatewayevents.2.7.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.Core/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DHqKeD1CYocP0t1dJC/NaXfu+5k6AoqnQ1Hlu/J2mXpLpCyeJfY+tIqT5fpruDarUlU0NtdIH8zSkCjeinyb1A==",
+      "path": "amazon.lambda.core/2.2.0",
+      "hashPath": "amazon.lambda.core.2.2.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.Serialization.Json/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EVPFDywjXpyIvWN5hIgEBSkReArqB8Y2woTRO5QDcDywV1fferxiy4eZHg6mQy6Y8WF1TM7vNMqq/McwI2OAMQ==",
+      "path": "amazon.lambda.serialization.json/2.2.1",
+      "hashPath": "amazon.lambda.serialization.json.2.2.1.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.304.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Gx5NqKJ4jt+V7LaKXWFhYbL5u99uTSmJg0w5k/iZgQEssxpZB438eTk7JdxrIFlIvw6Lv1v5LTNRNfI5/ZEaaA==",
+      "path": "awssdk.core/3.7.304.31",
+      "hashPath": "awssdk.core.3.7.304.31.nupkg.sha512"
+    },
+    "AWSSDK.DynamoDBv2/3.7.305.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1BncGathkKwwsCHBU42NCiPY3osFPkQ++A1JjrnFnfQ0SeFpfVc9xSrsvsKKR2E8IATuwgW30OXTNujTR5NGcw==",
+      "path": "awssdk.dynamodbv2/3.7.305.2",
+      "hashPath": "awssdk.dynamodbv2.3.7.305.2.nupkg.sha512"
+    },
+    "AWSSDK.SimpleEmail/3.7.301.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AvfErnO0JZQA7RtSWE0jEZgT7PxjCk2SOiNh84FS8SW1Cv/TGmH4vTO1713V+jjJ1SSqpQKHx0BQMoqBSigS2g==",
+      "path": "awssdk.simpleemail/3.7.301.5",
+      "hashPath": "awssdk.simpleemail.3.7.301.5.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
+      "path": "microsoft.extensions.dependencyinjection/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "OAuth.DotNetCore/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-odOVMFAIIBruZh1XlLdr7QekRYjqEzhpvcRDbObPwfqTqob+/H6mlsXaTzJ/djCzBOtywHghJtPBietPqzP9rA==",
+      "path": "oauth.dotnetcore/3.0.1",
+      "hashPath": "oauth.dotnetcore.3.0.1.nupkg.sha512"
+    },
+    "RestSharp/107.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qu+A+VAnVLX3OeWVNm11UJz0aVErqSfYqIiOUbJM9x98uLymCOoL/oXRAjMb6XHra27WXxHmzy9EKEOKXWR6Pw==",
+      "path": "restsharp/107.3.0",
+      "hashPath": "restsharp.107.3.0.nupkg.sha512"
+    },
+    "Arcade.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
